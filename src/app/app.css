@@ -1,0 +1,111 @@
+:root {
+  --bg-color-light: #fff;
+  --bg-color-dark: #fff;
+  --text-color: #000000;
+  --header-bg-color: #f0f0f0;
+  --button-bg-color: #ffffff;
+  --button-text-color: #000000;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-color-light: #000;
+    --bg-color-dark: #000;
+    --text-color: #ffffff;
+    --header-bg-color: #1a1a1a;
+    --button-bg-color: #333333;
+    --button-text-color: #ffffff;
+  }
+}
+
+.navbar {
+  position: relative;
+  z-index: 1000;
+  transition: top 0.3s;
+  background: rgba(255, 255, 255, 0);
+}
+
+.navbar.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(5, 7, 9, 0.5);
+  box-shadow: 0 2px 4px rgba(135, 80, 247, 0.2);
+  -moz-backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+}
+
+.navbar.scrolled {
+  position: fixed;
+  background: rgba(5, 7, 9, 0.5);
+  box-shadow: 0 2px 4px rgba(135, 80, 247, 0.2);
+  -moz-backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  --tw-shadow: 0 0 10 0px rgba(0, 0, 0, 0.1);
+  --tw-shadow-colored: 0 0 10 0px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
+    var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.navHolder {
+  width: 100%;
+}
+
+.nav-list {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-link {
+  margin: 5px;
+}
+
+.nav-link a {
+  font-weight: 500;
+  text-decoration: none;
+  padding-left: 10px;
+  padding-right: 10px;
+  display: block;
+}
+
+.nav-link a:hover {
+  color: var(--cyanblue);
+  transition: all 0.15s ease-in-out;
+}
+
+.nav-link a {
+  cursor: pointer !important;
+}
+
+.nav-link a {
+  position: relative;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.nav-link a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 5px;
+  border-radius: 5px;
+  background: linear-gradient(90deg, var(--cyanblue) 1%, var(--cyandark2) 100%);
+  transition: width 0.3s ease;
+}
+
+.nav-link a.active::after {
+  width: 100%;
+}
+
+.header .left-half {
+  background-color: #000712;
+}
+
+.header .right-half {
+  background-color: #ffdcb2;
+}

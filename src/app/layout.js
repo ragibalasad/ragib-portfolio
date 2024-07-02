@@ -1,9 +1,12 @@
-import { Sora } from "next/font/google";
+import { Poppins } from "next/font/google";
 import "./app.css";
 import "./globals.css";
 import Head from "next/head";
 
-const inter = Sora({ subsets: ["latin"] });
+const poppins = Poppins({
+  weight: ["400", "500", "600", "700"],
+  subsets: ["latin"],
+});
 
 export const metadata = {
   title: "Ragib Al Asad | Portfolio",
@@ -16,7 +19,7 @@ export default function RootLayout({ children }) {
       <Head>
         <link rel="icon" href="logo_32.png" />
       </Head>
-      <body className={inter.className}>{children}</body>
+      <body className={poppins.className}>{children}</body>
     </html>
   );
 }

@@ -2,32 +2,58 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
+@layer components {
+  body {
+    @apply bg-bgdark text-txtdark;
+  }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+  .navbar {
+    @apply flex fixed top-0 left-0 w-full z-50;
+    transition: 0.3s;
+  }
+  .navbar .container {
+    @apply flex justify-between items-center px-4 py-1;
+  }
+
+  .navHolder {
+    @apply flex items-center;
+  }
+
+  .nav-list {
+    /* @apply mr-14; */
+  }
+
+  .nav-link {
+    @apply px-2 py-2;
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+/* Extra small devices (phones, 576px and down) */
+@media (max-width: 575.98px) {
+  /* Styles for extra small devices */
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+/* Small devices (tablets, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  /* Styles for small devices */
+}
+
+/* Medium devices (small laptops, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  /* Styles for medium devices */
+}
+
+/* Large devices (laptops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  /* Styles for large devices */
+}
+
+/* Extra large devices (desktops, 1200px and up) */
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+  /* Styles for extra large devices */
+}
+
+/* XXL devices (large desktops, 1400px and up) */
+@media (min-width: 1400px) {
+  /* Styles for XXL devices */
 }
