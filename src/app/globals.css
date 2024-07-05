@@ -8,11 +8,11 @@
   }
 
   .navbar {
-    @apply flex fixed top-0 left-0 w-full z-50;
+    @apply flex fixed top-0 left-0 w-full z-50 py-4;
     transition: 0.3s;
   }
   .navbar .container {
-    @apply flex justify-between items-center px-4 py-1;
+    @apply flex justify-between items-center px-4;
   }
 
   .navHolder {
@@ -24,7 +24,7 @@
   }
 
   .nav-link {
-    @apply px-2 py-2;
+    @apply px-2;
   }
 }
 

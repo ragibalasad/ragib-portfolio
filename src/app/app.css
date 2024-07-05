@@ -22,15 +22,13 @@
   position: relative;
   z-index: 1000;
   transition: top 0.3s;
-  background: rgba(255, 255, 255, 0);
 }
 
 .navbar.sticky {
   position: fixed;
   top: 0;
   width: 100%;
-  background: rgba(5, 7, 9, 0.5);
-  box-shadow: 0 2px 4px rgba(135, 80, 247, 0.2);
+  background: rgba(255, 255, 255, 0.5);
   -moz-backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
   backdrop-filter: blur(5px);
@@ -38,8 +36,7 @@
 
 .navbar.scrolled {
   position: fixed;
-  background: rgba(5, 7, 9, 0.5);
-  box-shadow: 0 2px 4px rgba(135, 80, 247, 0.2);
+  background: rgba(255, 255, 255, 0.5);
   -moz-backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
   backdrop-filter: blur(5px);
@@ -47,6 +44,10 @@
   --tw-shadow-colored: 0 0 10 0px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
     var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.navbar.scrolled .logo span {
+  color: var(--header-bg-color);
 }
 
 .navHolder {
@@ -60,30 +61,19 @@
 }
 
 .nav-link {
-  margin: 5px;
+  /* margin: 5px; */
 }
 
 .nav-link a {
-  font-weight: 600;
   text-decoration: none;
-  padding-left: 10px;
-  padding-right: 10px;
-  display: block;
+  position: relative;
+  display: inline-block;
+  cursor: pointer !important;
 }
 
 .nav-link a:hover {
   color: var(--cyanblue);
   transition: all 0.15s ease-in-out;
-}
-
-.nav-link a {
-  cursor: pointer !important;
-}
-
-.nav-link a {
-  position: relative;
-  display: inline-block;
-  padding-bottom: 5px;
 }
 
 .nav-link a::after {
@@ -100,6 +90,10 @@
 
 .nav-link a.active::after {
   width: 100%;
+}
+
+.header {
+  height: 1000px;
 }
 
 .header .left-half {

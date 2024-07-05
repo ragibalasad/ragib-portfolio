@@ -7,8 +7,8 @@ const Header = () => {
         <div className="w-1/2 left-half flex justify-between">
           <div className="intro container p-10 mt-28 mr-32 text-right">
             <p className="text-2xl text-ff">Hi 👋 I&apos;m</p>
-            <p className="text-7xl text-ff font-bold">
-              RAGIB <br /> AL ASAD
+            <p className="text-7xl text-ff font-semibold">
+              Ragib <br /> Al Asad
             </p>
           </div>
         </div>

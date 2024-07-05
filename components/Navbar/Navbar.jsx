@@ -42,17 +42,22 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="navbar" id="navbar">
+    <nav
+      className={`navbar ${isScrolled ? "scrolled" : ""} ${
+        isOpen ? "open" : ""
+      }`}
+      id="navbar"
+    >
       <div className="container flex justify-between mx-auto text-center items-center">
-        <div className="navHolder flex py-0">
-          <div className="logo flex items-center mr-4">
-            <Image src={images.logo} alt="Logo" width={25} height={25} />
-            <span className="ml-3 text-ff font-bold text-xl">AGIB</span>
+        <div className="navHolder flex">
+          <div className="logo flex items-center">
+            <Image src={images.logo} alt="Logo" width={24} height={24} />
+            <span className="ml-1 text-ff font-semibold text-xl">agib</span>
           </div>
 
           <ul className={`nav-list ml-auto ${isOpen ? "open" : ""}`}>
             {navLinks.map((link, index) => (
-              <li key={index} className="nav-link px-0 text-md">
+              <li key={index} className="nav-link px-2 text-lg font-medium">
                 <Link
                   to={link.to}
                   activeClass="active"
