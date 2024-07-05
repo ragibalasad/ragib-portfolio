@@ -4,12 +4,11 @@
 
 @layer components {
   body {
-    @apply bg-bgdark text-txtdark;
+    background-color: black;
   }
 
   .navbar {
-    @apply flex fixed top-0 left-0 w-full z-50 py-4;
-    transition: 0.3s;
+    @apply flex fixed top-0 left-0 w-full z-50 py-6;
   }
   .navbar .container {
     @apply flex justify-between items-center px-4;
@@ -50,10 +49,15 @@
 
 /* Extra large devices (desktops, 1200px and up) */
 @media (min-width: 1200px) and (max-width: 1399.98px) {
-  /* Styles for extra large devices */
+  .header {
+    @apply pt-8;
+  }
 }
 
 /* XXL devices (large desktops, 1400px and up) */
 @media (min-width: 1400px) {
-  /* Styles for XXL devices */
+  .header {
+    min-height: calc(100% + 120px);
+    @apply pt-20;
+  }
 }
