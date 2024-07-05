@@ -31,7 +31,9 @@ const Header = () => {
                 <span className="code-color-1">{"<div "}</span>
                 <span className="code-color-2">className</span>
                 <span className="code-color-4">=</span>
-                <span className="code-color-3 text-2xl">"aboutMe"</span>
+                <span className="code-color-3 text-2xl">
+                  &quot;aboutMe&quot;
+                </span>
                 <span className="code-color-1">{">"}</span>
                 <br />
                 <span className="code-color-1 ml-4">{"<p> "}</span>
