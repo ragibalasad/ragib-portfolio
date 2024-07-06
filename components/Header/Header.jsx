@@ -29,12 +29,12 @@ const Header = () => {
             className="object-contain"
             src={images.ragib_potrait}
             alt="Ragib Al Asad"
-            height={620}
+            height={640}
           />
         </div>
       </ParallaxLayer>
 
-      <ParallaxLayer speed={1.5}>
+      <ParallaxLayer speed={1}>
         <div className="terminal container ml-auto w-1/2 h-full flex justify-start items-end p-6 pl-20">
           <div className="terminal-win">
             <div className="terminal-head flex shadow-sm p-2 gap-1">

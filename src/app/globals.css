@@ -49,14 +49,11 @@
 
 /* Extra large devices (desktops, 1200px and up) */
 @media (min-width: 1200px) and (max-width: 1399.98px) {
-  .header {
-    @apply pt-8;
-  }
 }
 
 /* XXL devices (large desktops, 1400px and up) */
 @media (min-width: 1400px) {
-  .header {
-    @apply pt-20;
+  .showcase-img img {
+    width: 500px;
   }
 }

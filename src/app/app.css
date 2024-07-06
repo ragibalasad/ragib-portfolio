@@ -112,11 +112,7 @@
 }
 
 .showcase-img {
-  position: relative;
   min-height: 100%;
-  justify-content: center;
-  object-fit: cover;
-  margin: auto 0;
 }
 
 .terminal {
