@@ -99,33 +99,32 @@
   width: 100%;
 }
 
-.header {
-  min-height: calc(100% + 120px);
-}
-
-.header .devider {
-  min-height: 100%;
-}
-
-.intro .sub-heading {
-  width: 0;
-  padding-left: 10px;
-  border-left: 3px solid yellow;
-}
-
 .two-color-bg {
   background: linear-gradient(90deg, rgba(6, 5, 25) 50%, aliceblue 50%);
 }
 
+.header {
+  /* max-height: 740px; */
+}
+
+.two-color-bg {
+  height: 100vh;
+}
+
 .showcase-img {
   position: relative;
-  min-height: calc(100% + 120px);
-  display: flex;
+  min-height: 100%;
   justify-content: center;
+  object-fit: cover;
+  margin: auto 0;
+}
+
+.terminal {
+  position: relative;
+  margin-left: auto;
 }
 
 .terminal-win {
-  position: relative;
   width: 410px;
   height: 260px;
   border-radius: 0.5rem;

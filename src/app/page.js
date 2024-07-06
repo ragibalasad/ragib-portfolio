@@ -1,10 +1,15 @@
-import { Navbar, Header } from '../../components';
+"use client";
+import { Navbar, Header, Work } from "../../components";
+import { Parallax } from "@react-spring/parallax";
 
 export default function Home() {
   return (
     <div>
       <Navbar />
-      <Header />
+      <Parallax>
+        <Header />
+        <Work />
+      </Parallax>
     </div>
   );
 }

@@ -57,7 +57,6 @@
 /* XXL devices (large desktops, 1400px and up) */
 @media (min-width: 1400px) {
   .header {
-    min-height: calc(100% + 120px);
     @apply pt-20;
   }
 }
