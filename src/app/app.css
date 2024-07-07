@@ -42,10 +42,10 @@
 .navbar.scrolled {
   padding: 1rem;
   position: fixed;
-  background: rgba(6, 5, 25, 0.75);
+  background: rgba(6, 5, 25, 0.6);
   -moz-backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(6px);
   --tw-shadow: 0 0 10 0px rgba(0, 0, 0, 0.1);
   --tw-shadow-colored: 0 0 10 0px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),

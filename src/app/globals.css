@@ -57,10 +57,16 @@
     width: 500px;
   }
   .terminal {
-    scale: 1.2;
-    @apply pb-20 pl-32;
+    scale: 1.1;
+    @apply z-10;
+  }
+  .intro .name {
+    @apply text-8xl;
   }
 }
 
 @media (min-width: 1900px) {
+  .header {
+    height: 80vh;
+  }
 }

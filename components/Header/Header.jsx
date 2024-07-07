@@ -1,8 +1,9 @@
 "use client";
 import { images } from "../../constants";
 import Image from "next/image";
-import React from "react";
+import { React, useRef } from "react";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
+import { useScroll, useTransform, motion } from "framer-motion";
 
 const Header = () => {
   const [text] = useTypewriter({
@@ -12,21 +13,38 @@ const Header = () => {
     deleteSpeed: 60,
   });
 
+  let ref = useRef();
+  let { scrollYProgress } = useScroll({
+    target: ref,
+    offset: ["start start", "end start"],
+  });
+  let yIntro = useTransform(scrollYProgress, [0, 1], ["0%", "25%"]);
+  let yTerminal = useTransform(scrollYProgress, [0, 1], ["0%", "-25%"]);
+
   return (
-    <header className="header mx-auto two-color-bg relative flex flex-col items-center h-screen">
+    <header
+      ref={ref}
+      className="header mx-auto overflow-y-hidden two-color-bg relative flex flex-col items-center h-screen"
+    >
       <div className="container flex w-full h-full">
-        <div className="intro w-1/2 flex justify-center items-center">
+        <motion.div
+          style={{ y: yIntro }}
+          className="intro w-1/2 flex justify-center items-center"
+        >
           <div className="text-right">
             <p className="text-2xl text-ff">Hi 👋 I&apos;m</p>
-            <p className="text-7xl text-ff font-semibold">
+            <p className="name text-7xl text-ff font-semibold">
               Ragib
               <br />
               Al Asad
             </p>
             <p className="sub-heading text-lg text-ff">I BUILD WEBSITES</p>
           </div>
-        </div>
-        <div className="terminal w-1/2 flex justify-center items-end pb-16">
+        </motion.div>
+        <motion.div
+          style={{ y: yTerminal }}
+          className="terminal w-1/2 flex justify-center items-end pb-16 z-10"
+        >
           <div className="terminal-win">
             <div className="terminal-head flex shadow-sm p-2 gap-1">
               <div className="close"></div>
@@ -56,7 +74,7 @@ const Header = () => {
               </span>
             </div>
           </div>
-        </div>
+        </motion.div>
       </div>
       <div className="showcase-img absolute bottom-0 left-1/2 transform -translate-x-1/2">
         <Image
