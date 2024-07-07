@@ -30,7 +30,7 @@
 
 .navbar.sticky {
   position: fixed;
-  padding: 1rem;
+  padding: 1rem 0;
   top: 0;
   width: 100%;
   background: rgba(6, 5, 25, 0.7);
@@ -40,7 +40,7 @@
 }
 
 .navbar.scrolled {
-  padding: 1rem;
+  padding: 1rem 0;
   position: fixed;
   background: rgba(6, 5, 25, 0.6);
   -moz-backdrop-filter: blur(5px);
@@ -97,6 +97,10 @@
 
 .nav-link a.active::after {
   width: 100%;
+}
+
+.header {
+  height: 700px;
 }
 
 .two-color-bg {

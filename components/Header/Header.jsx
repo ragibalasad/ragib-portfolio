@@ -24,21 +24,21 @@ const Header = () => {
   return (
     <header
       ref={ref}
-      className="header mx-auto overflow-y-hidden two-color-bg relative flex flex-col items-center h-screen"
+      className="header mx-auto overflow-y-hidden two-color-bg relative flex flex-col items-center"
     >
       <div className="container flex w-full h-full">
         <motion.div
           style={{ y: yIntro }}
           className="intro w-1/2 flex justify-center items-center"
         >
-          <div className="text-right">
+          <div className="info text-right">
             <p className="text-2xl text-ff">Hi 👋 I&apos;m</p>
             <p className="name text-7xl text-ff font-semibold">
               Ragib
               <br />
               Al Asad
             </p>
-            <p className="sub-heading text-lg text-ff">I BUILD WEBSITES</p>
+            <p className="sub-heading text-lg text-ff my-1">I BUILD WEBSITES</p>
           </div>
         </motion.div>
         <motion.div
@@ -76,11 +76,12 @@ const Header = () => {
           </div>
         </motion.div>
       </div>
-      <div className="showcase-img absolute bottom-0 left-1/2 transform -translate-x-1/2">
+      <div className="showcase-img absolute bottom-0 mx-auto">
         <Image
-          className="object-contain"
+          className="mx-auto"
           src={images.ragib_potrait}
           alt="Ragib Al Asad"
+          width={447}
           height={640}
         />
       </div>
