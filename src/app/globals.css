@@ -105,7 +105,11 @@
 }
 
 @media (min-width: 1900px) {
-  .header {
-    height: 90vh;
+  .showcase-img img {
+    width: 520px;
+  }
+  .terminal {
+    scale: 1.2;
+    @apply mb-10;
   }
 }
