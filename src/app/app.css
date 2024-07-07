@@ -32,22 +32,22 @@
 
 .navbar.sticky {
   position: fixed;
-  padding: 1rem 0;
+  padding: 1.25rem 0;
   top: 0;
   width: 100%;
-  background: rgba(6, 5, 25, 0.7);
+  background: rgba(12, 10, 48, 0.5);
   -moz-backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
   backdrop-filter: blur(5px);
 }
 
 .navbar.scrolled {
-  padding: 1rem 0;
+  padding: 1.25rem 0;
   position: fixed;
-  background: rgba(6, 5, 25, 0.6);
+  background: rgba(12, 10, 48, 0.5);
   -moz-backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
-  backdrop-filter: blur(6px);
+  backdrop-filter: blur(5px);
   --tw-shadow: 0 0 10 0px rgba(0, 0, 0, 0.1);
   --tw-shadow-colored: 0 0 10 0px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
@@ -67,6 +67,17 @@
   list-style-type: none;
   display: flex;
   justify-content: center;
+}
+
+.nav-list.open {
+  background: var(--bg-color);
+  color: white;
+  height: 140vh;
+  right: 0;
+}
+
+.nav-list.open .nav-link a {
+  color: white;
 }
 
 .nav-link {
@@ -99,10 +110,6 @@
 
 .nav-link a.active::after {
   width: 100%;
-}
-
-.header {
-  height: 700px;
 }
 
 .two-color-bg {
@@ -182,4 +189,42 @@
 
 .space {
   height: 5000px;
+}
+
+@media (max-width: 1024px) {
+  .logoAnim {
+    display: none;
+  }
+  .nav-list {
+    position: fixed;
+    top: 4.5rem;
+    right: -100%;
+    z-index: -50;
+    display: flex;
+    flex-direction: column;
+    height: 140vh;
+    width: 80%;
+    transition: right 0.3s ease-in-out;
+  }
+
+  .nav-list.open {
+    height: 140vh;
+    right: 0;
+  }
+
+  .navbar.scrolled {
+    top: 0px;
+  }
+
+  .navbar.open {
+    background: var(--bg-color);
+  }
+
+  .nav-list.open .navbar {
+    background: var(--bg-color) !important;
+  }
+
+  .navbar.scrolled {
+    /* background: var(--bglight); */
+  }
 }

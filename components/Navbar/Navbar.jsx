@@ -74,6 +74,12 @@ const Navbar = () => {
             ))}
           </ul>
         </div>
+
+        <div className="menuBtn hamburger" onClick={handleMenuToggle}>
+          <div className="bar"></div>
+          <div className="bar"></div>
+          <div className="bar"></div>
+        </div>
       </div>
     </nav>
   );

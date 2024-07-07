@@ -8,7 +8,7 @@
   }
 
   .navbar {
-    @apply flex fixed top-0 left-0 w-full z-50 py-6;
+    @apply flex fixed top-0 left-0 w-full z-50 py-8;
   }
   .navbar .container {
     @apply flex justify-between items-center px-4;
@@ -24,6 +24,14 @@
 
   .nav-link {
     @apply px-2;
+  }
+
+  .hamburger {
+    @apply hidden cursor-pointer;
+  }
+
+  .hamburger .bar {
+    @apply block h-1 w-6 my-1 bg-txtdark;
   }
 }
 
@@ -59,7 +67,7 @@
   }
 
   .showcase-img {
-    @apply relative px-2 rounded-lg mx-4;
+    @apply relative px-2 rounded-3xl mx-8;
     background: linear-gradient(54deg, rgba(6, 5, 25) 50%, #ffe1bd 50%);
   }
 
@@ -85,7 +93,71 @@
 }
 
 /* Large devices (laptops, 992px and up) */
-@media (max-width: 992px) {
+@media (max-width: 1024px) {
+  .nav-list {
+    /* @apply bg-bglight; */
+  }
+
+  .nav-link {
+    @apply justify-center items-center h-16 pr-10;
+    text-align: right !important;
+  }
+
+  .nav-link a {
+    @apply text-txtdark mr-10 py-4;
+  }
+
+  .hamburger {
+    @apply px-2 h-8 w-8 box-content cursor-pointer relative;
+  }
+
+  .hamburger .bar {
+    @apply w-full h-1 rounded bg-ff;
+  }
+
+  .hamburger .bar:nth-child(1) {
+    @apply top-2 transition-all duration-200;
+  }
+
+  .hamburger .bar:nth-child(2) {
+    @apply top-4 transition-all duration-200;
+  }
+
+  .hamburger .bar:nth-child(3) {
+    @apply top-6 transition-all duration-200;
+  }
+
+  .navbar.open .hamburger .bar:nth-child(1) {
+    @apply top-[50%] translate-y-[200%] rotate-[-45deg] transition duration-200;
+  }
+
+  .navbar.open .hamburger .bar:nth-child(2) {
+    @apply hidden transition duration-200;
+  }
+
+  .navbar.open .hamburger .bar:nth-child(3) {
+    @apply top-[50%] translate-y-[0%] rotate-[45deg] transition duration-200;
+  }
+
+  .navbar .container {
+    @apply relative;
+  }
+
+  .nav-list {
+    @apply block;
+  }
+
+  .nav-link::after {
+    @apply content-[""] absolute w-full h-2 rounded bottom-2 left-0;
+  }
+
+  .nav-link {
+    @apply my-6 text-txtdark font-medium w-full text-center;
+  }
+
+  .hamburger {
+    @apply block;
+  }
 }
 
 /* Extra large devices (desktops, 1200px and up) */
