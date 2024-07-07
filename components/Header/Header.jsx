@@ -32,7 +32,7 @@ const Header = () => {
           className="intro w-1/2 flex justify-center items-center"
         >
           <div className="info text-right">
-            <p className="text-2xl text-ff">Hi 👋 I&apos;m</p>
+            <p className="hi text-2xl text-ff">Hi 👋 I&apos;m</p>
             <p className="name text-7xl text-ff font-semibold">
               Ragib
               <br />
@@ -51,10 +51,10 @@ const Header = () => {
               <div className="minimize"></div>
               <div className="maximize"></div>
             </div>
-            <div className="terminal-body px-6 py-0">
+            <div className="terminal-body px-6 my-4">
               <span className="text-xl">
                 <span className="code-color-1">{"<div "}</span>
-                <span className="code-color-2">className</span>
+                <span className="code-color-2">class</span>
                 <span className="code-color-4">=</span>
                 <span className="code-color-3">&quot;aboutMe&quot;</span>
                 <span className="code-color-1">{">"}</span>
@@ -63,12 +63,12 @@ const Header = () => {
                 <span className="code-color-4">I&apos;m a</span>
                 <span className="code-color-1">{" </p>"}</span>
                 <br />
-                <span className="code-color-1 ml-4">{"<h1> "}</span>
-                <span className="code-color-4 text-2xl">{text}</span>
+                <span className="code-color-1 ml-4">{"<p> "}</span>
+                <span className="code-color-4">{text}</span>
                 <span className="code-color-2">
                   <Cursor cursorStyle="█" />
                 </span>
-                <span className="code-color-1">{"</h1>"}</span>
+                <span className="code-color-1">{"</p>"}</span>
                 <br />
                 <span className="code-color-1">{"</div>"}</span>
               </span>

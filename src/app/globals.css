@@ -47,19 +47,32 @@
     @apply text-left;
   }
 
+  .intro .hi {
+    /* @apply text-lg; */
+  }
+  .intro .name {
+    @apply text-6xl;
+  }
+  .intro .sub-heading {
+    /* @apply text-sm; */
+  }
+
   .showcase-img {
-    @apply relative px-2 m-4 rounded-lg mx-auto;
+    @apply relative px-2 rounded-lg mx-4;
     background: linear-gradient(54deg, rgba(6, 5, 25) 50%, #ffe1bd 50%);
   }
 
   .intro,
   .terminal {
-    @apply w-auto mx-auto px-8 py-9 block;
+    @apply w-auto mx-auto px-4 pt-8 block;
   }
 
   .terminal-win {
-    @apply mx-auto;
-    border: 1px solid #ffe1bd3a;
+    @apply mx-auto w-full text-sm h-auto;
+    border: 1px solid rgba(255, 225, 189, 0.4);
+  }
+  .terminal-body {
+    @apply my-1 mb-2 px-4;
   }
 }
 

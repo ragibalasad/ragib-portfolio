@@ -112,7 +112,6 @@
 
 .terminal {
   position: relative;
-  margin-left: auto;
   font-family: "Courier New", Courier, monospace;
 }
 
@@ -152,7 +151,6 @@
 }
 
 .terminal-body {
-  margin-top: 1rem;
   line-height: 2.5rem;
 }
 
