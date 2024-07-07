@@ -56,4 +56,11 @@
   .showcase-img img {
     width: 500px;
   }
+  .terminal {
+    scale: 1.2;
+    @apply pb-20 pl-32;
+  }
+}
+
+@media (min-width: 1900px) {
 }
