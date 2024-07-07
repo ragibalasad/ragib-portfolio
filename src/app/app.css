@@ -1,4 +1,6 @@
 :root {
+  --bg-color: rgba(6, 5, 25);
+  --main-color-2: #008cff;
   --bg-color-light: #fff;
   --bg-color-dark: #fff;
   --text-color: #000000;
@@ -104,7 +106,17 @@
 }
 
 .two-color-bg {
-  background: linear-gradient(90deg, rgba(6, 5, 25) 50%, #ffe1bd 50%);
+  background: linear-gradient(90deg, var(--bg-color) 50%, #ffe1bd 50%);
+}
+
+.sub-heading {
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  letter-spacing: 0.5px;
+  padding: 0.13rem 0.75rem;
+  margin-bottom: 1rem;
+  font-weight: 500;
+  border-left: 3px solid var(--main-color-2);
 }
 
 .showcase-img img {
@@ -112,7 +124,6 @@
 
 .terminal {
   position: relative;
-  font-family: "Courier New", Courier, monospace;
 }
 
 .terminal-win {

@@ -42,23 +42,23 @@ const Header = () => {
       <div className="container flex w-full h-full">
         <motion.div
           style={{ y: yIntro }}
-          className="intro w-1/2 flex justify-center items-center"
+          className="intro w-1/2 flex justify-end pr-48 items-center"
         >
           <div className="info text-right">
-            <p className="hi text-2xl text-ff">Hi 👋 I&apos;m</p>
-            <p className="name text-7xl text-ff font-semibold">
+            <p className="hi text-lg text-ff">Hi 👋 I&apos;m</p>
+            <p className="heading font-medium text-6xl text-ff">
               Ragib
               <br />
               Al Asad
             </p>
-            <p className="sub-heading text-lg text-ff my-1">I BUILD WEBSITES</p>
+            <p className="sub-heading text-ff my-3">I BUILD WEBSITES</p>
           </div>
         </motion.div>
         <motion.div
           style={{ y: yTerminal }}
           className="terminal w-1/2 flex justify-center items-end pb-16 z-10"
         >
-          <div className="terminal-win">
+          <div className="terminal-win text-xs">
             <div className="terminal-head flex shadow-sm p-2 gap-1">
               <div className="close"></div>
               <div className="minimize"></div>
@@ -94,8 +94,7 @@ const Header = () => {
           className="mx-auto"
           src={images.ragib_potrait}
           alt="Ragib Al Asad"
-          width={447}
-          height={640}
+          height={610}
         />
       </div>
     </header>

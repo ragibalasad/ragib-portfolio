@@ -50,8 +50,9 @@
   .intro .hi {
     /* @apply text-lg; */
   }
-  .intro .name {
+  .intro .heading {
     @apply text-6xl;
+    line-height: 1.1;
   }
   .intro .sub-heading {
     /* @apply text-sm; */
@@ -68,11 +69,14 @@
   }
 
   .terminal-win {
-    @apply mx-auto w-full text-sm h-auto;
+    @apply mx-auto w-full h-auto text-xs;
     border: 1px solid rgba(255, 225, 189, 0.4);
   }
   .terminal-body {
     @apply my-1 mb-2 px-4;
+  }
+  .terminal-body span {
+    @apply text-lg;
   }
 }
 
@@ -87,7 +91,7 @@
 /* Extra large devices (desktops, 1200px and up) */
 @media (max-width: 1280px) {
   .intro {
-    @apply pr-32;
+    @apply pr-28;
   }
 }
 
@@ -96,23 +100,23 @@
   .header {
     @apply h-screen;
   }
-  .terminal {
-    scale: 1.1;
-  }
-  .intro .name {
-    @apply text-8xl;
-  }
 }
 
 @media (min-width: 1900px) {
   .header {
     @apply h-screen;
   }
+  .info {
+    @apply mr-10;
+  }
+  .intro .name {
+    @apply text-7xl;
+  }
   .showcase-img img {
-    width: 520px;
+    width: 524px;
   }
   .terminal {
-    scale: 1.2;
-    @apply mb-10;
+    scale: 1.1;
+    @apply mb-10 ml-0;
   }
 }
