@@ -118,6 +118,7 @@
 .terminal {
   position: relative;
   margin-left: auto;
+  font-family: "Courier New", Courier, monospace;
 }
 
 .terminal-win {

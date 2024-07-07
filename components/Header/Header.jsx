@@ -1,9 +1,18 @@
 "use client";
 import { images } from "../../constants";
 import Image from "next/image";
-import { Parallax, ParallaxLayer } from "@react-spring/parallax";
+import { ParallaxLayer } from "@react-spring/parallax";
+import React from "react";
+import { useTypewriter, Cursor } from "react-simple-typewriter";
 
 const Header = () => {
+  const [text] = useTypewriter({
+    words: ["Web Developer", "Web Designer", "Programmer"],
+    loop: {},
+    typeSpeed: 120,
+    deleteSpeed: 60,
+  });
+
   return (
     <header className="header w-4/5 mx-auto">
       <ParallaxLayer speed={0.5}>
@@ -47,18 +56,19 @@ const Header = () => {
                 <span className="code-color-1">{"<div "}</span>
                 <span className="code-color-2">className</span>
                 <span className="code-color-4">=</span>
-                <span className="code-color-3 text-2xl">
-                  &quot;aboutMe&quot;
-                </span>
+                <span className="code-color-3">&quot;aboutMe&quot;</span>
                 <span className="code-color-1">{">"}</span>
                 <br />
                 <span className="code-color-1 ml-4">{"<p> "}</span>
-                <span className="code-color-4 text-2xl">I&apos;m a</span>
+                <span className="code-color-4">I&apos;m a</span>
                 <span className="code-color-1">{" </p>"}</span>
                 <br />
                 <span className="code-color-1 ml-4">{"<h1> "}</span>
-                <span className="code-color-4 text-2xl">Web Developer</span>
-                <span className="code-color-1">{" </h1>"}</span>
+                <span className="code-color-4 text-2xl">{text}</span>
+                <span className="code-color-2">
+                  <Cursor cursorStyle="█" />
+                </span>
+                <span className="code-color-1">{"</h1>"}</span>
                 <br />
                 <span className="code-color-1">{"</div>"}</span>
               </span>
