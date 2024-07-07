@@ -4,6 +4,7 @@ import Image from "next/image";
 import { React, useRef } from "react";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
 import { useScroll, useTransform, motion } from "framer-motion";
+import { useMediaQuery } from "react-responsive";
 
 const Header = () => {
   const [text] = useTypewriter({
@@ -14,12 +15,24 @@ const Header = () => {
   });
 
   let ref = useRef();
+  const isMobile = useMediaQuery({ query: "(max-width: 767.98px)" });
+
   let { scrollYProgress } = useScroll({
     target: ref,
     offset: ["start start", "end start"],
   });
-  let yIntro = useTransform(scrollYProgress, [0, 1], ["0%", "25%"]);
-  let yTerminal = useTransform(scrollYProgress, [0, 1], ["0%", "-25%"]);
+
+  // Always call the hooks
+  let yIntroTransform = useTransform(scrollYProgress, [0, 1], ["0%", "25%"]);
+  let yTerminalTransform = useTransform(
+    scrollYProgress,
+    [0, 1],
+    ["0%", "-25%"]
+  );
+
+  // Conditionally apply the values
+  let yIntro = isMobile ? "0%" : yIntroTransform;
+  let yTerminal = isMobile ? "0%" : yTerminalTransform;
 
   return (
     <header
