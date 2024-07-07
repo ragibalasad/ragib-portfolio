@@ -100,7 +100,7 @@
 }
 
 .two-color-bg {
-  background: linear-gradient(90deg, rgba(6, 5, 25) 50%, aliceblue 50%);
+  background: linear-gradient(90deg, rgba(6, 5, 25) 50%, #ffe1bd 50%);
 }
 
 .header {
@@ -177,5 +177,5 @@
 }
 
 .space {
-  height: 1000px;
+  height: 5000px;
 }
