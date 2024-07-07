@@ -37,7 +37,7 @@ const Header = () => {
   return (
     <header
       ref={ref}
-      className="header mx-auto overflow-y-hidden two-color-bg relative flex flex-col items-center"
+      className="header mx-auto overflow-y-hidden two-color-bg relative flex flex-col items-center h-screen"
     >
       <div className="container flex w-full h-full">
         <motion.div

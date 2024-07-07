@@ -105,6 +105,9 @@
 }
 
 @media (min-width: 1900px) {
+  .header {
+    @apply h-screen;
+  }
   .showcase-img img {
     width: 520px;
   }
