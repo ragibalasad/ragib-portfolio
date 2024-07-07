@@ -1,5 +1,5 @@
 "use client";
-import { Navbar, Header, Work } from "../../components";
+import { Navbar, Header, Work, Skills } from "../../components";
 import { Parallax } from "@react-spring/parallax";
 
 export default function Home() {
@@ -9,6 +9,7 @@ export default function Home() {
       <Parallax>
         <Header />
         <Work />
+        <Skills />
       </Parallax>
     </div>
   );
