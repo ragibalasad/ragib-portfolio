@@ -23,14 +23,14 @@
 }
 
 .navbar {
-  position: relative;
+  position: fixed;
   z-index: 1000;
-  transition: padding 0.15s ease-in-out;
+  transition: padding 0.3s ease-in-out;
 }
 
 .navbar.sticky {
   position: fixed;
-  padding: 1rem;
+  padding: 1rem 0;
   top: 0;
   width: 100%;
   background: rgba(6, 5, 25, 0.7);
@@ -40,12 +40,12 @@
 }
 
 .navbar.scrolled {
-  padding: 1rem;
+  padding: 1rem 0;
   position: fixed;
-  background: rgba(6, 5, 25, 0.7);
+  background: rgba(6, 5, 25, 0.6);
   -moz-backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
-  backdrop-filter: blur(5px);
+  backdrop-filter: blur(6px);
   --tw-shadow: 0 0 10 0px rgba(0, 0, 0, 0.1);
   --tw-shadow-colored: 0 0 10 0px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
@@ -99,25 +99,19 @@
   width: 100%;
 }
 
+.header {
+  height: 700px;
+}
+
 .two-color-bg {
   background: linear-gradient(90deg, rgba(6, 5, 25) 50%, #ffe1bd 50%);
 }
 
-.header {
-  /* max-height: 740px; */
-}
-
-.two-color-bg {
-  height: 100vh;
-}
-
-.showcase-img {
-  min-height: 100%;
+.showcase-img img {
 }
 
 .terminal {
   position: relative;
-  margin-left: auto;
   font-family: "Courier New", Courier, monospace;
 }
 
@@ -157,7 +151,6 @@
 }
 
 .terminal-body {
-  margin-top: 1rem;
   line-height: 2.5rem;
 }
 
