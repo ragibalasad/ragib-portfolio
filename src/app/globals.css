@@ -178,7 +178,7 @@
 
 /* Extra large devices (desktops, 1200px and up) */
 @media (max-width: 1280px) {
-  .intro {
+  .info {
     @apply pr-28;
   }
 }
