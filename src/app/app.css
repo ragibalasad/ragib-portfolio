@@ -1,5 +1,11 @@
 :root {
-  --bg-color: rgba(6, 5, 25);
+  --slate-950: rgb(2, 6, 23);
+  --slate-900: rgb(15, 23, 42);
+  --slate-800: rgb(30, 41, 59);
+  --gray-800: rgb(17, 24, 39);
+  --zinc-950: rgb(9, 9, 11);
+  --orange-200: rgb(254, 215, 170);
+  --indigo-950: rgb(30, 27, 75);
   --main-color-2: #008cff;
   --bg-color-light: #fff;
   --bg-color-dark: #fff;
@@ -35,7 +41,7 @@
   padding: 1.25rem 0;
   top: 0;
   width: 100%;
-  background: rgba(12, 10, 48, 0.5);
+  background: rgba(2, 6, 23, 0.5);
   -moz-backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
   backdrop-filter: blur(5px);
@@ -44,7 +50,7 @@
 .navbar.scrolled {
   padding: 1.25rem 0;
   position: fixed;
-  background: rgba(12, 10, 48, 0.5);
+  background: rgba(2, 6, 23, 0.5);
   -moz-backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
   backdrop-filter: blur(5px);
@@ -64,13 +70,14 @@
 }
 
 .nav-list {
+  color: rgb(2, 6, 23);
   list-style-type: none;
   display: flex;
   justify-content: center;
 }
 
 .nav-list.open {
-  background: var(--bg-color);
+  background: rgb(2, 6, 23);
   color: white;
   height: 140vh;
   right: 0;
@@ -113,7 +120,11 @@
 }
 
 .two-color-bg {
-  background: linear-gradient(90deg, var(--bg-color) 50%, #ffe1bd 50%);
+  background: linear-gradient(
+    90deg,
+    var(--slate-950) 50%,
+    var(--orange-200) 50%
+  );
 }
 
 .sub-heading {
@@ -137,7 +148,7 @@
   width: 410px;
   height: 260px;
   border-radius: 0.5rem;
-  background: rgba(6, 5, 25, 0.85);
+  background: rgba(2, 6, 23, 0.85);
   box-shadow: 1px 3px 7px rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(10px);
   z-index: 5;
@@ -146,7 +157,7 @@
 .terminal-head {
   width: 100%;
   height: 30px;
-  background: rgba(6, 5, 25);
+  background: rgb(2, 6, 23);
   border-top-left-radius: 0.5rem;
   border-top-right-radius: 0.5rem;
 }
@@ -192,9 +203,6 @@
 }
 
 @media (max-width: 1024px) {
-  .logoAnim {
-    display: none;
-  }
   .nav-list {
     position: fixed;
     top: 4.5rem;
@@ -204,10 +212,12 @@
     flex-direction: column;
     height: 140vh;
     width: 80%;
+    background: rgb(2, 6, 23);
     transition: right 0.3s ease-in-out;
   }
 
   .nav-list.open {
+    background: rgb(2, 6, 23);
     height: 140vh;
     right: 0;
   }
@@ -217,11 +227,11 @@
   }
 
   .navbar.open {
-    background: var(--bg-color);
+    background: rgb(2, 6, 23);
   }
 
-  .nav-list.open .navbar {
-    background: var(--bg-color) !important;
+  .navbar {
+    transition: all 0.3s ease-in-out;
   }
 
   .navbar.scrolled {

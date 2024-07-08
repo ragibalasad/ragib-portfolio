@@ -4,7 +4,7 @@
 
 @layer components {
   body {
-    background-color: black;
+    background-color: rgb(17, 24, 39);
   }
 
   .navbar {
@@ -31,7 +31,9 @@
   }
 
   .hamburger .bar {
-    @apply block h-1 w-6 my-1 bg-txtdark;
+    @apply block w-6 bg-txtdark;
+    height: 3px;
+    margin: 5px 0;
   }
 }
 
@@ -43,16 +45,16 @@
 /* Small devices (tablets, 576px and up) */
 @media (max-width: 767.98px) {
   .header {
-    @apply relative w-full h-max pt-20;
-    background: linear-gradient(180deg, rgba(6, 5, 25) 50%, #ffe1bd00 50%);
+    @apply relative w-full h-max;
+    background: rgb(15, 23, 42);
   }
 
   .header .container {
-    @apply block;
+    @apply block pt-20 mb-10;
   }
 
   .intro .info {
-    @apply text-left;
+    @apply text-left py-4;
   }
 
   .intro .hi {
@@ -60,15 +62,16 @@
   }
   .intro .heading {
     @apply text-6xl;
-    line-height: 1.1;
-  }
-  .intro .sub-heading {
-    /* @apply text-sm; */
+    line-height: 1.05;
   }
 
   .showcase-img {
     @apply relative px-2 rounded-3xl mx-8;
-    background: linear-gradient(54deg, rgba(6, 5, 25) 50%, #ffe1bd 50%);
+    background: linear-gradient(
+      54deg,
+      rgba(6, 5, 25) 50%,
+      rgb(254, 215, 170) 50%
+    );
   }
 
   .intro,
@@ -76,12 +79,16 @@
     @apply w-auto mx-auto px-4 pt-8 block;
   }
 
+  .terminal {
+    @apply py-4;
+  }
+
   .terminal-win {
     @apply mx-auto w-full h-auto text-xs;
-    border: 1px solid rgba(255, 225, 189, 0.4);
+    box-shadow: none;
   }
   .terminal-body {
-    @apply my-1 mb-2 px-4;
+    @apply my-1 mb-2 px-4 pb-1;
   }
   .terminal-body span {
     @apply text-lg;
@@ -112,7 +119,7 @@
   }
 
   .hamburger .bar {
-    @apply w-full h-1 rounded bg-ff;
+    @apply rounded bg-ff;
   }
 
   .hamburger .bar:nth-child(1) {
