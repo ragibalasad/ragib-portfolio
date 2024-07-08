@@ -5,6 +5,7 @@ import { React, useRef } from "react";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
 import { useScroll, useTransform, motion } from "framer-motion";
 import { useMediaQuery } from "react-responsive";
+import { FaFacebook, FaGithub, FaLinkedin } from "react-icons/fa";
 
 const Header = () => {
   const [text] = useTypewriter({
@@ -23,7 +24,7 @@ const Header = () => {
   });
 
   // Always call the hooks
-  let yIntroTransform = useTransform(scrollYProgress, [0, 1], ["0%", "25%"]);
+  let yIntroTransform = useTransform(scrollYProgress, [0, 1], ["0%", "60%"]);
   let yTerminalTransform = useTransform(
     scrollYProgress,
     [0, 1],
@@ -37,23 +38,42 @@ const Header = () => {
   return (
     <header
       ref={ref}
-      className="header mx-auto overflow-y-hidden two-color-bg relative flex flex-col items-center h-screen"
+      className="header mx-auto two-color-bg relative flex flex-col items-center h-screen"
     >
       <div className="container flex w-full h-full">
-        <motion.div
-          style={{ y: yIntro }}
-          className="intro w-1/2 flex justify-end pr-48 items-center"
-        >
-          <div className="info text-right">
+        <div className="intro w-1/2 flex flex-col justify-between">
+          <motion.div
+            style={{ y: yIntro }}
+            className="info text-right pr-44 self-end justify-center items-center my-auto"
+          >
             <p className="hi text-lg text-ff">Hi 👋 I&apos;m</p>
             <p className="heading font-medium text-6xl text-ff">
               Ragib
               <br />
               Al Asad
             </p>
-            <p className="sub-heading text-ff my-3">I BUILD WEBSITES</p>
+            <p className="sub-heading text-ff my-2">
+              <span>I BUILD WEBSITES</span>
+            </p>
+          </motion.div>
+          <div className="social-links flex gap-6 text-ff self-start m-10">
+            <div className="links flex gap-4 text-3xl my-auto">
+              <a href="">
+                <FaFacebook />
+              </a>
+              <a href="">
+                <FaGithub />
+              </a>
+              <a href="">
+                <FaLinkedin />
+              </a>
+            </div>
+
+            <a href="#" className="btn secondary-btn">
+              Download CV
+            </a>
           </div>
-        </motion.div>
+        </div>
         <motion.div
           style={{ y: yTerminal }}
           className="terminal w-1/2 flex justify-center items-end pb-16 z-10"

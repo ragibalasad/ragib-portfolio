@@ -50,33 +50,38 @@
   }
 
   .header .container {
-    @apply block pt-20 mb-10;
+    @apply block pt-20 mb-6;
   }
 
   .intro .info {
-    @apply text-left py-4;
+    @apply text-left py-4 p-0;
   }
 
   .intro .hi {
     /* @apply text-lg; */
   }
+
   .intro .heading {
     @apply text-6xl;
     line-height: 1.05;
   }
 
+  .intro,
+  .terminal {
+    @apply w-auto mx-auto px-4 pt-8 block;
+  }
+
+  .social-links {
+    @apply m-0 my-8 mb-4;
+  }
+
   .showcase-img {
-    @apply relative px-2 rounded-3xl mx-8;
+    @apply relative px-4 rounded-3xl mx-6 mb-4;
     background: linear-gradient(
       54deg,
       rgba(6, 5, 25) 50%,
       rgb(254, 215, 170) 50%
     );
-  }
-
-  .intro,
-  .terminal {
-    @apply w-auto mx-auto px-4 pt-8 block;
   }
 
   .terminal {
@@ -85,6 +90,7 @@
 
   .terminal-win {
     @apply mx-auto w-full h-auto text-xs;
+    /* box-shadow: 0px 0px 1px var(--main-color-2); */
     box-shadow: none;
   }
   .terminal-body {
@@ -97,6 +103,9 @@
 
 /* Medium devices (small laptops, 768px and up) */
 @media (min-width: 768px) and (max-width: 991.98px) {
+  .info {
+    @apply pr-20;
+  }
 }
 
 /* Large devices (laptops, 992px and up) */
@@ -106,7 +115,7 @@
   }
 
   .nav-link {
-    @apply justify-center items-center h-16 pr-10;
+    @apply justify-center items-center h-6 text-base;
     text-align: right !important;
   }
 
@@ -179,6 +188,14 @@
   .header {
     @apply h-screen;
   }
+
+  .info .heading {
+    @apply text-7xl;
+  }
+
+  .showcase-img img {
+    width: 450px;
+  }
 }
 
 @media (min-width: 1900px) {
@@ -188,7 +205,7 @@
   .info {
     @apply mr-10;
   }
-  .intro .name {
+  .info .heading {
     @apply text-7xl;
   }
   .showcase-img img {

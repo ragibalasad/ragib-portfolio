@@ -6,6 +6,7 @@
   --zinc-950: rgb(9, 9, 11);
   --orange-200: rgb(254, 215, 170);
   --indigo-950: rgb(30, 27, 75);
+  --main-color-1: #008cff;
   --main-color-2: #008cff;
   --bg-color-light: #fff;
   --bg-color-dark: #fff;
@@ -135,6 +136,18 @@
   margin-bottom: 1rem;
   font-weight: 500;
   border-left: 3px solid var(--main-color-2);
+}
+
+.social-links a {
+  transition: 0.3s ease-in-out;
+}
+
+.social-links a:hover {
+  color: var(--main-color-1);
+}
+
+.social-links a.btn {
+  border-bottom: 3px solid var(--main-color-2);
 }
 
 .showcase-img img {
