@@ -58,13 +58,13 @@ const Header = () => {
           </motion.div>
           <div className="social-links flex gap-6 text-ff self-start m-10">
             <div className="links flex gap-4 text-3xl my-auto">
-              <a href="">
+              <a href="https://facebook.com/ragibalasad" target="_blank">
                 <FaFacebook />
               </a>
-              <a href="">
+              <a href="https://github.com/RagibAlAsad" target="_blank">
                 <FaGithub />
               </a>
-              <a href="">
+              <a href="https://linkedin.com/in/RagibAlAsad" target="_blank">
                 <FaLinkedin />
               </a>
             </div>
