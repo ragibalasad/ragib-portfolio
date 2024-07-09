@@ -24,7 +24,7 @@ const Header = () => {
   });
 
   // Always call the hooks
-  let yIntroTransform = useTransform(scrollYProgress, [0, 1], ["0%", "60%"]);
+  let yIntroTransform = useTransform(scrollYProgress, [0, 1], ["0%", "75%"]);
   let yTerminalTransform = useTransform(
     scrollYProgress,
     [0, 1],
@@ -40,23 +40,21 @@ const Header = () => {
       ref={ref}
       className="header mx-auto two-color-bg relative flex flex-col items-center h-screen"
     >
-      <div className="container flex w-full h-full">
-        <div className="intro w-1/2 flex flex-col justify-between">
-          <motion.div
-            style={{ y: yIntro }}
-            className="info text-right pr-44 self-end justify-center items-center my-auto"
-          >
-            <p className="hi text-lg text-ff">Hi 👋 I&apos;m</p>
-            <p className="heading font-medium text-6xl text-ff">
-              Ragib
-              <br />
-              Al Asad
+      <div className="container flex h-full">
+        <motion.div
+          style={{ y: yIntro }}
+          className="intro w-1/2 flex flex-col my-auto gap-10"
+        >
+          <div className="info">
+            <p className="hi mb-1 text-lg text-ff">Hi 👋 I&apos;m</p>
+            <p className="heading text-6xl font-semibold text-ff uppercase">
+              Ragib Al Asad
             </p>
             <p className="sub-heading text-ff my-2">
               <span>I BUILD WEBSITES</span>
             </p>
-          </motion.div>
-          <div className="social-links flex gap-6 text-ff self-start m-10">
+          </div>
+          <div className="social-links flex gap-6 text-ff">
             <div className="links flex gap-4 text-3xl my-auto">
               <a href="https://facebook.com/ragibalasad" target="_blank">
                 <FaFacebook />
@@ -73,10 +71,10 @@ const Header = () => {
               Download CV
             </a>
           </div>
-        </div>
+        </motion.div>
         <motion.div
           style={{ y: yTerminal }}
-          className="terminal w-1/2 flex justify-center items-end pb-16 z-10"
+          className="terminal w-1/2 flex justify-center items-end pb-12 z-10"
         >
           <div className="terminal-win text-xs">
             <div className="terminal-head flex shadow-sm p-2 gap-1">

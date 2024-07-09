@@ -8,10 +8,10 @@
   }
 
   .navbar {
-    @apply flex fixed top-0 left-0 w-full z-50 py-8;
+    @apply flex fixed top-0 left-0 w-full z-50 py-8 px-4;
   }
   .navbar .container {
-    @apply flex justify-between items-center px-4;
+    @apply flex justify-between items-center;
   }
 
   .navHolder {
@@ -62,23 +62,22 @@
   }
 
   .intro .heading {
-    @apply text-6xl;
-    line-height: 1.05;
+    @apply text-5xl;
   }
 
   .intro,
   .terminal {
-    @apply w-auto mx-auto px-4 pt-8 block;
+    @apply w-auto mx-auto px-4 pt-8;
   }
 
   .social-links {
-    @apply m-0 my-8 mb-4;
+    @apply m-0 mb-4;
   }
 
   .showcase-img {
-    @apply relative px-4 rounded-3xl mx-6 mb-4;
+    @apply relative px-4 pt-4 rounded-3xl mx-8 mb-4;
     background: linear-gradient(
-      54deg,
+      54.5deg,
       rgba(6, 5, 25) 50%,
       rgb(254, 215, 170) 50%
     );
@@ -89,7 +88,7 @@
   }
 
   .terminal-win {
-    @apply mx-auto w-full h-auto text-xs;
+    @apply mx-auto w-full h-auto;
     /* box-shadow: 0px 0px 1px var(--main-color-2); */
     box-shadow: none;
   }
@@ -186,11 +185,9 @@
 /* XXL devices (large desktops, 1400px and up) */
 @media (min-width: 1400px) {
   .header {
-    @apply h-screen;
   }
 
   .info .heading {
-    @apply text-7xl;
   }
 
   .showcase-img img {
@@ -200,13 +197,12 @@
 
 @media (min-width: 1900px) {
   .header {
-    @apply h-screen;
   }
   .info {
     @apply mr-10;
   }
   .info .heading {
-    @apply text-7xl;
+    @apply text-6xl;
   }
   .showcase-img img {
     width: 524px;

@@ -1,9 +1,15 @@
-import { Poppins } from "next/font/google";
+import {
+  Inter,
+  Poppins,
+  Work_Sans,
+  Lato,
+  Space_Grotesk,
+} from "next/font/google";
 import "./app.css";
 import "./globals.css";
 import Head from "next/head";
 
-const poppins = Poppins({
+const poppins = Space_Grotesk({
   weight: ["400", "500", "600", "700"],
   subsets: ["latin"],
 });

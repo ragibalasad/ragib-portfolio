@@ -52,7 +52,7 @@ const Navbar = () => {
         <div className="navHolder flex">
           <div className="logo flex items-center">
             <Image src={images.logo} alt="Logo" width={24} height={24} />
-            <span className="ml-1 text-ff font-semibold text-lg">AGIB</span>
+            <span className="ml-1 text-ff font-semibold text-xl">agib</span>
           </div>
 
           <ul className={`nav-list ml-auto ${isOpen ? "open" : ""}`}>
