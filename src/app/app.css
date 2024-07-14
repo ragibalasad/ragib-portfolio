@@ -31,6 +31,10 @@
   }
 }
 
+.navbar, img, .intro, .terminal, h2, h3, h4, h5, h6, a, span, button, input, select, textarea {
+  user-select: none;
+}
+
 .navbar {
   position: fixed;
   z-index: 1000;
