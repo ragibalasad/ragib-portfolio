@@ -62,10 +62,6 @@
     /* @apply text-lg; */
   }
 
-  .intro .heading {
-    @apply text-5xl;
-  }
-
   .intro,
   .terminal {
     @apply w-auto mx-auto px-4 pt-8;
@@ -193,9 +189,6 @@
   }
   .info {
     @apply mr-10;
-  }
-  .info .heading {
-    @apply text-6xl;
   }
   .showcase-img img {
     width: 524px;

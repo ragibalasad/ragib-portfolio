@@ -40,7 +40,10 @@ textarea {
 .navbar {
   position: fixed;
   z-index: 1000;
-  transition: padding 0.3s ease-in-out;
+  transition: padding;
+  transition-delay: 50ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
 }
 
 .navbar.sticky {
@@ -67,6 +70,7 @@ textarea {
   --tw-shadow-colored: 0 0 10 0px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
     var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  transition: all 250ms;
 }
 
 .navbar.scrolled .logo span,
@@ -156,7 +160,7 @@ textarea {
   height: 260px;
   border-radius: 1rem;
   background: rgba(2, 6, 23, 0.85);
-  box-shadow: 1px 3px 7px rgba(0, 0, 0, 0.5);
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 5px 10px;
   backdrop-filter: blur(10px);
   z-index: 5;
 }
