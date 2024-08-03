@@ -9,7 +9,7 @@ import { FaFacebook, FaGithub, FaLinkedin } from "react-icons/fa";
 
 const Header = () => {
   const [text] = useTypewriter({
-    words: ["Web Developer", "Web Designer", "Programmer"],
+    words: ['"Web", "Developer"', '"Web", "Designer"', '"Programmer"'],
     loop: {},
     typeSpeed: 120,
     deleteSpeed: 60,
@@ -58,7 +58,8 @@ const Header = () => {
                 <span>Software developer from bangladesh</span>
               </p>
             </div>
-            <div className="w-max">
+
+            <div className="w-max flex gap-4">
               <a
                 href=""
                 className="bg-blue-700 text-white p-3 rounded-lg text-xs"
@@ -66,7 +67,7 @@ const Header = () => {
                 Download Resume
               </a>
 
-              <div className="flex justify-between text-2xl mt-10 text-blue-300">
+              <div className="flex gap-4 text-2xl my-auto text-blue-300">
                 <a href="https://facebook.com/ragibalasad" target="_blank">
                   <FaFacebook />
                 </a>
@@ -85,7 +86,7 @@ const Header = () => {
           className="terminal w-1/2 flex justify-center items-end pb-12 z-10"
         >
           <motion.div
-            className="terminal-win text-xs"
+            className="terminal-win"
             initial={{ opacity: 0, x: 100 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5 }}
@@ -95,27 +96,27 @@ const Header = () => {
               <div className="minimize"></div>
               <div className="maximize"></div>
             </div>
-            <div className="terminal-body px-6 my-4">
-              <span className="text-xl">
-                <span className="code-color-1">{"<div "}</span>
-                <span className="code-color-2">class</span>
-                <span className="code-color-4">=</span>
-                <span className="code-color-3">&quot;aboutMe&quot;</span>
-                <span className="code-color-1">{">"}</span>
-                <br />
-                <span className="code-color-1 ml-4">{"<p> "}</span>
-                <span className="code-color-4">I&apos;m a</span>
-                <span className="code-color-1">{" </p>"}</span>
-                <br />
-                <span className="code-color-1 ml-4">{"<p> "}</span>
-                <span className="code-color-4">{text}</span>
-                <span className="code-color-2">
-                  <Cursor cursorStyle="█" />
-                </span>
-                <span className="code-color-1">{"</p>"}</span>
-                <br />
-                <span className="code-color-1">{"</div>"}</span>
-              </span>
+            <div className="terminal-body px-6 my-4 text-base">
+              <pre>
+                {`1  class `}
+                <b>Person</b>
+                {` {`}
+              </pre>
+              <pre>{`2    constructor() {`}</pre>
+              <pre>
+                {`3      this.name = "`}
+                <b>Ragib Al Asad</b>
+                {`";`}
+              </pre>
+              <pre>
+                {`4      this.traits = [`}
+                <span className="font-semibold">{text}</span>
+                <Cursor cursorStyle="█" />
+                {`];`}
+              </pre>
+              <pre>{`5      this.age = new Date().getFullYear() - 2004;`}</pre>
+              <pre>{`6    }`}</pre>
+              <pre>{`7  }`}</pre>
             </div>
           </motion.div>
         </motion.div>
