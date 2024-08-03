@@ -136,16 +136,6 @@ textarea {
   font-weight: 400;
 }
 
-.sub-heading {
-  text-transform: lowercase;
-  letter-spacing: 0.5px;
-  padding: 0.13rem 0.75rem;
-  margin-bottom: 1rem;
-  font-weight: 400;
-  border-left-width: 3px;
-  @apply border-l-sky-500;
-}
-
 .social-links a {
   transition: 0.3s ease-in-out;
 }

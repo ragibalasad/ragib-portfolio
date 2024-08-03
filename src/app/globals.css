@@ -96,9 +96,6 @@
   .terminal-body {
     @apply my-1 mb-2 px-4 pb-1;
   }
-  .terminal-body span {
-    @apply text-lg;
-  }
 }
 
 /* Medium devices (small laptops, 768px and up) */
@@ -206,9 +203,5 @@
   }
   .showcase-img img {
     width: 524px;
-  }
-  .terminal {
-    scale: 1.1;
-    @apply mb-10 ml-0;
   }
 }

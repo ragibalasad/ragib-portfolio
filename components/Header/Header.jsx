@@ -51,10 +51,8 @@ const Header = () => {
           >
             <div className="info">
               <p className="hi mb-1 text-base ">Hello, I&apos;m</p>
-              <p className="heading text-5xl font-black uppercase">
-                Ragib Al Asad
-              </p>
-              <p className="text-lg my-2 uppercase">
+              <p className="text-5xl font-black uppercase">Ragib Al Asad</p>
+              <p className="text-lg my-2 uppercase border-l-4 border-l-blue-500 px-3 h-max">
                 <span>Software developer from bangladesh</span>
               </p>
             </div>
