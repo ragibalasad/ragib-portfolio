@@ -137,16 +137,11 @@ textarea {
 }
 
 .social-links a {
-  transition: 0.3s ease-in-out;
+  @apply transition-colors;
 }
 
 .social-links a:hover {
-  @apply text-sky-500;
-}
-
-.social-links a.btn {
-  border-bottom-width: 3px;
-  @apply border-b-sky-500;
+  @apply text-white;
 }
 
 .showcase-img img {

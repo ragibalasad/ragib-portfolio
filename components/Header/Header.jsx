@@ -60,12 +60,12 @@ const Header = () => {
             <div className="w-max flex gap-4">
               <a
                 href=""
-                className="bg-blue-700 text-white p-3 rounded-lg text-xs"
+                className="bg-blue-700 hover:bg-blue-500 transition-colors text-white p-3 rounded-lg text-xs"
               >
                 Download Resume
               </a>
 
-              <div className="flex gap-4 text-2xl my-auto text-blue-300">
+              <div className="social-links flex gap-4 text-2xl my-auto text-blue-300">
                 <a href="https://facebook.com/ragibalasad" target="_blank">
                   <FaFacebook />
                 </a>
@@ -81,7 +81,7 @@ const Header = () => {
         </div>
         <motion.div
           style={{ y: yTerminal }}
-          className="terminal w-1/2 flex justify-center items-end pb-12 z-10"
+          className="terminal w-1/2 flex justify-center items-end pb-10 my-4 z-10"
         >
           <motion.div
             className="terminal-win"

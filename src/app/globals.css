@@ -51,7 +51,7 @@
   }
 
   .header .container {
-    @apply block pt-20 mb-6;
+    @apply block pt-20 mb-4;
   }
 
   .intro .info {
@@ -71,12 +71,8 @@
     @apply w-auto mx-auto px-4 pt-8;
   }
 
-  .social-links {
-    @apply m-0 mb-4;
-  }
-
   .showcase-img {
-    @apply relative px-4 pt-4 rounded-3xl mx-8 mb-4;
+    @apply relative px-2 rounded-3xl mx-4 mb-4;
     background: linear-gradient(
       54.5deg,
       rgba(6, 5, 25) 50%,
@@ -94,7 +90,7 @@
     box-shadow: none;
   }
   .terminal-body {
-    @apply my-1 mb-2 px-4 pb-1;
+    @apply my-1 mb-2 px-4;
   }
 }
 
