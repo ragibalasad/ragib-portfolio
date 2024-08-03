@@ -46,6 +46,7 @@
 /* Small devices (tablets, 576px and up) */
 @media (max-width: 767.98px) {
   .header {
+    background: none;
     @apply relative w-full h-max bg-slate-900;
   }
 
