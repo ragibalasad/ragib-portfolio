@@ -4,8 +4,7 @@
 
 @layer components {
   body {
-    background-color: rgb(17, 24, 39);
-    @apply text-white;
+    @apply text-white bg-gray-900;
   }
 
   .navbar {
@@ -46,8 +45,7 @@
 /* Small devices (tablets, 576px and up) */
 @media (max-width: 767.98px) {
   .header {
-    @apply relative w-full h-max;
-    background: rgb(15, 23, 42);
+    @apply relative w-full h-max bg-slate-900;
   }
 
   .header .container {

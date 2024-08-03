@@ -79,17 +79,12 @@ textarea {
 }
 
 .nav-list {
-  color: rgb(2, 6, 23);
-  list-style-type: none;
-  display: flex;
-  justify-content: center;
+  @apply flex text-slate-950 list-none justify-center;
 }
 
 .nav-list.open {
-  background: rgb(2, 6, 23);
-  color: white;
+  @apply bg-slate-950 text-white right-0;
   height: 140vh;
-  right: 0;
 }
 
 .nav-list.open .nav-link a {
@@ -147,7 +142,8 @@ textarea {
   padding: 0.13rem 0.75rem;
   margin-bottom: 1rem;
   font-weight: 400;
-  border-left: 3px solid var(--main-color-2);
+  border-left-width: 3px;
+  @apply border-l-sky-500;
 }
 
 .social-links a {
@@ -155,11 +151,12 @@ textarea {
 }
 
 .social-links a:hover {
-  color: var(--main-color-1);
+  @apply text-sky-500;
 }
 
 .social-links a.btn {
-  border-bottom: 3px solid var(--main-color-2);
+  border-bottom-width: 3px;
+  @apply border-b-sky-500;
 }
 
 .showcase-img img {
@@ -242,9 +239,8 @@ textarea {
   }
 
   .nav-list.open {
-    background: rgb(2, 6, 23);
+    @apply bg-slate-950 right-0;
     height: 140vh;
-    right: 0;
   }
 
   .navbar.scrolled {
@@ -252,7 +248,7 @@ textarea {
   }
 
   .navbar.open {
-    background: rgb(2, 6, 23);
+    @apply bg-slate-950;
   }
 
   .navbar {

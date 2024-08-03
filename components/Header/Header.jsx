@@ -50,16 +50,16 @@ const Header = () => {
             transition={{ duration: 0.5 }}
           >
             <div className="info">
-              <p className="hi mb-1 text-lg text-ff">Hi 👋 I&apos;m</p>
-              <p className="heading text-6xl font-semibold text-ff uppercase">
+              <p className="hi mb-1 text-lg ">Hi 👋 I&apos;m</p>
+              <p className="heading text-6xl font-semibold  uppercase">
                 Ragib Al Asad
               </p>
-              <p className="sub-heading text-ff my-2">
+              <p className="sub-heading  my-2">
                 <span>I BUILD WEBSITES</span>
               </p>
             </div>
-            <div className="social-links flex gap-6 text-ff">
-              <div className="links flex gap-4 text-3xl my-auto">
+            <div className="social-links flex gap-6">
+              <div className="links flex gap-4 text-2xl my-auto">
                 <a href="https://facebook.com/ragibalasad" target="_blank">
                   <FaFacebook />
                 </a>
@@ -71,7 +71,7 @@ const Header = () => {
                 </a>
               </div>
 
-              <a href="#" className="btn secondary-btn">
+              <a href="#" className="btn">
                 Download CV
               </a>
             </div>

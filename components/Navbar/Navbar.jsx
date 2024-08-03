@@ -80,7 +80,10 @@ const Navbar = () => {
           </ul>
         </div>
 
-        <div className="menuBtn hamburger" onClick={handleMenuToggle}>
+        <div
+          className="menuBtn hamburger [&>*]:bg-white"
+          onClick={handleMenuToggle}
+        >
           <div className="bar"></div>
           <div className="bar"></div>
           <div className="bar"></div>
