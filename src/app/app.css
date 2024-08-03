@@ -193,6 +193,7 @@ textarea {
 .terminal-body pre {
   font-size: 0.95rem;
   font-family: "Montserrat", sans-serif;
+  font-weight: 300;
   padding: 2px 0;
 }
 

@@ -108,7 +108,7 @@ const Header = () => {
               </pre>
               <pre>
                 {`4      this.traits = [`}
-                <span className="font-semibold">{text}</span>
+                <span className="font-normal">{text}</span>
                 <Cursor cursorStyle="█" />
                 {`];`}
               </pre>
