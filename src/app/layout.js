@@ -1,10 +1,10 @@
-import { Space_Grotesk } from "next/font/google";
+import { Montserrat } from "next/font/google";
 import "./app.css";
 import "./globals.css";
 import Head from "next/head";
 
-const space_grotesk = Space_Grotesk({
-  weight: ["400", "500", "600", "700"],
+const space_grotesk = Montserrat({
+  weight: ["400", "500", "600", "700", "900"],
   subsets: ["latin"],
 });
 

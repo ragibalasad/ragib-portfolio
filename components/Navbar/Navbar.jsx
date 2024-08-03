@@ -35,11 +35,12 @@ const Navbar = () => {
   }, []);
 
   const navLinks = [
-    { to: "work", offset: -100, label: "Work" },
-    { to: "skills", offset: -100, label: "Skills" },
-    { to: "services", offset: -100, label: "Services" },
-    { to: "about", offset: -100, label: "About" },
-    { to: "contact", offset: -100, label: "Contact" },
+    { to: "header", offset: -100, label: "home" },
+    { to: "work", offset: -100, label: "projects" },
+    { to: "skills", offset: -100, label: "skills" },
+    { to: "services", offset: -100, label: "services" },
+    { to: "about", offset: -100, label: "about me" },
+    { to: "contact", offset: -100, label: "contact" },
   ];
 
   return (
@@ -57,13 +58,15 @@ const Navbar = () => {
       >
         <div className="navHolder flex">
           <div className="logo flex items-center">
-            <Image src={images.logo} alt="Logo" width={24} height={24} />
-            <span className="ml-1 text-ff font-semibold text-xl">agib</span>
+            <Image src={images.logo} alt="Logo" width={22} height={22} />
+            <span className="ml-1 text-blue-100 font-black text-lg uppercase">
+              agib
+            </span>
           </div>
 
           <ul className={`nav-list ml-auto ${isOpen ? "open" : ""}`}>
             {navLinks.map((link, index) => (
-              <li key={index} className="nav-link px-2 font-medium">
+              <li key={index} className="nav-link px-3 font-medium">
                 <Link
                   to={link.to}
                   activeClass="active"
@@ -73,7 +76,7 @@ const Navbar = () => {
                   duration={500}
                   onSetActive={handleLinkClick}
                 >
-                  {link.label.toUpperCase()}
+                  {link.label.toLowerCase()}
                 </Link>
               </li>
             ))}

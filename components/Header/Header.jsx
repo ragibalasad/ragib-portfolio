@@ -44,22 +44,29 @@ const Header = () => {
         <div className="intro w-1/2 flex">
           <motion.div
             style={{ y: yIntro }}
-            className="flex flex-col my-auto gap-10"
+            className="flex flex-col my-auto gap-7"
             initial={{ opacity: 0, x: -100 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5 }}
           >
             <div className="info">
-              <p className="hi mb-1 text-lg ">Hi 👋 I&apos;m</p>
-              <p className="heading text-6xl font-semibold  uppercase">
+              <p className="hi mb-1 text-base ">Hello, I&apos;m</p>
+              <p className="heading text-5xl font-black uppercase">
                 Ragib Al Asad
               </p>
-              <p className="sub-heading  my-2">
-                <span>I BUILD WEBSITES</span>
+              <p className="text-lg my-2 uppercase">
+                <span>Software developer from bangladesh</span>
               </p>
             </div>
-            <div className="social-links flex gap-6">
-              <div className="links flex gap-4 text-2xl my-auto">
+            <div className="w-max">
+              <a
+                href=""
+                className="bg-blue-700 text-white p-3 rounded-lg text-xs"
+              >
+                Download Resume
+              </a>
+
+              <div className="flex justify-between text-2xl mt-10 text-blue-300">
                 <a href="https://facebook.com/ragibalasad" target="_blank">
                   <FaFacebook />
                 </a>
@@ -70,10 +77,6 @@ const Header = () => {
                   <FaLinkedin />
                 </a>
               </div>
-
-              <a href="#" className="btn">
-                Download CV
-              </a>
             </div>
           </motion.div>
         </div>

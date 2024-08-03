@@ -5,6 +5,7 @@
 @layer components {
   body {
     @apply text-white bg-gray-900;
+    font-size: calc(12px + 0.4vw);
   }
 
   .navbar {
