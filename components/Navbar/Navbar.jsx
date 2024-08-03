@@ -63,7 +63,7 @@ const Navbar = () => {
 
           <ul className={`nav-list ml-auto ${isOpen ? "open" : ""}`}>
             {navLinks.map((link, index) => (
-              <li key={index} className="nav-link px-2 text-lg font-medium">
+              <li key={index} className="nav-link px-2 font-medium">
                 <Link
                   to={link.to}
                   activeClass="active"
@@ -71,7 +71,6 @@ const Navbar = () => {
                   smooth={true}
                   offset={link.offset}
                   duration={500}
-                  className=""
                   onSetActive={handleLinkClick}
                 >
                   {link.label.toUpperCase()}

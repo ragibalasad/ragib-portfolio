@@ -1,19 +1,7 @@
 :root {
-  --slate-950: rgb(2, 6, 23);
-  --slate-900: rgb(15, 23, 42);
-  --slate-800: rgb(30, 41, 59);
-  --gray-800: rgb(17, 24, 39);
-  --zinc-950: rgb(9, 9, 11);
-  --orange-200: rgb(254, 215, 170);
-  --indigo-950: rgb(30, 27, 75);
+  --slate-950: #020617;
+  --orange-200: #fed7aa;
   --main-color-1: #008cff;
-  --main-color-2: #008cff;
-  --bg-color-light: #fff;
-  --bg-color-dark: #fff;
-  --text-color: #000000;
-  --header-bg-color: #f0f0f0;
-  --button-bg-color: #ffffff;
-  --button-text-color: #000000;
   --code-color-1: #e06c75;
   --code-color-2: #e5c07b;
   --code-color-3: #98c379;
@@ -31,7 +19,21 @@
   }
 }
 
-.navbar, img, .intro, .terminal, h2, h3, h4, h5, h6, a, span, button, input, select, textarea {
+.navbar,
+img,
+.intro,
+.terminal,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+span,
+button,
+input,
+select,
+textarea {
   user-select: none;
 }
 
