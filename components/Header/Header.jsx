@@ -66,7 +66,7 @@ const Header = () => {
                 <span className="relative">Download Resume</span>
               </a>
 
-              <div className="social-links flex gap-4 text-2xl my-auto text-blue-300">
+              <div className="social-links flex gap-4 text-2xl my-auto text-indigo-300">
                 <a href="https://facebook.com/ragibalasad" target="_blank">
                   <FaFacebook />
                 </a>

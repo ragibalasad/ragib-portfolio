@@ -38,39 +38,9 @@ textarea {
 }
 
 .navbar {
-  position: fixed;
-  z-index: 1000;
   transition: padding;
-  transition-delay: 50ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 250ms;
-}
-
-.navbar.sticky {
-  position: fixed;
-  padding-top: 1.25rem;
-  padding-bottom: 1.25rem;
-  top: 0;
-  width: 100%;
-  background: rgba(2, 6, 23, 0.5);
-  -moz-backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
-  backdrop-filter: blur(5px);
-}
-
-.navbar.scrolled {
-  position: fixed;
-  padding-top: 1.25rem;
-  padding-bottom: 1.25rem;
-  background: rgba(2, 6, 23, 0.5);
-  -moz-backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
-  backdrop-filter: blur(5px);
-  --tw-shadow: 0 0 10 0px rgba(0, 0, 0, 0.1);
-  --tw-shadow-colored: 0 0 10 0px var(--tw-shadow-color);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
-    var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-  transition: all 250ms;
 }
 
 .navbar.scrolled .nav-link a {

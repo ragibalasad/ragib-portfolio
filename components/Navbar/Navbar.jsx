@@ -45,9 +45,10 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`navbar ${isScrolled ? "scrolled" : ""} ${
-        isOpen ? "open" : ""
-      }`}
+      className={`navbar fixed z-50
+        ${isScrolled ? "scrolled fixed py-5 bg-slate-950/50 backdrop-blur-sm transition-all duration-300" : ""} 
+        ${isOpen ? "open" : ""}
+        `}
       id="navbar"
     >
       <motion.div
