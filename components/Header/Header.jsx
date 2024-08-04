@@ -60,9 +60,10 @@ const Header = () => {
             <div className="w-max flex gap-4">
               <a
                 href=""
-                className="bg-blue-700 hover:bg-blue-500 transition-colors text-white p-3 rounded-lg text-xs"
+                className="group relative inline-block text-white p-3 rounded-lg text-xs bg-gradient-to-br from-sky-600 to-indigo-600"
               >
-                Download Resume
+                <span className="absolute inset-0 bg-gradient-to-bl from-sky-500 to-indigo-500 opacity-0 transition-opacity duration-300 group-hover:opacity-100 rounded-lg"></span>
+                <span className="relative">Download Resume</span>
               </a>
 
               <div className="social-links flex gap-4 text-2xl my-auto text-blue-300">

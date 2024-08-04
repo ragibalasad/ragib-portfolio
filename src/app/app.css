@@ -73,9 +73,8 @@ textarea {
   transition: all 250ms;
 }
 
-.navbar.scrolled .logo span,
 .navbar.scrolled .nav-link a {
-  color: white;
+  @apply text-blue-50 hover:text-sky-300;
 }
 
 .navHolder {
@@ -107,8 +106,7 @@ textarea {
 }
 
 .nav-link a:hover {
-  color: #414141;
-  transition: all 0.15s ease-in-out;
+  @apply hover:text-blue-600 transition-colors;
 }
 
 .nav-link a::after {
