@@ -113,7 +113,7 @@ textarea {
 }
 
 .social-links a:hover {
-  @apply text-white;
+  @apply text-indigo-50;
 }
 
 .showcase-img img {
