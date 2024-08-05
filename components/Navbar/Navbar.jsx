@@ -60,7 +60,7 @@ const Navbar = () => {
         <div className="navHolder flex">
           <div className="logo flex items-center">
             <Image src={images.logo} alt="Logo" width={22} height={22} />
-            <span className="ml-1 text-blue-100 sm:text-white font-black text-lg uppercase">
+            <span className="ml-1 text-indigo-50 font-black text-lg uppercase">
               agib
             </span>
           </div>
