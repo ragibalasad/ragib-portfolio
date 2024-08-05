@@ -97,7 +97,7 @@ textarea {
 
 .two-color-bg {
   background: linear-gradient(
-    90deg,
+    54.5deg,
     var(--slate-950) 50%,
     var(--orange-200) 50%
   );
