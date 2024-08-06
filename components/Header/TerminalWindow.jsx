@@ -1,8 +1,18 @@
 "use client";
 
+import React, { useState } from "react";
 import { Cursor } from "react-simple-typewriter";
 
 const TerminalWindow = ({ text }) => {
+  const [age, setAge] = useState(null);
+  const [clicked, setClicked] = useState(false);
+
+  const handleClick = () => {
+    const calculatedAge = new Date().getFullYear() - 2004;
+    setAge(calculatedAge);
+    setClicked(true);
+  };
+
   return (
     <div className="terminal-win h-max">
       <div className="terminal-head flex shadow-sm p-2 gap-1">
@@ -26,31 +36,43 @@ const TerminalWindow = ({ text }) => {
           <span className="text-orange-300">{`      this`}</span>.
           <span className="text-red-400">{`name`}</span>
           <span className="text-sky-400">{` = `}</span>
-          <span className="text-green-500">{`"`}</span>
-          <span className="text-green-500">Ragib Al Asad</span>
-          <span className="text-green-500">{`"`}</span>;
+          <span className="text-green-400">{`"`}</span>
+          <span className="text-green-400">Ragib Al Asad</span>
+          <span className="text-green-400">{`"`}</span>;
         </pre>
         <pre>
           <span className="text-gray-400">{`4`}</span>
           <span className="text-orange-300">{`      this`}</span>.
           <span className="text-red-400">{`traits`}</span>
           <span className="text-sky-400">{` = [`}</span>
-          <span className="text-green-500">{text}</span>
+          <span className="text-green-400">{text}</span>
           <Cursor cursorStyle="█" />
           <span className="text-sky-400">{`]`}</span>;
         </pre>
-        <pre>
-          <span className="text-gray-400">{`5`}</span>
-          <span className="text-orange-300">{`      this`}</span>.
-          <span className="text-red-400">{`age`}</span>
-          <span className="text-sky-400">{` = `}</span>
-          <span className="text-purple-400">{` new `}</span>
-          <span className="text-orange-300">{` Date`}</span>
-          <span className="text-sky-400">{`()`}</span>.
-          <span className="text-orange-300">{`getFullYear`}</span>
-          <span className="text-sky-400">{`() - `}</span>
-          <span className="text-orange-300">{`2004`}</span>;
-        </pre>
+        <>
+          {!clicked ? (
+            <pre onClick={handleClick} style={{ cursor: "pointer" }}>
+              <span className="text-gray-400">{`5`}</span>
+              <span className="text-orange-300">{`      this`}</span>.
+              <span className="text-red-400">{`age`}</span>
+              <span className="text-sky-400">{` = `}</span>
+              <span className="text-purple-400">{` new `}</span>
+              <span className="text-orange-300">{` Date`}</span>
+              <span className="text-sky-400">{`()`}</span>.
+              <span className="text-orange-300">{`getFullYear`}</span>
+              <span className="text-sky-400">{`() - `}</span>
+              <span className="text-orange-300">{`2004`}</span>;
+            </pre>
+          ) : (
+            <pre onClick={handleClick} style={{ cursor: "pointer" }}>
+              <span className="text-gray-400">{`5`}</span>
+              <span className="text-orange-300">{`      this`}</span>.
+              <span className="text-red-400">{`age`}</span>
+              <span className="text-sky-400">{` = `}</span>
+              <span className="text-purple-400">{age}</span>;
+            </pre>
+          )}
+        </>
         <pre>
           <span className="text-gray-400">{`6`}</span>
           <span className="text-orange-300">{`    }`}</span>
