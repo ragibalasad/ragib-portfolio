@@ -69,17 +69,17 @@ const TerminalWindow = ({ text }) => {
               <span className="text-orange-300">{`      this`}</span>.
               <span className="text-red-400">{`age`}</span>
               <span className="text-sky-400">{` = `}</span>
-              <span className="text-orange-300">{age}</span>;
+              <span className="text-purple-400">{age}</span>;
             </pre>
           )}
         </>
         <pre>
           <span className="text-gray-400">{`6`}</span>
-          <span className="text-purple-400">{`    }`}</span>
+          <span className="text-orange-300">{`    }`}</span>
         </pre>
         <pre>
           <span className="text-gray-400">{`7`}</span>
-          <span className="text-orange-300">{`  }`}</span>
+          <span className="text-purple-400">{`  }`}</span>
         </pre>
       </div>
     </div>

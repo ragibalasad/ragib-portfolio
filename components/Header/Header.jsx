@@ -84,11 +84,14 @@ const Header = () => {
         <motion.div
           style={{ y: yTerminal }}
           className="terminal w-1/2 flex justify-center items-end pb-10 my-4 z-10"
-          initial={{ opacity: 0, x: 100 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.5 }}
         >
-          <TerminalWindow text={text}></TerminalWindow>
+          <motion.div
+            initial={{ opacity: 0, x: 100 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.5 }}
+          >
+            <TerminalWindow text={text}></TerminalWindow>
+          </motion.div>
         </motion.div>
       </div>
       <motion.div
