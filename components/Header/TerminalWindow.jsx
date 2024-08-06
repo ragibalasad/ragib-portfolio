@@ -4,13 +4,13 @@ import { Cursor } from "react-simple-typewriter";
 
 const TerminalWindow = ({ text }) => {
   return (
-    <div className="terminal-win">
+    <div className="terminal-win h-max">
       <div className="terminal-head flex shadow-sm p-2 gap-1">
         <div className="close"></div>
         <div className="minimize"></div>
         <div className="maximize"></div>
       </div>
-      <div className="terminal-body px-6 my-4 text-sm text-gray-200">
+      <div className="terminal-body px-6 py-4 text-sm text-gray-200">
         <pre className="text-purple-400">
           <span className="text-gray-400">{`1`}</span>
           {`  class `}
