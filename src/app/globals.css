@@ -81,7 +81,7 @@
   }
 
   .terminal-win {
-    @apply mx-auto w-full h-auto;
+    @apply mx-auto min-w-fit w-full h-auto;
     box-shadow: none;
   }
   .terminal-body {

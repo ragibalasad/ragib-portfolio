@@ -119,7 +119,7 @@ textarea {
 }
 
 .terminal-win {
-  min-width: 410px;
+  width: 410px;
   border-radius: 1rem;
   background: rgba(2, 6, 23, 0.85);
   box-shadow: rgba(0, 0, 0, 0.05) 0px 5px 10px;
