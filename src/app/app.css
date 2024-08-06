@@ -1,11 +1,6 @@
 :root {
   --slate-950: #020617;
   --orange-200: #fed7aa;
-  --main-color-1: #008cff;
-  --code-color-1: #e06c75;
-  --code-color-2: #e5c07b;
-  --code-color-3: #98c379;
-  --code-color-4: #61afef;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -158,30 +153,11 @@ textarea {
   background: #00ca4e;
 }
 
-.terminal-body {
-  line-height: 2.5rem;
-}
-
 .terminal-body pre {
-  font-size: 0.95rem;
+  font-size: 0.925rem /* 14px */;
+  line-height: 1.4rem /* 20px */;
   font-family: "Montserrat", sans-serif;
-  font-weight: 300;
   padding: 2px 0;
-}
-
-.code-color-1 {
-  color: var(--code-color-1);
-}
-
-.code-color-2 {
-  color: var(--code-color-2);
-}
-
-.code-color-3 {
-  color: var(--code-color-3);
-}
-.code-color-4 {
-  color: var(--code-color-4);
 }
 
 .space {

@@ -2,10 +2,11 @@
 import { images } from "../../constants";
 import Image from "next/image";
 import { React, useRef } from "react";
-import { useTypewriter, Cursor } from "react-simple-typewriter";
+import { useTypewriter } from "react-simple-typewriter";
 import { useScroll, useTransform, motion } from "framer-motion";
 import { useMediaQuery } from "react-responsive";
 import { FaFacebook, FaGithub, FaLinkedin } from "react-icons/fa";
+import TerminalWindow from "./TerminalWindow";
 
 const Header = () => {
   const [text] = useTypewriter({
@@ -85,38 +86,11 @@ const Header = () => {
           className="terminal w-1/2 flex justify-center items-end pb-10 my-4 z-10"
         >
           <motion.div
-            className="terminal-win"
             initial={{ opacity: 0, x: 100 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5 }}
           >
-            <div className="terminal-head flex shadow-sm p-2 gap-1">
-              <div className="close"></div>
-              <div className="minimize"></div>
-              <div className="maximize"></div>
-            </div>
-            <div className="terminal-body px-6 my-4 text-base">
-              <pre>
-                {`1  class `}
-                <b>Person</b>
-                {` {`}
-              </pre>
-              <pre>{`2    constructor() {`}</pre>
-              <pre>
-                {`3      this.name = "`}
-                <b>Ragib Al Asad</b>
-                {`";`}
-              </pre>
-              <pre>
-                {`4      this.traits = [`}
-                <span className="font-normal">{text}</span>
-                <Cursor cursorStyle="█" />
-                {`];`}
-              </pre>
-              <pre>{`5      this.age = new Date().getFullYear() - 2004;`}</pre>
-              <pre>{`6    }`}</pre>
-              <pre>{`7  }`}</pre>
-            </div>
+            <TerminalWindow text={text}></TerminalWindow>
           </motion.div>
         </motion.div>
       </div>
