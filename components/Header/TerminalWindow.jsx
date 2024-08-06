@@ -55,13 +55,13 @@ const TerminalWindow = ({ text }) => {
               <span className="text-gray-400">{`5`}</span>
               <span className="text-orange-300">{`      this`}</span>.
               <span className="text-red-400">{`age`}</span>
-              <span className="text-sky-400">{` = `}</span>
-              <span className="text-purple-400">{` new `}</span>
+              <span className="text-sky-400">{` =`}</span>
+              <span className="text-purple-400">{` new`}</span>
               <span className="text-orange-300">{` Date`}</span>
               <span className="text-sky-400">{`()`}</span>.
               <span className="text-orange-300">{`getFullYear`}</span>
-              <span className="text-sky-400">{`() - `}</span>
-              <span className="text-orange-300">{`2004`}</span>;
+              <span className="text-sky-400">{`() -`}</span>
+              <span className="text-orange-300">{` 2004`}</span>;
             </pre>
           ) : (
             <pre onClick={handleClick} style={{ cursor: "pointer" }}>
