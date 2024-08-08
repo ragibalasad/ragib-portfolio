@@ -29,7 +29,7 @@ const Header = () => {
   let yTerminalTransform = useTransform(
     scrollYProgress,
     [0, 1],
-    ["0%", "-25%"]
+    ["0%", "-25%"],
   );
 
   // Conditionally apply the values
@@ -39,37 +39,37 @@ const Header = () => {
   return (
     <header
       ref={ref}
-      className="header mx-auto two-color-bg relative flex flex-col items-center h-screen"
+      className="header two-color-bg relative mx-auto flex h-screen flex-col items-center"
     >
       <div className="container flex h-full">
-        <div className="intro w-1/2 flex">
+        <div className="intro flex w-1/2">
           <motion.div
             style={{ y: yIntro }}
-            className="flex flex-col my-auto gap-7"
+            className="my-auto flex flex-col gap-7"
             initial={{ opacity: 0, x: -100 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5 }}
           >
-            <div className="info md:text-indigo-100 text-white">
-              <p className="hi mb-1 text-base ">Hello, I&apos;m</p>
-              <p className="text-5xl text-indigo-50 font-black uppercase">
+            <div className="info text-white md:text-indigo-100">
+              <p className="hi mb-1 text-base">Hello, I&apos;m</p>
+              <p className="text-5xl font-black uppercase text-indigo-50">
                 Ragib Al Asad
               </p>
-              <p className="text-lg my-2 uppercase border-l-4 border-l-blue-500 px-3 h-max">
+              <p className="my-2 h-max border-l-4 border-l-blue-500 px-3 text-lg uppercase">
                 <span>Software developer from bangladesh</span>
               </p>
             </div>
 
-            <div className="w-max flex gap-4">
+            <div className="flex w-max gap-4">
               <a
                 href=""
-                className="group relative inline-block text-white p-3 rounded-lg text-xs bg-gradient-to-br from-sky-600 to-indigo-600"
+                className="group relative inline-block rounded-lg bg-gradient-to-br from-sky-600 to-indigo-600 p-3 text-xs text-white"
               >
-                <span className="absolute inset-0 bg-gradient-to-bl from-sky-500 to-indigo-500 opacity-0 transition-opacity duration-300 group-hover:opacity-100 rounded-lg"></span>
+                <span className="absolute inset-0 rounded-lg bg-gradient-to-bl from-sky-500 to-indigo-500 opacity-0 transition-opacity duration-300 group-hover:opacity-100"></span>
                 <span className="relative">Download Resume</span>
               </a>
 
-              <div className="social-links flex gap-4 text-2xl my-auto text-indigo-300">
+              <div className="social-links my-auto flex gap-4 text-2xl text-indigo-300">
                 <a href="https://facebook.com/ragibalasad" target="_blank">
                   <FaFacebook />
                 </a>
@@ -85,7 +85,7 @@ const Header = () => {
         </div>
         <motion.div
           style={{ y: yTerminal }}
-          className="terminal w-1/2 flex justify-center items-end pb-10 my-4 z-10"
+          className="terminal z-10 my-4 flex w-1/2 items-end justify-center pb-10"
           initial={{ opacity: 0, x: 100 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.5 }}

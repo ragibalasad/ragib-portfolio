@@ -45,14 +45,11 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`navbar fixed z-50
-        ${isScrolled ? "scrolled fixed py-5 bg-slate-950/50 backdrop-blur-sm transition-all duration-300" : ""} 
-        ${isOpen ? "open" : ""}
-        `}
+      className={`navbar fixed z-50 ${isScrolled ? "scrolled fixed bg-slate-950/50 py-5 backdrop-blur-sm transition-all duration-300" : ""} ${isOpen ? "open" : ""} `}
       id="navbar"
     >
       <motion.div
-        className="container flex justify-between mx-auto text-center items-center"
+        className="container mx-auto flex items-center justify-between text-center"
         initial={{ opacity: 0, y: -100 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
@@ -60,7 +57,7 @@ const Navbar = () => {
         <div className="navHolder flex">
           <div className="logo flex items-center">
             <Image src={images.logo} alt="Logo" width={22} height={22} />
-            <span className="ml-1 text-indigo-50 font-black uppercase">
+            <span className="ml-1 font-black uppercase text-indigo-50">
               agib
             </span>
           </div>
@@ -69,7 +66,7 @@ const Navbar = () => {
             {navLinks.map((link, index) => (
               <li
                 key={index}
-                className="nav-link text-slate-800 px-3 font-semibold text-sm"
+                className="nav-link px-3 text-sm font-semibold text-slate-800"
               >
                 <Link
                   to={link.to}

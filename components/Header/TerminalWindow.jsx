@@ -14,8 +14,8 @@ const TerminalWindow = ({ text }) => {
   };
 
   return (
-    <div className="terminal-win h-max">
-      <div className="terminal-head flex shadow-sm p-2 gap-1">
+    <div className="terminal-win h-max shadow-md shadow-slate-900">
+      <div className="terminal-head flex gap-1 p-2 shadow-sm">
         <div className="close"></div>
         <div className="minimize"></div>
         <div className="maximize"></div>
