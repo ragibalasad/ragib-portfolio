@@ -51,7 +51,7 @@ textarea {
 }
 
 .nav-list.open {
-  @apply bg-slate-950 text-white right-0;
+  @apply right-0 bg-slate-950 text-white;
   height: 140vh;
 }
 
@@ -173,7 +173,7 @@ textarea {
   }
 
   .nav-list.open {
-    @apply bg-slate-950 right-0;
+    @apply right-0 bg-slate-950;
     height: 140vh;
   }
 

@@ -4,15 +4,15 @@
 
 @layer components {
   body {
-    @apply text-white bg-gray-900;
+    @apply bg-gray-900 text-white;
     font-size: calc(12px + 0.4vw);
   }
 
   .navbar {
-    @apply flex fixed top-0 left-0 w-full z-50 py-8 px-4;
+    @apply fixed left-0 top-0 z-50 flex w-full px-4 py-8;
   }
   .navbar .container {
-    @apply flex justify-between items-center;
+    @apply flex items-center justify-between;
   }
 
   .navHolder {
@@ -47,15 +47,15 @@
 @media (max-width: 767.98px) {
   .header {
     background: none;
-    @apply relative w-full h-max bg-slate-900;
+    @apply relative h-max w-full bg-slate-900;
   }
 
   .header .container {
-    @apply block pt-20 mb-4;
+    @apply mb-4 block pt-20;
   }
 
   .intro .info {
-    @apply text-left py-4 p-0;
+    @apply p-0 py-4 text-left;
   }
 
   .intro .hi {
@@ -64,11 +64,11 @@
 
   .intro,
   .terminal {
-    @apply w-auto mx-auto px-4 pt-8;
+    @apply mx-auto w-auto px-4 pt-8;
   }
 
   .showcase-img {
-    @apply relative px-2 rounded-3xl mx-4 mb-4;
+    @apply relative mx-4 mb-4 rounded-3xl px-2;
     background: linear-gradient(
       54.5deg,
       rgba(6, 5, 25) 50%,
@@ -81,7 +81,7 @@
   }
 
   .terminal-win {
-    @apply mx-auto min-w-fit w-full h-auto;
+    @apply mx-auto h-auto w-full min-w-fit;
     box-shadow: none;
   }
   .terminal-body {
@@ -102,7 +102,7 @@
   }
 
   .nav-link {
-    @apply justify-center items-center h-6 text-base;
+    @apply h-6 items-center justify-center text-base;
     text-align: right !important;
   }
 
@@ -111,7 +111,7 @@
   }
 
   .hamburger {
-    @apply px-2 h-8 w-8 box-content cursor-pointer relative;
+    @apply relative box-content h-8 w-8 cursor-pointer px-2;
   }
 
   .hamburger .bar {
@@ -151,7 +151,7 @@
   }
 
   .nav-link::after {
-    @apply content-[""] absolute w-full h-2 rounded bottom-2 left-0;
+    @apply absolute bottom-2 left-0 h-2 w-full rounded content-[""];
   }
 
   .nav-link {
