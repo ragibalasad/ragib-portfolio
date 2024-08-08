@@ -60,14 +60,17 @@ const Navbar = () => {
         <div className="navHolder flex">
           <div className="logo flex items-center">
             <Image src={images.logo} alt="Logo" width={22} height={22} />
-            <span className="ml-1 text-indigo-50 font-black text-lg uppercase">
+            <span className="ml-1 text-indigo-50 font-black uppercase">
               agib
             </span>
           </div>
 
           <ul className={`nav-list ml-auto ${isOpen ? "open" : ""}`}>
             {navLinks.map((link, index) => (
-              <li key={index} className="nav-link px-3 font-medium">
+              <li
+                key={index}
+                className="nav-link text-slate-800 px-3 font-semibold text-sm"
+              >
                 <Link
                   to={link.to}
                   activeClass="active"
@@ -77,7 +80,7 @@ const Navbar = () => {
                   duration={500}
                   onSetActive={handleLinkClick}
                 >
-                  {link.label.toLowerCase()}
+                  {link.label.toUpperCase()}
                 </Link>
               </li>
             ))}

@@ -155,7 +155,7 @@
   }
 
   .nav-link {
-    @apply my-6 font-medium w-full text-center;
+    @apply my-6 w-full text-center;
   }
 
   .hamburger {

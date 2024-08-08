@@ -47,7 +47,7 @@ textarea {
 }
 
 .nav-list {
-  @apply flex text-slate-950 list-none justify-center;
+  @apply flex list-none justify-center;
 }
 
 .nav-list.open {
@@ -68,10 +68,6 @@ textarea {
   position: relative;
   display: inline-block;
   cursor: pointer !important;
-}
-
-.nav-link a:hover {
-  @apply hover:text-blue-600 transition-colors;
 }
 
 .nav-link a::after {
