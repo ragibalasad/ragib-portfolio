@@ -54,14 +54,6 @@
     @apply mb-4 block pt-20;
   }
 
-  .intro .info {
-    @apply p-0 py-4 text-left;
-  }
-
-  .intro .hi {
-    /* @apply text-lg; */
-  }
-
   .intro,
   .terminal {
     @apply mx-auto w-auto px-4 pt-8;
@@ -91,9 +83,7 @@
 
 /* Medium devices (small laptops, 768px and up) */
 @media (min-width: 768px) and (max-width: 991.98px) {
-  .info {
-    @apply pr-20;
-  }
+  /* empty */
 }
 
 /* Large devices (laptops, 992px and up) */
