@@ -50,7 +50,7 @@ const Header = () => {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5 }}
           >
-            <div className="text-white md:text-indigo-100">
+            <div className="info text-white md:text-indigo-100">
               <p className="hi mb-1 text-base">Hello, I&apos;m</p>
               <p className="text-5xl font-black uppercase text-indigo-50">
                 Ragib Al Asad

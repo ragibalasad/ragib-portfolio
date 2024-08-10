@@ -54,6 +54,14 @@
     @apply mb-4 block pt-20;
   }
 
+  .intro .info {
+    @apply p-0 py-4 text-left;
+  }
+
+  .intro .hi {
+    /* @apply text-lg; */
+  }
+
   .intro,
   .terminal {
     @apply mx-auto w-auto px-4 pt-8;
