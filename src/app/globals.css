@@ -4,8 +4,7 @@
 
 @layer components {
   body {
-    @apply bg-gray-900 text-white;
-    font-size: calc(12px + 0.4vw);
+    @apply bg-slate-900 text-indigo-50 antialiased;
   }
 
   .navbar {
@@ -56,10 +55,6 @@
 
   .intro .info {
     @apply p-0 py-4 text-left;
-  }
-
-  .intro .hi {
-    /* @apply text-lg; */
   }
 
   .intro,

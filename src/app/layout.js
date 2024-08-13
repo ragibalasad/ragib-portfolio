@@ -1,10 +1,10 @@
-import { Montserrat } from "next/font/google";
+import { Montserrat, Open_Sans } from "next/font/google";
 import "./app.css";
 import "./globals.css";
 import Head from "next/head";
 
-const space_grotesk = Montserrat({
-  weight: ["300", "400", "500", "600", "700", "800", "900"],
+const font = Open_Sans({
+  // weight: ["300", "400", "500", "600", "700", "800", "900"],
   subsets: ["latin"],
 });
 
@@ -20,7 +20,7 @@ export default function RootLayout({ children }) {
       <Head>
         <link rel="icon" href="logo_32.png" />
       </Head>
-      <body className={space_grotesk.className}>{children}</body>
+      <body className={font.className}>{children}</body>
     </html>
   );
 }

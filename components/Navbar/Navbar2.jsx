@@ -6,7 +6,7 @@ import Image from "next/image";
 import { Link } from "react-scroll";
 import { motion } from "framer-motion";
 
-const Navbar = () => {
+const Navbar2 = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
 
@@ -45,29 +45,27 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`navbar fixed z-50 ${isScrolled ? "scrolled fixed border-b border-slate-900/30 bg-slate-950/70 py-5 backdrop-blur-sm" : ""} ${isOpen ? "open" : ""} `}
+      className={`fixed z-50 w-full transition-all ${isScrolled ? "border-b border-slate-50/10 py-4 backdrop-blur" : "py-6"} ${isOpen ? "open" : ""} `}
       id="navbar"
     >
       <motion.div
-        className="container mx-auto flex items-center justify-between text-center"
+        className="container mx-auto flex w-full items-center justify-between text-center md:w-4/5"
         initial={{ opacity: 0, y: -100 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
       >
         <div className="navHolder flex">
-          <div className="logo flex items-center">
-            <Image src={images.logo} alt="Logo" width={22} height={22} />
-            <span className="ml-1 font-black uppercase text-indigo-50">
-              agib
-            </span>
+          <div className="flex items-center">
+            <h1 className="text-lg font-bold lowercase text-cyan-400">
+              ragibalasad
+            </h1>
           </div>
 
-          <ul className={`nav-list ml-auto ${isOpen ? "open" : ""}`}>
+          <ul
+            className={`ml-auto flex list-none justify-center ${isOpen ? "open" : ""}`}
+          >
             {navLinks.map((link, index) => (
-              <li
-                key={index}
-                className="nav-link px-3 text-sm font-semibold text-slate-800"
-              >
+              <li key={index} className="px-3 text-sm font-semibold uppercase">
                 <Link
                   to={link.to}
                   activeClass="active"
@@ -77,24 +75,15 @@ const Navbar = () => {
                   duration={500}
                   onSetActive={handleLinkClick}
                 >
-                  {link.label.toUpperCase()}
+                  {link.label}
                 </Link>
               </li>
             ))}
           </ul>
-        </div>
-
-        <div
-          className="menuBtn hamburger [&>*]:bg-white"
-          onClick={handleMenuToggle}
-        >
-          <div className="bar"></div>
-          <div className="bar"></div>
-          <div className="bar"></div>
         </div>
       </motion.div>
     </nav>
   );
 };
 
-export default Navbar;
+export default Navbar2;
