@@ -31,7 +31,7 @@ const CodeWindow = ({ text }) => {
                   aria-hidden="true"
                   class="w-[20px] select-none text-wrap px-4 py-4 text-right text-slate-600 md:block"
                 >
-                  1 2 3 4 5 6 7 8 9 10 11
+                  1 2 3 4 5 6 7 8 9 10 11 12
                 </div>
                 <code class="relative block flex-auto overflow-auto px-4 pb-4 pt-4 text-slate-50"></code>
               </pre>

@@ -43,22 +43,24 @@ const Hero = () => {
       ></motion.div>
 
       <div className="relative grid w-full grid-cols-2">
-        <div className="mt-32 justify-between">
+        <div className="mt-48 justify-between">
           <div className="py-20">
-            <p className="text-lg text-slate-300">Hi there, I'm</p>
-            <h1 className="pb-2 text-5xl font-semibold">Ragib Al Asad</h1>
-            <p className="border-l-4 border-cyan-400 px-2 text-xl text-slate-300">
+            <p className="font-semibold text-slate-300">Hi there, I'm</p>
+            <h1 className="py-2 pb-4 text-5xl font-semibold text-cyan-400">
+              Ragib Al Asad
+            </h1>
+            <p className="border-l-4 border-cyan-400 px-2 text-xl font-medium text-slate-300">
               Software Developer from Bangladesh
             </p>
             <div className="flex gap-3 pt-12">
               <a
                 href=""
-                className="group relative inline-block rounded-lg bg-gradient-to-br from-cyan-600 to-indigo-600 p-3 text-xs text-white"
+                className="group relative inline-block rounded-lg bg-gradient-to-br from-cyan-600 via-cyan-700 to-indigo-600 p-4 text-xs text-white"
               >
-                <span className="absolute inset-0 rounded-lg bg-gradient-to-bl from-cyan-500 to-indigo-500 opacity-0 transition-opacity duration-300 group-hover:opacity-100"></span>
+                <span className="absolute inset-0 rounded-lg bg-gradient-to-bl from-cyan-500 via-cyan-600 to-indigo-500 opacity-0 transition-opacity duration-300 group-hover:opacity-100"></span>
                 <span className="relative">Download Resume</span>
               </a>
-              <div className="my-auto flex gap-2 text-xl">
+              <div className="my-auto flex gap-3 text-xl text-slate-300">
                 <a href="" className="transition hover:text-cyan-500">
                   <FaFacebook />
                 </a>
@@ -73,7 +75,7 @@ const Hero = () => {
           </div>
         </div>
 
-        <div className="mt-32 w-full p-4">
+        <div className="mt-44 w-full p-4">
           <CodeWindow />
         </div>
       </div>
