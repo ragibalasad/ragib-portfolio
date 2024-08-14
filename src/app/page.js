@@ -8,6 +8,7 @@ export default function Home() {
       <Navbar2 />
       {/* <Header /> */}
       <Hero />
+      <Skills />
       {/* <Work /> */}
     </div>
   );
