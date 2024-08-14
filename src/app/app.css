@@ -14,6 +14,31 @@
   }
 }
 
+/* Scrollbar for Webkit browsers (Chrome, Safari, and Edge Chromium) */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1e293b;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #22d3ee;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #22d3ee;
+}
+
+/* Scrollbar for Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #22d3ee #1e293b;
+}
+
 .navbar,
 img,
 .intro,
