@@ -5,6 +5,7 @@ import { images } from "../../constants";
 import Image from "next/image";
 import { Link } from "react-scroll";
 import { motion } from "framer-motion";
+import { FaGithub, FaSun, FaMoon } from "react-icons/fa";
 
 const Navbar2 = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -45,7 +46,7 @@ const Navbar2 = () => {
 
   return (
     <nav
-      className={`fixed z-50 w-full border-b border-slate-50/10 backdrop-blur transition-all ${isScrolled ? "py-4 shadow shadow-slate-900" : "py-6"} ${isOpen ? "open" : ""} `}
+      className={`fixed z-50 w-full border-b border-slate-50/10 backdrop-blur-md transition-all ${isScrolled ? "py-4 shadow" : "py-6"} ${isOpen ? "open" : ""} `}
       id="navbar"
     >
       <motion.div
@@ -82,6 +83,11 @@ const Navbar2 = () => {
                 </Link>
               </li>
             ))}
+            <li>
+              <Link>
+                <FaSun className="ml-5 cursor-pointer text-xl" />
+              </Link>
+            </li>
           </ul>
         </div>
       </motion.div>
