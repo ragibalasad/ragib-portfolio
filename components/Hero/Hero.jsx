@@ -45,7 +45,7 @@ const Hero = () => {
       <div className="relative grid w-full grid-cols-2">
         <div className="mt-48 justify-between">
           <div className="py-20">
-            <p className="font-semibold text-slate-300">Hi there, I'm</p>
+            <p className="font-semibold text-slate-300">Hi there, I&apos;m</p>
             <h1 className="py-2 pb-4 text-5xl font-semibold text-cyan-400">
               Ragib Al Asad
             </h1>
@@ -55,19 +55,19 @@ const Hero = () => {
             <div className="flex gap-3 pt-12">
               <a
                 href=""
-                className="group relative inline-block rounded-lg bg-gradient-to-br from-cyan-600 via-cyan-700 to-indigo-600 p-4 text-xs text-white"
+                className="group relative inline-block rounded-lg p-4 text-xs text-white transition hover:bg-slate-800/50 dark:bg-slate-800/70 dark:ring-1 dark:ring-white/10 dark:backdrop-blur-md"
               >
-                <span className="absolute inset-0 rounded-lg bg-gradient-to-bl from-cyan-500 via-cyan-600 to-indigo-500 opacity-0 transition-opacity duration-300 group-hover:opacity-100"></span>
+                {/* <span className="absolute inset-0 rounded-lg bg-gradient-to-bl from-cyan-500 via-cyan-600 to-indigo-500 opacity-0 transition-opacity duration-300 group-hover:opacity-100"></span> */}
                 <span className="relative">Download Resume</span>
               </a>
               <div className="my-auto flex gap-3 text-xl text-slate-300">
-                <a href="" className="transition hover:text-cyan-500">
+                <a href="" className="transition hover:text-cyan-400/80">
                   <FaFacebook />
                 </a>
-                <a href="" className="transition hover:text-cyan-500">
+                <a href="" className="transition hover:text-cyan-400/80">
                   <FaGithub />
                 </a>
-                <a href="" className="transition hover:text-cyan-500">
+                <a href="" className="transition hover:text-cyan-400/80">
                   <FaLinkedin />
                 </a>
               </div>

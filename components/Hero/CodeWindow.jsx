@@ -14,7 +14,7 @@ const CodeWindow = ({ text }) => {
   };
 
   return (
-    <div class="relative flex w-full overflow-hidden rounded-xl bg-slate-800 shadow-xl dark:bg-gray-800/70 dark:ring-1 dark:ring-inset dark:ring-white/10 dark:backdrop-blur-lg">
+    <div class="relative flex w-full overflow-hidden rounded-xl bg-gray-800 shadow-xl dark:bg-gray-800/70 dark:ring-1 dark:ring-inset dark:ring-white/10 dark:backdrop-blur-lg">
       <div class="relative flex w-full flex-col">
         <div class="flex-none border-b border-slate-500/30">
           <div class="flex h-8 items-center space-x-1.5 px-3">
