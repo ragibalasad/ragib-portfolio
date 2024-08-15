@@ -45,9 +45,9 @@ const CodeWindow = ({ text }) => {
                   <pre className="ml-4">
                     local skills=("C" "Python" "Linux" "Coffee")
                   </pre>
-                  <pre className="ml-4">
+                  <pre className="pl-4">
                     local hobbies=("Coding" "Debugging" "Pretending to
-                    Understand Regex")
+                    Understand Regex") <span> </span>
                   </pre>
                   <pre> </pre>
                   <pre className="ml-4">echo "Hello, World!"</pre>
