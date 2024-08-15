@@ -1,9 +1,9 @@
-import { Montserrat, Open_Sans } from "next/font/google";
+import { Open_Sans } from "next/font/google";
 import "./app.css";
 import "./globals.css";
 import Head from "next/head";
 
-const font = Open_Sans({
+const open_sans = Open_Sans({
   // weight: ["300", "400", "500", "600", "700", "800", "900"],
   subsets: ["latin"],
 });
@@ -20,7 +20,7 @@ export default function RootLayout({ children }) {
       <Head>
         <link rel="icon" href="logo_32.png" />
       </Head>
-      <body className={font.className}>{children}</body>
+      <body className={open_sans.className}>{children}</body>
     </html>
   );
 }

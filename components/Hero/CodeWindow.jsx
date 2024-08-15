@@ -1,7 +1,12 @@
 "use client";
 
 import React, { useState } from "react";
+import { Fira_Code } from "next/font/google";
 import { Cursor } from "react-simple-typewriter";
+
+const fira_code = Fira_Code({
+  subsets: ["latin"],
+});
 
 const CodeWindow = ({ text }) => {
   const [age, setAge] = useState(null);
@@ -33,29 +38,31 @@ const CodeWindow = ({ text }) => {
                 >
                   1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18
                 </div>
-                <code class="relative block flex-auto overflow-auto px-4 pb-4 pt-4 text-slate-50">
-                  <pre>{`class DeveloperProfile {`}</pre>
-                  <pre>{`  constructor() {`}</pre>
-                  <pre>{`    this.name = "Ragib Al Asad";`}</pre>
-                  <pre>{`    this.role = "Web Developer Extraordinaire";`}</pre>
-                  <pre>
+                <code
+                  class={`${fira_code.className} relative flex flex-col overflow-auto px-4 pb-4 pt-4 text-slate-50`}
+                >
+                  <span>{`class DeveloperProfile {`}</span>
+                  <span>{`  constructor() {`}</span>
+                  <span>{`    this.name = "Ragib Al Asad";`}</span>
+                  <span>{`    this.role = "Web Developer Extraordinaire";`}</span>
+                  <span>
                     {`    this.skills = ["HTML", "CSS", "JS", "React", "Coffee"];`}
-                  </pre>
-                  <pre>
+                  </span>
+                  <span>
                     {`    this.hobbies = (
       ["Coding", "Debugging", "Pretending to Understand Regex"]
     );`}
-                  </pre>
-                  <pre> </pre>
-                  <pre>{"  introduce() {"}</pre>
-                  <pre>{`    console.log("Hello, World!");`}</pre>
-                  <pre>{`    console.log(
+                  </span>
+                  <span> </span>
+                  <span>{"  introduce() {"}</span>
+                  <span>{`    console.log("Hello, World!");`}</span>
+                  <span>{`    console.log(
       \`I'm \${this.name}, your friendly \${this.role}.\`
-    );`}</pre>
-                  <pre>{`  }`}</pre>
-                  <pre>{`}`}</pre>
-                  <pre> </pre>
-                  <pre>{`new DeveloperProfile().introduce();`}</pre>
+    );`}</span>
+                  <span>{`  }`}</span>
+                  <span>{`}`}</span>
+                  <span> </span>
+                  <span>{`new DeveloperProfile().introduce();`}</span>
                 </code>
               </pre>
             </div>
