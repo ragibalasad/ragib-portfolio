@@ -42,8 +42,8 @@ const Hero = () => {
         className="yellow-bubble absolute -bottom-12 left-1/4 -z-10 block h-32 w-32 rounded-full bg-gradient-to-br from-transparent to-yellow-500 opacity-70 shadow-2xl shadow-yellow-500 blur"
       ></motion.div>
 
-      <div className="relative grid w-full grid-cols-2 pt-52 2xl:pt-72">
-        <div className="justify-between pt-4">
+      <div className="grid-col-2 relative grid w-full grid-cols-7 pt-32 xl:pt-40 2xl:grid-cols-2 2xl:pt-64">
+        <div className="col-span-3 justify-between pt-16 2xl:col-span-1">
           <div className="py-20">
             <p className="font-semibold text-slate-300">Hi there, I&apos;m</p>
             <h1 className="py-2 pb-4 text-5xl font-semibold text-cyan-400">
@@ -75,7 +75,7 @@ const Hero = () => {
           </div>
         </div>
 
-        <div className="w-full">
+        <div className="col-span-4 w-full 2xl:col-span-1">
           <CodeWindow />
         </div>
       </div>

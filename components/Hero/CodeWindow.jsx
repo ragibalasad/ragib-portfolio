@@ -31,28 +31,31 @@ const CodeWindow = ({ text }) => {
                   aria-hidden="true"
                   class="w-[50px] select-none text-wrap px-4 py-4 text-right text-slate-600 md:block"
                 >
-                  1 2 3 4 5 6 7 8 9 10 11 12 13
+                  1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18
                 </div>
                 <code class="relative block flex-auto overflow-auto px-4 pb-4 pt-4 text-slate-50">
-                  <pre>{`#!/bin/bash`}</pre>
-                  <pre>{`# profile.sh`}</pre>
-                  <pre> </pre>
-                  <pre>{"function introduce_self() {"}</pre>
-                  <pre>{`    local name="Ragib Al Asad"`}</pre>
+                  <pre>{`class DeveloperProfile {`}</pre>
+                  <pre>{`  constructor() {`}</pre>
+                  <pre>{`    this.name = "Ragib Al Asad";`}</pre>
+                  <pre>{`    this.role = "Web Developer Extraordinaire";`}</pre>
                   <pre>
-                    {`    local role="Software Developer Extraordinaire"`}
+                    {`    this.skills = ["HTML", "CSS", "JS", "React", "Coffee"];`}
                   </pre>
                   <pre>
-                    {'    local skills=("C" "Python" "Linux" "Coffee")'}
-                  </pre>
-                  <pre>
-                    {`    local hobbies=("Coding" "Debugging" "Pretending to Understand Regex ") `}
+                    {`    this.hobbies = (
+      ["Coding", "Debugging", "Pretending to Understand Regex"]
+    );`}
                   </pre>
                   <pre> </pre>
-                  <pre>{`    echo "Hello, World!"`}</pre>
-                  <pre>{`    echo "I'm \${name}, your friendly \${role}."`}</pre>
-                  <pre>{`    echo`}</pre>
+                  <pre>{"  introduce() {"}</pre>
+                  <pre>{`    console.log("Hello, World!");`}</pre>
+                  <pre>{`    console.log(
+      \`I'm \${this.name}, your friendly \${this.role}.\`
+    );`}</pre>
+                  <pre>{`  }`}</pre>
                   <pre>{`}`}</pre>
+                  <pre> </pre>
+                  <pre>{`new DeveloperProfile().introduce();`}</pre>
                 </code>
               </pre>
             </div>

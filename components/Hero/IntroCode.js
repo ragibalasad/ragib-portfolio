@@ -11,3 +11,5 @@ class DeveloperProfile {
     console.log(`I'm ${this.name}, your friendly ${this.role}.`);
   }
 }
+
+new DeveloperProfile().introduce();
