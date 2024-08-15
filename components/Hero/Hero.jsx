@@ -35,7 +35,7 @@ const Hero = () => {
       ></motion.div>
       <motion.div
         style={{ y: yGreen }}
-        className="green-bubble absolute right-1/3 top-1/4 -z-10 block h-40 w-40 rounded-full bg-gradient-to-br from-transparent to-green-500 opacity-70 shadow-2xl shadow-green-500 blur 2xl:bottom-1/2"
+        className="green-bubble absolute right-1/3 top-28 -z-10 block h-40 w-40 rounded-full bg-gradient-to-br from-transparent to-green-500 opacity-70 shadow-2xl shadow-green-500 blur 2xl:top-1/4"
       ></motion.div>
       <motion.div
         style={{ y: yYellow }}
