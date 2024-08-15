@@ -46,7 +46,7 @@ const CodeWindow = ({ text }) => {
                     {'    local skills=("C" "Python" "Linux" "Coffee")'}
                   </pre>
                   <pre>
-                    {`    local hobbies=("Coding" "Debugging" "Pretending to Understand Regex ")`}
+                    {`    local hobbies=("Coding" "Debugging" "Pretending to Understand Regex ") `}
                   </pre>
                   <pre> </pre>
                   <pre>{`    echo "Hello, World!"`}</pre>
