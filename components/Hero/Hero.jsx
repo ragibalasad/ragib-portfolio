@@ -35,14 +35,14 @@ const Hero = () => {
       ></motion.div>
       <motion.div
         style={{ y: yGreen }}
-        className="green-bubble absolute bottom-1/2 right-1/3 -z-10 block h-40 w-40 rounded-full bg-gradient-to-br from-transparent to-green-500 opacity-70 shadow-2xl shadow-green-500 blur"
+        className="green-bubble absolute right-1/3 top-1/4 -z-10 block h-40 w-40 rounded-full bg-gradient-to-br from-transparent to-green-500 opacity-70 shadow-2xl shadow-green-500 blur 2xl:bottom-1/2"
       ></motion.div>
       <motion.div
         style={{ y: yYellow }}
         className="yellow-bubble absolute -bottom-12 left-1/4 -z-10 block h-32 w-32 rounded-full bg-gradient-to-br from-transparent to-yellow-500 opacity-70 shadow-2xl shadow-yellow-500 blur"
       ></motion.div>
 
-      <div className="grid-col-2 relative grid w-full grid-cols-7 pt-32 xl:pt-40 2xl:grid-cols-2 2xl:pt-64">
+      <div className="grid-col-2 relative grid w-full grid-cols-7 pt-32 xl:pt-40 2xl:grid-cols-2 2xl:pt-56">
         <div className="col-span-3 justify-between pt-16 2xl:col-span-1">
           <div className="py-20">
             <p className="font-semibold text-slate-300">Hi there, I&apos;m</p>
