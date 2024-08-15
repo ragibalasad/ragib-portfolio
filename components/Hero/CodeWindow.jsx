@@ -39,30 +39,91 @@ const CodeWindow = ({ text }) => {
                   1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18
                 </div>
                 <code
-                  class={`${fira_code.className} relative flex flex-col overflow-auto px-4 pb-4 pt-4 text-slate-50`}
+                  class={`${fira_code.className} relative flex flex-col overflow-auto px-4 pb-4 pt-4 text-slate-300`}
                 >
-                  <span>{`class DeveloperProfile {`}</span>
-                  <span>{`  constructor() {`}</span>
-                  <span>{`    this.name = "Ragib Al Asad";`}</span>
-                  <span>{`    this.role = "Web Developer Extraordinaire";`}</span>
                   <span>
-                    {`    this.skills = ["HTML", "CSS", "JS", "React", "Coffee"];`}
+                    <span className="text-pink-400">{`class`}</span>
+                    <span className="text-yellow-200">{` DeveloperProfile {`}</span>
                   </span>
                   <span>
-                    {`    this.hobbies = (
-      ["Coding", "Debugging", "Pretending to Understand Regex"]
-    );`}
+                    <span className="text-pink-400">{`  constructor() {`}</span>
                   </span>
+                  <span>
+                    <span className="text-pink-400">{`    this`}</span>.
+                    <span className="text-slate-50">{`name`}</span>
+                    {` = `}
+                    <span className="text-green-300">{`"Ragib Al Asad"`}</span>;
+                  </span>
+                  <span>
+                    <span className="text-pink-400">{`    this`}</span>.
+                    <span className="text-slate-50">{`role`}</span>
+                    {` = `}
+                    <span className="text-green-300">{`"Web Developer Extraordinaire"`}</span>
+                    ;
+                  </span>
+                  <span>
+                    <span className="text-pink-400">{`    this`}</span>.
+                    <span className="text-slate-50">{`skills`}</span>
+                    {` = `}
+                    <span className="text-green-300">{`["HTML", "CSS", "JS", "React", "Coffee"]`}</span>
+                    ;
+                  </span>
+                  <span>
+                    <span className="text-pink-400">{`    this`}</span>.
+                    <span className="text-slate-50">{`hobbies`}</span>
+                    {` = `}
+                    <span className="text-sky-400">{`(`}</span>
+                    <span className="text-green-300">
+                      {`
+      ["Coding", "Debugging", "Pretending to Understand Regex"]`}
+                    </span>
+                    <span className="text-sky-400">{`
+    )`}</span>
+                    ;
+                  </span>
+
                   <span> </span>
-                  <span>{"  introduce() {"}</span>
-                  <span>{`    console.log("Hello, World!");`}</span>
-                  <span>{`    console.log(
-      \`I'm \${this.name}, your friendly \${this.role}.\`
-    );`}</span>
-                  <span>{`  }`}</span>
-                  <span>{`}`}</span>
+
+                  <span>
+                    <span className="text-sky-400">{`  introduce`}</span>
+                    <span className="text-pink-400">{`() {`}</span>
+                  </span>
+                  <span>
+                    <span className="text-yellow-200">{`    console`}</span>.
+                    <span className="text-sky-400">{`log(`}</span>
+                    <span className="text-green-300">{`"Hello, World!"`}</span>
+                    <span className="text-sky-400">{`)`}</span>;
+                  </span>
+                  <span>
+                    <span className="text-yellow-200">{`    console`}</span>.
+                    <span className="text-sky-400">{`log(`}</span>
+                    <span className="text-green-300">
+                      {`
+      \`I'm `}
+                      <span className="text-yellow-200">{`\${`}</span>
+                      <span className="text-pink-400">{`this`}</span>.
+                      <span className="text-slate-50">{`name`}</span>
+                      <span className="text-yellow-200">{`}`}</span>
+                      {`, your friendly `}
+                      <span className="text-yellow-200">{`\${`}</span>
+                      <span className="text-pink-400">{`this`}</span>.
+                      <span className="text-slate-50">{`role`}</span>
+                      <span className="text-yellow-200">{`}`}</span>
+                      {`.\``}
+                    </span>
+                    <span className="text-sky-400">{`
+    )`}</span>
+                    ;
+                  </span>
+                  <span className="text-pink-400">{`  }`}</span>
+                  <span className="text-yellow-200">{`}`}</span>
                   <span> </span>
-                  <span>{`new DeveloperProfile().introduce();`}</span>
+                  <span>
+                    <span className="text-pink-400">{`new `}</span>
+                    <span className="text-yellow-200">{`DeveloperProfile()`}</span>
+                    .<span className="text-sky-400">{`introduce`}</span>
+                    <span className="text-yellow-200">{`()`}</span>;
+                  </span>
                 </code>
               </pre>
             </div>
