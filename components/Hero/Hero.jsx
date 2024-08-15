@@ -52,7 +52,7 @@ const Hero = () => {
             <p className="border-l-4 border-cyan-400 px-2 text-xl font-medium text-slate-300">
               Software Developer from Bangladesh
             </p>
-            <div className="flex gap-3 pt-12">
+            <div className="flex gap-3 pt-16">
               <a
                 href=""
                 className="group relative inline-block rounded-lg p-4 text-xs text-white transition hover:bg-slate-800/50 dark:bg-slate-800/70 dark:ring-1 dark:ring-white/10 dark:backdrop-blur-md"
