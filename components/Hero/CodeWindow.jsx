@@ -34,25 +34,24 @@ const CodeWindow = ({ text }) => {
                   1 2 3 4 5 6 7 8 9 10 11 12 13
                 </div>
                 <code class="relative block flex-auto overflow-auto px-4 pb-4 pt-4 text-slate-50">
-                  <pre>#!/bin/bash</pre>
-                  <pre># profile.sh</pre>
+                  <pre>{`#!/bin/bash`}</pre>
+                  <pre>{`# profile.sh`}</pre>
                   <pre> </pre>
                   <pre>{"function introduce_self() {"}</pre>
-                  <pre className="ml-4">local name="Ragib Al Asad"</pre>
-                  <pre className="ml-4">
-                    local role="Software Developer Extraordinaire"
+                  <pre>{`    local name="Ragib Al Asad"`}</pre>
+                  <pre>
+                    {`    local role="Software Developer Extraordinaire"`}
                   </pre>
-                  <pre className="ml-4">
-                    local skills=("C" "Python" "Linux" "Coffee")
+                  <pre>
+                    {'    local skills=("C" "Python" "Linux" "Coffee")'}
                   </pre>
-                  <pre className="pl-4">
-                    local hobbies=("Coding" "Debugging" "Pretending to
-                    Understand Regex") <span> </span>
+                  <pre>
+                    {`    local hobbies=("Coding" "Debugging" "Pretending to Understand Regex ")`}
                   </pre>
                   <pre> </pre>
-                  <pre className="ml-4">echo "Hello, World!"</pre>
-                  <pre className="ml-4">{`echo "I'm \${name}, your friendly \${role}."`}</pre>
-                  <pre className="ml-4">echo</pre>
+                  <pre>{`    echo "Hello, World!"`}</pre>
+                  <pre>{`    echo "I'm \${name}, your friendly \${role}."`}</pre>
+                  <pre>{`    echo`}</pre>
                   <pre>{`}`}</pre>
                 </code>
               </pre>
