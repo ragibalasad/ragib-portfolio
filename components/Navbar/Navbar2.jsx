@@ -48,7 +48,7 @@ const Navbar2 = () => {
 
   return (
     <nav
-      className={`fixed z-50 w-full border-b border-slate-50/10 backdrop-blur-md transition-all ${isScrolled ? "py-4 shadow" : "py-6"} ${isOpen ? "open" : ""} `}
+      className={`fixed z-50 w-full border-b border-slate-50/10 backdrop-blur-md transition-all max-sm:px-4 ${isScrolled ? "bg-slate-800/70 py-4 shadow" : "py-6"} ${isOpen ? "open" : ""} `}
       id="navbar"
     >
       <motion.div
@@ -65,12 +65,12 @@ const Navbar2 = () => {
           </div>
 
           <ul
-            className={`ml-auto block list-none justify-center lg:flex ${isOpen ? "open" : ""}`}
+            className={`inset-0 ml-auto block list-none backdrop-blur-md max-lg:absolute max-lg:top-24 max-lg:mx-auto max-lg:h-72 max-lg:w-4/5 max-lg:items-center max-lg:rounded-xl max-lg:bg-slate-800/70 max-lg:p-8 max-lg:text-left max-lg:ring-1 max-lg:ring-white/10 lg:flex lg:backdrop-blur-none ${isOpen ? "open" : ""}`}
           >
             {navLinks.map((link, index) => (
               <li
                 key={index}
-                className="cursor-pointer px-3 text-sm font-semibold uppercase transition dark:hover:text-cyan-400"
+                className="cursor-pointer px-3 text-sm font-semibold uppercase transition max-lg:py-2 dark:hover:text-cyan-400"
               >
                 <Link
                   to={link.to}
