@@ -48,7 +48,7 @@ const Navbar2 = () => {
 
   return (
     <nav
-      className={`fixed z-50 w-full border-b border-slate-50/10 backdrop-blur-md transition-all max-sm:px-4 ${isScrolled ? "bg-slate-800/70 py-5 shadow" : "py-7"} ${isOpen ? "open" : ""} `}
+      className={`fixed z-50 w-full border-b border-slate-50/10 backdrop-blur-md transition-all max-sm:px-4 ${isScrolled ? "bg-slate-800/70 py-5 shadow" : "py-7"} ${isOpen ? "overflow-y-hidden max-sm:pb-96" : ""} `}
       id="navbar"
     >
       <motion.div
@@ -65,7 +65,7 @@ const Navbar2 = () => {
           </div>
 
           <ul
-            className={`inset-0 ml-auto block list-none backdrop-blur-md max-lg:absolute max-lg:top-24 max-lg:mx-auto max-lg:h-72 max-lg:w-4/5 max-lg:items-center max-lg:rounded-xl max-lg:bg-slate-800/70 max-lg:p-8 max-lg:text-left max-lg:ring-1 max-lg:ring-white/10 lg:flex lg:backdrop-blur-none ${isOpen ? "open" : "hidden"}`}
+            className={`inset-0 ml-auto flex list-none transition-all max-lg:absolute max-lg:my-20 max-lg:flex-col max-lg:rounded-xl max-lg:px-2 max-lg:text-left lg:backdrop-blur-none ${isOpen ? "max-sm:block" : "transition-all max-sm:hidden"}`}
           >
             {navLinks.map((link, index) => (
               <li
@@ -90,7 +90,10 @@ const Navbar2 = () => {
         <div className="flex text-xl">
           <MdDarkMode className="ml-5 cursor-pointer" />
           <div className="menuBtn">
-            <RiMenu4Fill className="ml-5 cursor-pointer lg:hidden" />
+            <RiMenu4Fill
+              onClick={handleMenuToggle}
+              className="ml-5 cursor-pointer lg:hidden"
+            />
           </div>
         </div>
       </motion.div>
