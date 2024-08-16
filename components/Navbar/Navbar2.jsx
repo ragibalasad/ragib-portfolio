@@ -48,7 +48,7 @@ const Navbar2 = () => {
 
   return (
     <nav
-      className={`fixed z-50 w-full border-b border-slate-50/10 backdrop-blur-md transition-all max-sm:px-4 ${isScrolled ? "bg-slate-800/70 py-4 shadow" : "py-6"} ${isOpen ? "open" : ""} `}
+      className={`fixed z-50 w-full border-b border-slate-50/10 backdrop-blur-md transition-all max-sm:px-4 ${isScrolled ? "bg-slate-800/70 py-5 shadow" : "py-7"} ${isOpen ? "open" : ""} `}
       id="navbar"
     >
       <motion.div
