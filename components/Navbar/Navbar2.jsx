@@ -5,7 +5,9 @@ import { images } from "../../constants";
 import Image from "next/image";
 import { Link } from "react-scroll";
 import { motion } from "framer-motion";
-import { FaGithub, FaSun, FaMoon } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
+import { MdLightMode, MdDarkMode } from "react-icons/md";
+import { RiMenu4Fill } from "react-icons/ri";
 
 const Navbar2 = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -63,7 +65,7 @@ const Navbar2 = () => {
           </div>
 
           <ul
-            className={`ml-auto flex list-none justify-center ${isOpen ? "open" : ""}`}
+            className={`ml-auto block list-none justify-center lg:flex ${isOpen ? "open" : ""}`}
           >
             {navLinks.map((link, index) => (
               <li
@@ -83,12 +85,13 @@ const Navbar2 = () => {
                 </Link>
               </li>
             ))}
-            <li>
-              <Link>
-                <FaSun className="ml-5 cursor-pointer text-xl" />
-              </Link>
-            </li>
           </ul>
+        </div>
+        <div className="flex text-xl">
+          <MdDarkMode className="ml-5 cursor-pointer" />
+          <div className="menuBtn">
+            <RiMenu4Fill className="ml-5 cursor-pointer lg:hidden" />
+          </div>
         </div>
       </motion.div>
     </nav>
