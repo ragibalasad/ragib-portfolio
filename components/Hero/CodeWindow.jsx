@@ -75,7 +75,7 @@ const CodeWindow = ({ text }) => {
                     <span className="text-sky-400">{`(`}</span>
                     <span className="text-green-300">
                       {`
-      ["Coding", "Debugging", "Pretending to Understand Regex"]`}
+      ["Coding", "Debugging", "Pretending to Understand Regex"] `}
                     </span>
                     <span className="text-sky-400">{`
     )`}</span>
