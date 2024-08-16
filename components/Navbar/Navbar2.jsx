@@ -48,7 +48,7 @@ const Navbar2 = () => {
 
   return (
     <nav
-      className={`fixed z-50 w-full border-b border-slate-50/10 backdrop-blur-md transition-all max-sm:px-4 ${isScrolled ? "bg-slate-800/70 py-5 shadow" : "py-7"} ${isOpen ? "overflow-y-hidden max-sm:pb-96" : ""} `}
+      className={`fixed z-50 w-full border-b border-slate-50/10 backdrop-blur-md transition-all max-sm:px-4 ${isScrolled ? "bg-slate-800/70 py-5 shadow" : "py-7"} ${isOpen ? "overflow-y-hidden max-lg:pb-96" : ""} `}
       id="navbar"
     >
       <motion.div
@@ -65,7 +65,7 @@ const Navbar2 = () => {
           </div>
 
           <ul
-            className={`inset-0 ml-auto flex list-none transition-all max-lg:absolute max-lg:my-20 max-lg:flex-col max-lg:rounded-xl max-lg:px-2 max-lg:text-left lg:backdrop-blur-none ${isOpen ? "max-sm:block" : "transition-all max-sm:hidden"}`}
+            className={`inset-0 ml-auto flex list-none transition-all max-lg:absolute max-lg:my-20 max-lg:flex-col max-lg:rounded-xl max-lg:px-2 max-lg:text-left lg:backdrop-blur-none ${isOpen ? "max-lg:container" : "transition-all max-lg:hidden"}`}
           >
             {navLinks.map((link, index) => (
               <li
@@ -85,6 +85,19 @@ const Navbar2 = () => {
                 </Link>
               </li>
             ))}
+            <li>
+              <p className="absolute -bottom-12 px-3 text-sm font-medium text-slate-400 transition md:hidden">
+                Copyright © 2024 <br /> Made with Love by{" "}
+                <a
+                  className="underline"
+                  href="https://github.com/ragibalasad"
+                  target="_blank"
+                >
+                  Ragib Al Asad
+                </a>
+                .
+              </p>
+            </li>
           </ul>
         </div>
         <div className="flex text-xl">
