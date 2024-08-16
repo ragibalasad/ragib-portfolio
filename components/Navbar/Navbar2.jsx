@@ -38,7 +38,7 @@ const Navbar2 = () => {
   }, []);
 
   const navLinks = [
-    { to: "header", offset: -100, label: "home" },
+    { to: "hero", offset: -100, label: "home" },
     { to: "work", offset: -100, label: "projects" },
     { to: "skills", offset: -100, label: "skills" },
     { to: "services", offset: -100, label: "services" },
@@ -70,11 +70,12 @@ const Navbar2 = () => {
             {navLinks.map((link, index) => (
               <li
                 key={index}
-                className="cursor-pointer px-3 text-sm font-semibold uppercase transition max-lg:py-2 dark:hover:text-cyan-400"
+                className="cursor-pointer px-3 text-sm font-semibold uppercase transition hover:text-cyan-400 max-lg:py-2"
               >
                 <Link
+                  className="block h-full w-full"
                   to={link.to}
-                  activeClass="dark:text-cyan-400"
+                  activeClass="text-cyan-400"
                   spy={true}
                   smooth={true}
                   offset={link.offset}
