@@ -27,7 +27,7 @@ const Hero = () => {
     <section className="hero container relative mx-auto md:w-4/5">
       <motion.div
         style={{ y: yPink }}
-        className="pink-bubble absolute left-10 top-6 -z-10 block h-48 w-48 rounded-full bg-gradient-to-br from-transparent to-pink-500 opacity-70 shadow-2xl shadow-pink-500 blur"
+        className="pink-bubble absolute left-10 top-6 -z-10 block h-48 w-48 rounded-full bg-gradient-to-br from-transparent to-pink-500 opacity-70 shadow-2xl shadow-pink-500 blur max-md:left-6"
       ></motion.div>
       <motion.div
         style={{ y: yIndigo }}
@@ -35,7 +35,7 @@ const Hero = () => {
       ></motion.div>
       <motion.div
         style={{ y: yGreen }}
-        className="green-bubble absolute right-1/3 top-28 -z-10 block h-40 w-40 rounded-full bg-gradient-to-br from-transparent to-green-500 opacity-70 shadow-2xl shadow-green-500 blur 2xl:top-1/4"
+        className="green-bubble absolute right-1/3 top-28 -z-10 block h-40 w-40 rounded-full bg-gradient-to-br from-transparent to-green-500 opacity-70 shadow-2xl shadow-green-500 blur max-md:right-6 max-md:top-52 2xl:top-1/4"
       ></motion.div>
       <motion.div
         style={{ y: yYellow }}
