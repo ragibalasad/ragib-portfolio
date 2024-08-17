@@ -1,6 +1,6 @@
 const Work = () => {
   return (
-    <section className="work relative mt-20 bg-slate-800 2xl:mt-48">
+    <section className="work relative mt-24 bg-slate-800 2xl:mt-32">
       <div className="placeHolderComponent container mx-auto h-auto py-20 md:w-4/5">
         <div className="mb-8 flex items-end">
           <h1 className="text-4xl font-semibold">Projects</h1>
