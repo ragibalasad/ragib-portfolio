@@ -19,16 +19,18 @@ const About = () => {
               <br /> Peak Efficiency
             </h1>
             <p className="mt-4 text-lg font-medium text-slate-400">
-              Hi, I&apos;m{" "}
-              <span className="font-semibold text-slate-300">Ragib Alasad</span>
-              —your friendly neighborhood software developer with over{" "}
+              I&apos;m your friendly neighborhood{" "}
+              <span className="font-semibold text-slate-300">
+                software developer
+              </span>{" "}
+              with over{" "}
               <span className="font-semibold text-slate-300">4 years </span>
-              of experience in making code work its magic. I build{" "}
+              of experience in coding. I build{" "}
               <span className="font-semibold text-slate-300">full-stack </span>
               solutions that are as{" "}
               <span className="font-semibold text-slate-300">reliable</span> as
-              your morning coffee and as smooth as your favorite playlist. When
-              I&apos;m not debugging or optimizing, I&apos;m probably sharing
+              your morning coffee. When I&apos;m not debugging or optimizing,
+              I&apos;m probably sharing
               <span className="font-semibold text-slate-300"> tech tips </span>
               or debating why dark mode is superior to light mode. <br />
               <br /> I&apos;m always up for{" "}
