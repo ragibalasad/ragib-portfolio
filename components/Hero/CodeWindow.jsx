@@ -65,7 +65,11 @@ const CodeWindow = ({ text }) => {
                     <span className="text-pink-400">{`    this`}</span>.
                     <span className="text-slate-50">{`skills`}</span>
                     {` = `}
-                    <span className="text-green-300">{`["HTML", "CSS", "JS", "React", "Coffee"]`}</span>
+                    <span className="text-green-300">
+                      <span className="text-sky-400">{`[`}</span>
+                      {`"HTML", "CSS", "JS", "React", "Coffee"`}
+                      <span className="text-sky-400">{`]`}</span>
+                    </span>
                     ;
                   </span>
                   <span>
@@ -74,15 +78,17 @@ const CodeWindow = ({ text }) => {
                     {` = `}
                     <span className="text-sky-400">{`(`}</span>
                     <span className="text-green-300">
-                      {`
-      ["Coding", "Debugging", "Pretending to Understand Regex"] `}
+                      <span className="text-yellow-200">{`
+      [`}</span>
+                      {`"Coding", "Debugging", "Pretending to Understand Regex"`}
+                      <span className="text-yellow-200">{`] `}</span>
                     </span>
                     <span className="text-sky-400">{`
     )`}</span>
                     ;
                   </span>
 
-                  <span> </span>
+                  <span className="text-pink-400">{`  }`}</span>
 
                   <span>
                     <span className="text-sky-400">{`  introduce`}</span>
