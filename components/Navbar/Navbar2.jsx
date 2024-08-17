@@ -65,12 +65,12 @@ const Navbar2 = () => {
           </div>
 
           <ul
-            className={`inset-0 ml-auto flex list-none transition-all max-lg:absolute max-lg:my-20 max-lg:flex-col max-lg:rounded-xl max-lg:px-2 max-lg:text-left lg:backdrop-blur-none ${isOpen ? "max-lg:container" : "transition-all max-lg:hidden"}`}
+            className={`inset-0 flex list-none transition-all max-lg:absolute max-lg:my-20 max-lg:flex-col max-lg:rounded-xl max-lg:text-left max-sm:px-6 lg:ml-auto lg:backdrop-blur-none ${isOpen ? "container mx-auto sm:w-4/5" : "transition-all max-lg:hidden"}`}
           >
             {navLinks.map((link, index) => (
               <li
                 key={index}
-                className="cursor-pointer px-3 text-sm font-semibold uppercase transition hover:text-cyan-400 max-lg:py-2"
+                className="cursor-pointer text-sm font-semibold uppercase transition hover:text-cyan-400 max-lg:py-2 lg:px-3"
               >
                 <Link
                   className="block h-full w-full"
@@ -87,7 +87,7 @@ const Navbar2 = () => {
               </li>
             ))}
             <li>
-              <p className="absolute -bottom-12 px-3 text-sm font-medium text-slate-400 transition md:hidden">
+              <p className="absolute -bottom-12 text-sm font-medium text-slate-400 transition lg:hidden">
                 Copyright © 2024 <br /> Made with Love by{" "}
                 <a
                   className="underline"
