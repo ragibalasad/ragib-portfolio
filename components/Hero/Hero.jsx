@@ -43,7 +43,7 @@ const Hero = () => {
       ></motion.div>
 
       <div className="relative grid w-full grid-cols-1 pt-32 lg:grid-cols-7 xl:pt-40 2xl:grid-cols-2 2xl:pt-64">
-        <div className="justify-between pt-16 max-sm:px-4 lg:col-span-3 2xl:col-span-1">
+        <div className="justify-between pt-16 max-sm:px-6 lg:col-span-3 2xl:col-span-1">
           <div className="py-20">
             <p className="font-semibold text-slate-300">Hi there, I&apos;m</p>
             <h1 className="py-2 pb-4 text-5xl font-semibold text-cyan-400">
