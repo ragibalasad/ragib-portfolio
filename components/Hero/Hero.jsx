@@ -24,7 +24,7 @@ const Hero = () => {
   let yYellow = yYellowTransform;
 
   return (
-    <section className="hero container relative mx-auto md:w-4/5">
+    <section className="hero container relative mx-auto sm:w-4/5">
       <motion.div
         style={{ y: yPink }}
         className="pink-bubble absolute left-10 top-6 -z-10 block h-48 w-48 rounded-full bg-gradient-to-br from-transparent to-pink-500 opacity-70 shadow-2xl shadow-pink-500 blur max-md:left-6"

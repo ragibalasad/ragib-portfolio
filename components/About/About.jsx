@@ -3,7 +3,7 @@ import my_potrait from "../../public/images/me.png";
 
 const About = () => {
   return (
-    <section className="about container relative mx-auto mt-24 md:w-4/5">
+    <section className="about container relative mx-auto mt-24 sm:w-4/5">
       {/* <div className="pink-bubble absolute left-10 top-6 -z-10 block h-48 w-48 rounded-full bg-gradient-to-br from-transparent to-pink-500 opacity-70 shadow-2xl shadow-pink-500 blur max-md:left-6"></div> */}
       <div className="placeHolderComponent h-auto py-8">
         <div className="grid grid-cols-1 rounded-2xl lg:grid-cols-5 2xl:grid-cols-3">
