@@ -1,3 +1,6 @@
+import Image from "next/image";
+import my_potrait from "../../public/images/me.png";
+
 const About = () => {
   return (
     <section className="about container relative mx-auto mt-24 md:w-4/5">
@@ -5,7 +8,7 @@ const About = () => {
       <div className="placeHolderComponent h-auto py-8">
         <div className="grid grid-cols-1 rounded-2xl lg:grid-cols-5 2xl:grid-cols-3">
           <div className="col-span-1 h-auto w-full rounded-2xl bg-gray-800/70 px-4 pt-4 shadow-xl backdrop-blur-xl lg:col-span-2 2xl:col-span-1 dark:ring-1 dark:ring-inset dark:ring-white/10">
-            <img className="" src="images/ragib_potrait_md.png" alt="" />
+            <Image className="" src={my_potrait} alt="Potrait of Ragib" />
           </div>
           <div className="col-span-1 my-auto p-16 lg:col-span-3 2xl:col-span-2 2xl:p-24">
             <p className="border-l-4 border-sky-400 pl-3 font-semibold text-slate-300">
