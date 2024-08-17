@@ -1,10 +1,10 @@
 const Work = () => {
   return (
-    <section className="work relative mt-20 bg-slate-800">
+    <section className="work relative mt-20 bg-slate-800 2xl:mt-48">
       <div className="placeHolderComponent container mx-auto h-auto py-20 md:w-4/5">
         <div className="mb-8 flex items-end">
           <h1 className="text-4xl font-semibold">Projects</h1>
-          <ul className="ml-auto flex gap-3 font-medium">
+          <ul className="ml-auto flex gap-3 text-sm font-medium">
             <li className="rounded-lg bg-slate-900/70 px-4 py-2 ring-1 ring-white/10">
               All
             </li>

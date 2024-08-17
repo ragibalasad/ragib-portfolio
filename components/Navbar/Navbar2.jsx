@@ -39,10 +39,10 @@ const Navbar2 = () => {
 
   const navLinks = [
     { to: "hero", offset: -100, label: "home" },
-    { to: "work", offset: -100, label: "projects" },
+    { to: "about", offset: -100, label: "about me" },
+    { to: "work", offset: -65, label: "projects" },
     { to: "skills", offset: -100, label: "skills" },
     { to: "services", offset: -100, label: "services" },
-    { to: "about", offset: -100, label: "about me" },
     { to: "contact", offset: -100, label: "contact" },
   ];
 
