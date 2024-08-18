@@ -20,9 +20,9 @@ const Work = () => {
   ];
 
   return (
-    <section className="work relative mt-24 bg-slate-800 max-sm:px-6 2xl:mt-32">
+    <section className="work relative mt-24 bg-slate-800 max-sm:px-6 2xl:mt-24">
       <div className="placeHolderComponent container mx-auto h-auto py-20 sm:w-4/5">
-        <div className="mb-8 flex max-sm:flex-col max-sm:items-center max-sm:gap-10">
+        <div className="mb-12 flex max-sm:flex-col max-sm:items-center max-sm:gap-10">
           <h1 className="text-4xl font-semibold">Projects</h1>
           <ul className="flex gap-3 text-sm font-medium sm:ml-auto">
             <li className="rounded-lg bg-slate-900/70 px-4 py-2 ring-1 ring-inset ring-white/10">
