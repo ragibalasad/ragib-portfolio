@@ -8,7 +8,7 @@ const About = () => {
       <div className="placeHolderComponent h-auto py-8">
         <div className="grid grid-cols-1 rounded-2xl max-sm:px-6 lg:grid-cols-5 2xl:grid-cols-3">
           <div className="col-span-1 my-auto h-auto w-full lg:col-span-2 2xl:col-span-1">
-            <div className="rounded-3xl bg-gray-800/70 px-2 pt-4 shadow-xl ring-1 ring-inset ring-white/10">
+            <div className="rounded-3xl bg-slate-800/70 px-2 pt-4 shadow-xl ring-1 ring-inset ring-white/10">
               <Image src={my_potrait} alt="Potrait of Ragib" />
             </div>
           </div>
