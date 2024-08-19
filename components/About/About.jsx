@@ -8,15 +8,13 @@ const About = () => {
       <div className="placeHolderComponent h-auto py-8">
         <div className="grid grid-cols-1 rounded-2xl max-sm:px-6 lg:grid-cols-5 2xl:grid-cols-3">
           <div className="col-span-1 my-auto h-auto w-full lg:col-span-2 2xl:col-span-1">
-            <Image
-              className="rounded-xl bg-gray-800/70 px-4 pt-4 shadow-xl ring-1 ring-inset ring-white/10 backdrop-blur-xl"
-              src={my_potrait}
-              alt="Potrait of Ragib"
-            />
+            <div className="rounded-3xl bg-gray-800/70 px-2 pt-4 shadow-xl ring-1 ring-inset ring-white/10">
+              <Image src={my_potrait} alt="Potrait of Ragib" />
+            </div>
           </div>
           <div className="col-span-1 flex lg:col-span-3 2xl:col-span-2">
             <div className="my-auto max-md:py-16 sm:px-16 2xl:p-24">
-              <p className="border-l-4 border-sky-400 pl-3 font-semibold text-slate-300">
+              <p className="border-l-4 border-sky-400 pl-4 font-semibold text-slate-300">
                 About Me
               </p>
               <h1 className="py-6 text-4xl font-semibold text-slate-300">

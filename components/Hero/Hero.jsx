@@ -49,7 +49,7 @@ const Hero = () => {
             <h1 className="py-2 pb-4 text-5xl font-semibold text-cyan-400">
               Ragib Al Asad
             </h1>
-            <p className="border-l-4 border-cyan-400 px-2 text-xl font-medium text-slate-300">
+            <p className="border-l-4 border-cyan-400 pl-4 text-xl font-medium text-slate-300">
               Software Developer from Bangladesh
             </p>
             <div className="flex gap-3 pt-16">
