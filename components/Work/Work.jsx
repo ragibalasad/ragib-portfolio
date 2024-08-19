@@ -25,7 +25,7 @@ const Work = () => {
         <div className="mb-12 flex max-sm:flex-col max-sm:items-center max-sm:gap-10">
           <h1 className="text-4xl font-semibold">Projects</h1>
           <ul className="flex gap-3 text-sm font-medium sm:ml-auto">
-            <li className="rounded-lg bg-slate-900/70 px-4 py-2 ring-1 ring-inset ring-white/10">
+            <li className="rounded-lg bg-slate-900/70 px-4 py-2 ring-1 ring-sky-500/10">
               All
             </li>
             <li className="rounded-lg bg-slate-700/70 px-4 py-2">Frontend</li>
@@ -38,7 +38,7 @@ const Work = () => {
           {projects.map((project, index) => (
             <div
               key={index}
-              className="overflow-hidden rounded-2xl bg-slate-900/70 ring-1 ring-white/10"
+              className="overflow-hidden rounded-2xl bg-slate-900 ring-1 ring-white/10"
             >
               <div className="overflow-hidden">
                 <Image
@@ -70,7 +70,7 @@ const Work = () => {
             </div>
           ))}
 
-          <div className="overflow-hidden rounded-2xl bg-slate-900/70 ring-1 ring-white/10">
+          <div className="overflow-hidden rounded-2xl bg-slate-900 ring-1 ring-white/10">
             <div className="overflow-hidden">
               <Image
                 className="transition-all hover:scale-110"
@@ -90,13 +90,13 @@ const Work = () => {
             </div>
           </div>
 
-          <div className="rounded-2xl p-12 dark:bg-slate-900/70 dark:ring-1 dark:ring-inset dark:ring-white/10">
+          <div className="rounded-2xl bg-slate-900 p-12 ring-1 ring-inset ring-white/10">
             <h1>Project 1</h1>
           </div>
-          <div className="rounded-2xl p-12 dark:bg-slate-900/70 dark:ring-1 dark:ring-inset dark:ring-white/10">
+          <div className="rounded-2xl bg-slate-900 p-12 ring-1 ring-inset ring-white/10">
             <h1>Project 1</h1>
           </div>
-          <div className="rounded-2xl p-12 dark:bg-slate-900/70 dark:ring-1 dark:ring-inset dark:ring-white/10">
+          <div className="rounded-2xl bg-slate-900 p-12 ring-1 ring-inset ring-white/10">
             <h1>Project 1</h1>
           </div>
         </div>

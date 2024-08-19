@@ -2,7 +2,7 @@ const Skills = () => {
   return (
     <section className="skills container relative mx-auto mt-20 sm:w-4/5">
       <div className="placeHolderComponent h-auto pt-8">
-        <div className="rounded-2xl p-12 backdrop-blur-md dark:bg-slate-800/70 dark:ring-1 dark:ring-inset dark:ring-white/10">
+        <div className="rounded-2xl p-12 dark:bg-slate-800/70 dark:ring-1 dark:ring-inset dark:ring-white/10">
           <p>
             Test Text Lorem ipsum, dolor sit amet consectetur adipisicing elit.
             Nihil, unde, voluptates pariatur ipsum facilis obcaecati repellendus
