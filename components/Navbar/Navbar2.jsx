@@ -48,7 +48,7 @@ const Navbar2 = () => {
 
   return (
     <nav
-      className={`fixed z-50 w-full border-b border-white/10 backdrop-blur-md transition-all max-sm:px-6 ${isScrolled ? "bg-slate-800/70 py-5 shadow" : "py-7"} ${isOpen ? "overflow-y-hidden max-lg:pb-96" : ""} `}
+      className={`fixed z-50 w-full border-b border-white/10 backdrop-blur-md transition-all max-sm:px-6 ${isScrolled ? "bg-slate-800/70 py-5 shadow" : "py-7"} ${isOpen ? "overflow-y-hidden max-lg:min-h-screen" : "min-h-0"} `}
       id="navbar"
     >
       <motion.div
@@ -65,7 +65,7 @@ const Navbar2 = () => {
           </div>
 
           <ul
-            className={`inset-0 flex list-none transition-all max-lg:absolute max-lg:my-20 max-lg:flex-col max-lg:rounded-xl max-lg:text-left max-sm:px-6 lg:ml-auto lg:backdrop-blur-none ${isOpen ? "container mx-auto sm:w-4/5" : "transition-all max-lg:hidden"}`}
+            className={`inset-0 flex list-none transition-all max-lg:absolute max-lg:my-20 max-lg:flex-col max-lg:rounded-xl max-lg:text-left max-sm:px-6 lg:ml-auto ${isOpen ? "container mx-auto sm:w-4/5" : "transition-all max-lg:hidden"}`}
           >
             {navLinks.map((link, index) => (
               <li

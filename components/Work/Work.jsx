@@ -20,7 +20,7 @@ const Work = () => {
   ];
 
   return (
-    <section className="work relative mt-24 bg-slate-800 max-sm:px-6 2xl:mt-24">
+    <section className="work relative mt-12 bg-slate-800 max-sm:px-6 md:mt-24 2xl:mt-24">
       <div className="placeHolderComponent container mx-auto h-auto py-20 sm:w-4/5">
         <div className="mb-12 flex max-sm:flex-col max-sm:items-center max-sm:gap-10">
           <h1 className="text-4xl font-semibold">Projects</h1>

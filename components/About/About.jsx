@@ -48,7 +48,7 @@ const About = () => {
                 , so let&apos;s connect and make some code magic together!
               </p>
 
-              <div className="mt-8 grid grid-cols-4 gap-x-4 gap-y-8 max-sm:grid-cols-2 max-sm:grid-rows-2 max-sm:items-center max-sm:justify-items-center">
+              <div className="mt-12 grid grid-cols-4 gap-x-4 gap-y-8 max-sm:grid-cols-2 max-sm:grid-rows-2 max-sm:items-center max-sm:justify-items-center">
                 <div className="flex size-24 flex-col items-center justify-center rounded-lg bg-slate-800/70 p-2">
                   <span className="text-2xl font-bold text-slate-300">4+</span>
                   <span className="text-lg font-semibold text-slate-400">
