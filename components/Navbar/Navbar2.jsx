@@ -48,7 +48,7 @@ const Navbar2 = () => {
 
   return (
     <nav
-      className={`fixed z-50 w-full border-b border-white/10 backdrop-blur-md transition-all max-sm:px-6 ${isScrolled ? "bg-slate-800/70 py-5 shadow" : "py-7"} ${isOpen ? "overflow-y-hidden max-lg:min-h-screen" : "min-h-0"} `}
+      className={`fixed z-50 w-full border-b border-white/10 backdrop-blur-md transition-all max-sm:px-6 ${isScrolled ? "bg-slate-800/70 py-5 shadow" : "py-7"} ${isOpen ? "overflow-y-hidden max-lg:min-h-dvh" : "min-h-0"} `}
       id="navbar"
     >
       <motion.div

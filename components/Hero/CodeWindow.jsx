@@ -19,27 +19,27 @@ const CodeWindow = ({ text }) => {
   };
 
   return (
-    <div class="relative flex w-full overflow-hidden bg-gray-800 shadow-xl sm:rounded-xl dark:bg-gray-800/70 dark:ring-1 dark:ring-inset dark:ring-white/10 dark:backdrop-blur-lg">
-      <div class="relative flex w-full flex-col">
-        <div class="flex-none border-b border-slate-500/30">
-          <div class="flex h-8 items-center space-x-1.5 px-3">
-            <div class="h-2.5 w-2.5 rounded-full bg-slate-600"></div>
-            <div class="h-2.5 w-2.5 rounded-full bg-slate-600"></div>
-            <div class="h-2.5 w-2.5 rounded-full bg-slate-600"></div>
+    <div className="relative flex w-full overflow-hidden bg-gray-800 shadow-xl sm:rounded-xl dark:bg-gray-800/70 dark:ring-1 dark:ring-inset dark:ring-white/10 dark:backdrop-blur-lg">
+      <div className="relative flex w-full flex-col">
+        <div className="flex-none border-b border-slate-500/30">
+          <div className="flex h-8 items-center space-x-1.5 px-3">
+            <div className="h-2.5 w-2.5 rounded-full bg-slate-600"></div>
+            <div className="h-2.5 w-2.5 rounded-full bg-slate-600"></div>
+            <div className="h-2.5 w-2.5 rounded-full bg-slate-600"></div>
           </div>
         </div>
-        <div class="relative flex min-h-0 flex-auto flex-col">
-          <div class="flex min-h-0 w-full flex-auto overflow-auto">
-            <div class="relative w-full flex-auto">
-              <pre class="flex min-h-full text-sm leading-6">
+        <div className="relative flex min-h-0 flex-auto flex-col">
+          <div className="flex min-h-0 w-full flex-auto overflow-auto">
+            <div className="relative w-full flex-auto">
+              <pre className="flex min-h-full text-sm leading-6">
                 <div
                   aria-hidden="true"
-                  class="w-[50px] select-none text-wrap px-4 py-4 text-right text-slate-600 md:block"
+                  className="w-[50px] select-none text-wrap px-4 py-4 text-right text-slate-600 md:block"
                 >
                   1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18
                 </div>
                 <code
-                  class={`${fira_code.className} relative flex flex-col overflow-auto px-4 pb-4 pt-4 text-slate-300`}
+                  className={`${fira_code.className} relative flex flex-col overflow-auto px-4 pb-4 pt-4 text-slate-300`}
                 >
                   <span>
                     <span className="text-pink-400">{`class`}</span>

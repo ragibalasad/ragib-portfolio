@@ -47,7 +47,7 @@ const Work = () => {
                 />
               </div>
               <div className="flex p-4 text-slate-300">
-                <h1 className="font-medium">{project.title}</h1>
+                <h1 className="text-lg font-medium">{project.title}</h1>
                 <div className="ml-auto flex gap-4 text-xl">
                   <a
                     className="transition hover:text-cyan-400"
@@ -78,7 +78,7 @@ const Work = () => {
               />
             </div>
             <div className="flex p-4 text-slate-300">
-              <h1 className="font-medium">Ragib&apos;s Portfolio</h1>
+              <h1 className="text-lg font-medium">Ragib&apos;s Portfolio</h1>
               <div className="ml-auto flex gap-4 text-xl">
                 <a href="http://" target="_blank" rel="">
                   <FaEye />
