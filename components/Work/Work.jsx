@@ -30,11 +30,9 @@ const Work = () => {
             {"Works I've Done"}
           </h1>
           <ul className="flex flex-wrap gap-3 text-sm font-medium sm:ml-auto">
-            <li className="rounded-lg bg-slate-900/70 px-4 py-2 text-cyan-300">
-              All
-            </li>
-            <li className="rounded-lg bg-slate-700/70 px-4 py-2">Frontend</li>
-            <li className="rounded-lg bg-slate-700/70 px-4 py-2">Backend</li>
+            <li className="rounded-lg bg-slate-900/70 px-4 py-2">All</li>
+            <li className="rounded-lg bg-slate-700/70 px-4 py-2">Front End</li>
+            <li className="rounded-lg bg-slate-700/70 px-4 py-2">Back End</li>
             <li className="rounded-lg bg-slate-700/70 px-4 py-2">Others</li>
           </ul>
         </div>

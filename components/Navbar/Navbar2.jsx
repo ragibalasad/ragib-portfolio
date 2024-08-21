@@ -88,7 +88,7 @@ const Navbar2 = () => {
             ))}
             <li>
               <p className="absolute -bottom-12 text-sm font-medium text-slate-400 transition lg:hidden">
-                Copyright © 2024 <br /> Made with Love by{" "}
+                Copyright © 2024. <br /> Made with Love by{" "}
                 <a
                   className="underline"
                   href="https://github.com/ragibalasad"
