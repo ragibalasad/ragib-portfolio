@@ -1,6 +1,6 @@
 "use client";
 
-import { Navbar2, Hero, About, Work, Skills } from "../../components";
+import { Navbar2, Hero, About, Work, Skills, Contact } from "../../components";
 
 export default function Home() {
   return (
@@ -10,6 +10,7 @@ export default function Home() {
       <About />
       <Work />
       <Skills />
+      <Contact />
     </div>
   );
 }
