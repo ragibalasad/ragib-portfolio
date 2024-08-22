@@ -5,7 +5,7 @@ const About = () => {
   return (
     <section className="about container relative mx-auto my-24 max-sm:px-6 sm:w-4/5">
       {/* <div className="pink-bubble absolute left-10 top-6 -z-10 block h-48 w-48 rounded-full bg-gradient-to-br from-transparent to-pink-500 opacity-70 shadow-2xl shadow-pink-500 blur max-md:left-6"></div> */}
-      <div className="placeHolderComponent h-auto py-8">
+      <div className="placeHolderComponent h-auto">
         <div className="grid grid-cols-1 rounded-2xl lg:grid-cols-5 2xl:grid-cols-3">
           <div className="col-span-1 my-auto h-auto w-full lg:col-span-2 2xl:col-span-1">
             <div className="rounded-3xl bg-slate-800/70 px-2 pt-4 shadow-xl ring-1 ring-inset ring-white/10">
@@ -13,7 +13,7 @@ const About = () => {
             </div>
           </div>
           <div className="col-span-1 flex lg:col-span-3 2xl:col-span-2">
-            <div className="my-auto max-md:py-16 sm:px-16 2xl:p-24">
+            <div className="my-auto max-md:pt-16 sm:px-16 2xl:p-24">
               <p className="border-l-4 border-sky-400 pl-4 font-semibold text-slate-300">
                 About Me
               </p>
