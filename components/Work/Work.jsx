@@ -1,107 +1,128 @@
+"use client";
+
+import { AnimatePresence, motion } from "framer-motion";
 import Image from "next/image";
+import { useState } from "react";
+import { FaEye, FaGithub } from "react-icons/fa";
 import ss_develeven from "../../public/images/screenshot-develeven.png";
 import ss_ragib_portfolio from "../../public/images/screenshot-ragib-portfolio.png";
-import { FaEye, FaGithub } from "react-icons/fa";
 
 const Work = () => {
+  const [filter, setFilter] = useState('all'); // Set up the filter state
+
   const projects = [
     {
       title: "DevEleven Website",
       image: ss_develeven,
       live: "https://develeven.vercel.app/",
       github: "https://github.com/DEVELEVEN-io/develeven-io",
+      category: "frontend",
     },
     {
       title: "Ragib's Portfolio",
       image: ss_ragib_portfolio,
       live: "https://ragibalasad.me/",
       github: "https://github.com/ragibalasad/ragib-portfolio",
+      category: "frontend",
+    },
+
+    {
+      title: "Ragib's Portfolio",
+      image: ss_ragib_portfolio,
+      live: "https://ragibalasad.me/",
+      github: "https://github.com/ragibalasad/ragib-portfolio",
+      category: "backend",
     },
   ];
 
+  const filteredProjects = projects.filter(
+    (project) => filter === 'all' || project.category === filter
+  );
+
   return (
     <section className="work relative my-24 bg-slate-800/70 max-sm:px-6">
-      <div className="placeHolderComponent container mx-auto h-auto py-16 sm:w-4/5">
+      <div className="container mx-auto h-auto py-16 sm:w-4/5">
         <p className="border-l-4 border-sky-400 pl-4 font-semibold text-slate-300">
           Projects
         </p>
+
         <div className="mb-6 flex py-6 max-sm:flex-col max-sm:gap-10">
           <h1 className="text-4xl font-semibold text-slate-300">
             {"Works I've Done"}
           </h1>
           <ul className="flex flex-wrap gap-3 text-sm font-medium sm:ml-auto">
-            <li className="rounded-lg bg-slate-900/70 px-4 py-2">All</li>
-            <li className="rounded-lg bg-slate-700/70 px-4 py-2">Front End</li>
-            <li className="rounded-lg bg-slate-700/70 px-4 py-2">Back End</li>
-            <li className="rounded-lg bg-slate-700/70 px-4 py-2">Others</li>
+            {/* Filter Buttons */}
+            <li
+              className={`rounded-lg px-4 py-2 cursor-pointer ${filter === 'all' ? 'bg-slate-900/70' : 'bg-slate-700/70'}`}
+              onClick={() => setFilter('all')}
+            >
+              All
+            </li>
+            <li
+              className={`rounded-lg px-4 py-2 cursor-pointer ${filter === 'frontend' ? 'bg-slate-900/70' : 'bg-slate-700/70'}`}
+              onClick={() => setFilter('frontend')}
+            >
+              Front End
+            </li>
+            <li
+              className={`rounded-lg px-4 py-2 cursor-pointer ${filter === 'backend' ? 'bg-slate-900/70' : 'bg-slate-700/70'}`}
+              onClick={() => setFilter('backend')}
+            >
+              Back End
+            </li>
+            <li
+              className={`rounded-lg px-4 py-2 cursor-pointer ${filter === 'others' ? 'bg-slate-900/70' : 'bg-slate-700/70'}`}
+              onClick={() => setFilter('others')}
+            >
+              Others
+            </li>
           </ul>
         </div>
 
+        {/* Display Filtered Projects */}
         <div className="grid gap-6 lg:grid-cols-3 lg:grid-rows-2">
-          {projects.map((project, index) => (
-            <div
-              key={index}
-              className="overflow-hidden rounded-2xl bg-slate-700/70"
-            >
-              <div className="overflow-hidden">
-                <Image
-                  className="transition-all hover:scale-110"
-                  src={project.image}
-                />
-              </div>
-              <div className="flex p-4 text-slate-300">
-                <h1 className="text-lg font-medium">{project.title}</h1>
-                <div className="ml-auto flex gap-4 text-xl">
-                  <a
-                    className="transition hover:text-cyan-400"
-                    href={project.live}
-                    target="_blank"
-                    rel=""
-                  >
-                    <FaEye />
-                  </a>
-                  <a
-                    className="transition hover:text-cyan-400"
-                    href={project.github}
-                    target="_blank"
-                    rel=""
-                  >
-                    <FaGithub />
-                  </a>
+          <AnimatePresence>
+            {filteredProjects.map((project, index) => (
+              <motion.div
+                key={index}
+                className="overflow-hidden rounded-2xl bg-slate-700/70"
+                layout
+                initial={{ opacity: 0, scale: 0.9 }}
+                animate={{ opacity: 1, scale: 1 }}
+                exit={{ opacity: 0, scale: 0.9 }}
+                transition={{ duration: 0.3 }}
+              >
+                <div className="overflow-hidden">
+                  <Image
+                    className="transition-all hover:scale-110"
+                    src={project.image}
+                    alt={project.title}
+                  />
                 </div>
-              </div>
-            </div>
-          ))}
-
-          <div className="overflow-hidden rounded-2xl bg-slate-900 ring-1 ring-white/10">
-            <div className="overflow-hidden">
-              <Image
-                className="transition-all hover:scale-110"
-                src={ss_ragib_portfolio}
-              />
-            </div>
-            <div className="flex p-4 text-slate-300">
-              <h1 className="text-lg font-medium">Ragib&apos;s Portfolio</h1>
-              <div className="ml-auto flex gap-4 text-xl">
-                <a href="http://" target="_blank" rel="">
-                  <FaEye />
-                </a>
-                <a href="http://" target="_blank" rel="">
-                  <FaGithub />
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div className="rounded-2xl bg-slate-900 p-12 ring-1 ring-inset ring-white/10">
-            <h1>Project 1</h1>
-          </div>
-          <div className="rounded-2xl bg-slate-900 p-12 ring-1 ring-inset ring-white/10">
-            <h1>Project 1</h1>
-          </div>
-          <div className="rounded-2xl bg-slate-900 p-12 ring-1 ring-inset ring-white/10">
-            <h1>Project 1</h1>
-          </div>
+                <div className="flex p-4 text-slate-300">
+                  <h1 className="text-lg font-medium">{project.title}</h1>
+                  <div className="ml-auto flex gap-4 text-xl">
+                    <a
+                      className="transition hover:text-cyan-400"
+                      href={project.live}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <FaEye />
+                    </a>
+                    <a
+                      className="transition hover:text-cyan-400"
+                      href={project.github}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <FaGithub />
+                    </a>
+                  </div>
+                </div>
+              </motion.div>
+            ))}
+          </AnimatePresence>
         </div>
       </div>
     </section>
