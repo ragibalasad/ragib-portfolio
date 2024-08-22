@@ -1,7 +1,7 @@
 const Contact = () => {
   return (
-    <section className="contact container relative mx-auto my-12 sm:w-4/5 md:my-24">
-      <div className="placeHolderComponent h-auto pt-8">
+    <section className="contact container relative mx-auto my-24 sm:w-4/5">
+      <div className="placeHolderComponent h-auto">
         <div className="rounded-2xl p-12 dark:bg-slate-800/70 dark:ring-1 dark:ring-inset dark:ring-white/10">
           <p>
             Test Text Lorem ipsum, dolor sit amet consectetur adipisicing elit.
