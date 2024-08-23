@@ -1,5 +1,5 @@
-import { MdLocationOn, MdPhone, MdMail } from "react-icons/md";
 import { FaArrowRight } from "react-icons/fa6";
+import { MdLocationOn, MdMail, MdPhone } from "react-icons/md";
 
 const Contact = () => {
   return (
