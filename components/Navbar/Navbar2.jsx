@@ -70,7 +70,7 @@ const Navbar2 = () => {
                 className="cursor-pointer text-sm font-semibold uppercase text-slate-200 transition max-lg:py-2 lg:px-3"
               >
                 <Link
-                  className="relative block h-full w-full after:absolute after:bottom-0 after:right-1 after:-z-10 after:w-full after:rounded-full after:p-1.5 after:opacity-0 after:transition-all hover:after:bg-cyan-600 hover:after:opacity-100"
+                  className="relative h-full w-full after:absolute after:right-1 after:top-1/2 after:-z-10 after:w-full after:rounded-full after:p-1.5 after:opacity-0 after:transition-all hover:after:bg-cyan-600 hover:after:opacity-100"
                   to={link.to}
                   activeClass="after:bg-cyan-600 after:opacity-100"
                   spy={true}
