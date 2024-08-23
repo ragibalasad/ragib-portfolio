@@ -7,25 +7,28 @@ const Contact = () => {
       <div className="placeHolderComponent h-auto">
         <div className="grid lg:grid-cols-7 2xl:grid-cols-2">
           <div className="p-6 max-md:order-2 lg:col-span-4 2xl:col-span-1">
-            <div className="content-center items-center justify-center rounded-3xl bg-slate-800 p-6 ring-1 ring-inset ring-white/10 sm:p-10">
-              <h1 className="inline-block py-6 text-lg font-semibold text-slate-300">
-                Send Message
-              </h1>
+            <div className="content-center items-center justify-center rounded-2xl bg-slate-800 p-6 ring-1 ring-inset ring-white/10 sm:p-10">
+              <p className="mb-2 mt-4 font-semibold text-slate-300">
+                Send me a message
+              </p>
+              <p className="mb-8 font-medium text-slate-400">
+                I&apos;ll respond as soon as possible.
+              </p>
               <div className="">
                 <form className="flex flex-col gap-6" action="" method="post">
                   <input
-                    className="w-full rounded-3xl bg-slate-700/70 p-4 py-5 font-medium ring-2 ring-transparent transition-all hover:bg-slate-700/85 focus:outline-none focus:ring-indigo-500"
+                    className="w-full rounded-2xl bg-slate-700/70 p-4 py-5 font-medium ring-2 ring-transparent transition-all hover:bg-slate-700/85 focus:outline-none focus:ring-indigo-500"
                     type="text"
                     placeholder="Full Name"
                   />
 
                   <input
-                    className="w-full rounded-3xl bg-slate-700/70 p-4 py-5 font-medium ring-2 ring-transparent transition-all hover:bg-slate-700/85 focus:outline-none focus:ring-indigo-500"
+                    className="w-full rounded-2xl bg-slate-700/70 p-4 py-5 font-medium ring-2 ring-transparent transition-all hover:bg-slate-700/85 focus:outline-none focus:ring-indigo-500"
                     type="text"
                     placeholder="Email Address"
                   />
                   <textarea
-                    className="w-full rounded-3xl bg-slate-700/70 p-4 py-5 font-medium ring-2 ring-transparent transition-all hover:bg-slate-700/85 focus:outline-none focus:ring-indigo-500"
+                    className="w-full rounded-2xl bg-slate-700/70 p-4 py-5 font-medium ring-2 ring-transparent transition-all hover:bg-slate-700/85 focus:outline-none focus:ring-indigo-500"
                     name=""
                     id=""
                     cols="30"
