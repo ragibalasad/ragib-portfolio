@@ -1,5 +1,5 @@
-import { MdLocationOn, MdPhone, MdMail } from "react-icons/md";
 import { FaArrowRight } from "react-icons/fa6";
+import { MdLocationOn, MdMail, MdPhone } from "react-icons/md";
 
 const Contact = () => {
   return (
@@ -57,7 +57,48 @@ const Contact = () => {
                 </div>
               </div>
             </div>
-            <div className="col-span-3"></div>
+
+            
+            <div className="col-span-3 ml-auto w-[84%] h-[480px]">
+            <form className="contact-form py-20 px-12 bg-slate-800 rounded-lg shadow-md" action="#" method="POST">
+              <h3 className="text-2xl font-semibold mb-4 text-slate-300">Leave a message</h3>
+              <div className="mb-4">
+                <input 
+                  name="name" 
+                  type="text" 
+                  className="form-input bg-slate-900 w-full px-4 py-2 border border-slate-800 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500" 
+                  placeholder="Your name" 
+                  required
+                />
+              </div>
+              <div className="mb-4">
+                <input 
+                  name="email" 
+                  type="email" 
+                  className="form-input bg-slate-900 w-full px-4 py-2 border border-slate-800 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500" 
+                  placeholder="Your email" 
+                  required
+                />
+              </div>
+              <div className="mb-4">
+                <textarea 
+                  name="message" 
+                  placeholder="Your message" 
+                  className="form-input bg-slate-900 w-full px-4 py-2 border border-slate-800 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500" 
+                  required
+                ></textarea>
+              </div>
+              <div>
+                <input 
+                  type="submit" 
+                  className="btn cursor-pointer w-full py-2 px-4 bg-slate-600 text-slate-300 font-semibold rounded-md shadow-sm hover:bg-slate-500 focus:outline-none focus:ring-2 focus:ring-blue-500" 
+                  value="Send Message"
+                />
+              </div>
+            </form>
+          </div>
+
+
           </div>
         </div>
       </div>
