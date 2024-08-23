@@ -1,11 +1,8 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { images } from "../../constants";
-import Image from "next/image";
 import { Link } from "react-scroll";
 import { motion } from "framer-motion";
-import { FaGithub } from "react-icons/fa";
 import { MdLightMode, MdDarkMode } from "react-icons/md";
 import { RiMenu4Fill } from "react-icons/ri";
 
@@ -40,7 +37,7 @@ const Navbar2 = () => {
   const navLinks = [
     { to: "hero", offset: -100, label: "home" },
     { to: "about", offset: -100, label: "about me" },
-    { to: "work", offset: -65, label: "projects" },
+    { to: "work", offset: -60, label: "projects" },
     { to: "skills", offset: -100, label: "skills" },
     { to: "services", offset: -100, label: "services" },
     { to: "contact", offset: -100, label: "contact" },
@@ -70,12 +67,12 @@ const Navbar2 = () => {
             {navLinks.map((link, index) => (
               <li
                 key={index}
-                className="cursor-pointer text-sm font-semibold uppercase transition hover:text-cyan-400 max-lg:py-2 lg:px-3"
+                className="cursor-pointer text-sm font-semibold uppercase text-slate-200 transition max-lg:py-2 lg:px-3"
               >
                 <Link
-                  className="block h-full w-full"
+                  className="relative block h-full w-full after:absolute after:bottom-0 after:right-1 after:-z-10 after:w-full after:rounded-full after:p-1.5 after:opacity-0 after:transition-all hover:after:bg-cyan-600 hover:after:opacity-100"
                   to={link.to}
-                  activeClass="text-cyan-400"
+                  activeClass="after:bg-cyan-600 after:opacity-100"
                   spy={true}
                   smooth={true}
                   offset={link.offset}

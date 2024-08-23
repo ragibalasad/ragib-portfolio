@@ -7,7 +7,7 @@ import { FaEye, FaGithub } from "react-icons/fa";
 import { images } from "../../constants/";
 
 const Work = () => {
-const [filter, setFilter] = useState("all");
+  const [filter, setFilter] = useState("all");
 
   const projects = [
     {
@@ -40,10 +40,9 @@ const [filter, setFilter] = useState("all");
     },
   ];
 
-const filteredProjects = projects.filter(
-  (project) => filter === "all" || project.category === filter
-);
-
+  const filteredProjects = projects.filter(
+    (project) => filter === "all" || project.category === filter,
+  );
 
   const containerVariants = {
     show: {
@@ -70,15 +69,15 @@ const filteredProjects = projects.filter(
           <h1 className="text-4xl font-semibold text-slate-300">
             {"Works I've Done"}
           </h1>
-          
-          <ul className="flex flex-wrap gap-3 text-sm font-medium sm:ml-auto select-none">
+
+          <ul className="flex select-none flex-wrap gap-3 text-sm font-medium sm:ml-auto">
             {/* Filter Buttons */}
-              <li
-                className={`cursor-pointer rounded-lg px-4 py-2 ${filter === "all" ? "bg-slate-900/70" : "bg-slate-700/70"}`}
-                onClick={() => setFilter("all")}
-              >
-                All
-              </li>
+            <li
+              className={`cursor-pointer rounded-lg px-4 py-2 ${filter === "all" ? "bg-slate-900/70" : "bg-slate-700/70"}`}
+              onClick={() => setFilter("all")}
+            >
+              All
+            </li>
 
             <li
               className={`cursor-pointer rounded-lg px-4 py-2 ${filter === "frontend" ? "bg-slate-900/70" : "bg-slate-700/70"}`}
@@ -100,7 +99,6 @@ const filteredProjects = projects.filter(
             >
               Others
             </li>
-
           </ul>
         </div>
 
