@@ -7,7 +7,7 @@ import { FaEye, FaGithub } from "react-icons/fa";
 import { images } from "../../constants/";
 
 const Work = () => {
-  const [filter, setFilter] = useState("all");
+const [filter, setFilter] = useState("all");
 
   const projects = [
     {
@@ -40,9 +40,10 @@ const Work = () => {
     },
   ];
 
-  const filteredProjects = projects.filter(
-    (project) => filter === "all" || project.category === filter
-  );
+const filteredProjects = projects.filter(
+  (project) => filter === "all" || project.category === filter
+);
+
 
   const containerVariants = {
     show: {
@@ -72,38 +73,34 @@ const Work = () => {
           
           <ul className="flex flex-wrap gap-3 text-sm font-medium sm:ml-auto select-none">
             {/* Filter Buttons */}
+              <li
+                className={`cursor-pointer rounded-lg px-4 py-2 ${filter === "all" ? "bg-slate-900/70" : "bg-slate-700/70"}`}
+                onClick={() => setFilter("all")}
+              >
+                All
+              </li>
+
             <li
-              className={`rounded-lg px-4 py-2 cursor-pointer ${
-                filter === "all" ? "bg-slate-900/70" : "bg-slate-700/70"
-              }`}
-              onClick={() => setFilter("all")}
-            >
-              All
-            </li>
-            <li
-              className={`rounded-lg px-4 py-2 cursor-pointer ${
-                filter === "frontend" ? "bg-slate-900/70" : "bg-slate-700/70"
-              }`}
+              className={`cursor-pointer rounded-lg px-4 py-2 ${filter === "frontend" ? "bg-slate-900/70" : "bg-slate-700/70"}`}
               onClick={() => setFilter("frontend")}
             >
               Front End
             </li>
+
             <li
-              className={`rounded-lg px-4 py-2 cursor-pointer ${
-                filter === "backend" ? "bg-slate-900/70" : "bg-slate-700/70"
-              }`}
+              className={`cursor-pointer rounded-lg px-4 py-2 ${filter === "backend" ? "bg-slate-900/70" : "bg-slate-700/70"}`}
               onClick={() => setFilter("backend")}
             >
               Back End
             </li>
+
             <li
-              className={`rounded-lg px-4 py-2 cursor-pointer ${
-                filter === "others" ? "bg-slate-900/70" : "bg-slate-700/70"
-              }`}
+              className={`cursor-pointer rounded-lg px-4 py-2 ${filter === "others" ? "bg-slate-900/70" : "bg-slate-700/70"}`}
               onClick={() => setFilter("others")}
             >
               Others
             </li>
+
           </ul>
         </div>
 
