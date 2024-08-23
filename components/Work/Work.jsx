@@ -8,7 +8,7 @@ import ss_develeven from "../../public/images/screenshot-develeven.png";
 import ss_ragib_portfolio from "../../public/images/screenshot-ragib-portfolio.png";
 
 const Work = () => {
-  const [filter, setFilter] = useState('all'); // Set up the filter state
+  const [filter, setFilter] = useState("all"); // Set up the filter state
 
   const projects = [
     {
@@ -36,7 +36,7 @@ const Work = () => {
   ];
 
   const filteredProjects = projects.filter(
-    (project) => filter === 'all' || project.category === filter
+    (project) => filter === "all" || project.category === filter,
   );
 
   return (
@@ -53,26 +53,26 @@ const Work = () => {
           <ul className="flex flex-wrap gap-3 text-sm font-medium sm:ml-auto">
             {/* Filter Buttons */}
             <li
-              className={`rounded-lg px-4 py-2 cursor-pointer ${filter === 'all' ? 'bg-slate-900/70' : 'bg-slate-700/70'}`}
-              onClick={() => setFilter('all')}
+              className={`cursor-pointer rounded-lg px-4 py-2 ${filter === "all" ? "bg-slate-900/70" : "bg-slate-700/70"}`}
+              onClick={() => setFilter("all")}
             >
               All
             </li>
             <li
-              className={`rounded-lg px-4 py-2 cursor-pointer ${filter === 'frontend' ? 'bg-slate-900/70' : 'bg-slate-700/70'}`}
-              onClick={() => setFilter('frontend')}
+              className={`cursor-pointer rounded-lg px-4 py-2 ${filter === "frontend" ? "bg-slate-900/70" : "bg-slate-700/70"}`}
+              onClick={() => setFilter("frontend")}
             >
               Front End
             </li>
             <li
-              className={`rounded-lg px-4 py-2 cursor-pointer ${filter === 'backend' ? 'bg-slate-900/70' : 'bg-slate-700/70'}`}
-              onClick={() => setFilter('backend')}
+              className={`cursor-pointer rounded-lg px-4 py-2 ${filter === "backend" ? "bg-slate-900/70" : "bg-slate-700/70"}`}
+              onClick={() => setFilter("backend")}
             >
               Back End
             </li>
             <li
-              className={`rounded-lg px-4 py-2 cursor-pointer ${filter === 'others' ? 'bg-slate-900/70' : 'bg-slate-700/70'}`}
-              onClick={() => setFilter('others')}
+              className={`cursor-pointer rounded-lg px-4 py-2 ${filter === "others" ? "bg-slate-900/70" : "bg-slate-700/70"}`}
+              onClick={() => setFilter("others")}
             >
               Others
             </li>

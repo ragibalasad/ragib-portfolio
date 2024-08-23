@@ -13,7 +13,7 @@ const About = () => {
             </div>
           </div>
           <div className="col-span-1 flex lg:col-span-3 2xl:col-span-2">
-            <div className="my-auto max-md:pt-16 sm:px-16 2xl:p-24">
+            <div className="mx-2 my-auto max-md:pt-16 sm:px-16 2xl:p-24">
               <p className="border-l-4 border-sky-400 pl-4 font-semibold text-slate-300">
                 About Me
               </p>
