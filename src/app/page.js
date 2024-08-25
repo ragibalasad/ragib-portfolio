@@ -1,14 +1,23 @@
-import { About, Contact, Hero, Navbar2, Skills, Work } from "../../components";
+import {
+  About,
+  Contact,
+  Hero,
+  Navbar2,
+  Skills,
+  Work,
+  Services,
+} from "../../components";
 
 export default function Home() {
   return (
-    <div>
+    <>
       <Navbar2 />
       <Hero />
       <About />
       <Work />
       <Skills />
+      <Services />
       <Contact />
-    </div>
+    </>
   );
 }
