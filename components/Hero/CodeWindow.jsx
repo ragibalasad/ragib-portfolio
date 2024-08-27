@@ -1,12 +1,12 @@
 "use client";
 
 import React, { useState } from "react";
-import { Fira_Code } from "next/font/google";
+// import { Fira_Code } from "next/font/google";
 import { Cursor } from "react-simple-typewriter";
 
-const fira_code = Fira_Code({
-  subsets: ["latin"],
-});
+// const fira_code = Fira_Code({
+//   subsets: ["latin"],
+// });
 
 const CodeWindow = ({ text }) => {
   const [age, setAge] = useState(null);
@@ -35,11 +35,13 @@ const CodeWindow = ({ text }) => {
                 <div
                   aria-hidden="true"
                   className="w-[50px] select-none text-wrap px-4 py-4 text-right text-slate-600 md:block"
+                  style={{ fontFamily: "monospace" }}
                 >
                   1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18
                 </div>
                 <code
-                  className={`${fira_code.className} relative flex flex-col overflow-auto px-4 pb-4 pt-4 text-slate-300`}
+                  className={`relative flex flex-col overflow-auto px-4 pb-4 pt-4 text-slate-300`}
+                  style={{ fontFamily: "monospace" }}
                 >
                   <span>
                     <span className="text-pink-400">{`class`}</span>
