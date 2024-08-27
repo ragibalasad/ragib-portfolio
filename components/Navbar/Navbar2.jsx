@@ -85,15 +85,14 @@ const Navbar2 = () => {
             ))}
             <li>
               <p className="absolute -bottom-12 text-sm font-medium text-slate-400 transition lg:hidden">
-                Copyright © 2024. <br /> Made with Love by{" "}
+                &copy; {new Date().getFullYear()} Copyright:{" "}
                 <a
-                  className="underline"
+                  className="font-semibold text-cyan-400"
                   href="https://github.com/ragibalasad"
                   target="_blank"
                 >
                   Ragib Al Asad
                 </a>
-                .
               </p>
             </li>
           </ul>
