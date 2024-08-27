@@ -1,4 +1,4 @@
-import { Open_Sans } from "next/font/google";
+// import { Open_Sans } from "next/font/google";
 import "./app.css";
 import "./globals.css";
 import Head from "next/head";
@@ -10,10 +10,10 @@ import "@fontsource/open-sans/600.css"; // Semi Bold
 import "@fontsource/open-sans/700.css"; // Bold
 import "@fontsource/open-sans/800.css"; // Extra Bold
 
-const open_sans = Open_Sans({
-  // weight: ["300", "400", "500", "600", "700", "800"],
-  subsets: ["latin"],
-});
+// const open_sans = Open_Sans({
+//   // weight: ["300", "400", "500", "600", "700", "800"],
+//   subsets: ["latin"],
+// });
 
 export const metadata = {
   title: "Ragib Al Asad | Portfolio",
@@ -28,7 +28,7 @@ export default function RootLayout({ children }) {
         <link rel="icon" href="logo_32.png" />
       </Head>
       <body
-        className={open_sans.className}
+        // className={open_sans.className}
         style={{ fontFamily: "Open Sans, sans-serif" }}
       >
         {children}

@@ -1,25 +1,16 @@
 "use client";
 
 import React, { useState } from "react";
-import { Fira_Code } from "next/font/google";
+// import { Fira_Code } from "next/font/google";
 // import { Cursor } from "react-simple-typewriter";
 
 import "@fontsource/fira-code";
 
-const fira_code = Fira_Code({
-  subsets: ["latin"],
-});
+// const fira_code = Fira_Code({
+//   subsets: ["latin"],
+// });
 
 const CodeWindow = ({ text }) => {
-  // const [age, setAge] = useState(null);
-  // const [clicked, setClicked] = useState(false);
-
-  // const handleClick = () => {
-  //   const calculatedAge = new Date().getFullYear() - 2004;
-  //   setAge(calculatedAge);
-  //   setClicked(true);
-  // };
-
   return (
     <div className="relative flex w-full overflow-hidden bg-slate-800 shadow-xl sm:rounded-xl dark:bg-slate-800/70 dark:ring-1 dark:ring-inset dark:ring-white/10 dark:backdrop-blur-lg">
       <div className="relative flex w-full flex-col">
@@ -42,7 +33,7 @@ const CodeWindow = ({ text }) => {
                   1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18
                 </div>
                 <code
-                  className={`${fira_code.className} relative flex flex-col overflow-auto px-4 pb-4 pt-4 text-slate-300`}
+                  className={`relative flex flex-col overflow-auto px-4 pb-4 pt-4 text-slate-300`}
                   style={{ fontFamily: "Fira Code, monospace" }}
                 >
                   <span>
