@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import { Fira_Code } from "next/font/google";
-import { Cursor } from "react-simple-typewriter";
+// import { Cursor } from "react-simple-typewriter";
 
 import "@fontsource/fira-code";
 
@@ -11,14 +11,14 @@ const fira_code = Fira_Code({
 });
 
 const CodeWindow = ({ text }) => {
-  const [age, setAge] = useState(null);
-  const [clicked, setClicked] = useState(false);
+  // const [age, setAge] = useState(null);
+  // const [clicked, setClicked] = useState(false);
 
-  const handleClick = () => {
-    const calculatedAge = new Date().getFullYear() - 2004;
-    setAge(calculatedAge);
-    setClicked(true);
-  };
+  // const handleClick = () => {
+  //   const calculatedAge = new Date().getFullYear() - 2004;
+  //   setAge(calculatedAge);
+  //   setClicked(true);
+  // };
 
   return (
     <div className="relative flex w-full overflow-hidden bg-slate-800 shadow-xl sm:rounded-xl dark:bg-slate-800/70 dark:ring-1 dark:ring-inset dark:ring-white/10 dark:backdrop-blur-lg">

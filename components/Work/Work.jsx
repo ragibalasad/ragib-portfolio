@@ -61,7 +61,7 @@ const Work = () => {
   return (
     <section className="work relative my-24 bg-slate-800/70 max-sm:px-6">
       <div className="container mx-auto h-auto py-16 sm:w-4/5">
-        <p className="border-l-4 border-sky-400 pl-4 font-semibold text-slate-300">
+        <p className="border-l-4 border-cyan-400 pl-4 font-semibold text-slate-300">
           Projects
         </p>
 

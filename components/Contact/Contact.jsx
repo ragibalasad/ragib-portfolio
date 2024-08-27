@@ -17,25 +17,25 @@ const Contact = () => {
               <div className="">
                 <form className="flex flex-col gap-6" action="" method="post">
                   <input
-                    className="w-full rounded-2xl bg-slate-700/70 p-4 py-5 font-medium ring-2 ring-transparent transition-all hover:bg-slate-700/85 focus:outline-none focus:ring-indigo-500"
+                    className="w-full rounded-2xl bg-slate-700/70 p-4 py-5 font-medium ring-2 ring-transparent transition-all hover:bg-slate-700/85 focus:outline-none focus:ring-cyan-500"
                     type="text"
                     placeholder="Full Name"
                   />
 
                   <input
-                    className="w-full rounded-2xl bg-slate-700/70 p-4 py-5 font-medium ring-2 ring-transparent transition-all hover:bg-slate-700/85 focus:outline-none focus:ring-indigo-500"
+                    className="w-full rounded-2xl bg-slate-700/70 p-4 py-5 font-medium ring-2 ring-transparent transition-all hover:bg-slate-700/85 focus:outline-none focus:ring-cyan-500"
                     type="text"
                     placeholder="Email Address"
                   />
                   <textarea
-                    className="w-full rounded-2xl bg-slate-700/70 p-4 py-5 font-medium ring-2 ring-transparent transition-all hover:bg-slate-700/85 focus:outline-none focus:ring-indigo-500"
+                    className="w-full rounded-2xl bg-slate-700/70 p-4 py-5 font-medium ring-2 ring-transparent transition-all hover:bg-slate-700/85 focus:outline-none focus:ring-cyan-500"
                     name=""
                     id=""
                     cols="30"
                     rows="10"
                     placeholder="Write Message"
                   ></textarea>
-                  <button className="w-full rounded-2xl bg-indigo-600 p-4 text-sm font-medium transition-all hover:brightness-90">
+                  <button className="w-full rounded-2xl bg-cyan-600 p-4 text-sm font-medium transition-all hover:brightness-90">
                     Send
                   </button>
                 </form>

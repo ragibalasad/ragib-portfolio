@@ -67,12 +67,12 @@ const Navbar2 = () => {
             {navLinks.map((link, index) => (
               <li
                 key={index}
-                className="cursor-pointer text-sm font-semibold uppercase text-slate-200 transition hover:text-slate-50 max-lg:py-2 lg:px-3"
+                className="cursor-pointer text-sm font-semibold uppercase text-slate-200 transition hover:text-cyan-50 max-lg:py-2 lg:px-3"
               >
                 <Link
                   className="relative h-full w-full after:absolute after:right-1 after:top-1/2 after:-z-10 after:w-full after:rounded-full after:p-1.5 after:opacity-0 after:transition-all hover:after:bg-slate-600 hover:after:opacity-100"
                   to={link.to}
-                  activeClass="after:bg-slate-600 after:opacity-100 text-slate-50"
+                  activeClass="after:bg-slate-600 after:opacity-100 text-cyan-50"
                   spy={true}
                   smooth={true}
                   offset={link.offset}
