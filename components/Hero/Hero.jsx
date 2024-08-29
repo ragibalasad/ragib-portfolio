@@ -5,6 +5,7 @@ import { FaGithub, FaLinkedin, FaFacebook } from "react-icons/fa";
 import { useScroll, useTransform, motion } from "framer-motion";
 
 import CodeWindow from "./CodeWindow";
+import { TextEffect } from "../TextEffect";
 
 const Hero = () => {
   let ref = useRef();
@@ -48,12 +49,15 @@ const Hero = () => {
             <p className="-ml-px font-semibold text-slate-300">
               Hi there, I&apos;m
             </p>
-            <h1 className="-ml-1 py-2 pb-4 text-5xl font-semibold text-cyan-400">
+            <TextEffect className="-ml-1 py-2 pb-4 text-5xl font-semibold text-cyan-400">
               Ragib Al Asad
-            </h1>
-            <p className="border-l-4 border-cyan-400 pl-4 text-xl font-medium text-slate-300">
+            </TextEffect>
+            <TextEffect
+              className="border-l-4 border-cyan-400 pl-4 text-xl font-medium text-slate-300"
+              preset="slide"
+            >
               Software Developer from Bangladesh
-            </p>
+            </TextEffect>
             <div className="flex gap-3 pt-16">
               <a
                 href=""
