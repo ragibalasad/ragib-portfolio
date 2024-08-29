@@ -1,3 +1,5 @@
+"use client";
+
 import { React, useRef } from "react";
 import { FaGithub, FaLinkedin, FaFacebook } from "react-icons/fa";
 import { useScroll, useTransform, motion } from "framer-motion";

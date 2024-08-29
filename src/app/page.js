@@ -2,7 +2,7 @@ import {
   About,
   Contact,
   Hero,
-  Navbar2,
+  Navbar,
   Skills,
   Work,
   Services,
@@ -12,7 +12,7 @@ import {
 export default function Home() {
   return (
     <>
-      <Navbar2 />
+      <Navbar />
       <Hero />
       <About />
       <Work />
