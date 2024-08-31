@@ -1,12 +1,6 @@
 import React, { useState } from "react";
-// import { Fira_Code } from "next/font/google";
-// import { Cursor } from "react-simple-typewriter";
 
 import "@fontsource/fira-code";
-
-// const fira_code = Fira_Code({
-//   subsets: ["latin"],
-// });
 
 const CodeWindow = ({ text }) => {
   return (
