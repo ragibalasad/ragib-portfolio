@@ -99,8 +99,7 @@ const Navbar = () => {
           </ul>
         </div>
         <div className="flex text-xl">
-          <MdDarkMode className="ml-5 cursor-pointer" />
-          <ThemeSwitcher></ThemeSwitcher>
+          <ThemeSwitcher className="ml-5 cursor-pointer" />
           <div className="menuBtn">
             <RiMenu4Fill
               onClick={handleMenuToggle}

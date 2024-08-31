@@ -27,7 +27,7 @@
     "src/app/layout.js",
     "src/app/page.js",
     ".next/types/**/*.ts",
-    "components/Navbar/ThemeSwitcher.jsx"
+    "components/Navbar/ThemeSwitcher.tsx"
   ],
   "exclude": ["node_modules"]
 }
