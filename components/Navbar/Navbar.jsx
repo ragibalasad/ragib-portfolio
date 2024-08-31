@@ -57,7 +57,7 @@ const Navbar = () => {
       >
         <div className="navHolder flex">
           <div className="flex items-center">
-            <h1 className="text-xl font-semibold lowercase text-cyan-500 dark:text-cyan-400">
+            <h1 className="text-xl font-semibold lowercase text-cyan-600 dark:text-cyan-400">
               ragibalasad
             </h1>
           </div>
@@ -85,10 +85,10 @@ const Navbar = () => {
               </li>
             ))}
             <li>
-              <p className="absolute -bottom-12 text-sm font-medium text-slate-400 transition lg:hidden">
+              <p className="absolute -bottom-12 text-sm font-medium text-slate-600 transition dark:text-slate-400 lg:hidden">
                 &copy; {new Date().getFullYear()} Copyright:{" "}
                 <a
-                  className="font-semibold text-cyan-400"
+                  className="font-semibold text-cyan-600 dark:text-cyan-400"
                   href="https://github.com/ragibalasad"
                   target="_blank"
                 >
@@ -103,7 +103,7 @@ const Navbar = () => {
           <div className="menuBtn">
             <RiMenu4Fill
               onClick={handleMenuToggle}
-              className="ml-5 cursor-pointer lg:hidden"
+              className="ml-5 cursor-pointer hover:text-cyan-500 dark:hover:text-cyan-400 lg:hidden"
             />
           </div>
         </div>
