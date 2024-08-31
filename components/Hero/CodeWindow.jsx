@@ -1,5 +1,3 @@
-import React, { useState } from "react";
-
 import "@fontsource/fira-code";
 
 const CodeWindow = ({ text }) => {

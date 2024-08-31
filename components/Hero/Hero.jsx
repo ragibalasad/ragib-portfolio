@@ -7,7 +7,7 @@ import { TextEffect } from "../TextEffect";
 const Hero = () => {
   return (
     <section className="hero container relative mx-auto sm:w-4/5">
-      <Bubbles></Bubbles>
+      <Bubbles />
       <div className="relative grid w-full grid-cols-1 pt-32 lg:grid-cols-7 xl:pt-40 2xl:grid-cols-2 2xl:pt-64">
         <div className="justify-between pt-16 max-sm:px-6 lg:col-span-3 2xl:col-span-1">
           <div className="pb-20 sm:py-20">
