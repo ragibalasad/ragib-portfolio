@@ -2,7 +2,7 @@ import "@fontsource/fira-code";
 
 const CodeWindow = ({ text }) => {
   return (
-    <div className="relative flex w-full overflow-hidden bg-slate-800 shadow-xl sm:rounded-xl dark:bg-slate-800/70 dark:ring-1 dark:ring-inset dark:ring-white/10 dark:backdrop-blur-lg">
+    <div className="relative flex w-full overflow-hidden bg-slate-800 shadow-xl dark:bg-slate-800/70 dark:ring-1 dark:ring-inset dark:ring-white/10 dark:backdrop-blur-lg sm:rounded-xl">
       <div className="relative flex w-full flex-col">
         <div className="flex-none border-b border-slate-500/30">
           <div className="flex h-8 items-center space-x-1.5 px-3">
