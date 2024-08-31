@@ -1,11 +1,7 @@
 {
   "compilerOptions": {
     "target": "esnext",
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
-    ],
+    "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
     "esModuleInterop": true,
@@ -30,9 +26,8 @@
     "**/*.tsx",
     "src/app/layout.js",
     "src/app/page.js",
-    ".next/types/**/*.ts"
+    ".next/types/**/*.ts",
+    "components/Navbar/ThemeSwitcher.jsx"
   ],
-  "exclude": [
-    "node_modules"
-  ]
+  "exclude": ["node_modules"]
 }

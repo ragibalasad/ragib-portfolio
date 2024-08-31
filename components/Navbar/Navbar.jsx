@@ -5,6 +5,7 @@ import { Link } from "react-scroll";
 import { motion } from "framer-motion";
 import { MdLightMode, MdDarkMode } from "react-icons/md";
 import { RiMenu4Fill } from "react-icons/ri";
+import ThemeSwitcher from "./ThemeSwitcher";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -99,6 +100,7 @@ const Navbar = () => {
         </div>
         <div className="flex text-xl">
           <MdDarkMode className="ml-5 cursor-pointer" />
+          <ThemeSwitcher></ThemeSwitcher>
           <div className="menuBtn">
             <RiMenu4Fill
               onClick={handleMenuToggle}
