@@ -46,7 +46,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`fixed z-50 w-full border-b border-white/10 backdrop-blur-md transition-all max-sm:px-6 ${isScrolled ? "bg-slate-800/70 py-5 shadow" : "py-7"} ${isOpen ? "overflow-y-hidden max-lg:min-h-dvh" : "min-h-0"} `}
+      className={`fixed z-50 w-full border-b border-slate-600/10 backdrop-blur-md transition-all dark:border-white/10 max-sm:px-6 ${isScrolled ? "bg-white/80 py-5 dark:bg-slate-800/70 dark:shadow" : "py-7"} ${isOpen ? "overflow-y-hidden max-lg:min-h-dvh" : "min-h-0"} `}
       id="navbar"
     >
       <motion.div
@@ -57,7 +57,7 @@ const Navbar = () => {
       >
         <div className="navHolder flex">
           <div className="flex items-center">
-            <h1 className="text-xl font-semibold lowercase text-cyan-400">
+            <h1 className="text-xl font-semibold lowercase text-cyan-500 dark:text-cyan-400">
               ragibalasad
             </h1>
           </div>
@@ -68,12 +68,12 @@ const Navbar = () => {
             {navLinks.map((link, index) => (
               <li
                 key={index}
-                className="cursor-pointer text-sm font-semibold uppercase text-slate-200 transition hover:text-cyan-50 max-lg:py-2 lg:px-3"
+                className="cursor-pointer text-sm font-semibold uppercase text-slate-800 transition hover:text-slate-900 dark:text-slate-200 dark:hover:text-cyan-50 max-lg:py-2 lg:px-3"
               >
                 <Link
-                  className="relative h-full w-full after:absolute after:right-1 after:top-1/2 after:-z-10 after:w-full after:rounded-full after:p-1.5 after:opacity-0 after:transition-all hover:after:bg-slate-600 hover:after:opacity-100"
+                  className="relative h-full w-full after:absolute after:right-1 after:top-1/2 after:-z-10 after:w-full after:rounded-full after:p-1.5 after:opacity-0 after:transition-all hover:after:bg-slate-300 hover:after:opacity-100 dark:hover:after:bg-slate-600"
                   to={link.to}
-                  activeClass="after:bg-slate-600 after:opacity-100 text-cyan-50"
+                  activeClass="after:bg-slate-300 dark:after:bg-slate-600 after:opacity-100 dark:text-cyan-50 text-slate-900"
                   spy={true}
                   smooth={true}
                   offset={link.offset}
@@ -99,7 +99,7 @@ const Navbar = () => {
           </ul>
         </div>
         <div className="flex text-xl">
-          <ThemeSwitcher className="ml-5 cursor-pointer" />
+          <ThemeSwitcher className="ml-5 cursor-pointer transition hover:text-cyan-500 dark:hover:text-cyan-400" />
           <div className="menuBtn">
             <RiMenu4Fill
               onClick={handleMenuToggle}
