@@ -11,14 +11,14 @@ const Hero = () => {
       <div className="relative grid w-full grid-cols-1 pt-32 lg:grid-cols-7 xl:pt-40 2xl:grid-cols-2 2xl:pt-64">
         <div className="justify-between pt-16 max-sm:px-6 lg:col-span-3 2xl:col-span-1">
           <div className="pb-20 sm:py-20">
-            <p className="-ml-px font-semibold dark:text-slate-300">
+            <p className="-ml-px font-semibold text-slate-700 dark:text-slate-300">
               Hi there, I&apos;m
             </p>
-            <TextEffect className="-ml-1 py-2 pb-4 text-5xl font-semibold text-cyan-600 dark:text-cyan-400">
+            <TextEffect className="-ml-1 py-2 pb-4 text-5xl font-semibold text-cyan-700 dark:text-cyan-400">
               Ragib Al Asad
             </TextEffect>
             <TextEffect
-              className="border-l-4 border-cyan-600 pl-4 text-xl font-medium dark:border-cyan-400 dark:text-slate-300"
+              className="border-l-4 border-cyan-500 pl-4 text-xl font-medium text-slate-700 dark:border-cyan-400 dark:text-slate-300"
               preset="slide"
             >
               Software Developer from Bangladesh
@@ -26,7 +26,7 @@ const Hero = () => {
             <div className="flex gap-3 pt-16">
               <a
                 href=""
-                className="group relative inline-block rounded-lg bg-cyan-500 p-4 text-xs text-white transition hover:bg-cyan-500/80 dark:bg-slate-800 dark:text-white dark:ring-white/10 dark:hover:bg-slate-800/70"
+                className="group relative inline-block rounded-lg bg-indigo-100 p-4 text-xs text-slate-900 ring-1 ring-black/10 transition hover:bg-indigo-200/70 dark:bg-slate-800 dark:text-white dark:ring-white/10 dark:hover:bg-slate-800/70"
               >
                 <span className="relative">Download Resume</span>
               </a>

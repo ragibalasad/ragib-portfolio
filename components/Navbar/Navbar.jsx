@@ -99,7 +99,7 @@ const Navbar = () => {
           </ul>
         </div>
         <div className="flex text-xl">
-          <ThemeSwitcher className="ml-5 cursor-pointer rounded-full bg-indigo-100 p-1 transition hover:text-cyan-500 dark:bg-slate-700 dark:hover:text-cyan-400" />
+          <ThemeSwitcher className="ml-5 cursor-pointer rounded-full bg-white p-1 transition hover:text-cyan-500 dark:bg-slate-700 dark:hover:text-cyan-400" />
           <div className="menuBtn">
             <RiMenu4Fill
               onClick={handleMenuToggle}
