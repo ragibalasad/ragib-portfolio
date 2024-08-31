@@ -57,7 +57,7 @@ const Navbar = () => {
       >
         <div className="navHolder flex">
           <div className="flex items-center">
-            <h1 className="text-xl font-semibold lowercase text-cyan-600 dark:text-cyan-400">
+            <h1 className="text-xl font-semibold lowercase text-cyan-700 dark:text-cyan-400">
               ragibalasad
             </h1>
           </div>
@@ -71,9 +71,9 @@ const Navbar = () => {
                 className="cursor-pointer text-sm font-semibold uppercase text-slate-800 transition hover:text-slate-900 dark:text-slate-200 dark:hover:text-cyan-50 max-lg:py-2 lg:px-3"
               >
                 <Link
-                  className="relative h-full w-full after:absolute after:right-1 after:top-1/2 after:-z-10 after:w-full after:rounded-full after:p-1.5 after:opacity-0 after:transition-all hover:after:bg-slate-300 hover:after:opacity-100 dark:hover:after:bg-slate-600"
+                  className="relative h-full w-full after:absolute after:right-1 after:top-1/2 after:-z-10 after:w-full after:rounded-full after:p-1.5 after:opacity-0 after:transition-all hover:after:bg-slate-400/40 hover:after:opacity-100 dark:hover:after:bg-slate-600"
                   to={link.to}
-                  activeClass="after:bg-slate-300 dark:after:bg-slate-600 after:opacity-100 dark:text-cyan-50 text-slate-900"
+                  activeClass="after:bg-slate-400/40 dark:after:bg-slate-600 after:opacity-100 dark:text-cyan-50 text-slate-900"
                   spy={true}
                   smooth={true}
                   offset={link.offset}
@@ -99,7 +99,7 @@ const Navbar = () => {
           </ul>
         </div>
         <div className="flex text-xl">
-          <ThemeSwitcher className="ml-5 cursor-pointer transition hover:text-cyan-500 dark:hover:text-cyan-400" />
+          <ThemeSwitcher className="ml-5 cursor-pointer rounded-full bg-indigo-100 p-1 transition hover:text-cyan-500 dark:bg-slate-700 dark:hover:text-cyan-400" />
           <div className="menuBtn">
             <RiMenu4Fill
               onClick={handleMenuToggle}
