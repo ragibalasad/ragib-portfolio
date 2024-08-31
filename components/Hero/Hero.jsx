@@ -18,7 +18,7 @@ const Hero = () => {
               Ragib Al Asad
             </TextEffect>
             <TextEffect
-              className="border-l-4 border-cyan-500 pl-4 text-xl font-medium text-slate-700 dark:border-cyan-400 dark:text-slate-300"
+              className="border-l-4 border-cyan-400 pl-4 text-xl font-medium text-slate-700 dark:border-cyan-400 dark:text-slate-300"
               preset="slide"
             >
               Software Developer from Bangladesh
