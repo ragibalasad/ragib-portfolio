@@ -71,7 +71,7 @@ const Navbar = () => {
                 className="cursor-pointer text-sm font-semibold uppercase text-slate-800 transition hover:text-slate-900 dark:text-slate-200 dark:hover:text-cyan-50 max-lg:py-2 lg:px-3"
               >
                 <Link
-                  className="relative h-full w-full after:absolute after:right-1 after:top-1/2 after:-z-10 after:w-full after:rounded-full after:p-1.5 after:opacity-0 after:transition-all hover:after:bg-gradient-to-bl hover:after:from-transparent hover:after:to-cyan-600 hover:after:opacity-100 dark:hover:after:to-cyan-400"
+                  className="relative h-full w-full after:absolute after:right-1 after:top-1/2 after:-z-10 after:w-full after:rounded-full after:p-1.5 after:opacity-0 after:transition-all hover:after:bg-gradient-to-bl hover:after:from-transparent hover:after:to-cyan-600/80 hover:after:opacity-100 dark:hover:after:to-cyan-400"
                   to={link.to}
                   activeClass="after:bg-gradient-to-bl after:from-transparent after:to-cyan-600/80 dark:after:to-cyan-400 after:opacity-100 dark:text-cyan-50 text-slate-900"
                   // activeClass="bg-gradient-to-b from-transparent to-cyan-500"
