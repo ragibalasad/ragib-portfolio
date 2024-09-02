@@ -30,25 +30,25 @@ const Hero = () => {
               >
                 <span className="relative">Download Resume</span>
               </a>
-              <div className="my-auto flex gap-3 text-xl text-slate-700 dark:text-slate-300">
+              <div className="my-auto flex gap-3 text-xl dark:text-slate-100">
                 <a
                   href="https://facebook.com/ragibalasad"
                   target="_blank"
-                  className="transition hover:text-cyan-700 dark:hover:text-cyan-400"
+                  className="rounded-full bg-indigo-100 p-2 transition hover:text-cyan-500 dark:bg-slate-800/75 dark:hover:text-cyan-400"
                 >
                   <FaFacebook />
                 </a>
                 <a
                   href="https://github.com/ragibalasad"
                   target="_blank"
-                  className="transition hover:text-cyan-700 dark:hover:text-cyan-400"
+                  className="rounded-full bg-indigo-100 p-2 transition hover:text-cyan-500 dark:bg-slate-800/75 dark:hover:text-cyan-400"
                 >
                   <FaGithub />
                 </a>
                 <a
                   href="https://linkedin.com/in/ragibalasad"
                   target="_blank"
-                  className="transition hover:text-cyan-700 dark:hover:text-cyan-400"
+                  className="rounded-full bg-indigo-100 p-2 transition hover:text-cyan-500 dark:bg-slate-800/75 dark:hover:text-cyan-400"
                 >
                   <FaLinkedin />
                 </a>

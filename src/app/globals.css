@@ -4,7 +4,7 @@
 
 @layer components {
   body {
-    @apply bg-indigo-50 text-slate-800 antialiased dark:bg-slate-900 dark:text-indigo-50;
+    @apply bg-slate-100 text-slate-800 antialiased dark:bg-slate-900 dark:text-indigo-50;
   }
 }
 
