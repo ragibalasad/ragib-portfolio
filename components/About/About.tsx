@@ -1,5 +1,6 @@
 import Image from "next/image";
 import my_potrait from "../../public/images/me.png";
+import { Experiences } from "./Experiences";
 
 import React from "react";
 
@@ -67,7 +68,9 @@ const About = () => {
               </p>
 
               <div className="mt-12 grid grid-cols-4 gap-x-4 gap-y-8 max-sm:grid-cols-2 max-sm:grid-rows-2 max-sm:items-center max-sm:justify-items-center">
-                {experiences.map((exp, index) => (
+                <Experiences></Experiences>
+
+                {/* {experiences.map((exp, index) => (
                   <div
                     key={index}
                     className={`experiences-after flex size-24 flex-col items-center justify-center rounded-lg bg-white p-2 text-slate-700 dark:bg-slate-800 dark:text-slate-300 ${exp.afterBg}`}
@@ -75,7 +78,7 @@ const About = () => {
                     <span className="text-2xl font-bold">{exp.count}</span>
                     <span className="text-lg font-semibold">{exp.label}</span>
                   </div>
-                ))}
+                ))} */}
               </div>
             </div>
           </div>
