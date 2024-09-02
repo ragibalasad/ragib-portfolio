@@ -6,35 +6,6 @@
   body {
     @apply bg-indigo-50 text-slate-800 antialiased dark:bg-slate-900 dark:text-indigo-50;
   }
-
-  .navbar {
-    @apply fixed left-0 top-0 z-50 flex w-full px-4 py-8;
-  }
-  .navbar .container {
-    @apply flex items-center justify-between;
-  }
-
-  .navHolder {
-    @apply flex items-center;
-  }
-
-  .nav-list {
-    /* @apply mr-14; */
-  }
-
-  .nav-link {
-    @apply px-2;
-  }
-
-  .hamburger {
-    @apply hidden cursor-pointer;
-  }
-
-  .hamburger .bar {
-    @apply block w-6;
-    height: 3px;
-    margin: 5px 0;
-  }
 }
 
 /* Extra small devices (phones, 576px and down) */
@@ -91,69 +62,6 @@
 
 /* Large devices (laptops, 992px and up) */
 @media (max-width: 1024px) {
-  .nav-list {
-  }
-
-  .nav-link {
-    @apply h-6 items-center justify-center text-base;
-    text-align: right !important;
-  }
-
-  .nav-link a {
-    @apply mr-10 py-4;
-  }
-
-  .hamburger {
-    @apply relative box-content h-8 w-8 cursor-pointer px-2;
-  }
-
-  .hamburger .bar {
-    @apply rounded;
-  }
-
-  .hamburger .bar:nth-child(1) {
-    @apply top-2 transition-all duration-200;
-  }
-
-  .hamburger .bar:nth-child(2) {
-    @apply top-4 transition-all duration-200;
-  }
-
-  .hamburger .bar:nth-child(3) {
-    @apply top-6 transition-all duration-200;
-  }
-
-  .navbar.open .hamburger .bar:nth-child(1) {
-    @apply top-[50%] translate-y-[200%] rotate-[-45deg] transition duration-200;
-  }
-
-  .navbar.open .hamburger .bar:nth-child(2) {
-    @apply hidden transition duration-200;
-  }
-
-  .navbar.open .hamburger .bar:nth-child(3) {
-    @apply top-[50%] translate-y-[0%] rotate-[45deg] transition duration-200;
-  }
-
-  .navbar .container {
-    @apply relative;
-  }
-
-  .nav-list {
-    @apply block;
-  }
-
-  .nav-link::after {
-    @apply absolute bottom-2 left-0 h-2 w-full rounded content-[""];
-  }
-
-  .nav-link {
-    @apply my-6 w-full text-center;
-  }
-
-  .hamburger {
-    @apply block;
-  }
 }
 
 /* Extra large devices (desktops, 1200px and up) */

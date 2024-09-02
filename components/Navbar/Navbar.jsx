@@ -55,8 +55,8 @@ const Navbar = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
       >
-        <div className="navHolder flex">
-          <div className="flex items-center">
+        <div className="flex w-full items-center">
+          <div className="flex">
             <h1 className="text-xl font-semibold lowercase text-cyan-700 dark:text-cyan-400">
               ragibalasad
             </h1>
@@ -99,7 +99,7 @@ const Navbar = () => {
             </li>
           </ul>
         </div>
-        <div className="flex text-xl">
+        <div className="flex items-center text-xl">
           <ThemeSwitcher className="ml-5 cursor-pointer rounded-full bg-indigo-100 p-1 transition hover:text-cyan-500 dark:bg-slate-700 dark:hover:text-cyan-400" />
           <div className="menuBtn">
             <RiMenu4Fill
