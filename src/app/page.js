@@ -4,7 +4,7 @@ import {
   Hero,
   Navbar,
   Skills,
-  Work,
+  Projects,
   Services,
   Footer,
 } from "../../components";
@@ -15,7 +15,7 @@ export default function Home() {
       <Navbar />
       <Hero />
       <About />
-      <Work />
+      <Projects />
       <Skills />
       <Services />
       <Contact />

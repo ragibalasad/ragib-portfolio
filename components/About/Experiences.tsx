@@ -17,13 +17,13 @@ const experiences: Experience[] = [
     count: 4,
     label: "Years",
     afterBg: "after:bg-pink-500",
-    scrollTo: "work",
+    scrollTo: "projectsSection",
   },
   {
     count: 16,
     label: "Projects",
     afterBg: "after:bg-yellow-500",
-    scrollTo: "work",
+    scrollTo: "projectsSection",
   },
   {
     count: 7,
