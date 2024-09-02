@@ -17,7 +17,7 @@ Licensed under the Creative Commons Zero v1.0 license.
 ## 📧 Contact
 
 - **Email**: [ragibalasad@gmail.com](mailto:ragibalasad@gmail.com)
-- **LinkedIn**: [Ragib Alasad](https://www.linkedin.com/in/ragibalasad/)
+- **LinkedIn**: [Ragib Al Asad](https://www.linkedin.com/in/ragibalasad/)
 
 ## 🤝 Contributions
 
