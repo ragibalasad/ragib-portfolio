@@ -1,4 +1,4 @@
-import { FaGithub, FaLinkedin, FaFacebook } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa6";
 
 import CodeWindow from "./CodeWindow";
 import Bubbles from "./Bubbles";
@@ -32,23 +32,23 @@ const Hero = () => {
               </a>
               <div className="my-auto flex gap-3 text-xl dark:text-slate-100">
                 <a
-                  href="https://facebook.com/ragibalasad"
+                  href="https://x.com/ragibalasad"
                   target="_blank"
-                  className="rounded-full bg-indigo-100 p-2 transition hover:text-cyan-500 dark:bg-slate-800/75 dark:hover:text-cyan-400"
+                  className="rounded-full bg-slate-200 p-2 transition hover:text-cyan-500 dark:bg-slate-800/75 dark:hover:text-cyan-400"
                 >
-                  <FaFacebook />
+                  <FaTwitter />
                 </a>
                 <a
                   href="https://github.com/ragibalasad"
                   target="_blank"
-                  className="rounded-full bg-indigo-100 p-2 transition hover:text-cyan-500 dark:bg-slate-800/75 dark:hover:text-cyan-400"
+                  className="rounded-full bg-slate-200 p-2 transition hover:text-cyan-500 dark:bg-slate-800/75 dark:hover:text-cyan-400"
                 >
                   <FaGithub />
                 </a>
                 <a
                   href="https://linkedin.com/in/ragibalasad"
                   target="_blank"
-                  className="rounded-full bg-indigo-100 p-2 transition hover:text-cyan-500 dark:bg-slate-800/75 dark:hover:text-cyan-400"
+                  className="rounded-full bg-slate-200 p-2 transition hover:text-cyan-500 dark:bg-slate-800/75 dark:hover:text-cyan-400"
                 >
                   <FaLinkedin />
                 </a>
