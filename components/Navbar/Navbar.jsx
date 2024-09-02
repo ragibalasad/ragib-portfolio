@@ -3,7 +3,6 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-scroll";
 import { motion } from "framer-motion";
-import { MdLightMode, MdDarkMode } from "react-icons/md";
 import { RiMenu4Fill } from "react-icons/ri";
 import ThemeSwitcher from "./ThemeSwitcher";
 
@@ -100,7 +99,7 @@ const Navbar = () => {
           </ul>
         </div>
         <div className="flex items-center text-xl">
-          <ThemeSwitcher className="ml-5 cursor-pointer rounded-full bg-indigo-100 p-1 transition hover:text-cyan-500 dark:bg-slate-700 dark:hover:text-cyan-400" />
+          <ThemeSwitcher className="ml-5 cursor-pointer rounded-full bg-slate-200 p-1 transition hover:text-cyan-500 dark:bg-slate-700 dark:hover:text-cyan-400" />
           <div className="menuBtn">
             <RiMenu4Fill
               onClick={handleMenuToggle}
