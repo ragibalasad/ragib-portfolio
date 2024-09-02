@@ -26,7 +26,7 @@ const Hero = () => {
             <div className="flex gap-3 pt-16">
               <a
                 href=""
-                className="group relative inline-block rounded-lg bg-indigo-100 p-4 text-xs text-slate-900 ring-1 ring-black/10 transition hover:bg-indigo-200/70 dark:bg-slate-800 dark:text-white dark:ring-white/10 dark:hover:bg-slate-800/70"
+                className="group relative inline-block rounded-lg bg-slate-800 p-4 text-xs text-white transition hover:bg-slate-700 dark:ring-1 dark:ring-white/10 dark:hover:bg-slate-800/70"
               >
                 <span className="relative">Download Resume</span>
               </a>
