@@ -2,7 +2,7 @@ import { FaGithub, FaLinkedin, FaFacebook } from "react-icons/fa";
 
 import CodeWindow from "./CodeWindow";
 import Bubbles from "./Bubbles";
-import { TextEffect } from "../TextEffect";
+import { TextEffect } from "../motion/TextEffect";
 
 const Hero = () => {
   return (
