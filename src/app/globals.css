@@ -10,54 +10,14 @@
 
 /* Extra small devices (phones, 576px and down) */
 @media (max-width: 575.98px) {
-  /* Styles for extra small devices */
 }
 
 /* Small devices (tablets, 576px and up) */
 @media (max-width: 767.98px) {
-  .header {
-    background: none;
-    @apply relative h-max w-full bg-slate-900;
-  }
-
-  .header .container {
-    @apply mb-4 block pt-20;
-  }
-
-  .intro .info {
-    @apply p-0 py-4 text-left;
-  }
-
-  .intro,
-  .terminal {
-    @apply mx-auto w-auto px-4 pt-8;
-  }
-
-  .showcase-img {
-    @apply relative mx-4 mb-4 rounded-3xl px-2;
-    background: linear-gradient(
-      54.5deg,
-      rgba(6, 5, 25) 50%,
-      rgb(254, 215, 170) 50%
-    );
-  }
-
-  .terminal {
-    @apply py-4;
-  }
-
-  .terminal-win {
-    @apply mx-auto h-auto w-full min-w-fit;
-    box-shadow: none;
-  }
-  .terminal-body {
-    @apply px-4;
-  }
 }
 
 /* Medium devices (small laptops, 768px and up) */
 @media (min-width: 768px) and (max-width: 991.98px) {
-  /* empty */
 }
 
 /* Large devices (laptops, 992px and up) */
@@ -70,13 +30,7 @@
 
 /* XXL devices (large desktops, 1400px and up) */
 @media (min-width: 1400px) {
-  .showcase-img img {
-    width: 450px;
-  }
 }
 
 @media (min-width: 1900px) {
-  .showcase-img img {
-    width: 524px;
-  }
 }
