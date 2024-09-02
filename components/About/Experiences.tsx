@@ -1,5 +1,6 @@
 "use client";
 
+import { Link } from "react-scroll";
 import { AnimatedNumber } from "../motion/AnimatedNumber";
 import { useInView } from "framer-motion";
 import { useRef, useState } from "react";
@@ -8,20 +9,43 @@ interface Experience {
   count: number;
   label: string;
   afterBg: string;
+  scrollTo: string;
 }
 
 const experiences: Experience[] = [
-  { count: 4, label: "Years", afterBg: "after:bg-pink-500" },
-  { count: 16, label: "Projects", afterBg: "after:bg-yellow-500" },
-  { count: 7, label: "Clients", afterBg: "after:bg-green-500" },
-  { count: 5, label: "Reviews", afterBg: "after:bg-indigo-500" },
+  {
+    count: 4,
+    label: "Years",
+    afterBg: "after:bg-pink-500",
+    scrollTo: "work",
+  },
+  {
+    count: 16,
+    label: "Projects",
+    afterBg: "after:bg-yellow-500",
+    scrollTo: "work",
+  },
+  {
+    count: 7,
+    label: "Clients",
+    afterBg: "after:bg-green-500",
+    scrollTo: "clientsSection",
+  },
+  {
+    count: 5,
+    label: "Reviews",
+    afterBg: "after:bg-indigo-500",
+    scrollTo: "reviewsSection",
+  },
 ];
 
 export function Experiences() {
   return (
     <>
       {experiences.map((exp, index) => (
-        <ExperienceItem key={index} {...exp} />
+        <Link key={index} to={exp.scrollTo} smooth={true} duration={500}>
+          <ExperienceItem {...exp} />
+        </Link>
       ))}
     </>
   );
