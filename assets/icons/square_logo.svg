@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120" fill="none">
+  <!-- Background Rectangle with Rounded Corners -->
+  <rect x="10" y="10" width="100" height="100" rx="15" ry="15" fill="white" />
+
+  <!-- Grouping the original logo and positioning it in the center -->
+  <g transform="translate(15, 15)">
+    <g id="OBJECTS">
+      <g>
+        <g>
+          <g>
+            <g>
+              <linearGradient id="SVGID_00000081624272873903726930000011403260101475393416_" gradientUnits="userSpaceOnUse" x1="13.7383" y1="0.6432" x2="15.3528" y2="33.7413">
+                <stop offset="0" style="stop-color:#00B4D8" /> <!-- Cyan color -->
+                <stop offset="0.3" style="stop-color:#0096C7" /> <!-- Darker cyan -->
+                <stop offset="0.6" style="stop-color:#0077B6" /> <!-- Even darker cyan -->
+                <stop offset="1" style="stop-color:#023E8A" /> <!-- Deep blue -->
+              </linearGradient>
+              <rect x="0.851" y="0.199" style="fill:url(#SVGID_00000081624272873903726930000011403260101475393416_);" width="30.171" height="91" />
+              <path style="opacity:0.2;fill:#022C90;" d="M31.022,3.38c-21.41,5.452-28.233,19.217-30.171,29.789v9.59l30.171,12.469V3.38z" />
+              <path style="opacity:0.3;fill:#FFFFFF;" d="M31.022,0.199h-30.171v18.767C3.907,11.612,11.621,2.423,31.022,0.199z" />
+            </g>
+            <g>
+              <linearGradient id="SVGID_00000004540778714245980790000009096365788875403914_" gradientUnits="userSpaceOnUse" x1="58.1455" y1="2.0782" x2="27.4693" y2="86.8416">
+                <stop offset="0" style="stop-color:#00B4D8" /> <!-- Cyan color -->
+                <stop offset="0.3" style="stop-color:#0096C7" /> <!-- Darker cyan -->
+                <stop offset="0.6" style="stop-color:#0077B6" /> <!-- Even darker cyan -->
+                <stop offset="1" style="stop-color:#023E8A" /> <!-- Deep blue -->
+              </linearGradient>
+              <path style="fill:url(#SVGID_00000004540778714245980790000009096365788875403914_);" d="M31.022,56.598c0-29.696,34.307-23.469,34.307-23.469v-28.932c-44.037-5.238-64.478,17.31-64.478,40.015c0,18.659,0,46.987,0,46.987h30.171C31.022,91.199,31.022,73.529,31.022,56.598z" />
+              <path style="opacity:0.5;fill:#FFFFFF;" d="M3.385,46.746c0-24.6,19.667-44.355,61.944-40.271v-2.278c-44.037-5.238-64.478,17.31-64.478,40.015c0,18.659,0,46.987,0,46.987h2.534C3.385,83.856,3.385,62.053,3.385,46.746z" />
+              <path style="opacity:0.3;fill:#022C90;" d="M65.328,33.129V15.82c-35.496-0.007-52.099,13.485-52.099,40.77c0,10.752,0,24.706,0,34.609h17.793c0,0,0-17.67,0-34.601C31.022,26.902,65.328,33.129,65.328,33.129z" />
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
