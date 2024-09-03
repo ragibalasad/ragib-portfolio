@@ -11,19 +11,16 @@ export default function ThemeSwitcher({ className = "" }: ThemeSwitcherProps) {
   const [isDarkMode, setIsDarkMode] = useState<boolean>(false);
 
   useEffect(() => {
-    // Check the saved theme preference on initial load
+    // Determine the initial theme
     const savedTheme = localStorage.getItem("theme");
-    if (savedTheme) {
-      document.documentElement.classList.add(savedTheme);
-      setIsDarkMode(savedTheme === "dark");
-    } else {
-      // If no preference is saved, use the system preference
-      const prefersDark = window.matchMedia(
-        "(prefers-color-scheme: dark)",
-      ).matches;
-      document.documentElement.classList.add(prefersDark ? "dark" : "light");
-      setIsDarkMode(prefersDark);
-    }
+    const prefersDark = window.matchMedia(
+      "(prefers-color-scheme: dark)",
+    ).matches;
+    const initialTheme = savedTheme || (prefersDark ? "dark" : "light");
+
+    // Set the document class and state
+    document.documentElement.classList.add(initialTheme);
+    setIsDarkMode(initialTheme === "dark");
   }, []);
 
   const toggleTheme = () => {
