@@ -1,4 +1,4 @@
-import logo from "../assets/icons/RagibLogo.svg";
+import logo from "../assets/icons/ragib_logo.svg";
 import ragib_potrait from "../assets/ragib_potrait_md.png";
 import project_develeven from "../assets/projects/screenshot-develeven.png";
 import project_ragib_portfolio from "../assets/projects/screenshot-ragib-portfolio.png";

@@ -5,6 +5,8 @@ import { Link } from "react-scroll";
 import { motion } from "framer-motion";
 import { RiMenu4Fill } from "react-icons/ri";
 import ThemeSwitcher from "./ThemeSwitcher";
+import { images } from "../../constants";
+import Image from "next/image";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -55,9 +57,17 @@ const Navbar = () => {
         transition={{ duration: 0.5 }}
       >
         <div className="flex w-full items-center">
-          <div className="flex">
+          <div className="flex items-center gap-0.5">
+            <div className="">
+              <Image
+                src={images.logo}
+                alt="ragib logo"
+                width={16}
+                height={16}
+              />
+            </div>
             <h1 className="text-xl font-semibold lowercase text-cyan-700 dark:text-cyan-400">
-              ragibalasad
+              agibalasad
             </h1>
           </div>
 

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+     x="0px" y="0px" viewBox="342 290 66 91" width="66" height="91" xml:space="preserve">
+<g id="OBJECTS">
+	<g>
+		<g>
+			<g>
+				<g>
+					<linearGradient id="SVGID_00000081624272873903726930000011403260101475393416_" gradientUnits="userSpaceOnUse" x1="355.7383" y1="290.6432" x2="357.3528" y2="323.7413">
+						<stop offset="0" style="stop-color:#00B4D8"/> <!-- Cyan color -->
+						<stop offset="0.3" style="stop-color:#0096C7"/> <!-- Darker cyan -->
+						<stop offset="0.6" style="stop-color:#0077B6"/> <!-- Even darker cyan -->
+						<stop offset="1" style="stop-color:#023E8A"/> <!-- Deep blue -->
+					</linearGradient>
+					<rect x="342.851" y="290.199" style="fill:url(#SVGID_00000081624272873903726930000011403260101475393416_);" width="30.171" height="91"/>
+					<path style="opacity:0.2;fill:#022C90;" d="M373.022,293.38c-21.41,5.452-28.233,19.217-30.171,29.789v9.59l30.171,12.469
+						V293.38z"/>
+					<path style="opacity:0.3;fill:#FFFFFF;" d="M373.022,290.199h-30.171v18.767C345.907,301.612,353.621,292.423,373.022,290.199z
+						"/>
+				</g>
+				<g>
+					<linearGradient id="SVGID_00000004540778714245980790000009096365788875403914_" gradientUnits="userSpaceOnUse" x1="387.1455" y1="292.0782" x2="356.4693" y2="376.8416">
+						<stop offset="0" style="stop-color:#00B4D8"/> <!-- Cyan color -->
+						<stop offset="0.3" style="stop-color:#0096C7"/> <!-- Darker cyan -->
+						<stop offset="0.6" style="stop-color:#0077B6"/> <!-- Even darker cyan -->
+						<stop offset="1" style="stop-color:#023E8A"/> <!-- Deep blue -->
+					</linearGradient>
+					<path style="fill:url(#SVGID_00000004540778714245980790000009096365788875403914_);" d="M373.022,346.598
+						c0-29.696,34.307-23.469,34.307-23.469v-28.932c-44.037-5.238-64.478,17.31-64.478,40.015c0,18.659,0,46.987,0,46.987h30.171
+						C373.022,381.199,373.022,363.529,373.022,346.598z"/>
+					<path style="opacity:0.5;fill:#FFFFFF;" d="M345.385,336.746c0-24.6,19.667-44.355,61.944-40.271v-2.278
+						c-44.037-5.238-64.478,17.31-64.478,40.015c0,18.659,0,46.987,0,46.987h2.534C345.385,373.856,345.385,352.053,345.385,336.746
+						z"/>
+					<path style="opacity:0.3;fill:#022C90;" d="M407.328,323.129V305.82c-35.496-0.007-52.099,13.485-52.099,40.77
+						c0,10.752,0,24.706,0,34.609h17.793c0,0,0-17.67,0-34.601C373.022,316.902,407.328,323.129,407.328,323.129z"/>
+				</g>
+			</g>
+		</g>
+	</g>
+</g>
+</svg>
