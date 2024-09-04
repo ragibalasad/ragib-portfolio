@@ -56,14 +56,6 @@ const Navbar = () => {
       >
         <div className="flex w-full items-center">
           <div className="flex items-center gap-0.5">
-            {/* <div className="">
-              <Image
-                src={images.logo}
-                alt="ragib logo"
-                width={16}
-                height={16}
-              />
-            </div> */}
             <h1 className="text-xl font-semibold text-cyan-700 dark:text-cyan-400">
               {`ragibalasad`}
             </h1>
