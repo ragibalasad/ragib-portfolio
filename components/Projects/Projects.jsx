@@ -4,10 +4,14 @@ import { AnimatePresence, motion } from "framer-motion";
 import Image from "next/image";
 import { useState } from "react";
 import { FaEye, FaGithub } from "react-icons/fa";
+import { MdOutlineFileDownload } from "react-icons/md";
+import { LuExternalLink } from "react-icons/lu";
 import { images } from "../../constants";
 
 const Projects = () => {
   const [filter, setFilter] = useState("all");
+
+  const catagories = ["all", "front end", "back end", "others"];
 
   const projects = [
     {
@@ -15,28 +19,28 @@ const Projects = () => {
       image: images.project_develeven,
       live: "https://develeven.vercel.app/",
       github: "https://github.com/DEVELEVEN-io/develeven-io",
-      category: "frontend",
+      category: "front end",
     },
     {
       title: "Ragib's Portfolio",
       image: images.project_ragib_portfolio,
       live: "https://ragibalasad.me/",
       github: "https://github.com/ragibalasad/ragib-portfolio",
-      category: "frontend",
+      category: "front end",
     },
     {
       title: "Test Project 1",
       image: images.project_develeven,
       live: "https://ragibalasad.me/",
       github: "https://github.com/ragibalasad/ragib-portfolio",
-      category: "backend",
+      category: "back end",
     },
     {
       title: "Test Project 2",
       image: images.project_develeven,
       live: "https://ragibalasad.me/",
       github: "https://github.com/ragibalasad/ragib-portfolio",
-      category: "backend",
+      category: "back end",
     },
   ];
 
@@ -59,46 +63,28 @@ const Projects = () => {
   };
 
   return (
-    <section className="projectsSection relative my-24 bg-slate-800/70 max-sm:px-6">
+    <section className="projectsSection relative my-24 dark:bg-slate-800/70 max-sm:px-6">
       <div className="container mx-auto h-auto py-16 sm:w-4/5">
-        <p className="border-l-4 border-cyan-400 pl-4 font-semibold text-slate-300">
+        <p className="border-l-4 border-cyan-400 pl-4 font-semibold dark:text-slate-300">
           Projects
         </p>
 
         <div className="mb-6 flex py-6 max-sm:flex-col max-sm:gap-10">
-          <h1 className="text-4xl font-semibold text-slate-300">
+          <h1 className="text-4xl font-semibold dark:text-slate-300">
             {"Works I've Done"}
           </h1>
 
-          <ul className="flex select-none flex-wrap gap-3 text-sm font-medium sm:ml-auto">
-            {/* Filter Buttons */}
-            <li
-              className={`cursor-pointer rounded-lg px-4 py-2 ${filter === "all" ? "bg-slate-900/70" : "bg-slate-700/70"}`}
-              onClick={() => setFilter("all")}
-            >
-              All
-            </li>
-
-            <li
-              className={`cursor-pointer rounded-lg px-4 py-2 ${filter === "frontend" ? "bg-slate-900/70" : "bg-slate-700/70"}`}
-              onClick={() => setFilter("frontend")}
-            >
-              Front End
-            </li>
-
-            <li
-              className={`cursor-pointer rounded-lg px-4 py-2 ${filter === "backend" ? "bg-slate-900/70" : "bg-slate-700/70"}`}
-              onClick={() => setFilter("backend")}
-            >
-              Back End
-            </li>
-
-            <li
-              className={`cursor-pointer rounded-lg px-4 py-2 ${filter === "others" ? "bg-slate-900/70" : "bg-slate-700/70"}`}
-              onClick={() => setFilter("others")}
-            >
-              Others
-            </li>
+          <ul className="flex select-none flex-wrap text-sm font-medium sm:ml-auto">
+            {/* Filter Buttons loop */}
+            {catagories.map((catagory, index) => (
+              <li
+                key={index}
+                className={`cursor-pointer rounded-lg px-4 py-2 font-medium capitalize text-cyan-600 dark:text-cyan-400 ${filter === catagory ? "bg-white dark:bg-slate-700/70" : ""}`}
+                onClick={() => setFilter(catagory)}
+              >
+                {catagory}
+              </li>
+            ))}
           </ul>
         </div>
 
@@ -114,7 +100,7 @@ const Projects = () => {
             {filteredProjects.map((project, index) => (
               <motion.div
                 key={project.title} // Use title as unique key to prevent index clashes
-                className="overflow-hidden rounded-2xl bg-slate-700/70"
+                className="overflow-hidden rounded-2xl bg-white shadow dark:bg-slate-700/70"
                 layout
                 variants={transitionEffects}
                 initial="hidden"
@@ -131,11 +117,11 @@ const Projects = () => {
                     height={300}
                   />
                 </div>
-                <div className="flex p-4 text-slate-300">
+                <div className="flex p-4">
                   <h1 className="text-lg font-medium">{project.title}</h1>
                   <div className="ml-auto flex gap-4 text-xl">
                     <a
-                      className="transition hover:text-cyan-400"
+                      className="rounded-full transition hover:text-cyan-400"
                       href={project.live}
                       target="_blank"
                       rel="noopener noreferrer"
@@ -143,7 +129,7 @@ const Projects = () => {
                       <FaEye />
                     </a>
                     <a
-                      className="transition hover:text-cyan-400"
+                      className="rounded-full transition hover:text-cyan-400"
                       href={project.github}
                       target="_blank"
                       rel="noopener noreferrer"
