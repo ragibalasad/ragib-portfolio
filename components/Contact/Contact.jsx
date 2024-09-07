@@ -7,35 +7,35 @@ const Contact = () => {
       <div className="placeHolderComponent h-auto">
         <div className="grid lg:grid-cols-7 2xl:grid-cols-2">
           <div className="p-6 max-md:order-2 lg:col-span-4 2xl:col-span-1">
-            <div className="content-center items-center justify-center rounded-2xl bg-slate-800 p-6 ring-1 ring-inset ring-white/10 sm:p-10">
-              <p className="mb-2 mt-4 font-semibold text-slate-300">
+            <div className="content-center items-center justify-center rounded-2xl bg-white p-6 shadow-xl ring-inset ring-white/10 dark:bg-slate-800 dark:shadow-none dark:ring-1 sm:p-10">
+              <p className="mb-2 mt-4 font-semibold text-slate-700 dark:text-slate-300">
                 Send me a message
               </p>
-              <p className="mb-8 font-medium text-slate-400">
+              <p className="mb-8 font-medium text-slate-600 dark:text-slate-400">
                 I&apos;ll respond as soon as possible.
               </p>
               <div className="">
                 <form className="flex flex-col gap-6" action="" method="post">
                   <input
-                    className="w-full rounded-2xl bg-slate-700/70 p-4 py-5 font-medium ring-2 ring-transparent transition-all hover:bg-slate-700/85 focus:outline-none focus:ring-cyan-500"
+                    className="w-full rounded-2xl bg-slate-100 p-4 py-5 font-medium ring-2 ring-transparent transition-all hover:bg-slate-100/70 focus:outline-none focus:ring-cyan-500 dark:bg-slate-700/70 dark:hover:bg-slate-700/85"
                     type="text"
                     placeholder="Full Name"
                   />
 
                   <input
-                    className="w-full rounded-2xl bg-slate-700/70 p-4 py-5 font-medium ring-2 ring-transparent transition-all hover:bg-slate-700/85 focus:outline-none focus:ring-cyan-500"
+                    className="w-full rounded-2xl bg-slate-100 p-4 py-5 font-medium ring-2 ring-transparent transition-all hover:bg-slate-100/70 focus:outline-none focus:ring-cyan-500 dark:bg-slate-700/70 dark:hover:bg-slate-700/85"
                     type="text"
                     placeholder="Email Address"
                   />
                   <textarea
-                    className="w-full rounded-2xl bg-slate-700/70 p-4 py-5 font-medium ring-2 ring-transparent transition-all hover:bg-slate-700/85 focus:outline-none focus:ring-cyan-500"
+                    className="w-full rounded-2xl bg-slate-100 p-4 py-5 font-medium ring-2 ring-transparent transition-all hover:bg-slate-100/70 focus:outline-none focus:ring-cyan-500 dark:bg-slate-700/70 dark:hover:bg-slate-700/85"
                     name=""
                     id=""
                     cols="30"
                     rows="10"
                     placeholder="Write Message"
                   ></textarea>
-                  <button className="w-full rounded-2xl bg-cyan-600 p-4 text-sm font-medium transition-all hover:brightness-90">
+                  <button className="w-full rounded-2xl bg-cyan-600 p-4 text-sm font-medium text-white transition-all hover:brightness-90">
                     Send
                   </button>
                 </form>
