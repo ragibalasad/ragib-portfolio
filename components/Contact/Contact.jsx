@@ -45,45 +45,43 @@ const Contact = () => {
 
           <div className="mx-2 content-center justify-between p-6 max-md:order-1 max-md:mb-12 sm:p-12 lg:col-span-3 2xl:col-span-1">
             <div className="flex flex-col">
-              <p className="border-l-4 border-cyan-500 pl-4 font-semibold text-slate-300">
+              <p className="border-l-4 border-cyan-500 pl-4 font-semibold dark:text-slate-300">
                 Contact info
               </p>
-              <h1 className="py-6 text-4xl font-semibold text-slate-300">
+              <h1 className="py-6 text-4xl font-semibold text-cyan-800 dark:text-cyan-400">
                 Let&apos;s get in touch
               </h1>
-              <p className="text-lg font-medium text-slate-400">
+              <p className="text-lg font-medium text-slate-700 dark:text-slate-400">
                 I&apos;m open to new opportunities and collaborations —
                 let&apos;s connect.
               </p>
             </div>
-            <div className="mt-16 flex flex-col gap-8 text-lg font-medium">
+            <div className="mt-16 flex flex-col gap-8 text-lg font-medium dark:text-slate-300">
               <div className="flex gap-4">
                 <div className="">
-                  <div className="rounded-full bg-cyan-600 p-2">
+                  <div className="rounded-full bg-cyan-600 p-2 text-white">
                     <MdLocationOn />
                   </div>
                 </div>
-                <p className="my-auto text-slate-300">
-                  Nilphamari, Rangpur, BD
-                </p>
+                <p className="my-auto">Nilphamari, Rangpur, BD</p>
               </div>
               <div className="flex gap-4">
                 <div className="">
-                  <div className="rounded-full bg-cyan-600 p-2">
+                  <div className="rounded-full bg-cyan-600 p-2 text-white">
                     <MdPhone />
                   </div>
                 </div>
-                <p className="my-auto text-slate-300">+880 1719 220115</p>
+                <p className="my-auto">+880 1719 220115</p>
               </div>
               <div className="flex gap-4">
                 <div className="">
-                  <div className="rounded-full bg-cyan-600 p-2">
+                  <div className="rounded-full bg-cyan-600 p-2 text-white">
                     <MdMail />
                   </div>
                 </div>
                 <a
                   href="mailto:ragibalasad@pm.me"
-                  className="my-auto flex cursor-pointer items-center justify-start gap-2 text-slate-300 transition-all hover:gap-4 hover:text-cyan-400"
+                  className="my-auto flex cursor-pointer items-center justify-start gap-2 transition-all hover:gap-4 hover:text-cyan-800 dark:hover:text-cyan-400"
                 >
                   ragibalasad@pm.me
                   <span>
