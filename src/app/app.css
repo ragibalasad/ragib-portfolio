@@ -34,3 +34,7 @@
 .experiences-after {
   @apply relative cursor-pointer after:absolute after:right-1 after:top-1 after:-z-10 after:h-full after:w-full after:rounded-lg after:opacity-70 after:transition-all hover:after:right-0.5 hover:after:top-1.5;
 }
+
+.footer-social-links > a {
+  @apply cursor-pointer rounded-full bg-slate-800 p-3 transition-colors hover:text-cyan-400 dark:bg-slate-900;
+}
