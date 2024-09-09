@@ -1,7 +1,7 @@
 const Skills = () => {
   return (
     <section className="skills container relative mx-auto my-24 py-12 sm:w-4/5">
-      <div className="placeHolderComponent h-auto">
+      <div className="placeHolderComponent h-auto max-sm:px-6">
         <div className="mx-auto w-fit">
           <h1 className="rounded border-4 border-slate-800 bg-slate-950/70 p-3 px-10 text-xl font-semibold uppercase text-cyan-300">
             My Skills

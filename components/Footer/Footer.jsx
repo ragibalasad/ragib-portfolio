@@ -2,10 +2,11 @@ import {
   FaXTwitter,
   FaFacebook,
   FaGithub,
-  FaInstagram,
   FaLinkedin,
   FaDiscord,
+  FaWhatsapp,
 } from "react-icons/fa6";
+import { IoMail } from "react-icons/io5";
 
 const Footer = () => {
   return (
@@ -17,9 +18,18 @@ const Footer = () => {
               <h1 className="text-2xl font-medium text-cyan-400">
                 www.ragibalasad.me
               </h1>
-              <p className="text-medium text-lg">
-                {" "}
-                Biulding quality software sience 2020.
+              <p className="text-medium mt-1 text-lg">
+                Building quality software sience 2020.
+              </p>
+              <p className="mt-4 flex flex-wrap gap-4 text-sm">
+                <span className="flex gap-1">
+                  <IoMail className="my-auto" />
+                  <span> ragibalasad@gmail.com</span>
+                </span>
+                <span className="flex gap-1">
+                  <FaWhatsapp className="my-auto" />
+                  <span>+880 1719 220115</span>
+                </span>
               </p>
             </div>
 
@@ -54,7 +64,7 @@ const Footer = () => {
         <div className="bg-slate-950 max-sm:px-6">
           <div className="container mx-auto h-auto py-3 sm:w-4/5">
             <div className="mx-auto w-fit text-slate-300">
-              Copyright &copy; 2024. Made by{" "}
+              Copyright &copy; {new Date().getFullYear()}. Made by{" "}
               <a
                 href="https://github.com/ragibalasad"
                 target="_blank"
