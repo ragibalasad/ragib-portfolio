@@ -38,3 +38,7 @@
 .footer-social-links > a {
   @apply cursor-pointer rounded-full bg-slate-800 p-3 transition-colors hover:text-cyan-400 dark:bg-slate-900;
 }
+
+.skill-sets li {
+  @apply cursor-pointer rounded border-2 border-slate-900 bg-slate-800 p-1 px-4 text-sm font-medium text-cyan-400 ring-2 ring-slate-800;
+}
