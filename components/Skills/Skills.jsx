@@ -7,43 +7,51 @@ const Skills = () => {
             My Skills
           </h1>
         </div>
-        <div className="skill-sets my-8 mt-20 grid grid-rows-2 gap-12 py-8">
-          <div className="grid grid-cols-2 gap-8">
-            <div className="">
-              <ul className="flex flex-wrap gap-4 pr-4 uppercase">
-                <li className="">html</li>
-                <li className="">css</li>
-                <li className="">javascript</li>
-                <li className="">react</li>
-                <li className="">next js</li>
-                <li className="">tailwind css</li>
-                <li className="">framer motion</li>
-                <li className="">UX/UI Design</li>
-                <li className="">SSR</li>
-              </ul>
-            </div>
-            <div className="">
-              <ul className="flex flex-wrap gap-4 pl-4 uppercase">
-                <li className="">python</li>
-                <li className="">flask</li>
-                <li className="">fastapi</li>
-                <li className="">sql alchemy</li>
-                <li className="">node</li>
-                <li className="">express</li>
-                <li className="">jwt/oauth</li>
-                <li className="">sql</li>
-                <li className="">postgresql</li>
-                <li className="">sqlite</li>
-                <li className="">prisma orm</li>
-                <li className="">mongo db</li>
-              </ul>
-            </div>
+        <div className="skill-sets mt-20 grid gap-16 py-8 md:grid-cols-2">
+          <div className="max-md:col-span-2">
+            <h1 className="mb-4 border-l-4 border-cyan-400 pl-4 font-semibold text-slate-700 dark:text-slate-300">
+              Frontend Skills
+            </h1>
+            <ul className="flex flex-wrap gap-4 uppercase md:pr-4">
+              <li className="">html</li>
+              <li className="">css</li>
+              <li className="">javascript</li>
+              <li className="">react</li>
+              <li className="">next js</li>
+              <li className="">tailwind css</li>
+              <li className="">framer motion</li>
+              <li className="">UX/UI Design</li>
+              <li className="">SSR</li>
+            </ul>
           </div>
-          <div className="mt-6 flex flex-col gap-4">
+          <div className="max-md:col-span-2">
+            <h1 className="mb-4 border-l-4 border-cyan-400 pl-4 font-semibold text-slate-700 dark:text-slate-300">
+              Backtend Technologies
+            </h1>
+            <ul className="flex flex-wrap gap-4 uppercase md:pl-4">
+              <li className="">python</li>
+              <li className="">flask</li>
+              <li className="">fastapi</li>
+              <li className="">sql alchemy</li>
+              <li className="">node</li>
+              <li className="">express</li>
+              <li className="">jwt/oauth</li>
+              <li className="">sql</li>
+              <li className="">postgresql</li>
+              <li className="">sqlite</li>
+              <li className="">prisma orm</li>
+              <li className="">mongo db</li>
+            </ul>
+          </div>
+
+          <div className="col-span-2 flex flex-col gap-4 md:mt-8">
+            <h1 className="mb-4 border-l-4 border-cyan-400 pl-4 font-semibold text-slate-700 dark:text-slate-300">
+              Software Developement Tools
+            </h1>
             <ul className="flex flex-wrap gap-4 uppercase">
               <li className="">c</li>
               <li className="">python</li>
-              <li className="">bash</li>
+              <li className="">shell</li>
               <li className="">javascript</li>
               <li className="">typescript</li>
             </ul>
@@ -52,6 +60,7 @@ const Skills = () => {
               <li className="">git</li>
               <li className="">github</li>
               <li className="">linux</li>
+              <li className="">bash</li>
               <li className="">vercel</li>
               <li className="">figma</li>
             </ul>
