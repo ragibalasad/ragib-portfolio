@@ -26,7 +26,7 @@ const Skills = () => {
           </div>
           <div className="max-md:col-span-2">
             <h1 className="mb-8 border-l-4 border-cyan-400 pl-4 font-semibold text-slate-700 dark:text-slate-300">
-              Backtend Technologies
+              Backend Technologies
             </h1>
             <ul className="flex flex-wrap gap-5 uppercase md:pl-4">
               <li className="">python</li>
