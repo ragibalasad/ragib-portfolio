@@ -7,7 +7,7 @@
 ![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)
 
 This repository contains the source code for my personal developer portfolio website. <br>
-Licensed under the Creative Commons Zero v1.0 license.
+Licensed under the terms of the MIT license.
 
 ## 📧 Contact
 
