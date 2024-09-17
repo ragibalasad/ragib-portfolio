@@ -45,7 +45,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`fixed z-50 w-full border-b border-slate-600/10 backdrop-blur-md transition-all dark:border-white/10 max-sm:px-6 ${isScrolled ? "bg-white/80 py-5 dark:bg-slate-800/70 dark:shadow" : "py-7"} ${isOpen ? "overflow-y-hidden max-lg:min-h-dvh" : "min-h-0"} `}
+      className={`fixed z-50 w-full border-b border-slate-600/10 backdrop-blur-md transition-all dark:border-white/10 max-sm:px-6 ${isScrolled ? "bg-white/80 py-5 dark:bg-slate-900/70 dark:shadow" : "py-7"} ${isOpen ? "overflow-y-hidden max-lg:min-h-dvh" : "min-h-0"} `}
       id="navbar"
     >
       <motion.div
@@ -56,7 +56,7 @@ const Navbar = () => {
       >
         <div className="flex w-full items-center">
           <div className="flex items-center gap-0.5">
-            <h1 className="text-xl font-semibold text-cyan-700 dark:text-cyan-400">
+            <h1 className="text-xl font-semibold text-cyan-800 dark:text-cyan-400">
               {`ragibalasad`}
             </h1>
           </div>
@@ -84,7 +84,7 @@ const Navbar = () => {
               </li>
             ))}
             <li>
-              <p className="absolute -bottom-12 text-sm font-medium text-slate-600 transition dark:text-slate-400 lg:hidden">
+              <p className="absolute -bottom-12 text-sm font-medium text-slate-700 transition dark:text-slate-300 lg:hidden">
                 &copy; {new Date().getFullYear()} Copyright:{" "}
                 <a
                   className="font-semibold text-cyan-600 dark:text-cyan-400"
@@ -98,7 +98,7 @@ const Navbar = () => {
           </ul>
         </div>
         <div className="flex items-center text-xl">
-          <ThemeSwitcher className="ml-5 cursor-pointer rounded-full bg-slate-200 p-1 transition hover:text-cyan-500 dark:bg-slate-700 dark:hover:text-cyan-400" />
+          <ThemeSwitcher className="ml-5 cursor-pointer rounded-full bg-slate-200 p-1 transition hover:text-cyan-500 dark:bg-slate-800 dark:hover:text-cyan-400" />
           <div className="menuBtn">
             <RiMenu4Fill
               onClick={handleMenuToggle}
