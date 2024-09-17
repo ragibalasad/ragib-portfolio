@@ -63,7 +63,7 @@ function ExperienceItem({ count, label, afterBg }: Experience) {
   return (
     <div
       ref={ref}
-      className={`experiences-after flex size-24 flex-col items-center justify-center rounded-lg bg-white p-2 text-slate-700 dark:bg-slate-800 dark:text-slate-300 ${afterBg}`}
+      className={`experiences-after flex size-24 flex-col items-center justify-center rounded-lg bg-white p-2 text-slate-700 dark:bg-slate-900 dark:text-slate-300 ${afterBg}`}
     >
       <AnimatedNumber
         className="text-2xl font-semibold"
