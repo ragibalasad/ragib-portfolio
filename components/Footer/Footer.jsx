@@ -63,7 +63,7 @@ const Footer = () => {
 
         <div className="bg-slate-950 max-sm:px-6">
           <div className="container mx-auto h-auto py-3 sm:w-4/5">
-            <div className="mx-auto w-fit text-slate-300">
+            <div className="mx-auto w-fit text-slate-300 text-sm">
               Copyright &copy; {new Date().getFullYear()}. Made by{" "}
               <a
                 href="https://github.com/ragibalasad"
