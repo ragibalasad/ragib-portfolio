@@ -11,7 +11,7 @@ import { IoMail } from "react-icons/io5";
 const Footer = () => {
   return (
     <>
-      <section className="mt-24 bg-slate-900 dark:bg-slate-800">
+      <section className="footer mt-24 bg-slate-900">
         <div className="container mx-auto h-auto py-12 max-sm:px-6 sm:w-4/5">
           <div className="flex gap-6 text-slate-300 max-lg:flex-col">
             <div className="my-auto">
@@ -35,8 +35,22 @@ const Footer = () => {
 
             <div className="my-auto flex flex-col gap-4 lg:ml-auto">
               <ul className="my-auto flex flex-wrap gap-5 font-medium lg:mx-auto">
-                <li>License</li>
-                <li>Contribute</li>
+                <li>
+                  <a
+                    href="https://github.com/ragibalasad/ragib-portfolio/?tab=MIT-1-ov-file#readme"
+                    target="_blank"
+                  >
+                    License
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://github.com/ragibalasad/ragib-portfolio/#readme"
+                    target="_blank"
+                  >
+                    Contribute
+                  </a>
+                </li>
                 <li>About</li>
                 <li>Contact</li>
               </ul>
@@ -63,7 +77,7 @@ const Footer = () => {
 
         <div className="bg-slate-950 max-sm:px-6">
           <div className="container mx-auto h-auto py-3 sm:w-4/5">
-            <div className="mx-auto w-fit text-slate-300 text-sm">
+            <div className="mx-auto w-fit text-sm text-slate-300">
               Copyright &copy; {new Date().getFullYear()}. Made by{" "}
               <a
                 href="https://github.com/ragibalasad"
