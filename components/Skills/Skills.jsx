@@ -71,7 +71,7 @@ const Skills = () => {
                 {skillSet.items.map((skill, i) => (
                   <li
                     key={i}
-                    className="cursor-pointer rounded bg-white p-1 px-4 text-sm font-medium text-cyan-700 ring-2 ring-white ring-offset-2 ring-offset-slate-200/80 dark:bg-slate-800 dark:text-cyan-400 dark:ring-slate-800 dark:ring-offset-slate-900"
+                    className="cursor-pointer rounded bg-white p-1 px-4 text-sm font-medium text-cyan-700 ring-2 ring-white ring-offset-2 ring-offset-slate-200/80 dark:bg-slate-800 dark:text-cyan-400 dark:ring-slate-800 dark:ring-offset-slate-950"
                   >
                     {skill}
                   </li>
