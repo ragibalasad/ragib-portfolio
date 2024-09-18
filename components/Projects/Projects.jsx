@@ -63,7 +63,7 @@ const Projects = () => {
   };
 
   return (
-    <section className="projectsSection relative my-24 dark:bg-slate-800/70 max-sm:px-6">
+    <section className="projectsSection relative my-24 dark:bg-slate-900/70 max-sm:px-6">
       <div className="container mx-auto h-auto py-16 sm:w-4/5">
         <p className="border-l-4 border-cyan-400 pl-4 font-semibold dark:text-slate-300">
           Projects
@@ -100,7 +100,7 @@ const Projects = () => {
             {filteredProjects.map((project, index) => (
               <motion.div
                 key={project.title} // Use title as unique key to prevent index clashes
-                className="overflow-hidden rounded-2xl bg-white shadow dark:bg-slate-700/70"
+                className="overflow-hidden rounded-2xl bg-white shadow dark:bg-slate-800/90"
                 layout
                 variants={transitionEffects}
                 initial="hidden"
@@ -118,7 +118,9 @@ const Projects = () => {
                   />
                 </div>
                 <div className="flex p-4">
-                  <h1 className="text-lg font-medium">{project.title}</h1>
+                  <h1 className="text-lg font-medium dark:text-slate-200">
+                    {project.title}
+                  </h1>
                   <div className="ml-auto flex gap-4 text-xl">
                     <a
                       className="rounded-full transition hover:text-cyan-400"
