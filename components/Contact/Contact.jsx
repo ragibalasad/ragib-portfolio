@@ -7,7 +7,7 @@ const Contact = () => {
       <div className="placeHolderComponent h-auto">
         <div className="grid gap-16 lg:grid-cols-7 2xl:grid-cols-2">
           <div className="content-center justify-between max-md:order-1 max-md:mb-12 lg:col-span-3 2xl:col-span-1">
-            <div className="rounded-lg bg-white p-12 py-16 shadow-sm dark:bg-slate-700/60">
+            <div className="relative overflow-hidden rounded-lg bg-white p-12 py-16 shadow-sm ring-1 ring-inset ring-white/10 after:absolute after:right-0 after:top-0 after:-z-10 after:size-60 after:rounded-full after:bg-gradient-to-tr after:from-transparent after:blur-3xl dark:bg-slate-900/70 dark:after:to-indigo-500">
               <div className="flex flex-col">
                 <p className="border-l-4 border-cyan-500 pl-4 font-semibold dark:text-slate-300">
                   Contact info
@@ -74,7 +74,7 @@ const Contact = () => {
                 </label>
                 <input
                   id="email"
-                  className="my-1 mb-6 w-full rounded-lg bg-white p-3 ring-1 ring-slate-900/15 transition-all hover:bg-white/70 focus:outline-none focus:ring-2 focus:ring-cyan-500 dark:bg-slate-700/70 dark:hover:bg-slate-700/85"
+                  className="my-1 mb-6 w-full rounded-lg bg-white p-3 ring-1 ring-slate-900/15 transition-all hover:bg-white/70 focus:outline-none focus:ring-2 focus:ring-cyan-500 dark:bg-slate-800 dark:hover:bg-slate-700/85 dark:focus:bg-slate-700/85"
                   type="text"
                   placeholder="ragibalasad@pm.me"
                 />
@@ -86,7 +86,7 @@ const Contact = () => {
                 </label>
                 <input
                   id="subject"
-                  className="my-1 mb-6 w-full rounded-lg bg-white p-3 ring-1 ring-slate-900/15 transition-all hover:bg-slate-100/70 focus:outline-none focus:ring-2 focus:ring-cyan-500 dark:bg-slate-700/70 dark:hover:bg-slate-700/85"
+                  className="my-1 mb-6 w-full rounded-lg bg-white p-3 ring-1 ring-slate-900/15 transition-all hover:bg-slate-100/70 focus:outline-none focus:ring-2 focus:ring-cyan-500 dark:bg-slate-800 dark:hover:bg-slate-700/85 dark:focus:bg-slate-700/85"
                   type="text"
                   placeholder="Let me know how I can help you"
                 />
@@ -97,7 +97,7 @@ const Contact = () => {
                   Your message
                 </label>
                 <textarea
-                  className="my-1 mb-6 w-full rounded-lg bg-white p-3 font-medium ring-1 ring-slate-900/15 transition-all hover:bg-slate-100/70 focus:outline-none focus:ring-2 focus:ring-cyan-500 dark:bg-slate-700/70 dark:hover:bg-slate-700/85"
+                  className="my-1 mb-6 w-full rounded-lg bg-white p-3 font-medium ring-1 ring-slate-900/15 transition-all hover:bg-slate-100/70 focus:outline-none focus:ring-2 focus:ring-cyan-500 dark:bg-slate-800 dark:hover:bg-slate-700/85 dark:focus:bg-slate-700/85"
                   name=""
                   id="msg"
                   cols="30"
