@@ -36,35 +36,33 @@ const About = () => {
                 Precision Design,
                 <br /> Peak Efficiency
               </h1>
-              <p className="mt-4 text-lg font-normal text-slate-700 dark:text-slate-400">
-                I&apos;m your friendly neighborhood{" "}
-                <strong className="font-semibold text-slate-800 dark:text-slate-300">
-                  software developer
-                </strong>{" "}
-                with over{" "}
-                <strong className="font-semibold text-slate-800 dark:text-slate-300">
-                  4 years{" "}
-                </strong>
-                of experience in coding. I build{" "}
-                <strong className="font-semibold text-slate-800 dark:text-slate-300">
-                  full-stack{" "}
-                </strong>
-                solutions that are as{" "}
-                <strong className="font-semibold text-slate-800 dark:text-slate-300">
-                  reliable
-                </strong>{" "}
-                as your morning coffee. When I&apos;m not debugging or
-                optimizing, I&apos;m probably sharing
-                <strong className="font-semibold text-slate-800 dark:text-slate-300">
+              <p className="about-me mt-4 text-lg font-normal text-slate-700 dark:text-slate-400">
+                I&apos;m a <strong>software developer</strong> from Bangladesh
+                with over <strong>4 years </strong>
+                of experience in <strong>full-stack web</strong> app and{" "}
+                <strong>desktop</strong> app development. I specialize in the{" "}
+                <strong>Python</strong> programming language and have decent
+                knowledge in languages like <strong>C</strong>,{" "}
+                <strong>TypeScript</strong>, and <strong>Go</strong>. I have
+                done several projects throughout the years including personal
+                and client projects. <br />
+                <br /> Take a look at my work in the{" "}
+                <a
+                  href="#projects"
+                  className="font-medium text-cyan-600 dark:text-cyan-400"
+                >
                   {" "}
-                  tech tips{" "}
-                </strong>
-                or debating why dark mode is superior to light mode. <br />
-                <br /> I&apos;m always up for{" "}
-                <strong className="font-semibold text-slate-800 dark:text-slate-300">
-                  collaborations
-                </strong>
-                , so let&apos;s connect and make some code magic together!
+                  projects
+                </a>{" "}
+                gallery. I&apos;m always up for <strong>collaborations</strong>.
+                <a
+                  href="#contact"
+                  className="font-medium text-cyan-600 dark:text-cyan-400"
+                >
+                  {" "}
+                  Learn More
+                </a>{" "}
+                about me.
               </p>
 
               <div className="mt-12 grid grid-cols-4 gap-x-4 gap-y-8 max-sm:grid-cols-2 max-sm:grid-rows-2 max-sm:items-center max-sm:justify-items-center">

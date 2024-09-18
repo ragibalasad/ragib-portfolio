@@ -63,7 +63,10 @@ const Projects = () => {
   };
 
   return (
-    <section className="projectsSection relative my-24 dark:bg-slate-900/70 max-sm:px-6">
+    <section
+      id="projects"
+      className="projectsSection relative my-24 dark:bg-slate-900/70 max-sm:px-6"
+    >
       <div className="container mx-auto h-auto py-16 sm:w-4/5">
         <p className="border-l-4 border-cyan-400 pl-4 font-semibold dark:text-slate-300">
           Projects

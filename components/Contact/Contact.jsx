@@ -3,7 +3,10 @@ import { MdLocationOn, MdMail, MdPhone } from "react-icons/md";
 
 const Contact = () => {
   return (
-    <section className="contact container relative mx-auto my-32 sm:w-4/5">
+    <section
+      id="contact"
+      className="contact container relative mx-auto my-32 sm:w-4/5"
+    >
       <div className="placeHolderComponent h-auto">
         <div className="grid gap-16 lg:grid-cols-7 2xl:grid-cols-2">
           <div className="content-center justify-between max-md:order-1 max-md:mb-12 lg:col-span-3 2xl:col-span-1">

@@ -40,7 +40,7 @@ const Navbar = () => {
     { to: "projectsSection", offset: -60, label: "projects" },
     { to: "skills", offset: -100, label: "skills" },
     { to: "services", offset: -100, label: "services" },
-    { to: "contact", offset: -100, label: "contact" },
+    { to: "contact", offset: -130, label: "contact" },
   ];
 
   return (

@@ -31,6 +31,10 @@
   scrollbar-color: #22d3ee #1e293b;
 }
 
+.about-me strong {
+  @apply font-semibold text-slate-800 dark:text-slate-300;
+}
+
 .experiences-after {
   @apply relative cursor-pointer after:absolute after:right-1 after:top-1 after:-z-10 after:h-full after:w-full after:rounded-lg after:opacity-70 after:transition-all hover:after:right-0.5 hover:after:top-1.5;
 }

@@ -3,6 +3,10 @@
 @tailwind utilities;
 
 @layer components {
+  html {
+    scroll-behavior: smooth;
+  }
+
   body {
     @apply bg-slate-50 text-slate-900 antialiased dark:bg-slate-950 dark:text-indigo-50;
   }
