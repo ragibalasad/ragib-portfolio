@@ -1,12 +1,11 @@
 "use client";
 
 import { AnimatePresence, motion } from "framer-motion";
-import Image from "next/image";
 import { useState } from "react";
-import { FaEye, FaGithub } from "react-icons/fa";
 import { MdOutlineFileDownload } from "react-icons/md";
 import { LuExternalLink } from "react-icons/lu";
 import { images } from "../../constants";
+import GridItem from "./GridItem";
 
 const catagories = ["all", "front end", "back end", "others"];
 
@@ -69,12 +68,6 @@ const Projects = () => {
     },
   };
 
-  const transitionEffects = {
-    hidden: { opacity: 0, scale: 0.95, x: 50 }, // Slight scaling and moving to the right when hidden
-    show: { opacity: 1, scale: 1, x: 0 }, // Moving back into position with full opacity
-    exit: { opacity: 0, scale: 0.9, x: -50, transition: { duration: 0.3 } }, // Exit by moving to the left and shrinking
-  };
-
   return (
     <section
       id="projects"
@@ -114,59 +107,7 @@ const Projects = () => {
         >
           <AnimatePresence>
             {filteredProjects.map((project, index) => (
-              <motion.div
-                key={project.title} // Use title as unique key to prevent index clashes
-                className="h-fit overflow-hidden rounded-lg bg-white shadow dark:bg-slate-900"
-                layout
-                variants={transitionEffects}
-                initial="hidden"
-                animate="show"
-                exit="exit"
-                transition={{ duration: 0.4, ease: "easeInOut" }} // Smooth transitions
-              >
-                <div className="overflow-hidden">
-                  <Image
-                    className="transition-all hover:scale-110"
-                    src={project.image}
-                    alt={project.title}
-                    width={500}
-                    height={300}
-                  />
-                </div>
-                <div className="p-4">
-                  <div className="flex">
-                    <h1 className="text-base font-semibold dark:text-slate-200">
-                      {project.title}
-                    </h1>
-                    <div className="ml-auto flex gap-4 text-xl">
-                      <a
-                        className="rounded-full transition hover:text-cyan-400"
-                        href={project.live}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        <FaEye />
-                      </a>
-                      <a
-                        className="rounded-full transition hover:text-cyan-400"
-                        href={project.github}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        <FaGithub />
-                      </a>
-                    </div>
-                  </div>
-                  <div className="project-tags flex flex-wrap gap-2 py-4">
-                    {project.tags.map((tag, index) => (
-                      <>
-                        <span key={index}>{tag}</span>
-                      </>
-                    ))}
-                  </div>
-                  <div className="mt-1 text-sm">{project.description}</div>
-                </div>
-              </motion.div>
+              <GridItem key={index} item={project} />
             ))}
           </AnimatePresence>
         </motion.div>
