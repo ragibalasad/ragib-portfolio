@@ -103,7 +103,7 @@ const Projects = () => {
             {filteredProjects.map((project, index) => (
               <motion.div
                 key={project.title} // Use title as unique key to prevent index clashes
-                className="overflow-hidden rounded-2xl bg-white shadow dark:bg-slate-800/90"
+                className="overflow-hidden rounded-lg bg-white shadow dark:bg-slate-900"
                 layout
                 variants={transitionEffects}
                 initial="hidden"
@@ -120,27 +120,41 @@ const Projects = () => {
                     height={300}
                   />
                 </div>
-                <div className="flex p-4">
-                  <h1 className="text-lg font-medium dark:text-slate-200">
-                    {project.title}
-                  </h1>
-                  <div className="ml-auto flex gap-4 text-xl">
-                    <a
-                      className="rounded-full transition hover:text-cyan-400"
-                      href={project.live}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <FaEye />
-                    </a>
-                    <a
-                      className="rounded-full transition hover:text-cyan-400"
-                      href={project.github}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <FaGithub />
-                    </a>
+                <div className="p-4">
+                  <div className="flex">
+                    <h1 className="text-base font-semibold dark:text-slate-200">
+                      {project.title}
+                    </h1>
+                    <div className="ml-auto flex gap-4 text-xl">
+                      <a
+                        className="rounded-full transition hover:text-cyan-400"
+                        href={project.live}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <FaEye />
+                      </a>
+                      <a
+                        className="rounded-full transition hover:text-cyan-400"
+                        href={project.github}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <FaGithub />
+                      </a>
+                    </div>
+                  </div>
+                  <div className="project-tags flex space-x-2 py-4">
+                    <span class="">JavaScript</span>
+                    <span class="">Python</span>
+                    <span class="">HTML</span>
+                    <span class="">CSS</span>
+                  </div>
+                  <div className="mt-1">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic
+                    reiciendis fugit dignissimos aliquam illo ratione quidem
+                    quod velit vitae, illum fugiat mollitia ullam, doloremque
+                    dolorum dolore rerum accusantium officiis facilis.
                   </div>
                 </div>
               </motion.div>

@@ -39,6 +39,10 @@
   @apply relative cursor-pointer after:absolute after:right-1 after:top-1 after:-z-10 after:h-full after:w-full after:rounded-lg after:opacity-70 after:transition-all hover:after:right-0.5 hover:after:top-1.5;
 }
 
+.project-tags > span {
+  @apply rounded bg-blue-100 px-2.5 py-0.5 text-xs font-medium text-blue-900 dark:bg-blue-500/15 dark:text-blue-400;
+}
+
 .footer li a {
   @apply hover:text-cyan-400;
 }
