@@ -50,16 +50,16 @@ const projects = [
 ];
 
 const Projects = () => {
-  // Distribute project items into three arrays
-  const grid1Items = projects.filter((_, index) => index % 3 === 0);
-  const grid2Items = projects.filter((_, index) => index % 3 === 1);
-  const grid3Items = projects.filter((_, index) => index % 3 === 2);
-
   const [filter, setFilter] = useState("all");
 
   const filteredProjects = projects.filter(
     (project) => filter === "all" || project.category === filter,
   );
+
+  // Distribute project items into three arrays
+  const grid1Items = filteredProjects.filter((_, index) => index % 3 === 0);
+  const grid2Items = filteredProjects.filter((_, index) => index % 3 === 1);
+  const grid3Items = filteredProjects.filter((_, index) => index % 3 === 2);
 
   const containerVariants = {
     show: {
@@ -157,11 +157,12 @@ const Projects = () => {
                       </a>
                     </div>
                   </div>
-                  <div className="project-tags flex flex-wrap space-x-2 py-4">
-                    <span class="">JavaScript</span>
-                    <span class="">Python</span>
-                    <span class="">HTML</span>
-                    <span class="">CSS</span>
+                  <div className="project-tags flex flex-wrap gap-2 py-4">
+                    {project.tags.map((tag, index) => (
+                      <>
+                        <span key={index}>{tag}</span>
+                      </>
+                    ))}
                   </div>
                   <div className="mt-1 text-sm">{project.description}</div>
                 </div>
