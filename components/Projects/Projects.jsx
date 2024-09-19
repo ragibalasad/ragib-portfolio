@@ -17,7 +17,7 @@ const projects = [
     github: "https://github.com/DEVELEVEN-io/develeven-io",
     category: "front end",
     tags: ["TypeScript", "React", "Next.js", "CSS"],
-    description: "",
+    description: "Team DevEleven's landing website",
   },
   {
     title: "Ragib's Portfolio",
@@ -26,7 +26,7 @@ const projects = [
     github: "https://github.com/ragibalasad/ragib-portfolio",
     category: "front end",
     tags: ["JavaScript", "Next.js", "Tailwind CSS", "Framer"],
-    description: "Ragib Al Asad's portfolio website. Not Complete Yet",
+    description: "Ragib Al Asad's portfolio website. Not Complete Yet ",
   },
   {
     title: "Test Project 1",
@@ -46,6 +46,17 @@ const projects = [
     tags: ["TypeScript", "React", "Next.js", "Tailwind CSS"],
     description: "",
   },
+
+  {
+    title: "Test Project 3",
+    image: images.project_develeven,
+    live: "https://ragibalasad.me/",
+    github: "https://github.com/ragibalasad/ragib-portfolio",
+    category: "back end",
+    tags: ["TypeScript", "React", "Next.js", "Tailwind CSS"],
+    description:
+      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe molestiae, repellendus aut sint vitae officia ipsum corrupti, minima at illo beatae ut! Sunt praesentium cupiditate qui mollitia? Minima, suscipit eum.",
+  },
 ];
 
 const Projects = () => {
@@ -55,10 +66,13 @@ const Projects = () => {
     (project) => filter === "all" || project.category === filter,
   );
 
-  // Distribute project items into three arrays
-  const grid1Items = filteredProjects.filter((_, index) => index % 3 === 0);
-  const grid2Items = filteredProjects.filter((_, index) => index % 3 === 1);
-  const grid3Items = filteredProjects.filter((_, index) => index % 3 === 2);
+  // Initialize arrays for the three grids
+  const grids = [[], [], []];
+
+  // Distribute items across the grids
+  projects.forEach((project, index) => {
+    grids[index % 3].push(project);
+  });
 
   const containerVariants = {
     show: {
@@ -106,6 +120,18 @@ const Projects = () => {
           layout
         >
           <AnimatePresence>
+            {/* masonry-style layout. */}
+
+            {/* {grids.map((gridItems, gridIndex) => (
+              <div key={gridIndex} className="grid grid-cols-1 gap-6">
+                {gridItems.map((item, itemIndex) => (
+                  <GridItem key={itemIndex} item={item} />
+                ))}
+              </div>
+            ))} */}
+
+            {/* Typical Grid Layout */}
+
             {filteredProjects.map((project, index) => (
               <GridItem key={index} item={project} />
             ))}
