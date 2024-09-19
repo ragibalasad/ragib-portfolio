@@ -17,7 +17,8 @@ const projects = [
     github: "https://github.com/DEVELEVEN-io/develeven-io",
     category: "front end",
     tags: ["TypeScript", "React", "Next.js", "CSS"],
-    description: "Team DevEleven's landing website",
+    description:
+      "Team DevEleven's landing website. Contributed as a team with @AbidAlWassie",
   },
   {
     title: "Ragib's Portfolio",

@@ -29,7 +29,7 @@ const transitionEffects = {
 const GridItem: React.FC<GridItemProps> = ({ item }) => (
   <motion.div
     key={item.title} // Use title as unique key to prevent index clashes
-    className="h-fit overflow-hidden rounded-lg bg-white shadow dark:bg-slate-900"
+    className="flex flex-col overflow-hidden rounded-lg bg-white shadow dark:bg-slate-900"
     layout
     variants={transitionEffects}
     initial="hidden"
@@ -46,7 +46,7 @@ const GridItem: React.FC<GridItemProps> = ({ item }) => (
         height={300}
       />
     </div>
-    <div className="p-4">
+    <div className="flex grow flex-col p-4">
       <div className="flex">
         <h1 className="text-base font-semibold dark:text-slate-200">
           {item.title}
@@ -70,14 +70,30 @@ const GridItem: React.FC<GridItemProps> = ({ item }) => (
           </a>
         </div>
       </div>
-      <div className="project-tags flex flex-wrap gap-2 py-4">
+      <div className="project-tags flex flex-wrap gap-2 py-3">
         {item.tags.map((tag, index) => (
           <>
             <span key={index}>{tag}</span>
           </>
         ))}
       </div>
-      <div className="mt-1 text-sm">{item.description}</div>
+      <div className="mt-1 flex grow flex-col text-sm">
+        <span className="line-clamp-3 grow">
+          {item.description ? (
+            item.description
+          ) : (
+            <span className="italic text-slate-600 dark:text-slate-400">
+              No description available
+            </span>
+          )}
+        </span>
+        <a
+          href="#"
+          className="mt-auto inline-block text-cyan-600 dark:text-cyan-400"
+        >
+          Learn More
+        </a>
+      </div>
     </div>
   </motion.div>
 );
