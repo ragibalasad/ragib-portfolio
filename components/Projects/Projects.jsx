@@ -8,41 +8,54 @@ import { MdOutlineFileDownload } from "react-icons/md";
 import { LuExternalLink } from "react-icons/lu";
 import { images } from "../../constants";
 
+const catagories = ["all", "front end", "back end", "others"];
+
+const projects = [
+  {
+    title: "DevEleven Website",
+    image: images.project_develeven,
+    live: "https://develeven.vercel.app/",
+    github: "https://github.com/DEVELEVEN-io/develeven-io",
+    category: "front end",
+    tags: ["TypeScript", "React", "Next.js", "CSS"],
+    description: "",
+  },
+  {
+    title: "Ragib's Portfolio",
+    image: images.project_ragib_portfolio,
+    live: "https://ragibalasad.me/",
+    github: "https://github.com/ragibalasad/ragib-portfolio",
+    category: "front end",
+    tags: ["JavaScript", "Next.js", "Tailwind CSS", "Framer"],
+    description: "Ragib Al Asad's portfolio website. Not Complete Yet",
+  },
+  {
+    title: "Test Project 1",
+    image: images.project_develeven,
+    live: "https://ragibalasad.me/",
+    github: "https://github.com/ragibalasad/ragib-portfolio",
+    category: "back end",
+    tags: ["TypeScript", "React", "Next.js", "Tailwind CSS"],
+    description: "",
+  },
+  {
+    title: "Test Project 2",
+    image: images.project_develeven,
+    live: "https://ragibalasad.me/",
+    github: "https://github.com/ragibalasad/ragib-portfolio",
+    category: "back end",
+    tags: ["TypeScript", "React", "Next.js", "Tailwind CSS"],
+    description: "",
+  },
+];
+
 const Projects = () => {
+  // Distribute project items into three arrays
+  const grid1Items = projects.filter((_, index) => index % 3 === 0);
+  const grid2Items = projects.filter((_, index) => index % 3 === 1);
+  const grid3Items = projects.filter((_, index) => index % 3 === 2);
+
   const [filter, setFilter] = useState("all");
-
-  const catagories = ["all", "front end", "back end", "others"];
-
-  const projects = [
-    {
-      title: "DevEleven Website",
-      image: images.project_develeven,
-      live: "https://develeven.vercel.app/",
-      github: "https://github.com/DEVELEVEN-io/develeven-io",
-      category: "front end",
-    },
-    {
-      title: "Ragib's Portfolio",
-      image: images.project_ragib_portfolio,
-      live: "https://ragibalasad.me/",
-      github: "https://github.com/ragibalasad/ragib-portfolio",
-      category: "front end",
-    },
-    {
-      title: "Test Project 1",
-      image: images.project_develeven,
-      live: "https://ragibalasad.me/",
-      github: "https://github.com/ragibalasad/ragib-portfolio",
-      category: "back end",
-    },
-    {
-      title: "Test Project 2",
-      image: images.project_develeven,
-      live: "https://ragibalasad.me/",
-      github: "https://github.com/ragibalasad/ragib-portfolio",
-      category: "back end",
-    },
-  ];
 
   const filteredProjects = projects.filter(
     (project) => filter === "all" || project.category === filter,
@@ -93,7 +106,7 @@ const Projects = () => {
 
         {/* Display Filtered Projects */}
         <motion.div
-          className="grid gap-6 lg:grid-cols-3 lg:grid-rows-2"
+          className="grid gap-6 lg:grid-cols-3"
           variants={containerVariants}
           initial="hidden"
           animate="show"
@@ -103,7 +116,7 @@ const Projects = () => {
             {filteredProjects.map((project, index) => (
               <motion.div
                 key={project.title} // Use title as unique key to prevent index clashes
-                className="overflow-hidden rounded-lg bg-white shadow dark:bg-slate-900"
+                className="h-fit overflow-hidden rounded-lg bg-white shadow dark:bg-slate-900"
                 layout
                 variants={transitionEffects}
                 initial="hidden"
@@ -144,18 +157,13 @@ const Projects = () => {
                       </a>
                     </div>
                   </div>
-                  <div className="project-tags flex space-x-2 py-4">
+                  <div className="project-tags flex flex-wrap space-x-2 py-4">
                     <span class="">JavaScript</span>
                     <span class="">Python</span>
                     <span class="">HTML</span>
                     <span class="">CSS</span>
                   </div>
-                  <div className="mt-1">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic
-                    reiciendis fugit dignissimos aliquam illo ratione quidem
-                    quod velit vitae, illum fugiat mollitia ullam, doloremque
-                    dolorum dolore rerum accusantium officiis facilis.
-                  </div>
+                  <div className="mt-1 text-sm">{project.description}</div>
                 </div>
               </motion.div>
             ))}
