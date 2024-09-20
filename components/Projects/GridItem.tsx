@@ -72,9 +72,7 @@ const GridItem: React.FC<GridItemProps> = ({ item }) => (
       </div>
       <div className="project-tags flex flex-wrap gap-2 py-3">
         {item.tags.map((tag, index) => (
-          <>
-            <span key={index}>{tag}</span>
-          </>
+          <span key={index}>{tag}</span>
         ))}
       </div>
       <div className="mt-1 flex grow flex-col text-sm">

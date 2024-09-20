@@ -11,14 +11,14 @@ const Hero = () => {
       <div className="relative grid w-full grid-cols-1 pt-32 lg:grid-cols-7 xl:pt-40 2xl:grid-cols-2 2xl:pt-64">
         <div className="justify-between pt-16 max-sm:px-6 lg:col-span-3 2xl:col-span-1">
           <div className="pb-20 sm:py-20">
-            <p className="-ml-px font-semibold text-slate-800 dark:text-slate-300">
+            <p className="-ml-px text-sm font-semibold text-slate-800 dark:text-slate-300">
               Hi there, I&apos;m
             </p>
             <TextEffect className="-ml-1 py-2 pb-4 text-5xl font-semibold text-cyan-800 dark:text-cyan-400">
               Ragib Al Asad
             </TextEffect>
             <TextEffect
-              className="border-l-4 border-cyan-400 pl-4 text-xl font-medium text-slate-800 dark:border-cyan-400 dark:text-slate-300"
+              className="border-l-4 border-cyan-400 pl-4 text-lg font-medium text-slate-800 dark:border-cyan-400 dark:text-slate-300"
               preset="slide"
             >
               Software Developer from Bangladesh

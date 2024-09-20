@@ -36,7 +36,7 @@ const About = () => {
                 Precision Design,
                 <br /> Peak Efficiency
               </h1>
-              <p className="about-me mt-4 text-lg font-normal text-slate-700 dark:text-slate-400">
+              <p className="about-me mt-4 text-base font-normal text-slate-700 dark:text-slate-400">
                 I&apos;m a <strong>software developer</strong> from Bangladesh
                 with over <strong>4 years </strong>
                 of experience in <strong>full-stack web</strong> app and{" "}
