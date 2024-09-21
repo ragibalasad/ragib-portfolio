@@ -17,12 +17,13 @@ const Hero = () => {
             <TextEffect className="-ml-1 py-2 pb-4 text-5xl font-semibold text-cyan-800 dark:text-cyan-400">
               Ragib Al Asad
             </TextEffect>
-            <TextEffect
-              className="border-l-4 border-cyan-400 pl-4 text-lg font-medium text-slate-800 dark:border-cyan-400 dark:text-slate-300"
-              preset="slide"
-            >
-              Software Developer from Bangladesh
-            </TextEffect>
+            <h1 className="flex items-center gap-4 text-lg font-medium text-slate-800 dark:text-slate-300">
+              <span className="-mt-1 text-2xl font-bold text-cyan-500">{`{`}</span>
+              <TextEffect preset="slide" className="my-auto">
+                Software Developer from Bangladesh
+              </TextEffect>
+            </h1>
+
             <div className="flex gap-3 pt-16">
               <a
                 href=""

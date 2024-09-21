@@ -64,9 +64,10 @@ const Skills = () => {
               className={`max-md:col-span-4 ${index == 2 ? "col-span-3 md:mt-8" : "col-span-2"}`}
               key={index}
             >
-              <h1 className="mb-8 border-l-4 border-cyan-400 pl-4 font-semibold text-slate-700 dark:text-slate-300">
-                {skillSet.category}
-              </h1>
+              <p className="mb-8 flex items-center gap-4 font-semibold dark:text-slate-300">
+                <span className="-mt-1 text-2xl font-bold dark:text-cyan-500">{`{`}</span>
+                <span className="my-auto text-base">{skillSet.category}</span>
+              </p>
               <ul className="flex flex-wrap gap-5 uppercase md:pr-4">
                 {skillSet.items.map((skill, i) => (
                   <li
