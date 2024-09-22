@@ -65,7 +65,7 @@ const Skills = () => {
               key={index}
             >
               <p className="mb-8 flex items-center gap-4 font-semibold dark:text-slate-300">
-                <span className="-mt-1 text-2xl font-bold dark:text-cyan-500">{`{`}</span>
+                <span className="-mt-1 text-2xl font-bold text-cyan-500">{`{`}</span>
                 <span className="my-auto text-base">{skillSet.category}</span>
               </p>
               <ul className="flex flex-wrap gap-5 uppercase md:pr-4">
