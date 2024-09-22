@@ -15,7 +15,7 @@ const Services = () => {
   return (
     <section
       id="services"
-      className="services container relative mx-auto my-32 sm:w-4/5"
+      className="services container relative mx-auto my-32 max-sm:mx-6 sm:w-4/5"
     >
       <div className="placeHolderComponent h-auto">
         <p className="flex items-center gap-4 font-semibold dark:text-slate-300">
@@ -27,7 +27,7 @@ const Services = () => {
         </h1>
         <div className="grid gap-6 py-12 lg:grid-cols-3">
           <div className="col-span-1 2xl:col-span-1">
-            <div className="relative overflow-hidden bg-white p-6 shadow-sm ring-1 ring-inset ring-white/10 after:absolute after:right-0 after:top-0 after:-z-10 after:size-60 after:rounded-full after:bg-gradient-to-tr after:from-transparent after:blur-3xl dark:bg-slate-900/70 dark:after:to-indigo-500 sm:rounded-lg">
+            <div className="relative overflow-hidden rounded-lg bg-white p-6 shadow-sm ring-1 ring-inset ring-white/10 after:absolute after:right-0 after:top-0 after:-z-10 after:size-60 after:rounded-full after:bg-gradient-to-tr after:from-transparent after:blur-3xl dark:bg-slate-900/70 dark:after:to-indigo-500">
               <div className="mx-auto my-8 h-fit w-fit rounded-full bg-slate-200 p-8 text-4xl text-slate-700 dark:bg-slate-600 dark:text-slate-200">
                 <FaCode />
               </div>
@@ -63,7 +63,7 @@ const Services = () => {
             </div>
           </div>
           <div className="col-span-1 2xl:col-span-1">
-            <div className="relative overflow-hidden bg-white p-6 shadow-sm ring-1 ring-inset ring-white/10 after:absolute after:right-0 after:top-0 after:-z-10 after:size-60 after:rounded-full after:bg-gradient-to-tr after:from-transparent after:blur-3xl dark:bg-slate-900/70 dark:after:to-indigo-500 sm:rounded-lg">
+            <div className="relative overflow-hidden rounded-lg bg-white p-6 shadow-sm ring-1 ring-inset ring-white/10 after:absolute after:right-0 after:top-0 after:-z-10 after:size-60 after:rounded-full after:bg-gradient-to-tr after:from-transparent after:blur-3xl dark:bg-slate-900/70 dark:after:to-indigo-500">
               <div className="mx-auto my-8 h-fit w-fit rounded-full bg-slate-200 p-8 text-4xl text-slate-700 dark:bg-slate-600 dark:text-slate-200">
                 <FaServer />
               </div>
@@ -99,7 +99,7 @@ const Services = () => {
             </div>
           </div>
           <div className="col-span-1 2xl:col-span-1">
-            <div className="relative overflow-hidden bg-white p-6 shadow-sm ring-1 ring-inset ring-white/10 after:absolute after:right-0 after:top-0 after:-z-10 after:size-60 after:rounded-full after:bg-gradient-to-tr after:from-transparent after:blur-3xl dark:bg-slate-900/70 dark:after:to-indigo-500 sm:rounded-lg">
+            <div className="relative overflow-hidden rounded-lg bg-white p-6 shadow-sm ring-1 ring-inset ring-white/10 after:absolute after:right-0 after:top-0 after:-z-10 after:size-60 after:rounded-full after:bg-gradient-to-tr after:from-transparent after:blur-3xl dark:bg-slate-900/70 dark:after:to-indigo-500">
               <div className="mx-auto my-8 h-fit w-fit rounded-full bg-slate-200 p-8 text-4xl text-slate-700 dark:bg-slate-600 dark:text-slate-200">
                 <FaCode />
               </div>
