@@ -22,6 +22,11 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
+        <meta
+          name="apple-mobile-web-app-status-bar-style"
+          content="black-translucent"
+        />
+        <meta name="theme-color" content="#020617" id="theme-color" />
         <script
           dangerouslySetInnerHTML={{
             __html: `
