@@ -90,7 +90,7 @@ const Projects = () => {
     >
       <div className="container mx-auto h-auto py-16 sm:w-4/5">
         <p className="flex items-center gap-4 font-semibold dark:text-slate-300">
-          <span className="-mt-1 text-2xl font-bold text-cyan-500">{`{`}</span>
+          <span className="-mt-1 text-2xl text-cyan-500">{`{`}</span>
           Projects
         </p>
 

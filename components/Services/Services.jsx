@@ -19,7 +19,7 @@ const Services = () => {
     >
       <div className="placeHolderComponent h-auto">
         <p className="flex items-center gap-4 font-semibold dark:text-slate-300">
-          <span className="-mt-1 text-2xl font-bold text-cyan-500">{`{`}</span>
+          <span className="-mt-1 text-2xl text-cyan-500">{`{`}</span>
           <span className="my-auto text-base">Services</span>
         </p>
         <h1 className="py-6 text-4xl font-semibold text-cyan-800 dark:text-cyan-400">

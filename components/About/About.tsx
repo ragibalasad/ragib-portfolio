@@ -30,7 +30,7 @@ const About = () => {
           <div className="col-span-1 flex lg:col-span-3 2xl:col-span-2">
             <div className="mx-2 my-auto max-md:pt-16 sm:px-16 2xl:p-24">
               <p className="flex items-center gap-4 font-semibold dark:text-slate-300">
-                <span className="-mt-1 text-2xl font-bold text-cyan-500">{`{`}</span>
+                <span className="-mt-1 text-2xl text-cyan-500">{`{`}</span>
                 <span className="my-auto text-base">About Me</span>
               </p>
               <h1 className="py-6 text-4xl font-semibold text-cyan-800 dark:text-cyan-400">
