@@ -10,7 +10,7 @@ const Contact = () => {
       <div className="placeHolderComponent h-auto">
         <div className="grid gap-16 lg:grid-cols-7 2xl:grid-cols-2">
           <div className="content-center justify-between max-md:order-1 max-md:mb-12 lg:col-span-3 2xl:col-span-1">
-            <div className="relative overflow-hidden bg-white p-12 py-16 shadow-sm ring-1 ring-inset ring-white/10 after:absolute after:right-0 after:top-0 after:-z-10 after:size-60 after:rounded-full after:bg-gradient-to-tr after:from-transparent after:blur-3xl dark:bg-slate-900/70 dark:after:to-indigo-500 sm:rounded-lg">
+            <div className="relative overflow-hidden bg-white px-12 py-16 shadow-sm ring-1 ring-inset ring-white/10 after:absolute after:right-0 after:top-0 after:-z-10 after:size-60 after:rounded-full after:bg-gradient-to-tr after:from-transparent after:blur-3xl dark:bg-slate-900/70 dark:after:to-indigo-500 max-sm:px-6 sm:rounded-lg">
               <div className="flex flex-col">
                 <p className="flex items-center gap-4 font-semibold dark:text-slate-300">
                   <span className="-mt-1 text-2xl text-cyan-500">{`{`}</span>

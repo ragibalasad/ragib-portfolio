@@ -37,12 +37,12 @@ const Services = () => {
                 <RiTailwindCssFill />
                 <SiNextdotjs />
               </div>
-              <div className="mb-4">
-                <h1 className="mx-auto w-fit text-2xl font-semibold text-cyan-600 dark:text-cyan-400">
+              <div className="mt-2">
+                <h1 className="text-center text-2xl font-semibold text-cyan-600 dark:text-cyan-400">
                   Frontend Development
                 </h1>
               </div>
-              <div className="mx-auto my-6 mb-8">
+              <div className="mx-auto my-5 mb-7">
                 <p className="text-center text-sm dark:text-slate-300">
                   I can craft responsive user interfaces using the latest
                   technologies to ensure your website is interactive and
@@ -72,12 +72,12 @@ const Services = () => {
                 <FaPython />
                 <SiNextdotjs />
               </div>
-              <div className="mb-4">
-                <h1 className="mx-auto w-fit text-2xl font-semibold text-cyan-600 dark:text-cyan-400">
+              <div className="mt-2">
+                <h1 className="text-center text-2xl font-semibold text-cyan-600 dark:text-cyan-400">
                   Backend Development
                 </h1>
               </div>
-              <div className="mx-auto my-6 mb-8">
+              <div className="mx-auto my-5 mb-7">
                 <p className="text-center text-sm dark:text-slate-300">
                   I can build scalable and efficient backend systems using
                   modern frameworks to ensure your application&apos;s data flow
@@ -109,12 +109,12 @@ const Services = () => {
                 <RiTailwindCssFill />
                 <SiNextdotjs />
               </div>
-              <div className="mb-4">
-                <h1 className="mx-auto w-fit text-2xl font-semibold text-cyan-600 dark:text-cyan-400">
+              <div className="mt-2">
+                <h1 className="text-center text-2xl font-semibold text-cyan-600 dark:text-cyan-400">
                   Frontend Development
                 </h1>
               </div>
-              <div className="mx-auto my-6 mb-8">
+              <div className="mx-auto my-5 mb-7">
                 <p className="w-full text-center text-sm dark:text-slate-300">
                   I can craft responsive user interfaces using the latest
                   technologies to ensure your website is interactive and
