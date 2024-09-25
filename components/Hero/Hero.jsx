@@ -18,7 +18,7 @@ const Hero = () => {
               Ragib Al Asad
             </TextEffect>
             <h1 className="flex items-center gap-4 text-lg font-medium text-slate-800 dark:text-slate-300">
-              <span className="-mt-1 text-2xl font-bold text-cyan-500">{`{`}</span>
+              <span className="-mt-1 text-2xl font-semibold text-cyan-500 max-sm:-mt-1.5 max-sm:text-5xl max-sm:font-normal">{`{`}</span>
               <TextEffect preset="slide" className="my-auto">
                 Software Developer from Bangladesh
               </TextEffect>

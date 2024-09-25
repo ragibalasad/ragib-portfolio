@@ -13,7 +13,7 @@ const Contact = () => {
             <div className="relative overflow-hidden bg-white p-12 py-16 shadow-sm ring-1 ring-inset ring-white/10 after:absolute after:right-0 after:top-0 after:-z-10 after:size-60 after:rounded-full after:bg-gradient-to-tr after:from-transparent after:blur-3xl dark:bg-slate-900/70 dark:after:to-indigo-500 sm:rounded-lg">
               <div className="flex flex-col">
                 <p className="flex items-center gap-4 font-semibold dark:text-slate-300">
-                  <span className="-mt-1 text-2xl font-bold text-cyan-500">{`{`}</span>
+                  <span className="-mt-1 text-2xl text-cyan-500">{`{`}</span>
                   <span className="my-auto text-base">Contact info</span>
                 </p>
 
@@ -64,7 +64,7 @@ const Contact = () => {
 
           <div className="max-md:order-2 max-sm:p-6 lg:col-span-4 2xl:col-span-1">
             <p className="flex items-center gap-4 font-semibold dark:text-slate-300">
-              <span className="-mt-1 text-2xl font-bold text-cyan-500">{`{`}</span>
+              <span className="-mt-1 text-2xl text-cyan-500">{`{`}</span>
               <span className="my-auto text-base">Send me a message</span>
             </p>
             <p className="py-6 text-4xl font-semibold text-cyan-800 dark:text-cyan-400">
