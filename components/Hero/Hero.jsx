@@ -29,6 +29,7 @@ const Hero = () => {
                 // href="https://raw.githubusercontent.com/ragibalasad/ragibalasad/main/ragib-resume.pdf"
                 href="/ragib-resume.pdf"
                 download="ragib-resume.pdf"
+                target="_blank"
                 className="group relative inline-block rounded-lg bg-slate-900 p-4 text-xs text-white transition hover:bg-slate-800 dark:ring-1 dark:ring-white/10 dark:hover:bg-slate-800/70"
               >
                 <span className="relative">Download Resume</span>
