@@ -1,6 +1,6 @@
 import "@fontsource/fira-code";
 
-const CodeWindow = ({ text }) => {
+const CodeWindow = () => {
   return (
     <div className="relative flex w-full overflow-hidden bg-slate-900 shadow-xl dark:bg-slate-900/70 dark:ring-1 dark:ring-inset dark:ring-white/10 dark:backdrop-blur-3xl sm:rounded-xl">
       <div className="relative flex w-full flex-col">

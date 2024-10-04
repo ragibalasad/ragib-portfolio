@@ -68,7 +68,7 @@ const Projects = () => {
   );
 
   // Initialize arrays for the three grids
-  const grids = [[], [], []];
+  const grids: Array<Array<(typeof projects)[0]>> = [[], [], []];
 
   // Distribute items across the grids
   projects.forEach((project, index) => {
@@ -104,7 +104,9 @@ const Projects = () => {
             {catagories.map((catagory, index) => (
               <li
                 key={index}
-                className={`cursor-pointer rounded-lg px-4 py-2 font-medium capitalize text-cyan-600 dark:text-cyan-400 ${filter === catagory ? "bg-white dark:bg-slate-700/70" : ""}`}
+                className={`cursor-pointer rounded-lg px-4 py-2 font-medium capitalize text-cyan-600 dark:text-cyan-400 ${
+                  filter === catagory ? "bg-white dark:bg-slate-700/70" : ""
+                }`}
                 onClick={() => setFilter(catagory)}
               >
                 {catagory}
@@ -119,21 +121,9 @@ const Projects = () => {
           variants={containerVariants}
           initial="hidden"
           animate="show"
-          layout
         >
           <AnimatePresence>
-            {/* masonry-style layout. */}
-
-            {/* {grids.map((gridItems, gridIndex) => (
-              <div key={gridIndex} className="grid grid-cols-1 gap-6">
-                {gridItems.map((item, itemIndex) => (
-                  <GridItem key={itemIndex} item={item} />
-                ))}
-              </div>
-            ))} */}
-
             {/* Typical Grid Layout */}
-
             {filteredProjects.map((project, index) => (
               <GridItem key={index} item={project} />
             ))}

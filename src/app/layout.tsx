@@ -1,3 +1,4 @@
+import React, { ReactNode } from "react";  // Import React
 import "./app.css";
 import "./globals.css";
 import "@fontsource/open-sans/300.css"; // Light
@@ -18,7 +19,11 @@ export const metadata = {
   },
 };
 
-export default function RootLayout({ children }) {
+interface RootLayoutProps {
+  children: ReactNode;
+}
+
+export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="en">
       <head>

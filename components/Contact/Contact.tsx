@@ -106,8 +106,8 @@ const Contact = () => {
                   className="my-1 mb-6 w-full rounded-lg bg-white p-3 font-medium ring-1 ring-slate-900/15 transition-all hover:bg-slate-100/70 focus:outline-none focus:ring-2 focus:ring-cyan-500 dark:bg-slate-800 dark:hover:bg-slate-700/85 dark:focus:bg-slate-700/85"
                   name=""
                   id="msg"
-                  cols="30"
-                  rows="10"
+                  cols={30}
+                  rows={10}
                   placeholder="Leave a comment..."
                 ></textarea>
                 <button className="rounded-lg bg-cyan-600 p-4 px-7 text-sm font-semibold text-white transition-all hover:bg-cyan-500">
