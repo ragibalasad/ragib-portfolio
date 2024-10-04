@@ -24,8 +24,8 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",
-    "src/app/layout.js",
-    "src/app/page.js",
+    "src/app/layout.tsx",
+    "src/app/page.tsx",
     ".next/types/**/*.ts",
     "components/Navbar/ThemeSwitcher.tsx"
   ],
