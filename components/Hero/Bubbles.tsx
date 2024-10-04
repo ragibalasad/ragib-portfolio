@@ -1,10 +1,11 @@
 "use client";
 
-import { React, useRef } from "react";
+import { useRef } from "react";
 import { useScroll, useTransform, motion } from "framer-motion";
 
 const Bubbles = () => {
-  let ref = useRef();
+  let ref = useRef<HTMLElement | null>(null);
+
   let { scrollYProgress } = useScroll({
     target: ref,
     offset: ["start start", "end start"],

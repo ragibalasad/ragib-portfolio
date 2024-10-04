@@ -1,14 +1,12 @@
 // src/components/GridItem.tsx
-import React from "react";
+import React, { FC } from "react";
 import { motion } from "framer-motion";
-import { useState } from "react";
 import { FaEye, FaGithub } from "react-icons/fa";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 
-// Define the type for the item directly in this file
-interface Item {
+interface Project {
   title: string;
-  image: string; // Assuming image is a URL string
+  image: StaticImageData;
   live: string;
   github: string;
   category: string;
@@ -17,7 +15,7 @@ interface Item {
 }
 
 interface GridItemProps {
-  item: Item;
+  item: Project;
 }
 
 const transitionEffects = {
@@ -26,7 +24,7 @@ const transitionEffects = {
   exit: { opacity: 0, scale: 0.9, x: -50, transition: { duration: 0.3 } }, // Exit by moving to the left and shrinking
 };
 
-const GridItem: React.FC<GridItemProps> = ({ item }) => (
+const GridItem: FC<GridItemProps> = ({ item }) => (
   <motion.div
     key={item.title} // Use title as unique key to prevent index clashes
     className="flex flex-col overflow-hidden rounded-lg bg-white shadow dark:bg-slate-900"
