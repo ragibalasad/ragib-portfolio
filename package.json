@@ -11,7 +11,6 @@
   "dependencies": {
     "@fontsource/fira-code": "^5.0.19",
     "@fontsource/open-sans": "^5.0.29",
-    "@react-spring/parallax": "^9.7.3",
     "fast-glob": "^3.2.7",
     "framer-motion": "^11.2.13",
     "glob": "^11.0.0",
