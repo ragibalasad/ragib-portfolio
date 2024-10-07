@@ -7,7 +7,7 @@ import {
   Projects,
   Services,
   Footer,
-} from "../../components";
+} from "../../layouts";
 
 export default function Home() {
   return (
