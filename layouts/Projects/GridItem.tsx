@@ -1,12 +1,11 @@
-// src/components/GridItem.tsx
 import React, { FC } from "react";
 import { motion } from "framer-motion";
 import { FaEye, FaGithub } from "react-icons/fa";
-import Image, { StaticImageData } from "next/image";
+import Image from "next/image";
 
 interface Project {
   title: string;
-  image: StaticImageData;
+  image: string;
   live: string;
   github: string;
   category: string;
@@ -38,7 +37,7 @@ const GridItem: FC<GridItemProps> = ({ item }) => (
     <div className="overflow-hidden">
       <Image
         className="transition-all hover:scale-110"
-        src={item.image}
+        src={`/images/${item.image}`}
         alt={item.title}
         width={500}
         height={300}
