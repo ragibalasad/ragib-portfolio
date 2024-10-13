@@ -1,0 +1,51 @@
+[
+  {
+    "category": "Frontend Skills",
+    "items": [
+      "HTML5",
+      "CSS3",
+      "JavaScript",
+      "React",
+      "Next.js",
+      "Tailwind CSS",
+      "Framer Motion",
+      "UI/UX Design",
+      "SSR"
+    ]
+  },
+  {
+    "category": "Backend Technologies",
+    "items": [
+      "Python",
+      "Flask",
+      "Fast API",
+      "SQL Alchemy",
+      "Node.js",
+      "Express",
+      "JWT/OAUTH",
+      "PRISMA ORM",
+      "SQL",
+      "POSTGRESQL",
+      "SQLITE",
+      "MongoDB"
+    ]
+  },
+  {
+    "category": "Software Development Tools",
+    "items": [
+      "C",
+      "Python",
+      "Shell",
+      "JavaScript",
+      "TypeScript",
+      "React Native",
+      "Git",
+      "GitHub",
+      "Linux",
+      "Bash",
+      "Vercel",
+      "Figma",
+      "VS Code"
+    ]
+  }
+]

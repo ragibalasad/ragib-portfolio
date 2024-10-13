@@ -1,55 +1,13 @@
+interface SkillSet {
+  category: string;
+  items: string[];
+}
+
+import skillsData from "./skills.json";
+
+const skills: SkillSet[] = skillsData as SkillSet[];
+
 const Skills = () => {
-  const skills = [
-    {
-      category: "Frontend Skills",
-      items: [
-        "HTML5",
-        "CSS3",
-        "JavaScript",
-        "React",
-        "Next.js",
-        "Tailwind CSS",
-        "Framer Motion",
-        "UI/UX Design",
-        "SSR",
-      ],
-    },
-    {
-      category: "Backend Technologies",
-      items: [
-        "Python",
-        "Falsk",
-        "Fast API",
-        "SQL Alchemy",
-        "Node.js",
-        "Express",
-        "JWT/OAUTH",
-        "PRISMA ORM",
-        "SQL",
-        "POSTGRESQL",
-        "SQLITE",
-        "MongoDB",
-      ],
-    },
-    {
-      category: "Software Developement Tools",
-      items: [
-        "C",
-        "Python",
-        "Shell",
-        "JavaScript",
-        "TypeScript",
-        "React Native",
-        "Giit",
-        "GitHub",
-        "Linux",
-        "Bash",
-        "Vercel",
-        "Figma",
-        "VS Code",
-      ],
-    },
-  ];
   return (
     <section className="skills container relative mx-auto my-24 py-12 sm:w-4/5">
       <div className="placeHolderComponent h-auto max-sm:px-6">
