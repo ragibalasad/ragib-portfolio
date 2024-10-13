@@ -2,63 +2,10 @@
 
 import { AnimatePresence, motion } from "framer-motion";
 import { useState } from "react";
-import { MdOutlineFileDownload } from "react-icons/md";
-import { LuExternalLink } from "react-icons/lu";
-import { images } from "../../constants";
 import GridItem from "./GridItem";
+import projects from "./projects.json";
 
 const catagories = ["all", "front end", "back end", "others"];
-
-const projects = [
-  {
-    title: "DevEleven Website",
-    image: images.project_develeven,
-    live: "https://develeven.vercel.app/",
-    github: "https://github.com/DEVELEVEN-io/develeven-io",
-    category: "front end",
-    tags: ["TypeScript", "React", "Next.js", "CSS"],
-    description:
-      "Team DevEleven's landing website. Contributed as a team with @AbidAlWassie",
-  },
-  {
-    title: "Ragib's Portfolio",
-    image: images.project_ragib_portfolio,
-    live: "https://ragibalasad.me/",
-    github: "https://github.com/ragibalasad/ragib-portfolio",
-    category: "front end",
-    tags: ["JavaScript", "Next.js", "Tailwind CSS", "Framer"],
-    description: "Ragib Al Asad's portfolio website. Not Complete Yet ",
-  },
-  {
-    title: "Test Project 1",
-    image: images.project_develeven,
-    live: "https://ragibalasad.me/",
-    github: "https://github.com/ragibalasad/ragib-portfolio",
-    category: "back end",
-    tags: ["TypeScript", "React", "Next.js", "Tailwind CSS"],
-    description: "",
-  },
-  {
-    title: "Test Project 2",
-    image: images.project_develeven,
-    live: "https://ragibalasad.me/",
-    github: "https://github.com/ragibalasad/ragib-portfolio",
-    category: "back end",
-    tags: ["TypeScript", "React", "Next.js", "Tailwind CSS"],
-    description: "",
-  },
-
-  {
-    title: "Test Project 3",
-    image: images.project_develeven,
-    live: "https://ragibalasad.me/",
-    github: "https://github.com/ragibalasad/ragib-portfolio",
-    category: "back end",
-    tags: ["TypeScript", "React", "Next.js", "Tailwind CSS"],
-    description:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe molestiae, repellendus aut sint vitae officia ipsum corrupti, minima at illo beatae ut! Sunt praesentium cupiditate qui mollitia? Minima, suscipit eum.",
-  },
-];
 
 const Projects = () => {
   const [filter, setFilter] = useState("all");
@@ -100,7 +47,6 @@ const Projects = () => {
           </h1>
 
           <ul className="flex select-none flex-wrap text-sm font-medium sm:ml-auto">
-            {/* Filter Buttons loop */}
             {catagories.map((catagory, index) => (
               <li
                 key={index}
@@ -115,7 +61,6 @@ const Projects = () => {
           </ul>
         </div>
 
-        {/* Display Filtered Projects */}
         <motion.div
           className="grid gap-6 lg:grid-cols-3"
           variants={containerVariants}
@@ -123,7 +68,6 @@ const Projects = () => {
           animate="show"
         >
           <AnimatePresence>
-            {/* Typical Grid Layout */}
             {filteredProjects.map((project, index) => (
               <GridItem key={index} item={project} />
             ))}

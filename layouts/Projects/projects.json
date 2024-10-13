@@ -1,0 +1,47 @@
+[
+  {
+    "title": "DevEleven Website",
+    "image": "develeven.png",
+    "live": "https://develeven.vercel.app/",
+    "github": "https://github.com/DEVELEVEN-io/develeven-io",
+    "category": "front end",
+    "tags": ["TypeScript", "React", "Next.js", "CSS"],
+    "description": "Team DevEleven's landing website. Contributed as a team with @AbidAlWassie"
+  },
+  {
+    "title": "Ragib's Portfolio",
+    "image": "ragib-portfolio.png",
+    "live": "https://ragibalasad.me/",
+    "github": "https://github.com/ragibalasad/ragib-portfolio",
+    "category": "front end",
+    "tags": ["JavaScript", "Next.js", "Tailwind CSS", "Framer"],
+    "description": "Ragib Al Asad's portfolio website. Not Complete Yet"
+  },
+  {
+    "title": "Test Project 1",
+    "image": "develeven.png",
+    "live": "https://ragibalasad.me/",
+    "github": "https://github.com/ragibalasad/ragib-portfolio",
+    "category": "back end",
+    "tags": ["TypeScript", "React", "Next.js", "Tailwind CSS"],
+    "description": ""
+  },
+  {
+    "title": "Test Project 2",
+    "image": "develeven.png",
+    "live": "https://ragibalasad.me/",
+    "github": "https://github.com/ragibalasad/ragib-portfolio",
+    "category": "back end",
+    "tags": ["TypeScript", "React", "Next.js", "Tailwind CSS"],
+    "description": ""
+  },
+  {
+    "title": "Test Project 3",
+    "image": "develeven.png",
+    "live": "https://ragibalasad.me/",
+    "github": "https://github.com/ragibalasad/ragib-portfolio",
+    "category": "back end",
+    "tags": ["TypeScript", "React", "Next.js", "Tailwind CSS"],
+    "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe molestiae, repellendus aut sint vitae officia ipsum corrupti, minima at illo beatae ut! Sunt praesentium cupiditate qui mollitia? Minima, suscipit eum."
+  }
+]

@@ -1,0 +1,20 @@
+[
+  {
+    "icon": "FaCode",
+    "title": "Frontend Development",
+    "tech": ["FaSquareJs", "FaReact", "RiTailwindCssFill", "SiNextdotjs"],
+    "description": "I can craft responsive user interfaces using the latest technologies to ensure your website is interactive and visually appealing on any device."
+  },
+  {
+    "icon": "FaServer",
+    "title": "Backend Development",
+    "tech": ["BiLogoTypescript", "FaPython", "SiNextdotjs"],
+    "description": "I can build scalable and efficient backend systems using modern frameworks to ensure your application&apos;s data flow is seamless, secure, and performs optimally across any platform."
+  },
+  {
+    "icon": "FaCode",
+    "title": "Frontend Development",
+    "tech": ["FaSquareJs", "FaReact", "RiTailwindCssFill", "SiNextdotjs"],
+    "description": "I can craft responsive user interfaces using the latest technologies to ensure your website is interactive and visually appealing on any device."
+  }
+]
