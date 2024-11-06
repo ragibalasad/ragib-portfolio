@@ -44,7 +44,7 @@ const Services = () => {
           <span className="my-auto text-base">Services</span>
         </p>
         <h1 className="py-6 text-4xl font-semibold text-cyan-800 dark:text-cyan-400">
-          Thinks I can do for you
+          Things I can do for you
         </h1>
         <div className="grid gap-6 py-12 lg:grid-cols-3">
           {servicesData.map((service, index) => (
