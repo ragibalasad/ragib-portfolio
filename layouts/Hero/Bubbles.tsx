@@ -1,45 +1,81 @@
 "use client";
 
-import { useRef } from "react";
-import { useScroll, useTransform, motion } from "framer-motion";
+import { motion } from "framer-motion";
 
 const Bubbles = () => {
-  let ref = useRef<HTMLElement | null>(null);
-
-  let { scrollYProgress } = useScroll({
-    target: ref,
-    offset: ["start start", "end start"],
-  });
-
-  let yPinkTransform = useTransform(scrollYProgress, [0, 1], ["0%", "600%"]);
-  let yIndigoTransform = useTransform(scrollYProgress, [0, 1], ["0%", "250%"]);
-  let yGreenTransform = useTransform(scrollYProgress, [0, 1], ["0%", "800%"]);
-  let yYellowTransform = useTransform(scrollYProgress, [0, 1], ["0%", "-600%"]);
-
-  let yPink = yPinkTransform;
-  let yIndigo = yIndigoTransform;
-  let yGreen = yGreenTransform;
-  let yYellow = yYellowTransform;
-
   return (
-    <>
+    <div className="pointer-events-none absolute inset-0 -z-10 overflow-hidden">
+      {/* Large Cyan Blob - Top Right */}
       <motion.div
-        style={{ y: yPink }}
-        className="pink-bubble absolute left-10 top-6 -z-10 block h-48 w-48 rounded-full bg-gradient-to-br from-transparent to-pink-500 max-md:left-6"
-      ></motion.div>
+        className="absolute -right-32 -top-32 h-[500px] w-[500px] rounded-full bg-gradient-to-br from-cyan-400/30 to-blue-500/20 blur-3xl"
+        animate={{
+          x: [0, 30, 0],
+          y: [0, -20, 0],
+          scale: [1, 1.05, 1],
+        }}
+        transition={{
+          duration: 12,
+          repeat: Infinity,
+          ease: "easeInOut",
+        }}
+      />
+
+      {/* Purple Blob - Left Side */}
       <motion.div
-        style={{ y: yIndigo }}
-        className="indigo-bubble absolute bottom-10 right-0 -z-10 block h-52 w-52 rounded-full bg-gradient-to-br from-transparent to-indigo-500"
-      ></motion.div>
+        className="absolute -left-20 top-1/4 h-[400px] w-[400px] rounded-full bg-gradient-to-tr from-purple-500/20 to-pink-400/15 blur-3xl"
+        animate={{
+          x: [0, -20, 0],
+          y: [0, 40, 0],
+          scale: [1, 1.08, 1],
+        }}
+        transition={{
+          duration: 15,
+          repeat: Infinity,
+          ease: "easeInOut",
+          delay: 2,
+        }}
+      />
+
+      {/* Blue Blob - Bottom Right */}
       <motion.div
-        style={{ y: yGreen }}
-        className="green-bubble absolute right-1/3 top-28 -z-10 block h-40 w-40 rounded-full bg-gradient-to-br from-transparent to-green-500 max-md:right-6 max-md:top-52 2xl:top-1/4"
-      ></motion.div>
+        className="absolute -bottom-32 right-1/4 h-[450px] w-[450px] rounded-full bg-gradient-to-tl from-blue-600/25 to-cyan-400/15 blur-3xl"
+        animate={{
+          x: [0, 40, 0],
+          y: [0, -30, 0],
+          scale: [1, 1.03, 1],
+        }}
+        transition={{
+          duration: 18,
+          repeat: Infinity,
+          ease: "easeInOut",
+          delay: 4,
+        }}
+      />
+
+      {/* Small Accent Blob - Center */}
       <motion.div
-        style={{ y: yYellow }}
-        className="yellow-bubble absolute -bottom-12 left-1/4 -z-10 block h-32 w-32 rounded-full bg-gradient-to-br from-transparent to-yellow-500"
-      ></motion.div>
-    </>
+        className="absolute left-1/2 top-1/2 h-[300px] w-[300px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-gradient-to-r from-cyan-500/10 to-blue-500/10 blur-3xl"
+        animate={{
+          scale: [1, 1.2, 1],
+          opacity: [0.3, 0.5, 0.3],
+        }}
+        transition={{
+          duration: 10,
+          repeat: Infinity,
+          ease: "easeInOut",
+          delay: 1,
+        }}
+      />
+
+      {/* Subtle Grid Pattern Overlay */}
+      <div 
+        className="absolute inset-0 opacity-[0.015] dark:opacity-[0.03]"
+        style={{
+          backgroundImage: `radial-gradient(circle at 1px 1px, currentColor 1px, transparent 0)`,
+          backgroundSize: '40px 40px',
+        }}
+      />
+    </div>
   );
 };
 
