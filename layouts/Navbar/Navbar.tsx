@@ -2,8 +2,8 @@
 
 import { useState, useEffect } from "react";
 import { Link } from "react-scroll";
-import { motion } from "framer-motion";
-import { RiMenu4Fill } from "react-icons/ri";
+import { motion, AnimatePresence } from "framer-motion";
+import { HiMenuAlt3, HiX } from "react-icons/hi";
 import ThemeSwitcher from "./ThemeSwitcher";
 
 const Navbar = () => {
@@ -18,7 +18,7 @@ const Navbar = () => {
     if (isOpen) {
       setTimeout(() => {
         setIsOpen(false);
-      }, 400);
+      }, 300);
     }
   };
 
@@ -35,78 +35,108 @@ const Navbar = () => {
   }, []);
 
   const navLinks = [
-    { to: "hero", offset: -100, label: "home" },
-    { to: "about", offset: -100, label: "about me" },
-    { to: "projectsSection", offset: -60, label: "projects" },
-    { to: "skills", offset: -100, label: "skills" },
-    { to: "services", offset: -100, label: "services" },
-    { to: "contact", offset: -130, label: "contact" },
+    { to: "hero", offset: -100, label: "Home" },
+    { to: "about", offset: -100, label: "About" },
+    { to: "projectsSection", offset: -60, label: "Projects" },
+    { to: "skills", offset: -100, label: "Skills" },
+    { to: "services", offset: -100, label: "Services" },
+    { to: "contact", offset: -130, label: "Contact" },
   ];
 
   return (
     <nav
-      className={`fixed z-50 w-full border-b border-slate-600/10 backdrop-blur-md transition-all dark:border-white/10 max-sm:px-6 ${isScrolled ? "bg-white/80 py-5 dark:bg-slate-900/70 dark:shadow" : "py-7"} ${isOpen ? "overflow-y-hidden max-lg:min-h-dvh" : "min-h-0"} `}
+      className={`fixed z-50 w-full transition-all duration-300 ${
+        isScrolled
+          ? "border-b border-slate-200/50 bg-white/80 py-4 shadow-sm backdrop-blur-lg dark:border-slate-800/50 dark:bg-slate-950/80"
+          : "py-6"
+      }`}
       id="navbar"
     >
       <motion.div
-        className="container mx-auto flex items-center justify-between text-center sm:w-4/5"
-        initial={{ opacity: 0, y: -100 }}
+        className="container mx-auto flex items-center justify-between px-6 sm:w-4/5"
+        initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5 }}
+        transition={{ duration: 0.4 }}
       >
-        <div className="flex w-full items-center">
-          <div className="flex items-center gap-0.5">
-            <h1 className="text-xl font-semibold text-cyan-800 dark:text-cyan-400">
-              {`ragibalasad`}
-            </h1>
-          </div>
+        {/* Logo */}
+        <Link
+          to="hero"
+          smooth={true}
+          duration={500}
+          className="cursor-pointer"
+        >
+          <span className="text-xl font-bold tracking-tight text-slate-900 dark:text-white">
+            ragib<span className="text-cyan-500">.</span>
+          </span>
+        </Link>
 
-          <ul
-            className={`inset-0 flex list-none transition-all max-lg:absolute max-lg:my-20 max-lg:flex-col max-lg:rounded-xl max-lg:text-left max-sm:px-6 lg:ml-auto ${isOpen ? "container mx-auto sm:w-4/5" : "transition-all max-lg:hidden"}`}
-          >
-            {navLinks.map((link, index) => (
-              <li
-                key={index}
-                className="cursor-pointer text-sm font-semibold uppercase text-slate-800 transition hover:text-slate-900 dark:text-slate-200 dark:hover:text-cyan-50 max-lg:py-2 lg:px-3"
+        {/* Desktop Navigation */}
+        <ul className="hidden items-center gap-1 lg:flex">
+          {navLinks.map((link, index) => (
+            <li key={index}>
+              <Link
+                to={link.to}
+                spy={true}
+                smooth={true}
+                offset={link.offset}
+                duration={500}
+                activeClass="text-cyan-600 dark:text-cyan-400"
+                className="cursor-pointer rounded-lg px-4 py-2 text-base font-medium text-slate-600 transition-colors hover:bg-slate-100 hover:text-slate-900 dark:text-slate-400 dark:hover:bg-slate-800/50 dark:hover:text-white"
               >
-                <Link
-                  className="relative h-full w-full after:absolute after:right-1 after:top-1/2 after:-z-10 after:w-full after:rounded-full after:p-1.5 after:opacity-0 after:transition-all hover:after:bg-gradient-to-bl hover:after:from-transparent hover:after:to-cyan-600/80 hover:after:opacity-100 dark:hover:after:to-cyan-400"
-                  to={link.to}
-                  activeClass="after:bg-gradient-to-bl after:from-transparent after:to-cyan-600/80 dark:after:to-cyan-400 after:opacity-100 dark:text-cyan-50 text-slate-900"
-                  spy={true}
-                  smooth={true}
-                  offset={link.offset}
-                  duration={500}
-                  onSetActive={handleLinkClick}
-                >
-                  {link.label}
-                </Link>
-              </li>
-            ))}
-            <li>
-              <p className="absolute -bottom-12 text-sm font-medium text-slate-700 transition dark:text-slate-300 lg:hidden">
-                &copy; {new Date().getFullYear()} Copyright:{" "}
-                <a
-                  className="font-semibold text-cyan-600 dark:text-cyan-400"
-                  href="https://github.com/ragibalasad"
-                  target="_blank"
-                >
-                  Ragib Al Asad
-                </a>
-              </p>
+                {link.label}
+              </Link>
             </li>
-          </ul>
-        </div>
-        <div className="flex items-center text-xl">
-          <ThemeSwitcher className="ml-5 cursor-pointer rounded-full bg-slate-200 p-1 transition hover:text-cyan-500 dark:bg-slate-800 dark:hover:text-cyan-400" />
-          <div className="menuBtn">
-            <RiMenu4Fill
-              onClick={handleMenuToggle}
-              className="ml-5 cursor-pointer hover:text-cyan-500 dark:hover:text-cyan-400 lg:hidden"
-            />
-          </div>
+          ))}
+        </ul>
+
+        {/* Right Side */}
+        <div className="flex items-center gap-3">
+          <ThemeSwitcher className="flex h-10 w-10 cursor-pointer items-center justify-center rounded-lg bg-slate-100 text-slate-600 transition-colors hover:bg-slate-200 hover:text-cyan-600 dark:bg-slate-800 dark:text-slate-400 dark:hover:bg-slate-700 dark:hover:text-cyan-400" />
+          
+          {/* Mobile Menu Button */}
+          <button
+            onClick={handleMenuToggle}
+            className="flex h-10 w-10 items-center justify-center rounded-lg bg-slate-100 text-slate-600 transition-colors hover:bg-slate-200 dark:bg-slate-800 dark:text-slate-400 dark:hover:bg-slate-700 lg:hidden"
+            aria-label="Toggle menu"
+          >
+            {isOpen ? <HiX className="text-xl" /> : <HiMenuAlt3 className="text-xl" />}
+          </button>
         </div>
       </motion.div>
+
+      {/* Mobile Menu */}
+      <AnimatePresence>
+        {isOpen && (
+          <motion.div
+            initial={{ opacity: 0, height: 0 }}
+            animate={{ opacity: 1, height: "auto" }}
+            exit={{ opacity: 0, height: 0 }}
+            transition={{ duration: 0.3 }}
+            className="border-t border-slate-200/50 bg-white/95 backdrop-blur-lg dark:border-slate-800/50 dark:bg-slate-950/95 lg:hidden"
+          >
+            <div className="container mx-auto px-6 py-6 sm:w-4/5">
+              <ul className="flex flex-col gap-2">
+                {navLinks.map((link, index) => (
+                  <li key={index}>
+                    <Link
+                      to={link.to}
+                      spy={true}
+                      smooth={true}
+                      offset={link.offset}
+                      duration={500}
+                      onClick={handleLinkClick}
+                      activeClass="bg-cyan-50 text-cyan-600 dark:bg-cyan-900/20 dark:text-cyan-400"
+                      className="block cursor-pointer rounded-lg px-4 py-3 text-base font-medium text-slate-700 transition-colors hover:bg-slate-100 dark:text-slate-300 dark:hover:bg-slate-800/50"
+                    >
+                      {link.label}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </nav>
   );
 };
