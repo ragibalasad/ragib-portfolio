@@ -27,7 +27,7 @@ const transitionEffects = {
 const GridItem: FC<GridItemProps> = ({ item }) => (
   <motion.div
     key={item.title}
-    className="group flex flex-col overflow-hidden rounded-2xl border border-white/20 bg-white/40 shadow-xl backdrop-blur-md transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl dark:border-slate-800/50 dark:bg-slate-900/40"
+    className="group relative flex flex-col justify-between overflow-hidden rounded-2xl border border-white/20 bg-white/40 shadow-xl backdrop-blur-md transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl dark:border-slate-800/50 dark:bg-slate-900/40"
     layout
     variants={transitionEffects}
     initial="hidden"
@@ -67,7 +67,7 @@ const GridItem: FC<GridItemProps> = ({ item }) => (
       </div>
     </div>
     
-    <div className="flex grow flex-col p-6">
+    <div className="flex grow flex-col p-8">
       <h3 className="text-xl font-bold text-slate-800 dark:text-slate-100">
         {item.title}
       </h3>
@@ -78,7 +78,7 @@ const GridItem: FC<GridItemProps> = ({ item }) => (
           return (
             <span 
               key={index} 
-              className="flex items-center gap-1.5 rounded-full bg-white/50 px-3 py-1 text-xs font-semibold text-slate-700 shadow-sm ring-1 ring-inset ring-slate-900/5 dark:bg-slate-800/50 dark:text-slate-300 dark:ring-white/10"
+              className="flex items-center gap-1.5 rounded-lg bg-white/50 px-3 py-1 text-xs font-semibold text-slate-700 shadow-sm ring-1 ring-inset ring-slate-900/5 dark:bg-slate-800/50 dark:text-slate-300 dark:ring-white/10"
             >
               <IconComp className="text-cyan-600 dark:text-cyan-400" />
               {tag}
@@ -87,8 +87,8 @@ const GridItem: FC<GridItemProps> = ({ item }) => (
         })}
       </div>
 
-      <div className="mt-auto">
-        <p className="text-sm leading-relaxed text-slate-600 line-clamp-3 dark:text-slate-400">
+      <div className="">
+        <p className="leading-relaxed text-slate-600 line-clamp-3 dark:text-slate-400">
           {item.description || <span className="italic opacity-70">No description available</span>}
         </p>
       </div>
