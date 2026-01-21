@@ -1,43 +1,70 @@
+import skillsData from "./skills.json";
+import { iconMap } from "./iconMap";
+import { FaCode, FaServer, FaTools, FaLayerGroup } from "react-icons/fa";
+
 interface SkillSet {
   category: string;
   items: string[];
 }
 
-import skillsData from "./skills.json";
-
 const skills: SkillSet[] = skillsData as SkillSet[];
+
+const getCategoryIcon = (category: string) => {
+  const lower = category.toLowerCase();
+  if (lower.includes("front")) return FaCode;
+  if (lower.includes("back")) return FaServer;
+  if (lower.includes("tool") || lower.includes("devops")) return FaTools;
+  return FaLayerGroup;
+};
 
 const Skills = () => {
   return (
-    <section className="skills container relative mx-auto my-24 py-12 sm:w-4/5">
-      <div className="placeHolderComponent h-auto max-sm:px-6">
-        <div className="mx-auto w-fit">
-          <h1 className="rounded border-4 border-slate-200 bg-white p-3 px-10 text-xl font-semibold uppercase text-cyan-600 dark:border-slate-800 dark:bg-slate-950/70 dark:text-cyan-300">
+    <section id="skills" className="skills container relative mx-auto my-32 px-4 sm:w-[90%] md:w-4/5">
+      <div className="flex flex-col items-center justify-center">
+        <div className="mb-16 flex flex-col items-center">
+          <h2 className="text-4xl font-extrabold tracking-tight text-slate-800 dark:text-slate-100 sm:text-5xl">
             My Skills
-          </h1>
+          </h2>
+          <div className="mt-4 h-1.5 w-24 rounded-full bg-gradient-to-r from-cyan-400 to-blue-600"></div>
         </div>
-        <div className="skill-sets mt-20 grid gap-16 py-8 md:grid-cols-4">
-          {skills.map((skillSet, index) => (
-            <div
-              className={`max-md:col-span-4 ${index == 2 ? "col-span-3 md:mt-8" : "col-span-2"}`}
-              key={index}
-            >
-              <p className="mb-8 flex items-center gap-4 font-semibold dark:text-slate-300">
-                <span className="-mt-1 text-2xl text-cyan-500">{`{`}</span>
-                <span className="my-auto text-base">{skillSet.category}</span>
-              </p>
-              <ul className="flex flex-wrap gap-5 uppercase md:pr-4">
-                {skillSet.items.map((skill, i) => (
-                  <li
-                    key={i}
-                    className="cursor-pointer rounded bg-white p-1 px-4 text-sm font-medium text-cyan-700 ring-2 ring-white ring-offset-2 ring-offset-slate-200/80 dark:bg-slate-800 dark:text-cyan-400 dark:ring-slate-800 dark:ring-offset-slate-950"
-                  >
-                    {skill}
-                  </li>
-                ))}
-              </ul>
-            </div>
-          ))}
+        
+        <div className="grid w-full gap-8 lg:grid-cols-3">
+          {skills.map((skillSet, index) => {
+            const CategoryIcon = getCategoryIcon(skillSet.category);
+            
+            return (
+              <div
+                key={index}
+                className="group relative flex flex-col overflow-hidden rounded-2xl border border-white/20 bg-white/40 p-8 shadow-xl backdrop-blur-md transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl dark:border-slate-800/50 dark:bg-slate-900/40"
+              >
+                <div className="mb-6 flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-cyan-400 to-blue-600 text-2xl text-white shadow-lg transition-transform duration-300 group-hover:scale-110">
+                  <CategoryIcon />
+                </div>
+                
+                <h3 className="mb-6 text-2xl font-bold text-slate-800 dark:text-slate-100">
+                  {skillSet.category}
+                </h3>
+                
+                <div className="flex flex-wrap gap-3">
+                  {skillSet.items.map((skillName, i) => {
+                    const IconComponent = iconMap[skillName] || iconMap["default"];
+                    
+                    return (
+                      <div
+                        key={i}
+                        className="flex items-center gap-2 rounded-lg bg-white/60 px-3 py-2 text-sm font-semibold text-slate-700 shadow-sm ring-1 ring-inset ring-slate-900/5 transition-all duration-300 hover:bg-white hover:text-cyan-600 hover:shadow dark:bg-slate-800/50 dark:text-slate-300 dark:ring-white/10 dark:hover:bg-slate-800 dark:hover:text-cyan-400"
+                      >
+                        <span className="text-lg opacity-80">
+                          <IconComponent />
+                        </span>
+                        <span>{skillName}</span>
+                      </div>
+                    );
+                  })}
+                </div>
+              </div>
+            );
+          })}
         </div>
       </div>
     </section>
