@@ -23,50 +23,43 @@ const About = () => {
       <div className="placeHolderComponent h-auto">
         <div className="grid grid-cols-1 rounded-2xl lg:grid-cols-5 2xl:grid-cols-3">
           <div className="col-span-1 my-auto h-auto w-full lg:col-span-2 2xl:col-span-1">
-            <div className="relative overflow-hidden rounded-3xl bg-white/80 px-2 pt-4 shadow-xl ring-1 ring-inset ring-white/10 after:absolute after:right-0 after:top-0 after:-z-10 after:size-60 after:rounded-full after:bg-gradient-to-tr after:from-transparent after:blur-3xl dark:bg-slate-900/70 dark:after:to-indigo-500">
-              <Image src={my_potrait} alt="Potrait of Ragib" />
+            <div className="relative flex flex-col items-center justify-center overflow-hidden rounded-[2rem] border border-white/20 bg-white/30 p-4 pb-0 shadow-2xl backdrop-blur-md dark:border-slate-800/50 dark:bg-slate-900/30">
+              {/* Restored Glassy Blob Effect */}
+              <div className="absolute -right-24 -top-24 z-0 h-80 w-80 rounded-full bg-gradient-to-tr from-cyan-400/40 to-indigo-500/40 blur-3xl dark:from-cyan-900/40 dark:to-indigo-900/40"></div>
+              <div className="absolute -bottom-12 -left-12 z-0 h-64 w-64 rounded-full bg-pink-400/30 blur-3xl dark:bg-pink-900/30"></div>
+              
+              <div className="relative z-10 w-full overflow-hidden rounded-2xl">
+                 <Image 
+                   src={my_potrait} 
+                   alt="Potrait of Ragib" 
+                   className="h-auto w-full object-cover transition-transform duration-700 hover:scale-[1.03]" 
+                   placeholder="blur"
+                 />
+              </div>
             </div>
           </div>
           <div className="col-span-1 flex lg:col-span-3 2xl:col-span-2">
             <div className="mx-2 my-auto max-md:pt-16 sm:px-16 2xl:p-24">
-              <p className="flex items-center gap-4 font-semibold dark:text-slate-300">
-                <span className="-mt-1 text-2xl text-cyan-500">{`{`}</span>
-                <span className="my-auto text-base">About Me</span>
-              </p>
-              <h1 className="py-6 text-4xl font-semibold text-cyan-800 dark:text-cyan-400">
-                Precision Design,
-                <br /> Peak Efficiency
-              </h1>
-              <p className="about-me mt-4 text-base font-normal text-slate-700 dark:text-slate-400">
-                I&apos;m a <strong>software developer</strong> from Bangladesh
-                with over <strong>4 years </strong>
-                of experience in <strong>full-stack web</strong> app and{" "}
-                <strong>desktop</strong> app development. I specialize in the{" "}
-                <strong>Python</strong> programming language and have decent
-                knowledge in languages like <strong>C</strong>,{" "}
-                <strong>TypeScript</strong>, and <strong>Go</strong>. I have
-                done several projects throughout the years including personal
-                and client projects. <br />
-                <br /> Take a look at my work in the{" "}
-                <a
-                  href="#projects"
-                  className="font-medium text-cyan-600 dark:text-cyan-400"
-                >
-                  {" "}
-                  projects
-                </a>{" "}
-                gallery. I&apos;m always up for <strong>collaborations</strong>.
-                <a
-                  href="#contact"
-                  className="font-medium text-cyan-600 dark:text-cyan-400"
-                >
-                  {" "}
-                  Learn More
-                </a>{" "}
-                about me.
+              <div className="mb-12 flex flex-col items-start">
+                <h2 className="text-4xl font-extrabold tracking-tight text-slate-800 dark:text-slate-100 sm:text-5xl">
+                   About Me
+                </h2>
+                <div className="mt-4 h-1.5 w-24 rounded-full bg-gradient-to-r from-cyan-400 to-blue-600"></div>
+              </div>
+              <p className="about-me mt-8 text-lg leading-relaxed text-slate-600 dark:text-slate-300">
+                I&apos;m a <strong>software developer</strong> from Bangladesh with over <strong>4 years</strong> of experience in <strong>full-stack web</strong> and <strong>desktop</strong> application development. 
+                <br /><br />
+                I specialize in <strong>Python</strong> and have strong proficiency in <strong>TypeScript</strong>, <strong>React</strong>, and <strong>Go</strong>. Throughout my career, I have successfully delivered numerous projects for both personal endeavors and international clients.
+                <br />
+                <br /> 
+                Explore my <a href="#projects" className="font-semibold text-cyan-600 underline decoration-cyan-400 decoration-2 underline-offset-4 transition-colors hover:text-cyan-700 dark:text-cyan-400 dark:hover:text-cyan-300">projects gallery</a> to see my work in action. I&apos;m always open to <strong className="text-slate-800 dark:text-slate-100">collaborations</strong> and new opportunities.
+                <br />
+                <a href="#contact" className="mt-4 inline-flex items-center gap-1 font-semibold text-cyan-600 transition-colors hover:gap-2 hover:text-cyan-700 dark:text-cyan-400 dark:hover:text-cyan-300">
+                   Learn More about me &rarr;
+                </a>
               </p>
 
-              <div className="mt-12 grid grid-cols-4 gap-x-4 gap-y-8 max-sm:grid-cols-2 max-sm:grid-rows-2 max-sm:items-center max-sm:justify-items-center">
+              <div className="mt-12 grid grid-cols-2 gap-6 md:grid-cols-4">
                 <Experiences />
               </div>
             </div>
