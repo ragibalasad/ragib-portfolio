@@ -39,47 +39,53 @@ const Services = () => {
       className="services container relative mx-auto my-32 max-sm:px-6 sm:w-4/5"
     >
       <div className="placeHolderComponent h-auto">
-        <p className="flex items-center gap-4 font-semibold dark:text-slate-300">
-          <span className="-mt-1 text-2xl text-cyan-500">{`{`}</span>
-          <span className="my-auto text-base">Services</span>
-        </p>
-        <h1 className="py-6 text-4xl font-semibold text-cyan-800 dark:text-cyan-400">
-          Things I can do for you
-        </h1>
-        <div className="grid gap-6 py-12 lg:grid-cols-3">
+        <div className="mb-12 flex flex-col items-center">
+          <h2 className="text-4xl font-extrabold tracking-tight text-slate-800 dark:text-slate-100 sm:text-5xl">
+            My Services
+          </h2>
+          <div className="mt-4 h-1.5 w-24 rounded-full bg-gradient-to-r from-cyan-400 to-blue-600"></div>
+        </div>
+        <div className="grid gap-8 py-12 lg:grid-cols-3">
           {servicesData.map((service, index) => (
-            <div key={index} className="col-span-1 2xl:col-span-1">
-              <div className="relative overflow-hidden rounded-lg bg-white p-6 shadow-sm ring-1 ring-inset ring-white/10 after:absolute after:right-0 after:top-0 after:-z-10 after:size-60 after:rounded-full after:bg-gradient-to-tr after:from-transparent after:blur-3xl dark:bg-slate-900/70 dark:after:to-indigo-500">
-                <div className="mx-auto my-8 h-fit w-fit rounded-full bg-slate-200 p-8 text-4xl text-slate-700 dark:bg-slate-600 dark:text-slate-200">
+            <div key={index} className="group relative flex flex-col justify-between overflow-hidden rounded-2xl border border-white/20 bg-white/40 p-8 shadow-xl backdrop-blur-md transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl dark:border-slate-800/50 dark:bg-slate-900/40">
+              <div>
+                <div className="mb-6 flex h-16 w-16 items-center justify-center rounded-2xl bg-gradient-to-br from-cyan-400 to-blue-600 text-3xl text-white shadow-lg transition-transform duration-300 group-hover:scale-110">
                   {iconMapping[service.icon as IconKeys]}
                 </div>
-                <div className="mx-auto flex w-fit gap-2">
-                  {service.tech.map((tech, index) => (
-                    <div key={index}>{iconMapping[tech as IconKeys]}</div>
-                  ))}
-                </div>
-                <div className="mt-2">
-                  <h1 className="text-center text-2xl font-semibold text-cyan-600 dark:text-cyan-400">
-                    {service.title}
-                  </h1>
-                </div>
-                <div className="mx-auto my-5 mb-7">
-                  <p className="text-center text-sm dark:text-slate-300">
-                    {service.description}
-                  </p>
-                </div>
-                <div className="">
-                  <a
-                    href="#"
-                    className="group block w-full rounded-lg bg-slate-800 p-4 text-center text-sm text-slate-200 ring-inset ring-white/10 transition-colors hover:bg-slate-900 hover:text-cyan-400 dark:bg-slate-800/75 dark:ring-1 dark:hover:bg-slate-800"
-                  >
-                    Get Started{" "}
-                    <span className="font-semibold transition-all group-hover:ml-2">
-                      &rarr;
-                    </span>
-                  </a>
+                
+                <h3 className="mb-4 text-2xl font-bold text-slate-800 dark:text-slate-100">
+                  {service.title}
+                </h3>
+                
+                <p className="mb-6 leading-relaxed text-slate-600 dark:text-slate-400">
+                  {service.description}
+                </p>
+
+                <div className="mb-8">
+                  <h4 className="mb-3 text-sm font-semibold uppercase tracking-wider text-slate-500 dark:text-slate-400">
+                    Tech Stack
+                  </h4>
+                  <div className="flex flex-wrap gap-3">
+                    {service.tech.map((tech, i) => (
+                      <div 
+                        key={i} 
+                        className="flex items-center justify-center rounded-lg bg-white/60 p-2 text-xl text-slate-700 shadow-sm transition-colors hover:bg-white hover:text-cyan-600 dark:bg-slate-800/50 dark:text-slate-300 dark:hover:bg-slate-800 dark:hover:text-cyan-400"
+                        title={tech.replace("Fa", "").replace("Si", "").replace("Ri", "")} // Simple tooltip hint
+                      >
+                        {iconMapping[tech as IconKeys]}
+                      </div>
+                    ))}
+                  </div>
                 </div>
               </div>
+
+              <a
+                href="#contact"
+                className="inline-flex items-center gap-2 font-semibold text-cyan-600 transition-all hover:gap-3 hover:text-cyan-500 dark:text-cyan-400 dark:hover:text-cyan-300"
+              >
+                Get Started
+                <span className="text-xl">&rarr;</span>
+              </a>
             </div>
           ))}
         </div>
