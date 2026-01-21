@@ -33,25 +33,25 @@ const Projects = () => {
   return (
     <section
       id="projects"
-      className="projectsSection relative my-24 dark:bg-slate-900/70 max-sm:px-6"
+      className="projectsSection relative my-24 max-sm:px-6"
     >
       <div className="container mx-auto h-auto py-16 sm:w-4/5">
-        <p className="flex items-center gap-4 font-semibold dark:text-slate-300">
-          <span className="-mt-1 text-2xl text-cyan-500">{`{`}</span>
-          Projects
-        </p>
+        <div className="mb-12 flex flex-col items-center">
+          <h2 className="text-4xl font-extrabold tracking-tight text-slate-800 dark:text-slate-100 sm:text-5xl">
+            My Projects
+          </h2>
+          <div className="mt-4 h-1.5 w-24 rounded-full bg-gradient-to-r from-cyan-400 to-blue-600"></div>
+        </div>
 
-        <div className="mb-6 flex py-6 max-sm:flex-col max-sm:gap-10">
-          <h1 className="text-4xl font-semibold dark:text-slate-300">
-            {"Works I've Done"}
-          </h1>
-
-          <ul className="flex select-none flex-wrap text-sm font-medium sm:ml-auto">
+        <div className="mb-12 flex justify-center">
+          <ul className="flex flex-wrap justify-center gap-3 rounded-full border border-white/20 bg-white/30 p-1.5 backdrop-blur-md dark:border-slate-800/50 dark:bg-slate-900/30">
             {catagories.map((catagory, index) => (
               <li
                 key={index}
-                className={`cursor-pointer rounded-lg px-4 py-2 font-medium capitalize text-cyan-600 dark:text-cyan-400 ${
-                  filter === catagory ? "bg-white dark:bg-slate-700/70" : ""
+                className={`cursor-pointer rounded-full px-6 py-2 text-sm font-semibold capitalize transition-all duration-300 ${
+                  filter === catagory 
+                    ? "bg-gradient-to-r from-cyan-400 to-blue-600 text-white shadow-md" 
+                    : "text-slate-600 hover:bg-white/50 hover:text-cyan-600 dark:text-slate-400 dark:hover:bg-slate-800/50 dark:hover:text-cyan-400"
                 }`}
                 onClick={() => setFilter(catagory)}
               >
