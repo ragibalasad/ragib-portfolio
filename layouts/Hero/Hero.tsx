@@ -1,68 +1,118 @@
-import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa6";
+"use client";
 
-import CodeWindow from "./CodeWindow";
+import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa6";
+import { HiArrowRight, HiDownload } from "react-icons/hi";
+import { motion } from "framer-motion";
 import Bubbles from "./Bubbles";
-import { TextEffect } from "../motion/TextEffect";
+
+const stats = [
+  { value: "4+", label: "Years" },
+  { value: "16+", label: "Projects" },
+  { value: "7+", label: "Clients" },
+];
 
 const Hero = () => {
   return (
-    <section className="hero container relative mx-auto sm:w-4/5">
+    <section className="hero relative min-h-screen overflow-hidden">
       <Bubbles />
-      <div className="relative grid w-full grid-cols-1 pt-32 lg:grid-cols-7 xl:pt-40 2xl:grid-cols-2 2xl:pt-64">
-        <div className="justify-between pt-16 max-sm:px-6 lg:col-span-3 2xl:col-span-1">
-          <div className="pb-20 sm:py-20">
-            <p className="-ml-px text-sm font-semibold text-slate-800 dark:text-slate-300">
-              Hi there, I&apos;m
+      
+      {/* Glowing Code Symbol Background */}
+      <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+        <motion.div
+          className="select-none font-mono text-[18rem] font-light tracking-tighter text-slate-100 dark:text-slate-800/30 sm:text-[24rem] lg:text-[32rem]"
+          animate={{
+            y: [0, -15, 0],
+          }}
+          transition={{
+            duration: 8,
+            repeat: Infinity,
+            ease: "easeInOut",
+          }}
+          style={{
+            textShadow: "0 0 120px rgba(34, 211, 238, 0.08)",
+          }}
+        >
+          {"</>"}
+        </motion.div>
+      </div>
+      
+      {/* Main Content */}
+      <div className="container relative mx-auto flex min-h-screen flex-col items-center justify-center px-6 py-24 text-center sm:w-4/5">
+        <div className="max-w-3xl space-y-6">
+          
+          {/* Name */}
+          <div>
+            <p className="mb-2 text-sm font-medium uppercase tracking-widest text-cyan-600 dark:text-cyan-400">
+              Software Developer
             </p>
-            <TextEffect className="-ml-1 py-2 pb-4 text-5xl font-semibold text-cyan-800 dark:text-cyan-400">
+            <h1 className="text-4xl font-bold tracking-tight text-slate-900 dark:text-white sm:text-5xl lg:text-6xl">
               Ragib Al Asad
-            </TextEffect>
-            <h1 className="flex items-center gap-4 text-lg font-medium text-slate-800 dark:text-slate-300">
-              <span className="-mt-1 text-2xl font-semibold text-cyan-500 max-sm:-mt-1.5 max-sm:text-5xl max-sm:font-normal">{`{`}</span>
-              <TextEffect preset="slide" className="my-auto">
-                Software Developer from Bangladesh
-              </TextEffect>
             </h1>
-
-            <div className="flex gap-3 pt-16">
-              <a
-                // href="https://raw.githubusercontent.com/ragibalasad/ragibalasad/main/ragib-resume.pdf"
-                href="/ragib-resume.pdf"
-                download="ragib-resume.pdf"
-                target="_blank"
-                className="group relative inline-block rounded-lg bg-slate-900 p-4 text-xs text-white transition hover:bg-slate-800 dark:ring-1 dark:ring-white/10 dark:hover:bg-slate-800/70"
-              >
-                <span className="relative">Download Resume</span>
-              </a>
-              <div className="my-auto flex gap-3 text-xl dark:text-white">
-                <a
-                  href="https://x.com/ragibalasad"
-                  target="_blank"
-                  className="rounded-full bg-slate-200 p-2 transition hover:text-cyan-500 dark:bg-slate-900 dark:hover:text-cyan-400"
-                >
-                  <FaTwitter />
-                </a>
-                <a
-                  href="https://github.com/ragibalasad"
-                  target="_blank"
-                  className="rounded-full bg-slate-200 p-2 transition hover:text-cyan-500 dark:bg-slate-900 dark:hover:text-cyan-400"
-                >
-                  <FaGithub />
-                </a>
-                <a
-                  href="https://linkedin.com/in/ragibalasad"
-                  target="_blank"
-                  className="rounded-full bg-slate-200 p-2 transition hover:text-cyan-500 dark:bg-slate-900 dark:hover:text-cyan-400"
-                >
-                  <FaLinkedin />
-                </a>
-              </div>
-            </div>
+            <div className="mx-auto mt-4 h-1.5 w-32 rounded-full bg-gradient-to-r from-cyan-400 to-blue-600"></div>
           </div>
-        </div>
-
-        <div className="col-span-4 w-full 2xl:col-span-1">
-          <CodeWindow />
+          
+          {/* Tagline */}
+          <p className="mx-auto max-w-xl text-base leading-relaxed text-slate-500 dark:text-slate-400 sm:text-lg">
+            Building modern web applications with clean architecture and thoughtful user experiences. Based in Bangladesh.
+          </p>
+          
+          {/* Stats - Inline */}
+          <div className="flex items-center justify-center gap-8 pt-2 text-sm text-slate-500 dark:text-slate-500">
+            {stats.map((stat, index) => (
+              <div key={index} className="flex items-center gap-2">
+                <span className="text-lg font-bold text-cyan-600 dark:text-cyan-400">{stat.value}</span>
+                <span>{stat.label}</span>
+              </div>
+            ))}
+          </div>
+          
+          {/* CTAs */}
+          <div className="flex flex-wrap items-center justify-center gap-4 pt-6">
+            <a
+              href="#contact"
+              className="inline-flex items-center gap-2 rounded-xl bg-gradient-to-r from-cyan-500 to-blue-600 px-6 py-3 text-sm font-semibold text-white shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-xl"
+            >
+              Get in Touch
+              <HiArrowRight />
+            </a>
+            <a
+              href="/ragib-resume.pdf"
+              download="ragib-resume.pdf"
+              target="_blank"
+              className="inline-flex items-center gap-2 rounded-xl border-2 border-slate-300 px-6 py-3 text-sm font-semibold text-slate-700 transition-all duration-300 hover:border-cyan-500 hover:text-cyan-600 dark:border-slate-600 dark:text-slate-300 dark:hover:border-cyan-400 dark:hover:text-cyan-400"
+            >
+              <HiDownload />
+              Resume
+            </a>
+          </div>
+          
+          {/* Social Links */}
+          <div className="flex items-center justify-center gap-5 pt-6">
+            <a
+              href="https://github.com/ragibalasad"
+              target="_blank"
+              className="text-xl text-slate-500 transition-all duration-300 hover:-translate-y-1 hover:text-cyan-600 dark:text-slate-400 dark:hover:text-cyan-400"
+              title="GitHub"
+            >
+              <FaGithub />
+            </a>
+            <a
+              href="https://linkedin.com/in/ragibalasad"
+              target="_blank"
+              className="text-xl text-slate-500 transition-all duration-300 hover:-translate-y-1 hover:text-cyan-600 dark:text-slate-400 dark:hover:text-cyan-400"
+              title="LinkedIn"
+            >
+              <FaLinkedin />
+            </a>
+            <a
+              href="https://x.com/ragibalasad"
+              target="_blank"
+              className="text-xl text-slate-500 transition-all duration-300 hover:-translate-y-1 hover:text-cyan-600 dark:text-slate-400 dark:hover:text-cyan-400"
+              title="Twitter/X"
+            >
+              <FaTwitter />
+            </a>
+          </div>
         </div>
       </div>
     </section>
