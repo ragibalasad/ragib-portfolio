@@ -22,7 +22,7 @@ const About = () => {
     <section className="about container relative mx-auto my-24 max-sm:px-6 sm:w-4/5">
       <div className="placeHolderComponent h-auto">
         <div className="grid grid-cols-1 rounded-2xl lg:grid-cols-5 2xl:grid-cols-3">
-          <div className="order-2 col-span-1 my-auto h-auto w-full lg:col-span-2 2xl:col-span-1">
+          <div className="lg:order-2 col-span-1 my-auto h-auto w-full lg:col-span-2 2xl:col-span-1">
             <div className="relative flex flex-col items-center justify-center overflow-hidden rounded-[2rem] border border-white/20 bg-white/30 shadow-2xl backdrop-blur-md dark:border-slate-800/50 dark:bg-slate-900/30">
               {/* Restored Glassy Blob Effect */}
               <div className="absolute -right-24 -top-24 z-0 h-80 w-80 rounded-full bg-gradient-to-tr from-cyan-400/40 to-indigo-500/40 blur-3xl dark:from-cyan-900/40 dark:to-indigo-900/40"></div>
