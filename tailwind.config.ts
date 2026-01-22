@@ -4,6 +4,11 @@ export const content = [
 ];
 export const darkMode = "class";
 export const theme = {
-  extend: {},
+  extend: {
+    fontFamily: {
+      sans: ["Open Sans", "sans-serif"],
+      mono: ["Fira Code", "monospace"],
+    },
+  },
 };
 export const plugins = [];

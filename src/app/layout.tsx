@@ -7,6 +7,10 @@ import "@fontsource/open-sans/500.css"; // Medium
 import "@fontsource/open-sans/600.css"; // Semi Bold
 import "@fontsource/open-sans/700.css"; // Bold
 import "@fontsource/open-sans/800.css"; // Extra Bold
+import "@fontsource/fira-code/300.css";
+import "@fontsource/fira-code/400.css";
+import "@fontsource/fira-code/500.css";
+import "@fontsource/fira-code/700.css";
 
 // Define metadata
 export const metadata = {
@@ -50,7 +54,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
           }}
         />
       </head>
-      <body style={{ fontFamily: "Open Sans, sans-serif" }}>{children}</body>
+      <body className="font-sans antialiased">{children}</body>
     </html>
   );
 }
