@@ -5,13 +5,11 @@ const Contact = () => {
   return (
     <section
       id="contact"
-      className="contact container relative mx-auto my-32 px-4 sm:w-[90%] md:w-4/5"
+      className="contact container relative mx-auto my-32 max-sm:px-6"
     >
-      <div className="grid gap-12 lg:grid-cols-7">
+      <div className="grid lg:grid-cols-2 gap-10 sm:gap-14 lg:gap-20 items-start">
         {/* Left Column: Contact Info Card */}
-        <div className="relative flex flex-col justify-between overflow-hidden rounded-3xl border border-white/20 bg-white/40 p-10 shadow-xl backdrop-blur-md dark:border-slate-800/50 dark:bg-slate-900/40 lg:col-span-3">
-          {/* Background decoration */}
-          <div className="absolute -right-10 -top-10 h-64 w-64 rounded-full bg-cyan-400/20 blur-3xl dark:bg-cyan-900/20"></div>
+        <div className="relative flex flex-col justify-between py-10">
           
           <div className="relative z-10">
             <div className="mb-8 flex flex-col items-start">
@@ -59,13 +57,15 @@ const Contact = () => {
         </div>
 
         {/* Right Column: Contact Form */}
-        <div className="relative overflow-hidden rounded-3xl border border-white/20 bg-white/40 p-10 shadow-xl backdrop-blur-md dark:border-slate-800/50 dark:bg-slate-900/40 lg:col-span-4">
-           <div className="mb-8 flex flex-col items-start">
-              <h2 className="text-3xl font-extrabold tracking-tight text-slate-800 dark:text-slate-100 sm:text-4xl">
+        <div className="relative overflow-hidden rounded-3xl border border-white/20 bg-white/40 p-8 py-16 shadow-xl backdrop-blur-md dark:border-slate-800/50 dark:bg-slate-900/40">
+           <div className="mb-8 flex flex-col items-center space-y-4">
+              <div className="flex h-16 w-16 items-center justify-center rounded-full bg-gradient-to-br from-cyan-400 to-blue-600 text-white shadow-lg transition-transform group-hover:scale-110">
+                <MdMail className="text-3xl" />
+              </div>
+              <h2 className="text-3xl font-extrabold tracking-tight text-slate-800 dark:text-slate-100 sm:text-3xl">
                  Send me a message
               </h2>
-              <div className="mt-4 h-1.5 w-24 rounded-full bg-gradient-to-r from-cyan-400 to-blue-600"></div>
-              <p className="mt-4 text-base text-slate-600 dark:text-slate-400">
+              <p className="text-base text-slate-600 dark:text-slate-400">
                 I&apos;ll respond as soon as possible.
               </p>
             </div>

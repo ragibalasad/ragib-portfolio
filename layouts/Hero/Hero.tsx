@@ -13,7 +13,7 @@ const stats = [
 
 const Hero = () => {
   return (
-    <section className="hero relative min-h-screen overflow-hidden">
+    <section className="hero relative min-h-screen overflow-hidden max-sm:px-6">
       <Bubbles />
       
       {/* Glowing Code Symbol Background */}
@@ -37,7 +37,7 @@ const Hero = () => {
       </div>
       
       {/* Main Content */}
-      <div className="container relative mx-auto flex min-h-screen flex-col items-center justify-center px-6 py-24 text-center sm:w-4/5">
+      <div className="container relative mx-auto flex min-h-screen flex-col items-center justify-center max-sm:px-6 py-10 text-center sm:w-4/5">
         <div className="max-w-3xl space-y-6">
           
           {/* Name */}

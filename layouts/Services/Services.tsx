@@ -36,11 +36,11 @@ const Services = () => {
   return (
     <section
       id="services"
-      className="services container relative mx-auto my-32 max-sm:px-6 sm:w-4/5"
+      className="services container relative mx-auto my-32 max-sm:px-6"
     >
       <div className="placeHolderComponent h-auto">
         <div className="mb-12 flex flex-col items-center">
-          <h2 className="text-4xl font-extrabold tracking-tight text-slate-800 dark:text-slate-100 sm:text-5xl">
+          <h2 className="text-4xl font-extrabold tracking-tight text-slate-800 dark:text-slate-100">
             My Services
           </h2>
           <div className="mt-4 h-1.5 w-24 rounded-full bg-gradient-to-r from-cyan-400 to-blue-600"></div>

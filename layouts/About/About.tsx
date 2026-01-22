@@ -19,9 +19,9 @@ const experiences: Experience[] = [
 
 const About = () => {
   return (
-    <section className="about container relative mx-auto my-24 max-sm:px-6 sm:w-4/5">
+    <section className="about container relative mx-auto my-32 max-sm:px-6">
       <div className="placeHolderComponent h-auto">
-        <div className="grid grid-cols-1 rounded-2xl lg:grid-cols-5 2xl:grid-cols-3">
+        <div className="grid grid-cols-1 gap-12 rounded-2xl lg:grid-cols-5 2xl:grid-cols-3">
           <div className="lg:order-2 col-span-1 my-auto h-auto w-full lg:col-span-2 2xl:col-span-1">
             <div className="relative flex flex-col items-center justify-center overflow-hidden rounded-[2rem] border border-white/20 bg-white/30 shadow-2xl backdrop-blur-md dark:border-slate-800/50 dark:bg-slate-900/30">
               {/* Restored Glassy Blob Effect */}
@@ -39,7 +39,7 @@ const About = () => {
             </div>
           </div>
           <div className="col-span-1 flex lg:col-span-3 2xl:col-span-2">
-            <div className="mx-2 my-auto max-md:pt-16 sm:px-16 2xl:p-24">
+            <div className="my-auto max-md:pt-16 2xl:p-24">
               <div className="mb-12 flex flex-col items-start">
                 <h2 className="text-4xl font-extrabold tracking-tight text-slate-800 dark:text-slate-100 sm:text-5xl">
                    About Me
@@ -47,9 +47,7 @@ const About = () => {
                 <div className="mt-4 h-1.5 w-24 rounded-full bg-gradient-to-r from-cyan-400 to-blue-600"></div>
               </div>
               <p className="about-me mt-8 text-lg leading-relaxed text-slate-600 dark:text-slate-300">
-                I&apos;m a <strong>software developer</strong> from Bangladesh with over <strong>4 years</strong> of experience in <strong>full-stack web</strong> and <strong>desktop</strong> application development. 
-                <br /><br />
-                I specialize in <strong>Python</strong> and have strong proficiency in <strong>TypeScript</strong>, <strong>React</strong>, and <strong>Go</strong>. Throughout my career, I have successfully delivered numerous projects for both personal endeavors and international clients.
+                I am an experienced software engineer from Bangladesh who has been developing applications for 4+ years (both back end & front end) using Full Stack Development technologies like: Python (Django & Flask), TypeScript (Next.JS), React & GoLang.
                 <br />
                 <br /> 
                 Explore my <a href="#projects" className="font-semibold text-cyan-600 underline decoration-cyan-400 decoration-2 underline-offset-4 transition-colors hover:text-cyan-700 dark:text-cyan-400 dark:hover:text-cyan-300">projects gallery</a> to see my work in action. I&apos;m always open to <strong className="text-slate-800 dark:text-slate-100">collaborations</strong> and new opportunities.

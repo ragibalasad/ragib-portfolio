@@ -36,11 +36,11 @@ const Navbar = () => {
 
   const navLinks = [
     { to: "hero", offset: -100, label: "Home" },
-    { to: "about", offset: -100, label: "About" },
-    { to: "projectsSection", offset: -60, label: "Projects" },
-    { to: "skills", offset: -100, label: "Skills" },
-    { to: "services", offset: -100, label: "Services" },
-    { to: "contact", offset: -130, label: "Contact" },
+    { to: "about", offset: -150, label: "About" },
+    { to: "projectsSection", offset: -150, label: "Projects" },
+    { to: "skills", offset: -150, label: "Skills" },
+    { to: "services", offset: -150, label: "Services" },
+    { to: "contact", offset: -150, label: "Contact" },
   ];
 
   return (
@@ -53,7 +53,7 @@ const Navbar = () => {
       id="navbar"
     >
       <motion.div
-        className="container mx-auto flex items-center justify-between px-6 sm:w-4/5"
+        className="container mx-auto flex items-center justify-between max-sm:px-6"
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.4 }}

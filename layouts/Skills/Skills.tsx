@@ -19,10 +19,10 @@ const getCategoryIcon = (category: string) => {
 
 const Skills = () => {
   return (
-    <section id="skills" className="skills container relative mx-auto my-32 px-4 sm:w-[90%] md:w-4/5">
-      <div className="flex flex-col items-center justify-center">
+    <section id="skills" className="skills container relative mx-auto my-32 max-sm:px-6">
+      <div className="placeHolderComponent h-auto">
         <div className="mb-16 flex flex-col items-center">
-          <h2 className="text-4xl font-extrabold tracking-tight text-slate-800 dark:text-slate-100 sm:text-5xl">
+          <h2 className="text-4xl font-extrabold tracking-tight text-slate-800 dark:text-slate-100">
             My Skills
           </h2>
           <div className="mt-4 h-1.5 w-24 rounded-full bg-gradient-to-r from-cyan-400 to-blue-600"></div>
