@@ -1,7 +1,7 @@
 "use client";
 
 import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa6";
-import { HiArrowRight, HiDownload } from "react-icons/hi";
+import { HiArrowRight, HiDownload, HiMail } from "react-icons/hi";
 import { motion } from "framer-motion";
 import Bubbles from "./Bubbles";
 
@@ -37,7 +37,7 @@ const Hero = () => {
       </div>
       
       {/* Main Content */}
-      <div className="container relative mx-auto flex min-h-screen flex-col items-center justify-center max-sm:px-6 py-10 text-center sm:w-4/5">
+      <div className="container relative mx-auto flex min-h-screen flex-col items-center justify-center max-sm:px-6 pb-10 text-center">
         <div className="max-w-3xl space-y-6">
           
           {/* Name */}
@@ -86,33 +86,55 @@ const Hero = () => {
             </a>
           </div>
           
-          {/* Social Links */}
-          <div className="flex items-center justify-center gap-5 pt-6">
-            <a
-              href="https://github.com/ragibalasad"
-              target="_blank"
-              className="text-xl text-slate-500 transition-all duration-300 hover:-translate-y-1 hover:text-cyan-600 dark:text-slate-400 dark:hover:text-cyan-400"
-              title="GitHub"
-            >
-              <FaGithub />
-            </a>
-            <a
-              href="https://linkedin.com/in/ragibalasad"
-              target="_blank"
-              className="text-xl text-slate-500 transition-all duration-300 hover:-translate-y-1 hover:text-cyan-600 dark:text-slate-400 dark:hover:text-cyan-400"
-              title="LinkedIn"
-            >
-              <FaLinkedin />
-            </a>
-            <a
-              href="https://x.com/ragibalasad"
-              target="_blank"
-              className="text-xl text-slate-500 transition-all duration-300 hover:-translate-y-1 hover:text-cyan-600 dark:text-slate-400 dark:hover:text-cyan-400"
-              title="Twitter/X"
-            >
-              <FaTwitter />
-            </a>
-          </div>
+        </div>
+      </div>
+      
+      {/* Social Links - Glassy Dock (Bottom) */}
+      <div className="absolute bottom-8 left-1/2 z-10 -translate-x-1/2">
+        <div className="flex items-center gap-2 rounded-2xl border border-white/20 bg-white/40 px-4 py-3 shadow-lg backdrop-blur-xl dark:border-white/10 dark:bg-white/5">
+          <a
+            href="https://github.com/ragibalasad"
+            target="_blank"
+            className="group relative flex h-11 w-11 items-center justify-center rounded-xl bg-white/60 text-xl text-slate-600 shadow-sm transition-all duration-300 hover:-translate-y-2 hover:scale-110 hover:bg-gradient-to-br hover:from-slate-700 hover:to-slate-900 hover:text-white hover:shadow-xl hover:shadow-slate-500/25 dark:bg-white/10 dark:text-slate-300 dark:hover:from-slate-600 dark:hover:to-slate-800 dark:hover:text-white dark:hover:shadow-slate-400/20"
+            title="GitHub"
+          >
+            <FaGithub className="transition-transform duration-300 group-hover:scale-110" />
+            <span className="pointer-events-none absolute -bottom-8 left-1/2 -translate-x-1/2 whitespace-nowrap rounded-md bg-slate-900 px-2 py-1 text-xs font-medium text-white opacity-0 shadow-lg transition-all duration-200 group-hover:-bottom-10 group-hover:opacity-100 dark:bg-slate-700">
+              GitHub
+            </span>
+          </a>
+          <a
+            href="https://linkedin.com/in/ragibalasad"
+            target="_blank"
+            className="group relative flex h-11 w-11 items-center justify-center rounded-xl bg-white/60 text-xl text-slate-600 shadow-sm transition-all duration-300 hover:-translate-y-2 hover:scale-110 hover:bg-gradient-to-br hover:from-blue-500 hover:to-blue-700 hover:text-white hover:shadow-xl hover:shadow-blue-500/30 dark:bg-white/10 dark:text-slate-300 dark:hover:from-blue-500 dark:hover:to-blue-700 dark:hover:text-white dark:hover:shadow-blue-400/25"
+            title="LinkedIn"
+          >
+            <FaLinkedin className="transition-transform duration-300 group-hover:scale-110" />
+            <span className="pointer-events-none absolute -bottom-8 left-1/2 -translate-x-1/2 whitespace-nowrap rounded-md bg-slate-900 px-2 py-1 text-xs font-medium text-white opacity-0 shadow-lg transition-all duration-200 group-hover:-bottom-10 group-hover:opacity-100 dark:bg-slate-700">
+              LinkedIn
+            </span>
+          </a>
+          <a
+            href="https://x.com/ragibalasad"
+            target="_blank"
+            className="group relative flex h-11 w-11 items-center justify-center rounded-xl bg-white/60 text-xl text-slate-600 shadow-sm transition-all duration-300 hover:-translate-y-2 hover:scale-110 hover:bg-gradient-to-br hover:from-slate-800 hover:to-black hover:text-white hover:shadow-xl hover:shadow-slate-500/25 dark:bg-white/10 dark:text-slate-300 dark:hover:from-slate-700 dark:hover:to-slate-900 dark:hover:text-white dark:hover:shadow-slate-400/20"
+            title="Twitter/X"
+          >
+            <FaTwitter className="transition-transform duration-300 group-hover:scale-110" />
+            <span className="pointer-events-none absolute -bottom-8 left-1/2 -translate-x-1/2 whitespace-nowrap rounded-md bg-slate-900 px-2 py-1 text-xs font-medium text-white opacity-0 shadow-lg transition-all duration-200 group-hover:-bottom-10 group-hover:opacity-100 dark:bg-slate-700">
+              Twitter/X
+            </span>
+          </a>
+          <a
+            href="mailto:ragibalasad@gmail.com"
+            className="group relative flex h-11 w-11 items-center justify-center rounded-xl bg-white/60 text-xl text-slate-600 shadow-sm transition-all duration-300 hover:-translate-y-2 hover:scale-110 hover:bg-gradient-to-br hover:from-red-500 hover:to-rose-600 hover:text-white hover:shadow-xl hover:shadow-red-500/30 dark:bg-white/10 dark:text-slate-300 dark:hover:from-red-500 dark:hover:to-rose-600 dark:hover:text-white dark:hover:shadow-red-400/25"
+            title="Email"
+          >
+            <HiMail className="transition-transform duration-300 group-hover:scale-110" />
+            <span className="pointer-events-none absolute -bottom-8 left-1/2 -translate-x-1/2 whitespace-nowrap rounded-md bg-slate-900 px-2 py-1 text-xs font-medium text-white opacity-0 shadow-lg transition-all duration-200 group-hover:-bottom-10 group-hover:opacity-100 dark:bg-slate-700">
+              Email
+            </span>
+          </a>
         </div>
       </div>
     </section>
