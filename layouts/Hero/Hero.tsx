@@ -13,7 +13,7 @@ const stats = [
 
 const Hero = () => {
   return (
-    <section className="hero relative min-h-screen overflow-hidden max-sm:px-6">
+    <section className="hero relative min-h-screen overflow-hidden px-6">
       <Bubbles />
       
       {/* Glowing Code Symbol Background */}

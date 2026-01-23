@@ -33,7 +33,7 @@ const Projects = () => {
   return (
     <section
       id="projects"
-      className="projectsSection container relative mx-auto my-32 max-sm:px-6"
+      className="projectsSection container relative mx-auto my-32 max-sm:px-6 max-w-7xl"
     >
       <div className="placeHolderComponent h-auto">
         <div className="mb-12 flex flex-col items-center">

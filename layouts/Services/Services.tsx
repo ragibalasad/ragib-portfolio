@@ -36,7 +36,7 @@ const Services = () => {
   return (
     <section
       id="services"
-      className="services container relative mx-auto my-32 max-sm:px-6"
+      className="services container relative mx-auto my-32 max-sm:px-6 max-w-7xl"
     >
       <div className="placeHolderComponent h-auto">
         <div className="mb-12 flex flex-col items-center">

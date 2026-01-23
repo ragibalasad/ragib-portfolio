@@ -5,7 +5,7 @@ const Contact = () => {
   return (
     <section
       id="contact"
-      className="contact container relative mx-auto my-32 max-sm:px-6"
+      className="contact container relative mx-auto my-32 max-sm:px-6 max-w-7xl"
     >
       <div className="grid lg:grid-cols-2 gap-10 sm:gap-14 lg:gap-20 items-start">
         {/* Left Column: Contact Info Card */}

@@ -36,11 +36,11 @@ const Navbar = () => {
 
   const navLinks = [
     { to: "hero", offset: -100, label: "Home" },
-    { to: "about", offset: -150, label: "About" },
-    { to: "projectsSection", offset: -150, label: "Projects" },
-    { to: "skills", offset: -150, label: "Skills" },
-    { to: "services", offset: -150, label: "Services" },
-    { to: "contact", offset: -150, label: "Contact" },
+    { to: "about", offset: -140, label: "About" },
+    { to: "projectsSection", offset: -140, label: "Projects" },
+    { to: "skills", offset: -140, label: "Skills" },
+    { to: "services", offset: -140, label: "Services" },
+    { to: "contact", offset: -140, label: "Contact" },
   ];
 
   return (
@@ -53,7 +53,7 @@ const Navbar = () => {
       id="navbar"
     >
       <motion.div
-        className="container mx-auto flex items-center justify-between max-sm:px-6"
+        className="container mx-auto flex items-center justify-between max-sm:px-6 max-w-7xl"
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.4 }}
@@ -80,7 +80,7 @@ const Navbar = () => {
                 smooth={true}
                 offset={link.offset}
                 duration={500}
-                activeClass="text-cyan-600 dark:text-cyan-400"
+                activeClass="bg-slate-100 text-slate-900 dark:bg-slate-800/50 dark:text-white"
                 className="cursor-pointer rounded-lg px-4 py-2 text-base font-medium text-slate-600 transition-colors hover:bg-slate-100 hover:text-slate-900 dark:text-slate-400 dark:hover:bg-slate-800/50 dark:hover:text-white"
               >
                 {link.label}
