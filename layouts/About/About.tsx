@@ -23,12 +23,12 @@ const About = () => {
       <div className="placeHolderComponent h-auto">
         <div className="grid grid-cols-1 gap-12 rounded-2xl lg:grid-cols-5">
           <div className="lg:order-2 col-span-1 my-auto h-auto w-full lg:col-span-2">
-            <div className="relative flex flex-col items-center justify-center overflow-hidden rounded-[2rem] border border-white/20 bg-white/30 shadow-2xl backdrop-blur-md dark:border-slate-800/50 dark:bg-slate-900/30">
-              {/* Restored Glassy Blob Effect */}
+            <div className="relative flex flex-col items-center justify-center overflow-hidden rounded-2xl border border-white/20 bg-white/40 shadow-xl backdrop-blur-xl dark:border-white/10 dark:bg-white/5">
+              {/* Glowing Blob Effects */}
               <div className="absolute -right-24 -top-24 z-0 h-80 w-80 rounded-full bg-gradient-to-tr from-cyan-400/40 to-indigo-500/40 blur-3xl dark:from-cyan-900/40 dark:to-indigo-900/40"></div>
               <div className="absolute -bottom-12 -left-12 z-0 h-64 w-64 rounded-full bg-pink-400/30 blur-3xl dark:bg-pink-900/30"></div>
               
-              <div className="relative z-10 w-full overflow-hidden rounded-2xl">
+              <div className="relative z-10 w-full overflow-hidden rounded-xl">
                  <Image 
                    src={my_potrait} 
                    alt="Potrait of Ragib" 

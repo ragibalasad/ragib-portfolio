@@ -27,7 +27,7 @@ const transitionEffects = {
 const GridItem: FC<GridItemProps> = ({ item }) => (
   <motion.div
     key={item.title}
-    className="group relative flex flex-col justify-between overflow-hidden rounded-2xl border border-white/20 bg-white/40 shadow-xl backdrop-blur-md transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl dark:border-slate-800/50 dark:bg-slate-900/40"
+    className="group relative flex flex-col justify-between overflow-hidden rounded-2xl border border-white/20 bg-white/40 shadow-xl backdrop-blur-xl transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl dark:border-white/10 dark:bg-white/5"
     layout
     variants={transitionEffects}
     initial="hidden"

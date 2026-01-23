@@ -57,7 +57,7 @@ const Contact = () => {
         </div>
 
         {/* Right Column: Contact Form */}
-        <div className="relative overflow-hidden rounded-3xl border border-white/20 bg-white/40 p-8 py-16 shadow-xl backdrop-blur-md dark:border-slate-800/50 dark:bg-slate-900/40">
+        <div className="relative overflow-hidden rounded-2xl border border-white/20 bg-white/40 p-8 py-16 shadow-xl backdrop-blur-xl dark:border-white/10 dark:bg-white/5">
            <div className="mb-8 flex flex-col items-center space-y-4">
               <div className="flex h-16 w-16 items-center justify-center rounded-full bg-gradient-to-br from-cyan-400 to-blue-600 text-white shadow-lg transition-transform group-hover:scale-110">
                 <MdMail className="text-3xl" />
@@ -79,7 +79,7 @@ const Contact = () => {
                   id="email"
                   type="email"
                   placeholder="name@example.com"
-                  className="w-full rounded-xl border border-white/10 bg-white/50 p-4 font-medium text-slate-800 placeholder-slate-400 shadow-sm outline-none backdrop-blur-sm transition-all focus:bg-white focus:ring-2 focus:ring-cyan-400 dark:bg-slate-800/50 dark:text-slate-100 dark:focus:bg-slate-800"
+                  className="w-full rounded-xl border border-white/10 bg-white/50 p-4 font-medium text-slate-800 placeholder-slate-400 shadow-sm outline-none backdrop-blur-sm transition-all focus:bg-white focus:ring-2 focus:ring-cyan-400 dark:border-white/10 dark:bg-white/5 dark:text-slate-100 dark:focus:bg-white/10"
                 />
               </div>
 
@@ -91,7 +91,7 @@ const Contact = () => {
                   id="subject"
                   type="text"
                   placeholder="How can I help you?"
-                  className="w-full rounded-xl border border-white/10 bg-white/50 p-4 font-medium text-slate-800 placeholder-slate-400 shadow-sm outline-none backdrop-blur-sm transition-all focus:bg-white focus:ring-2 focus:ring-cyan-400 dark:bg-slate-800/50 dark:text-slate-100 dark:focus:bg-slate-800"
+                  className="w-full rounded-xl border border-white/10 bg-white/50 p-4 font-medium text-slate-800 placeholder-slate-400 shadow-sm outline-none backdrop-blur-sm transition-all focus:bg-white focus:ring-2 focus:ring-cyan-400 dark:border-white/10 dark:bg-white/5 dark:text-slate-100 dark:focus:bg-white/10"
                 />
               </div>
 
@@ -103,7 +103,7 @@ const Contact = () => {
                   id="msg"
                   rows={5}
                   placeholder="Write your message here..."
-                  className="w-full rounded-xl border border-white/10 bg-white/50 p-4 font-medium text-slate-800 placeholder-slate-400 shadow-sm outline-none backdrop-blur-sm transition-all focus:bg-white focus:ring-2 focus:ring-cyan-400 dark:bg-slate-800/50 dark:text-slate-100 dark:focus:bg-slate-800"
+                  className="w-full rounded-xl border border-white/10 bg-white/50 p-4 font-medium text-slate-800 placeholder-slate-400 shadow-sm outline-none backdrop-blur-sm transition-all focus:bg-white focus:ring-2 focus:ring-cyan-400 dark:border-white/10 dark:bg-white/5 dark:text-slate-100 dark:focus:bg-white/10"
                 ></textarea>
               </div>
 
