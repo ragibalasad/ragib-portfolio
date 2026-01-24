@@ -10,75 +10,82 @@ import { IoMail } from "react-icons/io5";
 
 const Footer = () => {
   return (
-    <footer className="mt-32 border-t border-slate-800 bg-slate-950 text-slate-300">
-      <div className="container mx-auto max-xl:px-6 py-12 max-w-7xl">
-        <div className="grid gap-12 lg:grid-cols-3 lg:items-center">
+    <footer className="relative mt-32 overflow-hidden border-t border-white/10 bg-slate-950 px-6 py-16 dark:bg-black">
+      {/* Decorative Blob */}
+      <div className="absolute -bottom-24 -left-24 z-0 h-96 w-96 rounded-full bg-cyan-500/5 blur-[120px]"></div>
+
+      <div className="container relative z-10 mx-auto max-w-7xl max-xl:px-6">
+        <div className="grid gap-16 lg:grid-cols-12 items-start">
           
           {/* Brand & Info */}
-          <div className="flex flex-col items-start gap-4">
-            <div className="flex flex-col">
-              <h1 className="text-3xl font-bold tracking-tight text-white">
-                ragibalasad<span className="text-cyan-400">.me</span>
-              </h1>
-              <p className="mt-2 text-base font-medium text-slate-400">
-                Building quality software since 2020.
-              </p>
+          <div className="lg:col-span-4 flex flex-col gap-6">
+            <div className="flex items-center gap-2">
+              <span className="font-mono text-2xl font-bold tracking-tighter text-cyan-500">
+                &lt;/&gt;
+              </span>
+              <span className="text-2xl font-bold tracking-tight text-white">
+                ragib<span className="text-cyan-500">.</span>
+              </span>
             </div>
             
-            <div className="flex flex-col gap-2 text-sm text-slate-400">
-              <a href="mailto:ragibalasad@gmail.com" className="flex items-center gap-2 transition-colors hover:text-cyan-400">
-                <IoMail className="text-lg" />
+            <p className="max-w-xs text-base font-medium text-slate-400">
+              Building quality digital experiences with clean code and modern aesthetics. Based in Bangladesh.
+            </p>
+
+            <div className="flex flex-col gap-3 text-sm text-slate-500">
+              <a href="mailto:ragibalasad@gmail.com" className="flex items-center gap-3 transition-colors hover:text-cyan-400">
+                <IoMail className="text-xl" />
                 <span>ragibalasad@gmail.com</span>
               </a>
-              <div className="flex items-center gap-2">
-                <FaWhatsapp className="text-lg" />
+              <div className="flex items-center gap-3">
+                <FaWhatsapp className="text-xl" />
                 <span>+880 1719 220115</span>
               </div>
             </div>
           </div>
 
           {/* Navigation Links */}
-          <div className="flex flex-col items-start gap-4 lg:items-center">
-            <h3 className="text-sm font-bold uppercase tracking-wider text-slate-500">Navigation</h3>
-            <ul className="flex flex-wrap gap-6 font-medium">
-              <li>
-                <a href="#about" className="transition-colors hover:text-cyan-400">About</a>
-              </li>
-              <li>
-                <a href="#projects" className="transition-colors hover:text-cyan-400">Projects</a>
-              </li>
-              <li>
-                <a href="#contact" className="transition-colors hover:text-cyan-400">Contact</a>
-              </li>
-              <li>
-                <a
-                  href="https://github.com/ragibalasad/ragib-portfolio"
-                  target="_blank"
-                  className="transition-colors hover:text-cyan-400"
-                >
-                  Source Code
-                </a>
-              </li>
+          <div className="lg:col-span-4 flex flex-col items-start gap-6 lg:items-center">
+            <h3 className="text-xs font-bold uppercase tracking-[0.3em] text-slate-600">Explore</h3>
+            <ul className="grid grid-cols-2 gap-x-12 gap-y-4 text-sm font-bold text-slate-400">
+              <li><a href="#hero" className="transition-colors hover:text-white">Home</a></li>
+              <li><a href="#about" className="transition-colors hover:text-white">About</a></li>
+              <li><a href="#projects" className="transition-colors hover:text-white">Projects</a></li>
+              <li><a href="#skills" className="transition-colors hover:text-white">Skills</a></li>
+              <li><a href="#services" className="transition-colors hover:text-white">Services</a></li>
+              <li><a href="#contact" className="transition-colors hover:text-white">Contact</a></li>
             </ul>
           </div>
 
-          {/* Social Links */}
-          <div className="flex flex-col items-start gap-4 lg:items-end">
-             <h3 className="text-sm font-bold uppercase tracking-wider text-slate-500">Socials</h3>
-             <div className="flex gap-4">
-                <SocialLink href="https://github.com/ragibalasad"><FaGithub /></SocialLink>
-                <SocialLink href="https://linkedin.com/in/ragibalasad"><FaLinkedin /></SocialLink>
-                <SocialLink href="https://x.com/ragibalasad"><FaXTwitter /></SocialLink>
-                <SocialLink href="https://facebook.com/ragibalasad"><FaFacebook /></SocialLink>
-                <SocialLink href="https://discord.com/ragibalasad"><FaDiscord /></SocialLink>
+          {/* Social Links & CTA */}
+          <div className="lg:col-span-4 flex flex-col items-start gap-6 lg:items-end">
+             <h3 className="text-xs font-bold uppercase tracking-[0.3em] text-slate-600">Connect</h3>
+             <div className="flex flex-wrap gap-3 lg:justify-end">
+                <SocialLink href="https://github.com/ragibalasad" label="GitHub"><FaGithub /></SocialLink>
+                <SocialLink href="https://linkedin.com/in/ragibalasad" label="LinkedIn"><FaLinkedin /></SocialLink>
+                <SocialLink href="https://x.com/ragibalasad" label="Twitter"><FaXTwitter /></SocialLink>
+                <SocialLink href="https://facebook.com/ragibalasad" label="Facebook"><FaFacebook /></SocialLink>
+                <SocialLink href="https://discord.com/ragibalasad" label="Discord"><FaDiscord /></SocialLink>
              </div>
+             
+             <a 
+                href="https://github.com/ragibalasad/ragib-portfolio"
+                target="_blank"
+                className="mt-4 flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-6 py-2 text-[10px] font-bold uppercase tracking-widest text-slate-400 transition-all hover:bg-white/10 hover:text-white"
+             >
+                <FaGithub className="text-sm" />
+                View Source Code
+             </a>
           </div>
         </div>
         
-        {/* Simple divider if needed, or just bottom copyright bar */}
-        <div className="mt-12 border-t border-slate-900 pt-8 text-center text-sm text-slate-500">
+        {/* Copyright Bar */}
+        <div className="mt-20 flex flex-col items-center justify-between gap-6 border-t border-white/5 pt-8 text-[11px] font-bold uppercase tracking-[0.2em] text-slate-600 sm:flex-row">
           <p>
-            &copy; {new Date().getFullYear()} Ragib Al Asad. All rights reserved.
+            &copy; {new Date().getFullYear()} Ragib Al Asad.
+          </p>
+          <p className="flex items-center gap-2">
+            Build with <span className="text-rose-500">♥</span> using Next.js & Tailwind
           </p>
         </div>
       </div>
@@ -86,15 +93,17 @@ const Footer = () => {
   );
 };
 
-function SocialLink({ href, children }: { href: string; children: React.ReactNode }) {
+function SocialLink({ href, children, label }: { href: string; children: React.ReactNode; label: string }) {
   return (
     <a
       href={href}
       target="_blank"
-      className="text-2xl text-slate-400 transition-all hover:-translate-y-1 hover:text-cyan-400"
+      className="group relative flex h-10 w-10 items-center justify-center rounded-xl border border-white/10 bg-white/5 text-xl text-slate-400 transition-all hover:scale-110 hover:border-cyan-500/50 hover:bg-white hover:text-slate-900"
+      aria-label={label}
     >
       {children}
     </a>
   );
 }
+
 export default Footer;

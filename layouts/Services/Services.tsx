@@ -34,62 +34,70 @@ const iconMapping: Record<IconKeys, JSX.Element> = {
 
 const Services = () => {
   return (
-    <section
-      id="services"
-      className="services container relative mx-auto my-32 max-xl:px-6 max-w-7xl"
-    >
-      <div className="placeHolderComponent h-auto">
-        <div className="mb-12 flex flex-col items-center">
-          <h2 className="text-4xl font-extrabold tracking-tight text-slate-900 dark:text-slate-100">
-            My Services
-          </h2>
-          <div className="mt-4 h-1.5 w-24 rounded-full bg-gradient-to-r from-cyan-400 to-blue-600"></div>
-        </div>
-        <div className="grid gap-8 py-12 lg:grid-cols-3">
-          {servicesData.map((service, index) => (
-            <div key={index} className="group relative flex flex-col justify-between overflow-hidden rounded-2xl border border-white/20 bg-white/40 p-8 shadow-xl backdrop-blur-xl transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl dark:border-white/10 dark:bg-white/5">
-              <div>
-                <div className="mb-6 flex h-16 w-16 items-center justify-center rounded-2xl bg-gradient-to-br from-cyan-400 to-blue-600 text-3xl text-white shadow-lg transition-transform duration-300 group-hover:scale-110">
-                  {iconMapping[service.icon as IconKeys]}
-                </div>
-                
-                <h3 className="mb-4 text-2xl font-bold text-slate-900 dark:text-slate-100">
-                  {service.title}
-                </h3>
-                
-                <p className="mb-6 leading-relaxed text-slate-900 dark:text-slate-400">
-                  {service.description}
-                </p>
+    <section id="services" className="services container relative mx-auto my-32 max-w-7xl max-xl:px-6">
+      <div className="relative h-auto overflow-hidden rounded-[2.5rem] border border-white/20 bg-white/30 p-8 shadow-2xl backdrop-blur-3xl dark:border-white/10 dark:bg-white/5 sm:p-12 lg:p-16">
+        {/* Background Decorative Element */}
+        <div className="absolute -right-24 -top-24 z-0 h-96 w-96 rounded-full bg-blue-500/10 blur-[100px] dark:bg-blue-900/10"></div>
+        <div className="absolute -bottom-24 -left-24 z-0 h-96 w-96 rounded-full bg-indigo-500/10 blur-[100px] dark:bg-indigo-900/10"></div>
 
-                <div className="mb-8">
-                  <h4 className="mb-3 text-sm font-semibold uppercase tracking-wider text-slate-900 dark:text-slate-400">
-                    Tech Stack
-                  </h4>
-                  <div className="flex flex-wrap gap-3">
-                    {service.tech.map((tech, i) => (
-                      <div 
-                        key={i} 
-                        className="group/icon relative flex h-10 w-10 items-center justify-center rounded-xl bg-white/60 text-xl text-slate-700 shadow-sm transition-all duration-300 hover:-translate-y-2 hover:scale-110 hover:bg-gradient-to-br hover:from-cyan-500 hover:to-blue-600 hover:text-white hover:shadow-xl hover:shadow-blue-500/25 dark:bg-white/10 dark:text-slate-300 dark:hover:from-cyan-400 dark:hover:to-blue-500 dark:hover:text-white dark:hover:shadow-blue-400/20"
-                      >
-                        {iconMapping[tech as IconKeys]}
-                        <span className="pointer-events-none absolute -bottom-8 left-1/2 z-20 -translate-x-1/2 whitespace-nowrap rounded-md bg-slate-900 px-2 py-1 text-xs font-medium text-white opacity-0 shadow-lg transition-all duration-200 group-hover/icon:-bottom-10 group-hover/icon:opacity-100 dark:bg-slate-700">
-                          {tech.replace("Fa", "").replace("Si", "").replace("Ri", "")}
-                        </span>
-                      </div>
-                    ))}
+        <div className="relative z-10 flex flex-col gap-12">
+          <div className="flex flex-col items-start gap-4">
+            <h2 className="text-4xl font-extrabold tracking-tight text-slate-900 dark:text-slate-100 sm:text-5xl lg:text-6xl">
+               Services <br />
+               <span className="bg-gradient-to-r from-cyan-400 to-blue-600 bg-clip-text text-transparent italic">I Offer.</span>
+            </h2>
+            <div className="h-1.5 w-24 rounded-full bg-gradient-to-r from-cyan-400 to-blue-600"></div>
+            <p className="max-w-xl text-lg text-slate-600 dark:text-slate-400">
+              Providing end-to-end software solutions tailored to your business needs, from concept to deployment.
+            </p>
+          </div>
+
+          <div className="grid gap-8 lg:grid-cols-3">
+            {servicesData.map((service, index) => (
+              <div 
+                key={index} 
+                className="group relative flex flex-col justify-between overflow-hidden rounded-[2rem] border border-white/20 bg-white/40 p-8 transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl dark:border-white/10 dark:bg-white/5"
+              >
+                <div>
+                  <div className="mb-6 flex h-16 w-16 items-center justify-center rounded-2xl bg-gradient-to-br from-cyan-400 to-blue-600 text-3xl text-white shadow-lg transition-transform duration-300 group-hover:scale-110">
+                    {iconMapping[service.icon as IconKeys]}
+                  </div>
+                  
+                  <h3 className="mb-4 text-2xl font-bold tracking-tight text-slate-900 dark:text-slate-100">
+                    {service.title}
+                  </h3>
+                  
+                  <p className="mb-8 leading-relaxed text-slate-600 dark:text-slate-400">
+                    {service.description}
+                  </p>
+
+                  <div className="mb-8">
+                    <h4 className="mb-4 text-[10px] font-bold uppercase tracking-[0.2em] text-cyan-600 dark:text-cyan-400">
+                      Core Technologies
+                    </h4>
+                    <div className="flex flex-wrap gap-2.5">
+                      {service.tech.map((tech, i) => (
+                        <div 
+                          key={i} 
+                          className="flex h-10 w-10 items-center justify-center rounded-xl border border-white/20 bg-white/50 text-xl text-slate-700 shadow-sm backdrop-blur-sm transition-all hover:border-cyan-500/50 hover:bg-white dark:border-white/10 dark:bg-white/5 dark:text-slate-300 dark:hover:bg-white/10"
+                        >
+                          {iconMapping[tech as IconKeys]}
+                        </div>
+                      ))}
+                    </div>
                   </div>
                 </div>
-              </div>
 
-              <a
-                href="#contact"
-                className="inline-flex items-center gap-2 font-semibold text-blue-600 transition-all hover:gap-3 hover:text-blue-500 dark:text-cyan-400 dark:hover:text-cyan-300"
-              >
-                Get Started
-                <span className="text-xl">&rarr;</span>
-              </a>
-            </div>
-          ))}
+                <a
+                  href="#contact"
+                  className="group/btn inline-flex items-center gap-2 font-bold uppercase tracking-widest text-slate-900 transition-all hover:gap-3 dark:text-white"
+                >
+                  Get Started
+                  <span className="text-xl transition-transform group-hover/btn:translate-x-1">&rarr;</span>
+                </a>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </section>
