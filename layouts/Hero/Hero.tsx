@@ -57,7 +57,7 @@ const Hero = () => {
           </p>
           
           {/* Stats - Inline */}
-          <div className="flex items-center justify-center gap-8 pt-2 text-sm text-slate-800 dark:text-slate-400">
+          <div className="flex items-center justify-center gap-8 pt-2 text-sm text-slate-800 dark:text-slate-500">
             {stats.map((stat, index) => (
               <div key={index} className="flex items-center gap-2">
                 <span className="text-lg font-bold text-cyan-700 dark:text-cyan-400">{stat.value}</span>
