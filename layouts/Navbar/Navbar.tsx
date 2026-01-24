@@ -63,8 +63,11 @@ const Navbar = () => {
           to="hero"
           smooth={true}
           duration={500}
-          className="cursor-pointer"
+          className="group flex cursor-pointer items-center gap-2"
         >
+          <span className="font-mono text-2xl font-medium tracking-tighter text-cyan-500 transition-transform duration-300 group-hover:scale-110">
+            &lt;/&gt;
+          </span>
           <span className="text-xl font-bold tracking-tight text-slate-900 dark:text-white">
             ragib<span className="text-cyan-500">.</span>
           </span>
