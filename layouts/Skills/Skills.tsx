@@ -19,7 +19,7 @@ const getCategoryIcon = (category: string) => {
 
 const Skills = () => {
   return (
-    <section id="skills" className="skills container relative mx-auto my-32 max-sm:px-6 max-w-7xl">
+    <section id="skills" className="skills container relative mx-auto my-32 max-xl:px-6 max-w-7xl">
       <div className="placeHolderComponent h-auto">
         <div className="mb-16 flex flex-col items-center">
           <h2 className="text-4xl font-extrabold tracking-tight text-slate-800 dark:text-slate-100">

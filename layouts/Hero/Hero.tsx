@@ -37,7 +37,7 @@ const Hero = () => {
       </div>
       
       {/* Main Content */}
-      <div className="container relative mx-auto flex min-h-screen flex-col items-center justify-center max-sm:px-6 pb-10 text-center">
+      <div className="container relative mx-auto flex min-h-screen flex-col items-center justify-center max-xl:px-6 pb-10 text-center">
         <div className="max-w-3xl space-y-6">
           
           {/* Name */}

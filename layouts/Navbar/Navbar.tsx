@@ -53,7 +53,7 @@ const Navbar = () => {
       id="navbar"
     >
       <motion.div
-        className="container mx-auto flex items-center justify-between max-sm:px-6 max-w-7xl"
+        className="container mx-auto flex items-center justify-between max-xl:px-6 max-w-7xl"
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.4 }}

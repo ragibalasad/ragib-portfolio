@@ -11,7 +11,7 @@ import { IoMail } from "react-icons/io5";
 const Footer = () => {
   return (
     <footer className="mt-32 border-t border-slate-800 bg-slate-950 text-slate-300">
-      <div className="container mx-auto max-sm:px-6 py-12 max-w-7xl">
+      <div className="container mx-auto max-xl:px-6 py-12 max-w-7xl">
         <div className="grid gap-12 lg:grid-cols-3 lg:items-center">
           
           {/* Brand & Info */}

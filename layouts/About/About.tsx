@@ -19,7 +19,7 @@ const experiences: Experience[] = [
 
 const About = () => {
   return (
-    <section className="about container relative mx-auto my-32 max-w-7xl max-sm:px-6">
+    <section className="about container relative mx-auto my-32 max-w-7xl max-xl:px-6">
       <div className="placeHolderComponent h-auto">
         <div className="grid grid-cols-1 gap-12 rounded-2xl lg:grid-cols-5">
           <div className="lg:order-2 col-span-1 my-auto h-auto w-full lg:col-span-2">
