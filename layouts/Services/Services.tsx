@@ -40,7 +40,7 @@ const Services = () => {
     >
       <div className="placeHolderComponent h-auto">
         <div className="mb-12 flex flex-col items-center">
-          <h2 className="text-4xl font-extrabold tracking-tight text-slate-800 dark:text-slate-100">
+          <h2 className="text-4xl font-extrabold tracking-tight text-slate-900 dark:text-slate-100">
             My Services
           </h2>
           <div className="mt-4 h-1.5 w-24 rounded-full bg-gradient-to-r from-cyan-400 to-blue-600"></div>
@@ -53,23 +53,23 @@ const Services = () => {
                   {iconMapping[service.icon as IconKeys]}
                 </div>
                 
-                <h3 className="mb-4 text-2xl font-bold text-slate-800 dark:text-slate-100">
+                <h3 className="mb-4 text-2xl font-bold text-slate-900 dark:text-slate-100">
                   {service.title}
                 </h3>
                 
-                <p className="mb-6 leading-relaxed text-slate-600 dark:text-slate-400">
+                <p className="mb-6 leading-relaxed text-slate-900 dark:text-slate-400">
                   {service.description}
                 </p>
 
                 <div className="mb-8">
-                  <h4 className="mb-3 text-sm font-semibold uppercase tracking-wider text-slate-500 dark:text-slate-400">
+                  <h4 className="mb-3 text-sm font-semibold uppercase tracking-wider text-slate-900 dark:text-slate-400">
                     Tech Stack
                   </h4>
                   <div className="flex flex-wrap gap-3">
                     {service.tech.map((tech, i) => (
                       <div 
                         key={i} 
-                        className="group/icon relative flex h-10 w-10 items-center justify-center rounded-xl bg-white/60 text-xl text-slate-600 shadow-sm transition-all duration-300 hover:-translate-y-2 hover:scale-110 hover:bg-gradient-to-br hover:from-cyan-500 hover:to-blue-600 hover:text-white hover:shadow-xl hover:shadow-blue-500/25 dark:bg-white/10 dark:text-slate-300 dark:hover:from-cyan-400 dark:hover:to-blue-500 dark:hover:text-white dark:hover:shadow-blue-400/20"
+                        className="group/icon relative flex h-10 w-10 items-center justify-center rounded-xl bg-white/60 text-xl text-slate-700 shadow-sm transition-all duration-300 hover:-translate-y-2 hover:scale-110 hover:bg-gradient-to-br hover:from-cyan-500 hover:to-blue-600 hover:text-white hover:shadow-xl hover:shadow-blue-500/25 dark:bg-white/10 dark:text-slate-300 dark:hover:from-cyan-400 dark:hover:to-blue-500 dark:hover:text-white dark:hover:shadow-blue-400/20"
                       >
                         {iconMapping[tech as IconKeys]}
                         <span className="pointer-events-none absolute -bottom-8 left-1/2 z-20 -translate-x-1/2 whitespace-nowrap rounded-md bg-slate-900 px-2 py-1 text-xs font-medium text-white opacity-0 shadow-lg transition-all duration-200 group-hover/icon:-bottom-10 group-hover/icon:opacity-100 dark:bg-slate-700">
@@ -83,7 +83,7 @@ const Services = () => {
 
               <a
                 href="#contact"
-                className="inline-flex items-center gap-2 font-semibold text-cyan-600 transition-all hover:gap-3 hover:text-cyan-500 dark:text-cyan-400 dark:hover:text-cyan-300"
+                className="inline-flex items-center gap-2 font-semibold text-blue-600 transition-all hover:gap-3 hover:text-blue-500 dark:text-cyan-400 dark:hover:text-cyan-300"
               >
                 Get Started
                 <span className="text-xl">&rarr;</span>

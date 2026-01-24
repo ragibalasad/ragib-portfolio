@@ -61,7 +61,7 @@ function ExperienceItem({ count, label }: Experience) {
       className="group flex h-36 w-full cursor-pointer flex-col items-center justify-center rounded-xl border border-white/20 bg-white/40 p-6 shadow-xl backdrop-blur-xl transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:shadow-cyan-500/10 dark:border-white/10 dark:bg-white/5 dark:hover:shadow-cyan-400/10"
     >
       <AnimatedNumber
-        className="text-5xl font-bold text-cyan-600 dark:text-cyan-400"
+        className="text-5xl font-bold text-blue-500 dark:text-cyan-400"
         springOptions={{
           bounce: 0,
           duration: 1500,

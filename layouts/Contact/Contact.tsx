@@ -13,13 +13,13 @@ const Contact = () => {
           
           <div className="relative z-10">
             <div className="mb-8 flex flex-col items-start">
-              <h2 className="text-3xl font-extrabold tracking-tight text-slate-800 dark:text-slate-100 sm:text-4xl">
+              <h2 className="text-3xl font-extrabold tracking-tight text-slate-900 dark:text-slate-100 sm:text-4xl">
                 Let&apos;s get in touch
               </h2>
               <div className="mt-4 h-1.5 w-24 rounded-full bg-gradient-to-r from-cyan-400 to-blue-600"></div>
             </div>
             
-            <p className="text-lg leading-relaxed text-slate-600 dark:text-slate-300">
+            <p className="text-lg leading-relaxed text-slate-800 dark:text-slate-300">
               I&apos;m open to new opportunities and collaborations. Whether you have a question or just want to say hi, I&apos;ll try my best to get back to you!
             </p>
           </div>
@@ -29,14 +29,14 @@ const Contact = () => {
               <div className="flex h-12 w-12 items-center justify-center rounded-full bg-gradient-to-br from-cyan-400 to-blue-600 text-white shadow-lg transition-transform group-hover:scale-110">
                 <MdLocationOn className="text-xl" />
               </div>
-              <p className="font-medium text-slate-700 dark:text-slate-200">Nilphamari, Rangpur, BD</p>
+              <p className="font-medium text-slate-800 dark:text-slate-300">Nilphamari, Rangpur, BD</p>
             </div>
             
             <div className="flex items-center gap-4 group">
               <div className="flex h-12 w-12 items-center justify-center rounded-full bg-gradient-to-br from-cyan-400 to-blue-600 text-white shadow-lg transition-transform group-hover:scale-110">
                 <MdPhone className="text-xl" />
               </div>
-              <p className="font-medium text-slate-700 dark:text-slate-200">+880 1719 220115</p>
+              <p className="font-medium text-slate-800 dark:text-slate-300">+880 1719 220115</p>
             </div>
             
             <div className="flex items-center gap-4 group">
@@ -45,7 +45,7 @@ const Contact = () => {
               </div>
               <a
                 href="mailto:ragibalasad@pm.me"
-                className="flex items-center gap-2 font-medium text-slate-700 transition-colors hover:text-cyan-600 dark:text-slate-200 dark:hover:text-cyan-400"
+                className="flex items-center gap-2 font-medium text-slate-800 transition-colors hover:text-cyan-600 dark:text-slate-300 dark:hover:text-cyan-400"
               >
                 ragibalasad@pm.me
                 <span className="opacity-0 transition-all group-hover:translate-x-1 group-hover:opacity-100">
@@ -62,48 +62,48 @@ const Contact = () => {
               <div className="flex h-16 w-16 items-center justify-center rounded-full bg-gradient-to-br from-cyan-400 to-blue-600 text-white shadow-lg transition-transform group-hover:scale-110">
                 <MdMail className="text-3xl" />
               </div>
-              <h2 className="text-3xl font-extrabold tracking-tight text-slate-800 dark:text-slate-100 sm:text-3xl">
+              <h2 className="text-3xl font-extrabold tracking-tight text-slate-900 dark:text-slate-100 sm:text-3xl">
                  Send me a message
               </h2>
-              <p className="text-base text-slate-600 dark:text-slate-400">
+              <p className="text-base text-slate-800 dark:text-slate-400">
                 I&apos;ll respond as soon as possible.
               </p>
             </div>
 
             <form className="flex flex-col gap-6" action="" method="post">
               <div className="flex flex-col gap-2">
-                <label className="text-sm font-bold uppercase tracking-wide text-slate-500 dark:text-slate-400" htmlFor="email">
+                <label className="text-sm font-bold uppercase tracking-wide text-slate-700 dark:text-slate-400" htmlFor="email">
                   Your Email
                 </label>
                 <input
                   id="email"
                   type="email"
                   placeholder="name@example.com"
-                  className="w-full rounded-xl border border-white/10 bg-white/50 p-4 font-medium text-slate-800 placeholder-slate-400 shadow-sm outline-none backdrop-blur-sm transition-all focus:bg-white focus:ring-2 focus:ring-cyan-400 dark:border-white/10 dark:bg-white/5 dark:text-slate-100 dark:focus:bg-white/10"
+                  className="w-full rounded-xl border border-white/10 bg-white/50 p-4 font-medium text-slate-800 placeholder-slate-500 shadow-sm outline-none backdrop-blur-sm transition-all focus:bg-white focus:ring-2 focus:ring-cyan-400 dark:border-white/10 dark:bg-white/5 dark:text-slate-100 dark:focus:bg-white/10"
                 />
               </div>
 
               <div className="flex flex-col gap-2">
-                <label className="text-sm font-bold uppercase tracking-wide text-slate-500 dark:text-slate-400" htmlFor="subject">
+                <label className="text-sm font-bold uppercase tracking-wide text-slate-700 dark:text-slate-400" htmlFor="subject">
                   Subject
                 </label>
                 <input
                   id="subject"
                   type="text"
                   placeholder="How can I help you?"
-                  className="w-full rounded-xl border border-white/10 bg-white/50 p-4 font-medium text-slate-800 placeholder-slate-400 shadow-sm outline-none backdrop-blur-sm transition-all focus:bg-white focus:ring-2 focus:ring-cyan-400 dark:border-white/10 dark:bg-white/5 dark:text-slate-100 dark:focus:bg-white/10"
+                  className="w-full rounded-xl border border-white/10 bg-white/50 p-4 font-medium text-slate-800 placeholder-slate-500 shadow-sm outline-none backdrop-blur-sm transition-all focus:bg-white focus:ring-2 focus:ring-cyan-400 dark:border-white/10 dark:bg-white/5 dark:text-slate-100 dark:focus:bg-white/10"
                 />
               </div>
 
               <div className="flex flex-col gap-2">
-                <label className="text-sm font-bold uppercase tracking-wide text-slate-500 dark:text-slate-400" htmlFor="msg">
+                <label className="text-sm font-bold uppercase tracking-wide text-slate-700 dark:text-slate-400" htmlFor="msg">
                   Message
                 </label>
                 <textarea
                   id="msg"
                   rows={5}
                   placeholder="Write your message here..."
-                  className="w-full rounded-xl border border-white/10 bg-white/50 p-4 font-medium text-slate-800 placeholder-slate-400 shadow-sm outline-none backdrop-blur-sm transition-all focus:bg-white focus:ring-2 focus:ring-cyan-400 dark:border-white/10 dark:bg-white/5 dark:text-slate-100 dark:focus:bg-white/10"
+                  className="w-full rounded-xl border border-white/10 bg-white/50 p-4 font-medium text-slate-800 placeholder-slate-500 shadow-sm outline-none backdrop-blur-sm transition-all focus:bg-white focus:ring-2 focus:ring-cyan-400 dark:border-white/10 dark:bg-white/5 dark:text-slate-100 dark:focus:bg-white/10"
                 ></textarea>
               </div>
 

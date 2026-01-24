@@ -27,7 +27,7 @@ const transitionEffects = {
 const GridItem: FC<GridItemProps> = ({ item }) => (
   <motion.div
     key={item.title}
-    className="group relative flex flex-col justify-between overflow-hidden rounded-2xl border border-white/20 bg-white/40 shadow-xl backdrop-blur-xl transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl dark:border-white/10 dark:bg-white/5"
+    className="group relative flex flex-col justify-start overflow-hidden rounded-2xl border border-white/20 bg-white/40 shadow-xl backdrop-blur-xl transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl dark:border-white/10 dark:bg-white/5"
     layout
     variants={transitionEffects}
     initial="hidden"
@@ -67,31 +67,38 @@ const GridItem: FC<GridItemProps> = ({ item }) => (
       </div>
     </div>
     
-    <div className="flex grow flex-col p-8">
-      <h3 className="text-xl font-bold text-slate-800 dark:text-slate-100">
+    <div className="group relative justify-between overflow-hidden p-8">
+
+      <h3 className="mb-4 text-2xl font-bold text-slate-900 dark:text-slate-100">
         {item.title}
       </h3>
-      
-      <div className="mt-4 mb-4 flex flex-wrap gap-2">
-        {item.tags.map((tag, index) => {
-          const IconComp = iconMap[tag] || iconMap["default"];
-          return (
-            <span 
-              key={index} 
-              className="flex items-center gap-1.5 rounded-lg bg-white/50 px-3 py-1 text-xs font-semibold text-slate-700 shadow-sm ring-1 ring-inset ring-slate-900/5 dark:bg-slate-800/50 dark:text-slate-300 dark:ring-white/10"
-            >
-              <IconComp className="text-cyan-600 dark:text-cyan-400" />
-              {tag}
-            </span>
-          );
-        })}
-      </div>
+
+      <p className="mb-6 leading-relaxed text-slate-900 dark:text-slate-400">
+        {item.description || <span className="italic opacity-70">No description available</span>}
+      </p>
 
       <div className="">
-        <p className="leading-relaxed text-slate-600 line-clamp-3 dark:text-slate-400">
-          {item.description || <span className="italic opacity-70">No description available</span>}
-        </p>
+        <h4 className="mb-3 text-sm font-semibold uppercase tracking-wider text-slate-900 dark:text-slate-400">
+          Tech Stack
+        </h4>
+        <div className="flex flex-wrap gap-3">
+          {item.tags.map((tag, i) => {
+            const Icon = iconMap[tag] || iconMap["default"];
+            return (
+              <div 
+                key={i} 
+                className="group/icon relative flex h-10 w-10 items-center justify-center rounded-xl bg-white/60 text-xl text-slate-700 shadow-sm transition-all duration-300 hover:-translate-y-2 hover:scale-110 hover:bg-gradient-to-br hover:from-cyan-500 hover:to-blue-600 hover:text-white hover:shadow-xl hover:shadow-blue-500/25 dark:bg-white/10 dark:text-slate-300 dark:hover:from-cyan-400 dark:hover:to-blue-500 dark:hover:text-white dark:hover:shadow-blue-400/20"
+              >
+                <Icon />
+                <span className="pointer-events-none absolute -bottom-8 left-1/2 z-20 -translate-x-1/2 whitespace-nowrap rounded-md bg-slate-900 px-2 py-1 text-xs font-medium text-white opacity-0 shadow-lg transition-all duration-200 group-hover/icon:-bottom-10 group-hover/icon:opacity-100 dark:bg-slate-700">
+                  {tag}
+                </span>
+              </div>
+            );
+          })}
+        </div>
       </div>
+
     </div>
   </motion.div>
 );

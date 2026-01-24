@@ -41,7 +41,7 @@ const Skills = () => {
                   <CategoryIcon />
                 </div>
                 
-                <h3 className="mb-6 text-2xl font-bold text-slate-800 dark:text-slate-100">
+                <h3 className="mb-6 text-2xl font-bold text-slate-900 dark:text-slate-100">
                   {skillSet.category}
                 </h3>
                 
@@ -52,7 +52,7 @@ const Skills = () => {
                     return (
                       <div
                         key={i}
-                        className="flex items-center gap-2 rounded-lg bg-white/60 px-3 py-2 text-sm font-semibold text-slate-700 shadow-sm ring-1 ring-inset ring-slate-900/5 transition-all duration-300 hover:bg-white hover:text-cyan-600 hover:shadow dark:bg-slate-800/50 dark:text-slate-300 dark:ring-white/10 dark:hover:bg-slate-800 dark:hover:text-cyan-400"
+                        className="flex items-center gap-2 rounded-lg bg-white/60 px-3 py-2 text-sm font-semibold text-slate-900 shadow-sm ring-1 ring-inset ring-slate-900/5 transition-all duration-300 hover:bg-white hover:text-blue-600 hover:shadow dark:bg-slate-800/50 dark:text-slate-300 dark:ring-white/10 dark:hover:bg-slate-800 dark:hover:text-cyan-400"
                       >
                         <span className="text-lg opacity-80">
                           <IconComponent />

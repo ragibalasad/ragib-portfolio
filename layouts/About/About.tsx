@@ -46,7 +46,7 @@ const About = () => {
                 </h2>
                 <div className="mt-4 h-1.5 w-24 rounded-full bg-gradient-to-r from-cyan-400 to-blue-600"></div>
               </div>
-              <p className="about-me mt-8 text-lg leading-relaxed text-slate-600 dark:text-slate-300">
+              <p className="about-me mt-8 text-lg leading-relaxed text-slate-800 dark:text-slate-300">
                 I am an experienced software engineer from Bangladesh who has been developing applications for 4+ years (both back end & front end) using Full Stack Development technologies like: Python (Django & Flask), TypeScript (Next.JS), React & GoLang.
                 <br />
                 <br /> 

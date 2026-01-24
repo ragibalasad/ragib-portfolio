@@ -5,7 +5,7 @@
     "live": "https://develeven.vercel.app/",
     "github": "https://github.com/DEVELEVEN-io/develeven-io",
     "category": "front end",
-    "tags": ["TypeScript", "React", "Next.js", "CSS"],
+    "tags": ["React", "Next.js", "CSS"],
     "description": "Team DevEleven's landing website. Contributed as a team with @AbidAlWassie"
   },
   {
@@ -14,7 +14,7 @@
     "live": "https://ragibalasad.me/",
     "github": "https://github.com/ragibalasad/ragib-portfolio",
     "category": "front end",
-    "tags": ["JavaScript", "Next.js", "Tailwind CSS", "Framer"],
+    "tags": ["Next.js", "Tailwind CSS", "Framer"],
     "description": "Ragib Al Asad's portfolio website. Not Complete Yet"
   },
   {
@@ -23,7 +23,7 @@
     "live": "https://ragibalasad.me/",
     "github": "https://github.com/ragibalasad/ragib-portfolio",
     "category": "back end",
-    "tags": ["TypeScript", "React", "Next.js", "Tailwind CSS"],
+    "tags": ["React", "Next.js", "Tailwind CSS"],
     "description": ""
   },
   {
@@ -32,7 +32,7 @@
     "live": "https://ragibalasad.me/",
     "github": "https://github.com/ragibalasad/ragib-portfolio",
     "category": "back end",
-    "tags": ["TypeScript", "React", "Next.js", "Tailwind CSS"],
+    "tags": ["React", "Next.js", "Tailwind CSS"],
     "description": ""
   },
   {
@@ -41,7 +41,7 @@
     "live": "https://ragibalasad.me/",
     "github": "https://github.com/ragibalasad/ragib-portfolio",
     "category": "back end",
-    "tags": ["TypeScript", "React", "Next.js", "Tailwind CSS"],
+    "tags": ["React", "Next.js", "Tailwind CSS"],
     "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe molestiae, repellendus aut sint vitae officia ipsum corrupti, minima at illo beatae ut! Sunt praesentium cupiditate qui mollitia? Minima, suscipit eum."
   }
 ]

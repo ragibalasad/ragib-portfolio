@@ -42,7 +42,7 @@ const Hero = () => {
           
           {/* Name */}
           <div>
-            <p className="mb-2 text-sm font-medium uppercase tracking-widest text-cyan-600 dark:text-cyan-400">
+            <p className="mb-2 text-sm font-medium uppercase tracking-widest text-cyan-800 dark:text-cyan-400">
               Software Developer
             </p>
             <h1 className="text-4xl font-bold tracking-tight text-slate-900 dark:text-white sm:text-5xl lg:text-6xl">
@@ -52,15 +52,15 @@ const Hero = () => {
           </div>
           
           {/* Tagline */}
-          <p className="mx-auto max-w-xl text-base leading-relaxed text-slate-500 dark:text-slate-400 sm:text-lg">
+          <p className="mx-auto max-w-xl text-base leading-relaxed text-slate-800 dark:text-slate-400 sm:text-lg">
             Building modern web applications with clean architecture and thoughtful user experiences. Based in Bangladesh.
           </p>
           
           {/* Stats - Inline */}
-          <div className="flex items-center justify-center gap-8 pt-2 text-sm text-slate-500 dark:text-slate-500">
+          <div className="flex items-center justify-center gap-8 pt-2 text-sm text-slate-800 dark:text-slate-400">
             {stats.map((stat, index) => (
               <div key={index} className="flex items-center gap-2">
-                <span className="text-lg font-bold text-cyan-600 dark:text-cyan-400">{stat.value}</span>
+                <span className="text-lg font-bold text-cyan-700 dark:text-cyan-400">{stat.value}</span>
                 <span>{stat.label}</span>
               </div>
             ))}
