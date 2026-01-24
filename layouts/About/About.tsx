@@ -39,25 +39,27 @@ const About = () => {
             </div>
           </div>
           <div className="col-span-1 flex lg:col-span-3">
-            <div className="my-auto max-md:pt-16">
-              <div className="mb-12 flex flex-col items-start">
+            <div className="my-auto max-md:pt-16 space-y-12">
+              <div className="flex flex-col items-start">
                 <h2 className="text-4xl font-extrabold tracking-tight text-slate-800 dark:text-slate-100 sm:text-5xl">
                    About Me
                 </h2>
                 <div className="mt-4 h-1.5 w-24 rounded-full bg-gradient-to-r from-cyan-400 to-blue-600"></div>
               </div>
-              <p className="about-me mt-8 text-lg leading-relaxed text-slate-800 dark:text-slate-300">
+              <p className="about-me text-lg leading-relaxed text-slate-800 dark:text-slate-300 space-y-6">
+                <span className="block">
                 I am an experienced software engineer from Bangladesh who has been developing applications for 4+ years (both back end & front end) using Full Stack Development technologies like: Python (Django & Flask), TypeScript (Next.JS), React & GoLang.
-                <br />
-                <br /> 
+                </span>
+                <span className="block">
                 Explore my <a href="#projects" className="font-semibold text-cyan-600 underline decoration-cyan-400 decoration-2 underline-offset-4 transition-colors hover:text-cyan-700 dark:text-cyan-400 dark:hover:text-cyan-300">projects gallery</a> to see my work in action. I&apos;m always open to <strong className="text-slate-800 dark:text-slate-100">collaborations</strong> and new opportunities.
-                <br />
-                <a href="#contact" className="mt-4 inline-flex items-center gap-1 font-semibold text-cyan-600 transition-colors hover:gap-2 hover:text-cyan-700 dark:text-cyan-400 dark:hover:text-cyan-300">
+                </span>
+
+                <a href="#contact" className="inline-flex items-center gap-1 font-semibold text-cyan-600 transition-colors hover:gap-2 hover:text-cyan-700 dark:text-cyan-400 dark:hover:text-cyan-300">
                    Learn More about me &rarr;
                 </a>
               </p>
 
-              <div className="mt-12 grid grid-cols-2 gap-6 md:grid-cols-4">
+              <div className="grid gap-8 md:grid-cols-4">
                 <Experiences />
               </div>
             </div>
