@@ -27,7 +27,7 @@ const SponsorPopup = ({ address = "0x3b9d44e43f04f43c0e397968543975dfb2893eb9" }
       onMouseLeave={() => setIsHovered(false)}
     >
       {/* Sponsor Button */}
-      <div className="group relative flex flex-col gap-1 rounded-[2rem] border border-white/20 bg-white/20 p-5 backdrop-blur-md dark:border-white/5 dark:bg-white/5 transition-all hover:bg-white/40 cursor-default">
+      <div className="group relative flex flex-col gap-1 rounded-[2rem] border border-white/20 bg-white/40 p-6 shadow-xl backdrop-blur-3xl dark:border-white/10 dark:bg-white/5">
         <div className="flex items-center justify-between w-full">
           <div className="flex items-center gap-2 text-rose-500">
             <motion.div
@@ -57,7 +57,7 @@ const SponsorPopup = ({ address = "0x3b9d44e43f04f43c0e397968543975dfb2893eb9" }
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, y: 10, scale: 0.95 }}
             transition={{ duration: 0.2, ease: "easeOut" }}
-            className="absolute bottom-full left-1/2 mb-4 w-80 -translate-x-1/2 rounded-[2.5rem] border border-white/20 bg-white/80 p-7 shadow-2xl backdrop-blur-xl dark:border-white/10 dark:bg-slate-900/80 z-20"
+            className="absolute bottom-full left-1/2 mb-4 w-80 -translate-x-1/2 rounded-[2.5rem] border border-white/20 bg-white/40 p-8 shadow-2xl backdrop-blur-3xl dark:border-white/10 dark:bg-white/5 z-20"
           >
             <div className="flex flex-col items-center gap-5">
               {/* QR Code Container */}

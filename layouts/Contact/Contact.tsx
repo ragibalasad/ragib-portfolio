@@ -55,7 +55,7 @@ const Contact = () => {
 
           {/* Right Column: Contact Form */}
           <div className="relative">
-            <div className="relative overflow-hidden rounded-[2.5rem] border border-white/20 bg-white/60 p-8 sm:p-12 shadow-2xl backdrop-blur-3xl dark:border-white/10 dark:bg-slate-900/60">
+            <div className="relative overflow-hidden rounded-[2.5rem] border border-white/20 bg-white/30 p-8 sm:p-12 shadow-2xl backdrop-blur-3xl dark:border-white/10 dark:bg-white/5">
               <div className="mb-10 space-y-2">
                 <h3 className="text-3xl font-bold tracking-tight text-slate-900 dark:text-slate-100">
                    Get in touch
@@ -74,7 +74,7 @@ const Contact = () => {
                     id="email"
                     type="email"
                     placeholder="e.g. john@doe.com"
-                    className="w-full rounded-2xl border border-slate-200 bg-white/50 px-5 py-4 font-semibold text-slate-900 placeholder-slate-400 outline-none transition-all focus:border-cyan-400 focus:bg-white focus:ring-4 focus:ring-cyan-500/10 dark:border-white/5 dark:bg-black/20 dark:text-white dark:placeholder-slate-600 dark:focus:border-cyan-500 dark:focus:bg-black/40"
+                    className="w-full rounded-2xl border dark:border-white/20 bg-white/50 px-5 py-4 font-semibold text-slate-900 placeholder-slate-400 outline-none transition-all focus:border-cyan-400 focus:bg-white focus:ring-4 focus:ring-cyan-500/10 dark:border-white/10 dark:bg-white/5 dark:text-white dark:placeholder-slate-600 dark:focus:border-cyan-500 dark:focus:bg-white/10"
                   />
                 </div>
 
@@ -86,7 +86,7 @@ const Contact = () => {
                     id="subject"
                     type="text"
                     placeholder="What's this about?"
-                    className="w-full rounded-2xl border border-slate-200 bg-white/50 px-5 py-4 font-semibold text-slate-900 placeholder-slate-400 outline-none transition-all focus:border-cyan-400 focus:bg-white focus:ring-4 focus:ring-cyan-500/10 dark:border-white/5 dark:bg-black/20 dark:text-white dark:placeholder-slate-600 dark:focus:border-cyan-500 dark:focus:bg-black/40"
+                    className="w-full rounded-2xl border dark:border-white/20 bg-white/50 px-5 py-4 font-semibold text-slate-900 placeholder-slate-400 outline-none transition-all focus:border-cyan-400 focus:bg-white focus:ring-4 focus:ring-cyan-500/10 dark:border-white/10 dark:bg-white/5 dark:text-white dark:placeholder-slate-600 dark:focus:border-cyan-500 dark:focus:bg-white/10"
                   />
                 </div>
 
@@ -98,7 +98,7 @@ const Contact = () => {
                     id="msg"
                     rows={4}
                     placeholder="Your message goes here..."
-                    className="w-full resize-none rounded-2xl border border-slate-200 bg-white/50 px-5 py-4 font-semibold text-slate-900 placeholder-slate-400 outline-none transition-all focus:border-cyan-400 focus:bg-white focus:ring-4 focus:ring-cyan-500/10 dark:border-white/5 dark:bg-black/20 dark:text-white dark:placeholder-slate-600 dark:focus:border-cyan-500 dark:focus:bg-black/40"
+                    className="w-full resize-none rounded-2xl border dark:border-white/20 bg-white/50 px-5 py-4 font-semibold text-slate-900 placeholder-slate-400 outline-none transition-all focus:border-cyan-400 focus:bg-white focus:ring-4 focus:ring-cyan-500/10 dark:border-white/10 dark:bg-white/5 dark:text-white dark:placeholder-slate-600 dark:focus:border-cyan-500 dark:focus:bg-white/10"
                   ></textarea>
                 </div>
 
@@ -120,7 +120,7 @@ const Contact = () => {
 
 const ContactItem = ({ icon, label, value, href }: { icon: React.ReactNode, label: string, value: string, href?: string }) => {
   const Content = (
-    <div className="group flex flex-col gap-1 rounded-[2rem] border border-white/20 bg-white/20 p-5 backdrop-blur-md dark:border-white/5 dark:bg-white/5 transition-all hover:bg-white/40">
+    <div className="group flex flex-col gap-1 rounded-[2rem] border border-white/20 bg-white/40 p-6 shadow-xl backdrop-blur-3xl dark:border-white/10 dark:bg-white/5">
       <div className="flex items-center gap-2 text-cyan-600 dark:text-cyan-400">
         <span className="text-lg">{icon}</span>
         <span className="text-[9px] font-black uppercase tracking-widest opacity-60">{label}</span>
