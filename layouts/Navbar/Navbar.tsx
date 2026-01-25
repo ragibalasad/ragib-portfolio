@@ -60,7 +60,7 @@ const Navbar = () => {
       <motion.div
         className={`container mx-auto flex items-center justify-between transition-all duration-500 ${
           isScrolled
-            ? "max-w-5xl rounded-3xl border border-slate-200/50 bg-white/80 py-3 shadow-2xl backdrop-blur-xl dark:border-white/10 dark:bg-slate-950/80 px-8"
+            ? "max-w-5xl rounded-3xl border border-white/20 bg-white/60 py-3 shadow-xl backdrop-blur-2xl dark:border-white/10 dark:bg-white/5 px-8"
             : "max-w-7xl border-b border-transparent py-6 px-6"
         }`}
         initial={{ opacity: 0, y: -20 }}
@@ -77,7 +77,7 @@ const Navbar = () => {
           <motion.span 
             animate={isScrolled ? { scale: [1, 1.1, 1] } : {}}
             transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
-            className="font-mono text-2xl font-medium tracking-tighter text-cyan-500"
+            className="font-mono text-2xl font-medium bg-gradient-to-r from-cyan-400 to-blue-600 bg-clip-text text-transparent"
           >
             &lt;/&gt;
           </motion.span>

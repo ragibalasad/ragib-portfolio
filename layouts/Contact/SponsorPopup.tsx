@@ -99,7 +99,7 @@ const SponsorPopup = ({ address = "0x3b9d44e43f04f43c0e397968543975dfb2893eb9" }
               {/* Address with Copy */}
               <button
                 onClick={handleCopy}
-                className="group relative flex w-full items-center justify-between rounded-2xl bg-slate-100/50 px-4 py-3.5 transition-colors hover:bg-slate-200/50 dark:bg-slate-800/50 dark:hover:bg-slate-700/50"
+                className="group relative flex w-full items-center justify-between rounded-2xl bg-slate-200/50 px-4 py-3.5 transition-colors hover:bg-slate-300/50 dark:bg-slate-800 dark:hover:bg-slate-700/50"
               >
                 <code className="text-sm font-semibold text-slate-700 dark:text-slate-300 truncate max-w-[200px]">
                   {address}

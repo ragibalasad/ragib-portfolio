@@ -52,70 +52,70 @@ const HeroVisual = () => {
           rotateX: { duration: 9, repeat: Infinity, ease: "easeInOut" },
         }}
         style={{ transformStyle: "preserve-3d" }}
-        className="relative z-10 w-[90%] max-w-md overflow-hidden rounded-2xl border border-white/20 bg-slate-900/80 shadow-2xl backdrop-blur-xl dark:border-white/10 dark:bg-black/60"
+        className="relative z-10 w-[90%] max-w-md overflow-hidden rounded-2xl border dark:border-white/20 bg-white/40 shadow-2xl backdrop-blur-xl dark:border-white/10 dark:bg-black/60"
       >
         {/* Window Controls */}
-        <div className="flex items-center gap-2 border-b border-white/10 bg-white/5 px-4 py-3">
+        <div className="flex items-center gap-2 border-b dark:border-white/10 bg-white/5 px-4 py-3">
           <div className="h-3 w-3 rounded-full bg-red-400"></div>
           <div className="h-3 w-3 rounded-full bg-yellow-400"></div>
           <div className="h-3 w-3 rounded-full bg-green-400"></div>
-          <div className="ml-2 text-xs font-medium text-slate-500">welcome.tsx</div>
+          <div className="ml-2 text-xs font-medium text-slate-600 dark:text-slate-500">welcome.tsx</div>
         </div>
 
         {/* Code Content */}
-        <div className="p-6 font-mono text-sm leading-relaxed text-slate-300">
+        <div className="p-6 font-mono text-sm leading-relaxed dark:text-slate-300 text-slate-600">
           <div className="flex">
             <span className="w-6 select-none text-slate-600">1</span>
             <div>
-              <span className="text-purple-400">const</span> <span className="text-blue-400">Developer</span> = <span className="text-yellow-300">{"{"}</span>
+              <span className="dark:text-purple-400 text-purple-600">const</span> <span className="dark:text-blue-400 text-blue-600">Developer</span> = <span className="dark:text-yellow-300 text-yellow-600">{"{"}</span>
             </div>
           </div>
           <div className="flex">
             <span className="w-6 select-none text-slate-600">2</span>
             <div className="pl-4">
-              name: <span className="text-green-400">"Ragib Al Asad"</span>,
+              name: <span className="dark:text-green-400 text-green-600">"Ragib Al Asad"</span>,
             </div>
           </div>
           <div className="flex">
             <span className="w-6 select-none text-slate-600">3</span>
             <div className="pl-4">
-              role: <span className="text-green-400">"Full Stack Engineer"</span>,
+              role: <span className="dark:text-green-400 text-green-600">"Full Stack Engineer"</span>,
             </div>
           </div>
           <div className="flex">
             <span className="w-6 select-none text-slate-600">4</span>
             <div className="pl-4">
-              skills: <span className="text-yellow-300">{"["}</span>
-              <span className="text-green-400">"React"</span>, <span className="text-green-400">"Next.js"</span><span className="text-yellow-300">{"]"}</span>,
+              skills: <span className="dark:text-yellow-300 text-yellow-600">{"["}</span>
+              <span className="dark:text-green-400 text-green-600">"React"</span>, <span className="dark:text-green-400 text-green-600">"Next.js"</span><span className="dark:text-yellow-300 text-yellow-600">{"]"}</span>,
             </div>
           </div>
           <div className="flex">
             <span className="w-6 select-none text-slate-600">5</span>
             <div className="pl-4">
-              hardWorker: <span className="text-orange-400">true</span>,
+              hardWorker: <span className="dark:text-orange-400 text-orange-600">true</span>,
             </div>
           </div>
           <div className="flex">
             <span className="w-6 select-none text-slate-600">6</span>
             <div className="pl-4">
-              quickLearner: <span className="text-orange-400">true</span>,
+              quickLearner: <span className="dark:text-orange-400 text-orange-600">true</span>,
             </div>
           </div>
           <div className="flex">
             <span className="w-6 select-none text-slate-600">6</span>
             <div className="pl-4">
-              problemSolver: <span className="text-orange-400">true</span>,
+              problemSolver: <span className="dark:text-orange-400 text-orange-600">true</span>,
             </div>
           </div>
           <div className="flex">
             <span className="w-6 select-none text-slate-600">7</span>
             <div>
-              <span className="text-yellow-300">{"}"}</span>;
+              <span className="dark:text-yellow-300 text-yellow-600">{"}"}</span>;
             </div>
           </div>
-          <div className="flex animate-pulse">
+          <div className="flex">
             <span className="w-6 select-none text-slate-600">8</span>
-            <div className="h-5 w-2 bg-cyan-400"></div>
+            <div className="h-5 w-2 bg-cyan-400 animate-pulse"></div>
           </div>
         </div>
 

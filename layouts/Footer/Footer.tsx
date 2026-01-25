@@ -20,7 +20,7 @@ const Footer = () => {
           {/* Brand & Info */}
           <div className="lg:col-span-4 flex flex-col gap-6">
             <div className="flex items-center gap-2">
-              <span className="font-mono text-2xl font-bold tracking-tighter text-cyan-500">
+              <span className="font-mono text-2xl font-medium bg-gradient-to-r from-cyan-400 to-blue-600 bg-clip-text text-transparent">
                 &lt;/&gt;
               </span>
               <span className="text-2xl font-bold tracking-tight text-white">
