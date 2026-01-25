@@ -31,7 +31,7 @@ const About = () => {
             <div className="space-y-4">
               <h2 className="text-4xl font-extrabold tracking-tight text-slate-900 dark:text-slate-100 sm:text-5xl lg:text-6xl">
                  Crafting Digital <br />
-                 <span className="bg-gradient-to-r from-cyan-400 to-blue-600 bg-clip-text text-transparent">Experiences.</span>
+                 <span className="bg-gradient-to-r from-cyan-400 to-blue-600 bg-clip-text text-transparent italic">Experiences.</span>
               </h2>
               <div className="h-1.5 w-24 rounded-full bg-gradient-to-r from-cyan-400 to-blue-600"></div>
             </div>
@@ -80,7 +80,7 @@ const About = () => {
               <Image 
                 src={my_potrait} 
                 alt="Potrait of Ragib" 
-                className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110" 
+                className="-mt-8 w-full object-cover transition-transform duration-700 group-hover:scale-110" 
                 placeholder="blur"
               />
             </div>

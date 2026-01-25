@@ -1,5 +1,6 @@
 import { FaArrowRight, FaBitcoin, FaEthereum, FaHeart } from "react-icons/fa6";
 import { MdLocationOn, MdMail, MdPhone } from "react-icons/md";
+import SponsorPopup from "./SponsorPopup";
 
 const Contact = () => {
   return (
@@ -8,7 +9,7 @@ const Contact = () => {
       className="contact relative overflow-hidden py-32"
     >
       {/* Background Decorative Blobs - Matching Hero Style */}
-      <div className="absolute top-1/4 left-1/4 -z-10 h-[500px] w-[500px] rounded-full bg-cyan-500/5 blur-[120px] dark:bg-cyan-900/10"></div>
+      <div className="absolute top-1/4 left-1/4 -z-50 h-[500px] w-[500px] rounded-full bg-cyan-500/5 blur-[120px] dark:bg-cyan-900/10"></div>
       <div className="absolute bottom-1/4 right-1/4 -z-10 h-[500px] w-[500px] rounded-full bg-blue-500/5 blur-[120px] dark:bg-blue-900/10"></div>
 
       <div className="container relative mx-auto max-w-7xl max-xl:px-6">
@@ -48,13 +49,7 @@ const Contact = () => {
                  label="Location" 
                  value="Rangpur, Bangladesh" 
                />
-               <div className="group relative flex flex-col gap-1 rounded-[2rem] border border-white/20 bg-white/20 p-5 backdrop-blur-md dark:border-white/5 dark:bg-white/5 transition-all hover:bg-white/40">
-                  <div className="flex items-center gap-2 text-rose-500">
-                    <FaHeart className="text-lg" />
-                    <span className="text-[10px] font-black uppercase tracking-widest opacity-60">Sponsor</span>
-                  </div>
-                  <p className="text-sm font-bold text-slate-900 dark:text-slate-100">Enjoying my work?</p>
-               </div>
+               <SponsorPopup />
             </div>
           </div>
 

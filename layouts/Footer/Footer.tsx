@@ -71,10 +71,10 @@ const Footer = () => {
              <a 
                 href="https://github.com/ragibalasad/ragib-portfolio"
                 target="_blank"
-                className="mt-4 flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-6 py-2 text-[10px] font-bold uppercase tracking-widest text-slate-400 transition-all hover:bg-white/10 hover:text-white"
+                className="group mt-4 flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-6 py-2 text-[10px] font-bold uppercase tracking-widest text-slate-400 transition-all hover:bg-white/10 hover:text-white"
              >
                 <FaGithub className="text-sm" />
-                View Source Code
+                Get this website for <span className="text-green-500 text-sm group-hover:text-green-300">$45.99</span> only
              </a>
           </div>
         </div>
