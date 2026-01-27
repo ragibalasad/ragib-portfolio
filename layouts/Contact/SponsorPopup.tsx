@@ -52,7 +52,7 @@ const SponsorPopup = ({ address = "0x3b9d44e43f04f43c0e397968543975dfb2893eb9" }
       <button 
         type="button"
         onClick={() => setIsOpen(!isOpen)}
-        className="group relative flex w-full flex-col gap-1 rounded-[2rem] border border-white/20 bg-white/40 p-6 shadow-xl backdrop-blur-3xl transition-transform hover:-translate-y-1 dark:border-white/10 dark:bg-white/5"
+        className="group relative flex w-full flex-col gap-1 rounded-3xl border border-white/20 bg-white/60 p-6 shadow-xl backdrop-blur-2xl transition-transform hover:-translate-y-1 dark:border-white/10 dark:bg-white/5"
       >
         <div className="flex items-center justify-between w-full">
           <div className="flex items-center gap-2 text-rose-500">
@@ -83,7 +83,7 @@ const SponsorPopup = ({ address = "0x3b9d44e43f04f43c0e397968543975dfb2893eb9" }
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, y: 10, scale: 0.95 }}
             transition={{ duration: 0.2, ease: "easeOut" }}
-            className="fixed inset-x-4 bottom-20 z-[60] sm:absolute sm:inset-x-auto sm:bottom-full sm:left-1/2 sm:-translate-x-1/2 sm:mb-4 sm:w-80 rounded-[2.5rem] border border-white/20 bg-white/40 p-6 sm:p-8 shadow-2xl backdrop-blur-3xl dark:border-white/10 dark:bg-white/5"
+            className="fixed inset-x-4 bottom-20 z-[60] sm:absolute sm:inset-x-auto sm:bottom-full sm:left-1/2 sm:-translate-x-1/2 sm:mb-4 sm:w-80 rounded-3xl border border-white/20 bg-white/60 p-6 sm:p-8 shadow-xl backdrop-blur-2xl dark:border-white/10 dark:bg-white/5"
           >
             <div className="flex flex-col items-center gap-5">
               {/* QR Code Container */}
@@ -125,7 +125,7 @@ const SponsorPopup = ({ address = "0x3b9d44e43f04f43c0e397968543975dfb2893eb9" }
               {/* Address with Copy */}
               <button
                 onClick={handleCopy}
-                className="group relative flex w-full items-center justify-between rounded-2xl bg-slate-200/50 px-4 py-3.5 transition-colors hover:bg-slate-300/50 dark:bg-slate-800 dark:hover:bg-slate-700/50"
+                className="group relative flex w-full items-center justify-between rounded-xl border border-white/20 bg-white/40 px-4 py-3.5 shadow-sm backdrop-blur-xl transition-all duration-200 hover:bg-white/60 dark:border-white/10 dark:bg-white/5 dark:hover:bg-white/10"
               >
                 <code className="text-sm font-semibold text-slate-700 dark:text-slate-300 truncate max-w-[200px]">
                   {address}
@@ -143,7 +143,7 @@ const SponsorPopup = ({ address = "0x3b9d44e43f04f43c0e397968543975dfb2893eb9" }
             </div>
 
             {/* Arrow - Hidden on mobile, visible on desktop */}
-            <div className="hidden sm:block absolute -bottom-2 left-1/2 h-4 w-4 -translate-x-1/2 rotate-45 border-b border-r border-white/20 bg-white/80 backdrop-blur-[60px] dark:border-white/10 dark:bg-slate-900/80"></div>
+            <div className="hidden sm:block absolute -bottom-2 left-1/2 h-4 w-4 -translate-x-1/2 rotate-45 border-b border-r border-white/20 bg-white/60 backdrop-blur-2xl dark:border-white/10 dark:bg-white/5"></div>
           </motion.div>
         )}
       </AnimatePresence>
