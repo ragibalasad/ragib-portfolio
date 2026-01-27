@@ -50,7 +50,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`fixed z-50 w-full transition-all duration-500 ${
+      className={`fixed z-50 w-full transition-all duration-500 max-lg:px-8 ${
         isScrolled
           ? "top-4 px-6"
           : "top-0 px-0"
@@ -60,8 +60,8 @@ const Navbar = () => {
       <motion.div
         className={`container mx-auto flex items-center justify-between transition-all duration-500 ${
           isScrolled
-            ? "max-w-5xl rounded-3xl border border-white/20 bg-white/60 py-3 shadow-xl backdrop-blur-2xl dark:border-white/10 dark:bg-white/5 px-8"
-            : "max-w-7xl border-b border-transparent py-6 px-6"
+            ? "max-w-5xl rounded-full border border-white/20 bg-white/60 py-3 shadow-xl backdrop-blur-2xl dark:border-white/10 dark:bg-white/5 px-8"
+            : "max-w-7xl border-b border-transparent py-6 max-xl:px-6"
         }`}
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
@@ -123,7 +123,7 @@ const Navbar = () => {
 
         {/* Scroll Progress Bar (Inside Floating Island) */}
         {isScrolled && (
-          <div className="absolute bottom-0 left-8 right-8 h-[2px] overflow-hidden rounded-full bg-slate-200/20">
+          <div className="absolute bottom-0 left-6 right-6 h-[2px] overflow-hidden rounded-full bg-slate-200/20">
             <motion.div 
               className="h-full bg-gradient-to-r from-cyan-400 to-blue-600"
               style={{ width: `${scrollProgress}%` }}
@@ -136,16 +136,14 @@ const Navbar = () => {
       <AnimatePresence>
         {isOpen && (
           <motion.div
-            initial={{ opacity: 0, height: 0 }}
-            animate={{ opacity: 1, height: "auto" }}
-            exit={{ opacity: 0, height: 0 }}
-            transition={{ duration: 0.3 }}
-            className={`mx-auto mt-2 overflow-hidden bg-white/95 backdrop-blur-lg dark:bg-slate-950/95 lg:hidden ${
-              isScrolled ? "max-w-5xl rounded-3xl border border-slate-200/50 dark:border-white/10" : "w-full border-t border-slate-200/50 dark:border-white/5"
-            }`}
+            initial={{ opacity: 0, y: -10 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -10 }}
+            transition={{ duration: 0.2 }}
+            className={`mx-auto mt-2 overflow-hidden lg:hidden`}
           >
-            <div className="container mx-auto px-6 py-6 sm:w-4/5">
-              <ul className="flex flex-col gap-2">
+            <div className={`rounded-3xl border border-white/20 bg-white/60 p-4 shadow-xl backdrop-blur-2xl dark:border-white/10 dark:bg-white/5`}>
+              <ul className="flex flex-col gap-1">
                 {navLinks.map((link, index) => (
                   <li key={index}>
                     <Link
@@ -155,8 +153,8 @@ const Navbar = () => {
                       offset={link.offset}
                       duration={500}
                       onClick={handleLinkClick}
-                      activeClass="bg-cyan-50 text-cyan-600 dark:bg-cyan-900/20 dark:text-cyan-400"
-                      className="block cursor-pointer rounded-lg px-4 py-3 text-base font-medium text-slate-700 transition-colors hover:bg-slate-100 dark:text-slate-300 dark:hover:bg-slate-800/50"
+                      activeClass="!text-cyan-600 dark:!text-cyan-400 bg-cyan-500/10"
+                      className="block cursor-pointer rounded-2xl px-4 py-3 text-sm font-bold uppercase tracking-widest text-slate-600 transition-all duration-200 hover:bg-white/40 hover:text-slate-900 dark:text-slate-400 dark:hover:bg-white/5 dark:hover:text-white"
                     >
                       {link.label}
                     </Link>
