@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { QRCodeSVG } from "qrcode.react";
 import { FaHeart, FaCopy, FaCheck } from "react-icons/fa6";
@@ -11,8 +11,25 @@ interface SponsorPopupProps {
 }
 
 const SponsorPopup = ({ address = "0x3b9d44e43f04f43c0e397968543975dfb2893eb9" }: SponsorPopupProps) => {
-  const [isHovered, setIsHovered] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
   const [copied, setCopied] = useState(false);
+  const containerRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (containerRef.current && !containerRef.current.contains(event.target as Node)) {
+        setIsOpen(false);
+      }
+    };
+
+    if (isOpen) {
+      document.addEventListener("mousedown", handleClickOutside);
+    }
+
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [isOpen]);
 
   const handleCopy = () => {
     navigator.clipboard.writeText(address);
@@ -22,12 +39,21 @@ const SponsorPopup = ({ address = "0x3b9d44e43f04f43c0e397968543975dfb2893eb9" }
 
   return (
     <div 
+      ref={containerRef}
       className="relative"
-      onMouseEnter={() => setIsHovered(true)}
-      onMouseLeave={() => setIsHovered(false)}
+      onPointerEnter={(e) => {
+        if (e.pointerType === "mouse") setIsOpen(true);
+      }}
+      onPointerLeave={(e) => {
+        if (e.pointerType === "mouse") setIsOpen(false);
+      }}
     >
       {/* Sponsor Button */}
-      <div className="group relative flex flex-col gap-1 rounded-[2rem] border border-white/20 bg-white/40 p-6 shadow-xl backdrop-blur-3xl dark:border-white/10 dark:bg-white/5">
+      <button 
+        type="button"
+        onClick={() => setIsOpen(!isOpen)}
+        className="group relative flex w-full flex-col gap-1 rounded-[2rem] border border-white/20 bg-white/40 p-6 shadow-xl backdrop-blur-3xl transition-transform hover:-translate-y-1 dark:border-white/10 dark:bg-white/5"
+      >
         <div className="flex items-center justify-between w-full">
           <div className="flex items-center gap-2 text-rose-500">
             <motion.div
@@ -47,11 +73,11 @@ const SponsorPopup = ({ address = "0x3b9d44e43f04f43c0e397968543975dfb2893eb9" }
           <SiTether className="text-emerald-500 text-xl" title="USDT (ERC20)" />
         </div>
         <p className="text-sm font-bold text-slate-900 dark:text-slate-100">Sponsor my work</p>
-      </div>
+      </button>
 
       {/* Popup */}
       <AnimatePresence>
-        {isHovered && (
+        {isOpen && (
           <motion.div
             initial={{ opacity: 0, y: 10, scale: 0.95 }}
             animate={{ opacity: 1, y: 0, scale: 1 }}
