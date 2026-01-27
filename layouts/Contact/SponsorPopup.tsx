@@ -83,7 +83,7 @@ const SponsorPopup = ({ address = "0x3b9d44e43f04f43c0e397968543975dfb2893eb9" }
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, y: 10, scale: 0.95 }}
             transition={{ duration: 0.2, ease: "easeOut" }}
-            className="absolute bottom-full left-1/2 mb-4 w-80 -translate-x-1/2 rounded-[2.5rem] border border-white/20 bg-white/40 p-8 shadow-2xl backdrop-blur-3xl dark:border-white/10 dark:bg-white/5 z-20"
+            className="fixed inset-x-4 bottom-20 z-[60] sm:absolute sm:inset-x-auto sm:bottom-full sm:left-1/2 sm:-translate-x-1/2 sm:mb-4 sm:w-80 rounded-[2.5rem] border border-white/20 bg-white/40 p-6 sm:p-8 shadow-2xl backdrop-blur-3xl dark:border-white/10 dark:bg-white/5"
           >
             <div className="flex flex-col items-center gap-5">
               {/* QR Code Container */}
@@ -142,8 +142,8 @@ const SponsorPopup = ({ address = "0x3b9d44e43f04f43c0e397968543975dfb2893eb9" }
               </p>
             </div>
 
-            {/* Arrow */}
-            <div className="absolute -bottom-2 left-1/2 h-4 w-4 -translate-x-1/2 rotate-45 border-b border-r border-white/20 bg-white/80 backdrop-blur-[60px] dark:border-white/10 dark:bg-slate-900/80"></div>
+            {/* Arrow - Hidden on mobile, visible on desktop */}
+            <div className="hidden sm:block absolute -bottom-2 left-1/2 h-4 w-4 -translate-x-1/2 rotate-45 border-b border-r border-white/20 bg-white/80 backdrop-blur-[60px] dark:border-white/10 dark:bg-slate-900/80"></div>
           </motion.div>
         )}
       </AnimatePresence>
