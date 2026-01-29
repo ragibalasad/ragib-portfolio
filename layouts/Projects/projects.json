@@ -34,14 +34,5 @@
     "category": "back end",
     "tags": ["React", "Next.js", "Tailwind CSS"],
     "description": ""
-  },
-  {
-    "title": "Test Project 3",
-    "image": "develeven.png",
-    "live": "https://ragibalasad.me/",
-    "github": "https://github.com/ragibalasad/ragib-portfolio",
-    "category": "back end",
-    "tags": ["React", "Next.js", "Tailwind CSS"],
-    "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe molestiae, repellendus aut sint vitae officia ipsum corrupti, minima at illo beatae ut! Sunt praesentium cupiditate qui mollitia? Minima, suscipit eum."
   }
 ]

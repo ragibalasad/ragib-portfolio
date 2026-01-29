@@ -50,7 +50,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`fixed z-50 w-full transition-all duration-500 max-lg:px-8 ${
+      className={`fixed z-50 w-full transition-all duration-500 ${
         isScrolled
           ? "top-4 px-6"
           : "top-0 px-0"

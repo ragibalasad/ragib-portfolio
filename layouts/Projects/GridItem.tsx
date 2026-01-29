@@ -38,7 +38,7 @@ const GridItem: FC<GridItemProps> = ({ item }) => (
     {/* Image Container */}
     <div className="relative aspect-video overflow-hidden">
       <Image
-        className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
+        className="h-full w-full object-cover transition-all duration-700 group-hover:scale-110 group-hover:blur-sm"
         src={`/images/${item.image}`}
         alt={item.title}
         width={600}
