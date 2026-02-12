@@ -43,9 +43,9 @@ const Projects = () => {
         <div className="relative z-10">
           <div className="mb-16 flex flex-col items-start lg:flex-row lg:items-end lg:justify-between gap-8">
             <div className="space-y-4">
-              <h2 className="text-4xl font-extrabold tracking-tight text-slate-900 dark:text-slate-100 sm:text-5xl lg:text-6xl">
+              <h2 className="font-heading text-4xl font-extrabold tracking-tight text-slate-900 dark:text-slate-100 sm:text-5xl lg:text-6xl">
                  Featured <br />
-                 <span className="bg-gradient-to-r from-cyan-400 to-blue-600 bg-clip-text text-transparent italic">Projects.</span>
+                 <span className="bg-gradient-to-r from-cyan-400 to-blue-600 bg-clip-text text-transparent">Projects.</span>
               </h2>
               <div className="h-1.5 w-24 rounded-full bg-gradient-to-r from-cyan-400 to-blue-600"></div>
               <p className="max-w-xl text-lg text-slate-600 dark:text-slate-400">

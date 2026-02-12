@@ -42,9 +42,9 @@ const Services = () => {
 
         <div className="relative z-10 flex flex-col gap-12">
           <div className="flex flex-col items-start gap-4">
-            <h2 className="text-4xl font-extrabold tracking-tight text-slate-900 dark:text-slate-100 sm:text-5xl lg:text-6xl">
+            <h2 className="font-heading text-4xl font-extrabold tracking-tight text-slate-900 dark:text-slate-100 sm:text-5xl lg:text-6xl">
                Services <br />
-               <span className="bg-gradient-to-r from-cyan-400 to-blue-600 bg-clip-text text-transparent italic">I Offer.</span>
+               <span className="bg-gradient-to-r from-cyan-400 to-blue-600 bg-clip-text text-transparent">I Offer.</span>
             </h2>
             <div className="h-1.5 w-24 rounded-full bg-gradient-to-r from-cyan-400 to-blue-600"></div>
             <p className="max-w-xl text-lg text-slate-600 dark:text-slate-400">

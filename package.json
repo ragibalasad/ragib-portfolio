@@ -9,8 +9,6 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@fontsource/fira-code": "^5.0.19",
-    "@fontsource/open-sans": "^5.0.29",
     "@types/qrcode.react": "^1.0.5",
     "fast-glob": "^3.2.7",
     "framer-motion": "^11.2.13",

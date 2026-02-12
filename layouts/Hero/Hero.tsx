@@ -60,7 +60,7 @@ const Hero = () => {
 
             {/* Name & Title */}
             <div className="space-y-4">
-              <h1 className="text-4xl font-extrabold tracking-tight text-slate-900 dark:text-white sm:text-6xl lg:text-6xl xl:text-7xl">
+              <h1 className="font-heading text-4xl font-extrabold tracking-tight text-slate-900 dark:text-white sm:text-5xl lg:text-6xl xl:text-7xl">
                 Ragib <span className="bg-gradient-to-r from-cyan-400 to-blue-600 bg-clip-text text-transparent">Al Asad.</span>
               </h1>
               <p className="max-w-xl text-lg leading-relaxed text-slate-600 dark:text-slate-400 sm:text-xl">
@@ -72,10 +72,10 @@ const Hero = () => {
             <div className="flex flex-wrap items-center justify-center gap-8 border-y border-slate-200/50 py-8 dark:border-white/5 lg:justify-start sm:gap-12">
               {stats.map((stat, index) => (
                 <div key={index} className="flex flex-col items-center gap-1 lg:items-start">
-                  <span className="text-2xl font-black tracking-tighter text-slate-900 dark:text-white sm:text-3xl">
+                  <span className="font-heading text-3xl font-bold tracking-tighter text-slate-900 dark:text-white sm:text-4xl">
                     {stat.value}
                   </span>
-                  <span className="text-[10px] font-bold uppercase tracking-[0.3em] text-cyan-600 dark:text-cyan-400">
+                  <span className="text-[10px] font-bold uppercase tracking-[0.2em] text-cyan-600 dark:text-cyan-400">
                     {stat.label}
                   </span>
                 </div>

@@ -29,9 +29,9 @@ const About = () => {
           {/* Text Content */}
           <div className="lg:col-span-7 space-y-10">
             <div className="space-y-4">
-              <h2 className="text-4xl font-extrabold tracking-tight text-slate-900 dark:text-slate-100 sm:text-5xl lg:text-6xl">
+              <h2 className="font-heading text-4xl font-extrabold tracking-tight text-slate-900 dark:text-slate-100 sm:text-5xl lg:text-6xl">
                  Crafting Digital <br />
-                 <span className="bg-gradient-to-r from-cyan-400 to-blue-600 bg-clip-text text-transparent italic">Experiences.</span>
+                 <span className="bg-gradient-to-r from-cyan-400 to-blue-600 bg-clip-text text-transparent">Experiences.</span>
               </h2>
               <div className="h-1.5 w-24 rounded-full bg-gradient-to-r from-cyan-400 to-blue-600"></div>
             </div>

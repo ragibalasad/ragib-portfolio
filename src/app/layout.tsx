@@ -1,16 +1,25 @@
 import React, { ReactNode } from "react";  // Import React
+import { Outfit, Inter, Fira_Code } from "next/font/google"; // Import Google Fonts
 import "./app.css";
 import "./globals.css";
-import "@fontsource/open-sans/300.css"; // Light
-import "@fontsource/open-sans/400.css"; // Normal
-import "@fontsource/open-sans/500.css"; // Medium
-import "@fontsource/open-sans/600.css"; // Semi Bold
-import "@fontsource/open-sans/700.css"; // Bold
-import "@fontsource/open-sans/800.css"; // Extra Bold
-import "@fontsource/fira-code/300.css";
-import "@fontsource/fira-code/400.css";
-import "@fontsource/fira-code/500.css";
-import "@fontsource/fira-code/700.css";
+
+const outfit = Outfit({
+  subsets: ["latin"],
+  variable: "--font-heading",
+  display: "swap",
+});
+
+const inter = Inter({
+  subsets: ["latin"],
+  variable: "--font-body",
+  display: "swap",
+});
+
+const firaCode = Fira_Code({
+  subsets: ["latin"],
+  variable: "--font-mono",
+  display: "swap",
+});
 
 // Define metadata
 export const metadata = {
@@ -29,7 +38,7 @@ interface RootLayoutProps {
 
 export default function RootLayout({ children }: RootLayoutProps) {
   return (
-    <html lang="en">
+    <html lang="en" className={`${outfit.variable} ${inter.variable} ${firaCode.variable}`}>
       <head>
         <meta
           name="apple-mobile-web-app-status-bar-style"

@@ -1,0 +1,14 @@
+* fix/typography
+  main
+ M layouts/About/About.tsx
+ M layouts/Contact/Contact.tsx
+ M layouts/Hero/Hero.tsx
+ M layouts/Navbar/Navbar.tsx
+ M layouts/Projects/Projects.tsx
+ M layouts/Services/Services.tsx
+ M layouts/Skills/Skills.tsx
+ M package-lock.json
+ M package.json
+ M src/app/layout.tsx
+ M tailwind.config.ts
+?? git_output.txt

@@ -63,8 +63,8 @@ const Navbar = () => {
             ? "max-w-5xl rounded-full border border-white/20 bg-white/60 py-3 shadow-xl backdrop-blur-2xl dark:border-white/10 dark:bg-white/5 px-8"
             : "max-w-7xl border-b border-transparent py-6 max-xl:px-6"
         }`}
-        initial={{ opacity: 0, y: -20 }}
-        animate={{ opacity: 1, y: 0 }}
+        initial={{ y: -20 }}
+        animate={{ y: 0 }}
         transition={{ duration: 0.4 }}
       >
         {/* Logo */}
@@ -97,7 +97,7 @@ const Navbar = () => {
                 offset={link.offset}
                 duration={500}
                 activeClass="!text-cyan-600 dark:!text-cyan-400"
-                className="peer cursor-pointer rounded-xl px-4 py-2 text-sm font-bold uppercase tracking-widest text-slate-600 transition-all duration-200 hover:text-slate-900 dark:text-slate-400 dark:hover:text-white"
+                className="peer cursor-pointer rounded-xl px-4 py-2 text-sm font-medium uppercase tracking-wider text-slate-600 transition-all duration-200 hover:text-slate-900 dark:text-slate-400 dark:hover:text-white"
               >
                 {link.label}
               </Link>
