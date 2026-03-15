@@ -19,8 +19,9 @@ const experiences: Experience[] = [
 
 const About = () => {
   return (
-    <section className="about container relative mx-auto my-32 max-w-7xl max-xl:px-6">
-      <div className="relative h-auto overflow-hidden rounded-[2.5rem] border border-white/20 bg-white/30 p-8 shadow-2xl backdrop-blur-3xl dark:border-white/10 dark:bg-white/5 sm:p-12 lg:p-16">
+    <section id="about" className="relative w-full py-16 sm:py-24 lg:py-32">
+      <div className="container relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div className="relative h-auto overflow-hidden rounded-[2.5rem] border border-white/30 bg-white/60 p-8 shadow-2xl backdrop-blur-2xl dark:border-white/10 dark:bg-slate-900/60 sm:p-12 lg:p-16">
         {/* Background Decorative Element */}
         <div className="absolute -left-20 -top-20 z-0 h-96 w-96 rounded-full bg-cyan-500/10 blur-[100px] dark:bg-cyan-900/10"></div>
         <div className="absolute -bottom-20 -right-20 z-0 h-96 w-96 rounded-full bg-blue-500/10 blur-[100px] dark:bg-blue-900/10"></div>
@@ -92,6 +93,7 @@ const About = () => {
                </div>
             </div>
           </div>
+        </div>
         </div>
       </div>
     </section>

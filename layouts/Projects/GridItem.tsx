@@ -27,7 +27,7 @@ const transitionEffects = {
 const GridItem: FC<GridItemProps> = ({ item }) => (
   <motion.div
     key={item.title}
-    className="group relative flex flex-col overflow-hidden rounded-[2.5rem] border border-white/20 bg-white/40 shadow-xl backdrop-blur-2xl transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl dark:border-white/10 dark:bg-white/5"
+    className="group relative flex flex-col overflow-hidden rounded-[2rem] border border-white/20 bg-white/40 shadow-xl transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl dark:border-white/10 dark:bg-white/5"
     layout
     variants={transitionEffects}
     initial="hidden"
@@ -70,30 +70,30 @@ const GridItem: FC<GridItemProps> = ({ item }) => (
     </div>
     
     {/* Content Container */}
-    <div className="flex flex-1 flex-col p-8 lg:p-10">
-      <div className="mb-4 flex items-center justify-between">
+    <div className="flex flex-1 flex-col p-6 lg:p-8">
+      <div className="mb-2 flex items-center justify-between">
         <span className="text-[10px] font-bold uppercase tracking-[0.2em] text-cyan-600 dark:text-cyan-400 font-mono">
           {item.category}
         </span>
       </div>
 
-      <h3 className="mb-4 text-2xl font-bold tracking-tight text-slate-900 dark:text-slate-100">
+      <h3 className="mb-2 text-xl font-bold tracking-tight text-slate-900 dark:text-slate-100">
         {item.title}
       </h3>
 
-      <p className="mb-10 line-clamp-3 text-base leading-relaxed text-slate-600 dark:text-slate-400">
+      <p className="mb-6 line-clamp-3 text-sm leading-relaxed text-slate-600 dark:text-slate-400">
         {item.description || "No description available"}
       </p>
 
       {/* Tech Stack integrated at bottom */}
       <div className="mt-auto">
-        <div className="flex flex-wrap gap-2">
+        <div className="flex flex-wrap gap-1.5">
           {item.tags.map((tag, i) => {
             const Icon = iconMap[tag] || iconMap["default"];
             return (
               <div 
                 key={i} 
-                className="flex items-center gap-1.5 rounded-full border border-white/20 bg-white/50 px-3.5 py-1.5 text-[10px] font-bold uppercase tracking-wider text-slate-700 shadow-sm backdrop-blur-sm transition-all hover:border-cyan-500/50 hover:bg-white dark:border-white/10 dark:bg-white/5 dark:text-slate-300 dark:hover:bg-white/10"
+                className="flex items-center gap-1.5 rounded-full border border-slate-200 bg-white/50 px-2.5 py-1 text-[10px] font-bold uppercase tracking-wider text-slate-700 shadow-sm backdrop-blur-sm transition-all hover:border-cyan-500/50 hover:bg-white dark:border-white/10 dark:bg-white/5 dark:text-slate-300 dark:hover:bg-white/10"
               >
                 <Icon className="text-sm text-cyan-600 dark:text-cyan-400" />
                 {tag}

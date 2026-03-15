@@ -1,5 +1,6 @@
 import React, { ReactNode } from "react";  // Import React
 import { Outfit, Inter, Fira_Code } from "next/font/google"; // Import Google Fonts
+import MainBackground from "../../layouts/motion/MainBackground";
 import "./app.css";
 import "./globals.css";
 
@@ -63,7 +64,10 @@ export default function RootLayout({ children }: RootLayoutProps) {
           }}
         />
       </head>
-      <body className="font-sans antialiased">{children}</body>
+      <body className="font-sans antialiased">
+        <MainBackground />
+        {children}
+      </body>
     </html>
   );
 }
