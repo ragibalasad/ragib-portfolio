@@ -1,6 +1,6 @@
 import skillsData from "./skills.json";
 import { iconMap } from "./iconMap";
-import { FaCode, FaServer, FaTools, FaLayerGroup } from "react-icons/fa";
+import { FaMicrochip, FaCubes, FaWandMagicSparkles, FaLayerGroup } from "react-icons/fa6";
 
 interface SkillSet {
   category: string;
@@ -11,9 +11,9 @@ const skills: SkillSet[] = skillsData as SkillSet[];
 
 const getCategoryIcon = (category: string) => {
   const lower = category.toLowerCase();
-  if (lower.includes("front")) return FaCode;
-  if (lower.includes("back")) return FaServer;
-  if (lower.includes("tool") || lower.includes("devops")) return FaTools;
+  if (lower.includes("low-level")) return FaMicrochip;
+  if (lower.includes("web")) return FaCubes;
+  if (lower.includes("ui")) return FaWandMagicSparkles;
   return FaLayerGroup;
 };
 
@@ -34,7 +34,7 @@ const Skills = () => {
             </h2>
             <div className="h-1.5 w-24 rounded-full bg-gradient-to-r from-cyan-400 to-blue-600"></div>
             <p className="max-w-xl text-lg text-slate-600 dark:text-slate-400">
-              Broad experience across the modern web stack, focusing on performance, scalability, and robust architectures.
+              A specialized toolkit focused on low-level performance, scalable backend ecosystems, and high-end digital craftsmanship.
             </p>
           </div>
           

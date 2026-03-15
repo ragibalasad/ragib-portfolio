@@ -4,10 +4,15 @@ import {
   FaPython,
   FaReact,
   FaServer,
+  FaLinux,
+  FaDatabase,
+  FaTerminal,
+  FaGitAlt,
 } from "react-icons/fa6";
 import { RiTailwindCssFill } from "react-icons/ri";
-import { SiNextdotjs } from "react-icons/si";
+import { SiNextdotjs, SiC, SiFramer } from "react-icons/si";
 import { BiLogoTypescript } from "react-icons/bi";
+import { TbServer } from "react-icons/tb";
 
 import servicesData from "./services.json";
 
@@ -19,7 +24,14 @@ type IconKeys =
   | "FaReact"
   | "RiTailwindCssFill"
   | "SiNextdotjs"
-  | "BiLogoTypescript";
+  | "BiLogoTypescript"
+  | "FaLinux"
+  | "FaDatabase"
+  | "FaTerminal"
+  | "FaGitAlt"
+  | "SiC"
+  | "SiFramer"
+  | "TbServer";
 
 const iconMapping: Record<IconKeys, JSX.Element> = {
   FaCode: <FaCode />,
@@ -30,6 +42,13 @@ const iconMapping: Record<IconKeys, JSX.Element> = {
   RiTailwindCssFill: <RiTailwindCssFill />,
   SiNextdotjs: <SiNextdotjs />,
   BiLogoTypescript: <BiLogoTypescript />,
+  FaLinux: <FaLinux />,
+  FaDatabase: <FaDatabase />,
+  FaTerminal: <FaTerminal />,
+  FaGitAlt: <FaGitAlt />,
+  SiC: <SiC />,
+  SiFramer: <SiFramer />,
+  TbServer: <TbServer />,
 };
 
 const Services = () => {
@@ -49,7 +68,7 @@ const Services = () => {
             </h2>
             <div className="h-1.5 w-24 rounded-full bg-gradient-to-r from-cyan-400 to-blue-600"></div>
             <p className="max-w-xl text-lg text-slate-600 dark:text-slate-400">
-              Providing end-to-end software solutions tailored to your business needs, from concept to deployment.
+              Solving complex engineering challenges through high-performance systems, distributed architecture, and immersive digital experiences.
             </p>
           </div>
 

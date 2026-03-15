@@ -1,51 +1,38 @@
 [
   {
-    "category": "Frontend Skills",
+    "category": "Low-level Engineering",
     "items": [
-      "HTML5",
-      "CSS3",
-      "JavaScript",
-      "React",
-      "Next.js",
-      "Tailwind CSS",
-      "Framer Motion",
-      "UI/UX Design",
-      "SSR"
+      "C",
+      "Go",
+      "Python",
+      "Linux",
+      "Bash",
+      "Git",
+      "GitHub"
     ]
   },
   {
-    "category": "Backend Technologies",
+    "category": "Web Application",
     "items": [
-      "Python",
-      "Flask",
+      "TypeScript",
+      "Next.js",
       "Fast API",
-      "SQL Alchemy",
-      "Node.js",
-      "Express",
-      "JWT/OAUTH",
-      "PRISMA ORM",
       "SQL",
       "POSTGRESQL",
-      "SQLITE",
+      "PRISMA ORM",
+      "JWT/OAUTH",
       "MongoDB"
     ]
   },
   {
-    "category": "Software Development Tools",
+    "category": "UI/UX Design",
     "items": [
-      "C",
-      "Python",
-      "Shell",
-      "JavaScript",
-      "TypeScript",
-      "React Native",
-      "Git",
-      "GitHub",
-      "Linux",
-      "Bash",
+      "React",
+      "Next.js",
+      "Tailwind CSS",
+      "Framer Motion",
       "Vercel",
-      "Figma",
-      "VS Code"
+      "Figma"
     ]
   }
 ]

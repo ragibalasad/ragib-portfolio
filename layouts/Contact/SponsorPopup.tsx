@@ -94,7 +94,7 @@ const SponsorPopup = ({ address = "0x3b9d44e43f04f43c0e397968543975dfb2893eb9" }
                   level="H"
                   includeMargin={false}
                   imageSettings={{
-                    src: "https://cryptologos.cc/logos/tether-usdt-logo.png",
+                    src: "https://raw.githubusercontent.com/spothq/cryptocurrency-icons/master/128/color/usdt.png",
                     x: undefined,
                     y: undefined,
                     height: 36,

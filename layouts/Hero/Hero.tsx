@@ -12,13 +12,20 @@ const stats = [
 
 const Hero = () => {
   return (
-    <section id="hero" className="relative w-full min-h-screen overflow-hidden">
+    <section id="hero" className="relative w-full min-h-[110vh] overflow-hidden">
 
-      {/* Milky frosted glass overlay — colorful shapes glow through naturally */}
-      <div className="absolute inset-0 bg-white/60 backdrop-blur-3xl dark:bg-slate-950/70" />
+      {/* Milky frosted glass overlay — colorful shapes glow through naturally with wave bottom edge */}
+      <div className="absolute inset-x-0 top-0 h-full bg-white/60 backdrop-blur-3xl dark:bg-slate-950/70" style={{ clipPath: "url(#heroWave)" }} />
+      <svg className="absolute" width="0" height="0">
+        <defs>
+          <clipPath id="heroWave" clipPathUnits="objectBoundingBox">
+            <path d="M 0,0 L 1,0 L 1,0.95 C 0.85,0.92 0.7,0.98 0.5,0.94 C 0.3,0.9 0.15,0.98 0,0.94 Z" />
+          </clipPath>
+        </defs>
+      </svg>
 
       {/* Main Content */}
-      <div className="container relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 grid min-h-screen grid-cols-1 items-center gap-12 pb-24 pt-32 lg:grid-cols-2 lg:gap-16">
+      <div className="container relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 grid min-h-screen items-center gap-12 pb-24 pt-32 lg:grid-cols-2 lg:gap-16">
 
         {/* Left Column: Text & Content — no card, just open */}
         <div className="flex flex-col items-center text-center lg:items-start lg:text-left">
