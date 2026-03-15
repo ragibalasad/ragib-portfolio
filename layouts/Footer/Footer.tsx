@@ -10,7 +10,7 @@ import { IoMail } from "react-icons/io5";
 
 const Footer = () => {
   return (
-    <footer className="relative mt-32 overflow-hidden border-t border-white/10 bg-slate-950 px-6 py-16 dark:bg-black">
+    <footer className="relative overflow-hidden border-t border-white/10 bg-slate-950 px-6 py-16 dark:bg-black">
       {/* Decorative Blob */}
       <div className="absolute -bottom-24 -left-24 z-0 h-96 w-96 rounded-full bg-cyan-500/5 blur-[120px]"></div>
 

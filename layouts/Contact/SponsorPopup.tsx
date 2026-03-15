@@ -52,7 +52,7 @@ const SponsorPopup = ({ address = "0x3b9d44e43f04f43c0e397968543975dfb2893eb9" }
       <button 
         type="button"
         onClick={() => setIsOpen(!isOpen)}
-        className="group relative flex w-full flex-col gap-1 rounded-3xl border border-white/20 bg-white/60 p-6 shadow-xl backdrop-blur-2xl transition-transform hover:-translate-y-1 dark:border-white/10 dark:bg-white/5"
+        className="group relative flex w-full flex-col gap-1 rounded-[2rem] border border-white/30 bg-white/60 p-6 shadow-xl backdrop-blur-2xl transition-transform hover:-translate-y-1 dark:border-white/10 dark:bg-slate-900/60"
       >
         <div className="flex items-center justify-between w-full">
           <div className="flex items-center gap-2 text-rose-500">
@@ -83,7 +83,7 @@ const SponsorPopup = ({ address = "0x3b9d44e43f04f43c0e397968543975dfb2893eb9" }
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, y: 10, scale: 0.95 }}
             transition={{ duration: 0.2, ease: "easeOut" }}
-            className="fixed inset-x-4 bottom-20 z-20 sm:absolute sm:inset-x-auto sm:bottom-full sm:left-1/2 sm:-translate-x-1/2 sm:mb-4 sm:w-80 rounded-3xl border border-white/20 bg-white/60 p-6 sm:p-8 shadow-xl backdrop-blur-2xl dark:border-white/10 dark:bg-white/5"
+            className="fixed inset-x-4 bottom-20 z-20 sm:absolute sm:inset-x-auto sm:bottom-full sm:left-1/2 sm:-translate-x-1/2 sm:mb-4 sm:w-80 rounded-[2rem] border border-white/30 bg-white/60 p-6 sm:p-8 shadow-xl backdrop-blur-2xl dark:border-white/10 dark:bg-slate-900/60"
           >
             <div className="flex flex-col items-center gap-5">
               {/* QR Code Container */}

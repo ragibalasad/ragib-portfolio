@@ -4,15 +4,18 @@ import SponsorPopup from "./SponsorPopup";
 
 const Contact = () => {
   return (
-    <section
-      id="contact"
-      className="contact relative overflow-hidden py-32"
-    >
-      {/* Background Decorative Blobs - Matching Hero Style */}
-      <div className="absolute top-1/4 left-1/4 -z-50 h-[500px] w-[500px] rounded-full bg-cyan-500/5 blur-[120px] dark:bg-cyan-900/10"></div>
-      <div className="absolute bottom-1/4 right-1/4 -z-10 h-[500px] w-[500px] rounded-full bg-blue-500/5 blur-[120px] dark:bg-blue-900/10"></div>
+    <section id="contact" className="relative w-full py-16 sm:py-24 lg:py-32">
+      {/* Frosted glass overlay with wave top edge */}
+      <div className="absolute inset-0 bg-white/60 backdrop-blur-3xl dark:bg-slate-950/70" style={{ clipPath: "url(#contactWave)" }} />
+      <svg className="absolute" width="0" height="0">
+        <defs>
+          <clipPath id="contactWave" clipPathUnits="objectBoundingBox">
+            <path d="M 0,0.06 C 0.15,0.02 0.3,0.1 0.5,0.06 C 0.7,0.02 0.85,0.08 1,0.04 L 1,1 L 0,1 Z" />
+          </clipPath>
+        </defs>
+      </svg>
 
-      <div className="container relative mx-auto max-w-7xl max-xl:px-6">
+      <div className="container relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-16 lg:gap-24 items-center">
           
           {/* Left Column: Info & Content */}
@@ -55,12 +58,12 @@ const Contact = () => {
 
           {/* Right Column: Contact Form */}
           <div className="relative">
-            <div className="relative overflow-hidden rounded-[2.5rem] border border-white/20 bg-white/30 p-8 sm:p-12 shadow-2xl backdrop-blur-3xl dark:border-white/10 dark:bg-white/5">
+            <div className="relative overflow-hidden rounded-[2.5rem] border border-white/30 bg-white/60 p-8 sm:p-12 shadow-2xl backdrop-blur-2xl dark:border-white/10 dark:bg-slate-900/60">
               <div className="mb-10 space-y-2">
                 <h3 className="text-3xl font-bold tracking-tight text-slate-900 dark:text-slate-100">
                    Get in touch
                 </h3>
-                <p className="text-slate-500 font-medium italic">
+                <p className="text-slate-500 font-medium">
                   I usually respond within 24 hours.
                 </p>
               </div>
@@ -120,7 +123,7 @@ const Contact = () => {
 
 const ContactItem = ({ icon, label, value, href }: { icon: React.ReactNode, label: string, value: string, href?: string }) => {
   const Content = (
-    <div className="group flex flex-col gap-1 rounded-[2rem] border border-white/20 bg-white/40 p-6 shadow-xl backdrop-blur-3xl dark:border-white/10 dark:bg-white/5">
+    <div className="group flex flex-col gap-1 rounded-[2rem] border border-white/30 bg-white/60 p-6 shadow-xl backdrop-blur-2xl dark:border-white/10 dark:bg-slate-900/60">
       <div className="flex items-center gap-2 text-cyan-600 dark:text-cyan-400">
         <span className="text-lg">{icon}</span>
         <span className="text-[9px] font-black uppercase tracking-widest opacity-60">{label}</span>

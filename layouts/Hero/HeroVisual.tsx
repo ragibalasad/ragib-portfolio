@@ -12,7 +12,7 @@ const HeroVisual = () => {
       <FloatingIcon
         icon={<FaReact />}
         color="text-cyan-400"
-        position="-top-12 -left-12"
+        position="top-0 left-8"
         delay={0}
       />
       <FloatingIcon
@@ -52,7 +52,7 @@ const HeroVisual = () => {
           rotateX: { duration: 9, repeat: Infinity, ease: "easeInOut" },
         }}
         style={{ transformStyle: "preserve-3d" }}
-        className="relative z-10 w-[90%] max-w-md overflow-hidden rounded-2xl border dark:border-white/20 bg-white/40 shadow-2xl backdrop-blur-xl dark:border-white/10 dark:bg-black/60"
+        className="relative z-10 w-[90%] max-w-md overflow-hidden rounded-2xl border border-white/30 bg-white/60 shadow-2xl backdrop-blur-2xl dark:border-white/10 dark:bg-slate-900/60"
       >
         {/* Window Controls */}
         <div className="flex items-center gap-2 border-b dark:border-white/10 bg-white/5 px-4 py-3">
