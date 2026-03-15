@@ -29,8 +29,7 @@ import {
   SiMongodb,
   SiC,
   SiTypescript,
-  SiVercel,
-  SiVisualstudiocode,
+  SiVercel
 } from "react-icons/si";
 import { TbServer, TbBrandReactNative } from "react-icons/tb";
 
@@ -71,7 +70,6 @@ export const iconMap: Record<string, React.ElementType> = {
   "Bash": FaTerminal,
   "Vercel": SiVercel,
   "Figma": FaFigma,
-  "VS Code": SiVisualstudiocode,
   
   // Default fallback
   "default": FaCode
