@@ -14,7 +14,7 @@ const Footer = () => {
       {/* Decorative Blob */}
       <div className="absolute -bottom-24 -left-24 z-0 h-96 w-96 rounded-full bg-cyan-500/5 blur-[120px]"></div>
 
-      <div className="container relative z-10 mx-auto max-w-7xl max-xl:px-6">
+      <div className="container relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="grid gap-16 lg:grid-cols-12 items-start">
           
           {/* Brand & Info */}
