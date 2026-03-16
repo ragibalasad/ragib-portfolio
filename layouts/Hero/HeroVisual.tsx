@@ -11,25 +11,25 @@ const HeroVisual = () => {
       {/* Floating Icons Orbiting */}
       <FloatingIcon
         icon={<FaReact />}
-        color="text-cyan-400"
+        color="text-sky-600 dark:text-sky-400"
         position="top-0 left-8"
         delay={0}
       />
       <FloatingIcon
         icon={<SiTypescript />}
-        color="text-blue-500"
+        color="text-sky-600 dark:text-sky-400"
         position="top-1/4 -right-16"
         delay={1.5}
       />
       <FloatingIcon
         icon={<SiNextdotjs />}
-        color="text-white"
+        color="text-slate-600 dark:text-white"
         position="-bottom-8 left-1/4"
         delay={3}
       />
        <FloatingIcon
         icon={<FaPython />}
-        color="text-yellow-400"
+        color="text-amber-500 dark:text-yellow-400"
         position="bottom-20 -right-8"
         delay={4.5}
       />
