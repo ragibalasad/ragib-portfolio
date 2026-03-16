@@ -84,7 +84,7 @@ const Navbar = () => {
                 smooth={true}
                 offset={link.offset}
                 duration={500}
-                activeClass="!text-cyan-600 dark:!text-cyan-400"
+                activeClass="!text-sky-600 dark:!text-cyan-400"
                 className="peer cursor-pointer rounded-full px-4 py-2 text-sm font-medium uppercase tracking-wider text-slate-600 transition-all duration-200 hover:text-slate-900 dark:text-slate-400 dark:hover:text-white"
               >
                 {link.label}
@@ -105,7 +105,7 @@ const Navbar = () => {
                 href={social.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group relative flex h-9 w-9 items-center justify-center rounded-full text-base text-slate-500 transition-all duration-200 hover:scale-110 hover:text-cyan-600 dark:text-slate-400 dark:hover:text-cyan-400"
+                className="group relative flex h-9 w-9 items-center justify-center rounded-full text-base text-slate-600 transition-all duration-200 hover:scale-110 hover:text-cyan-600 dark:text-slate-300 dark:hover:text-cyan-400"
                 title={social.label}
               >
                 {social.icon}
@@ -118,7 +118,7 @@ const Navbar = () => {
           </div>
 
           {/* Theme Toggle */}
-          <ThemeSwitcher className="flex h-9 w-9 cursor-pointer items-center justify-center rounded-full text-lg text-slate-600 transition-colors duration-200 hover:text-cyan-500 dark:text-slate-400 dark:hover:text-cyan-400" />
+          <ThemeSwitcher className="flex h-9 w-9 cursor-pointer items-center justify-center rounded-full text-lg text-slate-600 transition-colors duration-200 hover:text-cyan-500 dark:text-slate-300 dark:hover:text-cyan-400" />
 
           {/* Mobile Menu Button */}
           <button

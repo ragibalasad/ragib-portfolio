@@ -33,10 +33,6 @@ const Projects = () => {
     <section id="projects" className="relative w-full py-16 sm:py-24 lg:py-32">
       <div className="container relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="relative h-auto overflow-hidden rounded-[2.5rem] border border-white/30 bg-white/60 p-8 shadow-2xl backdrop-blur-2xl dark:border-white/10 dark:bg-slate-900/60 sm:p-12 lg:p-16">
-        {/* Background Decorative Element */}
-        <div className="absolute -right-24 -top-24 z-0 h-96 w-96 rounded-full bg-cyan-500/10 blur-[100px] dark:bg-cyan-900/10"></div>
-        <div className="absolute -bottom-24 -left-24 z-0 h-96 w-96 rounded-full bg-blue-500/10 blur-[100px] dark:bg-blue-900/10"></div>
-        <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-0 h-80 w-80 rounded-full bg-purple-500/5 blur-[120px] dark:bg-purple-900/5"></div>
 
         <div className="relative z-10">
           <div className="mb-16 flex flex-col items-start lg:flex-row lg:items-end lg:justify-between gap-8">
