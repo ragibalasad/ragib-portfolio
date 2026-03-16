@@ -76,8 +76,8 @@ const About = () => {
 
           {/* Portrait Image Container */}
           <div className="lg:col-span-5 relative group">
-            <div className="relative aspect-square overflow-hidden rounded-[2rem] border border-white/20 bg-white/40 shadow-2xl backdrop-blur-xl dark:border-white/10 dark:bg-white/5">
-              <div className="absolute inset-0 bg-gradient-to-tr from-cyan-500/20 to-transparent transition-opacity group-hover:opacity-0"></div>
+            <div className="relative aspect-square overflow-hidden rounded-[2rem] border border-white/20 bg-white/40 shadow-2xl dark:border-white/10 dark:bg-white/5">
+              <div className="absolute inset-0"></div>
               <Image 
                 src={my_potrait} 
                 alt="Potrait of Ragib" 
