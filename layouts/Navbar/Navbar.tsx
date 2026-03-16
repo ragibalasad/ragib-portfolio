@@ -36,12 +36,12 @@ const Navbar = () => {
   }, []);
 
   const navLinks = [
-    { to: "hero", offset: -0, label: "Home" },
-    { to: "about", offset: -0, label: "About" },
-    { to: "projects", offset: -0, label: "Projects" },
-    { to: "skills", offset: -0, label: "Skills" },
-    { to: "services", offset: -0, label: "Services" },
-    { to: "contact", offset: -0, label: "Contact" },
+    { to: "hero", offset: 0, label: "Home" },
+    { to: "about", offset: 0, label: "About" },
+    { to: "projects", offset: 0, label: "Projects" },
+    { to: "skills", offset: 0, label: "Skills" },
+    { to: "services", offset: 0, label: "Services" },
+    { to: "contact", offset: 0, label: "Contact" },
   ];
 
   const socialLinks = [
