@@ -36,7 +36,7 @@ const Hero = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.2 }}
-              className="mx-auto flex w-fit items-center gap-2 rounded-full border border-cyan-500/20 bg-cyan-500/5 px-4 py-1.5 text-xs font-bold uppercase tracking-widest text-cyan-600 dark:text-cyan-400 lg:mx-0 backdrop-blur-sm"
+              className="mx-auto flex w-fit items-center gap-2 rounded-full border border-cyan-500/20 bg-cyan-500/5 px-4 py-1.5 justify-center text-xs font-medium tracking-wider text-cyan-600 dark:text-cyan-400 lg:mx-0 backdrop-blur-sm"
             >
               <span className="relative flex h-2 w-2">
                 <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-cyan-400 opacity-75"></span>
@@ -65,7 +65,7 @@ const Hero = () => {
                   <span className="font-heading text-3xl font-bold tracking-tighter text-slate-900 dark:text-white sm:text-4xl">
                     {stat.value}
                   </span>
-                  <span className="text-[10px] font-bold uppercase tracking-[0.2em] text-cyan-600 dark:text-cyan-400">
+                  <span className="text-sm font-semibold text-cyan-600 dark:text-cyan-400">
                     {stat.label}
                   </span>
                 </div>
@@ -88,7 +88,7 @@ const Hero = () => {
                 href="/ragib-resume.pdf"
                 download="ragib-resume.pdf"
                 target="_blank"
-                className="flex w-full items-center justify-center gap-2 rounded-2xl border border-slate-200 bg-white/50 px-8 py-4 text-sm font-bold text-slate-700 backdrop-blur-sm transition-all hover:border-cyan-500 hover:bg-white dark:border-white/10 dark:bg-white/5 dark:text-slate-300 dark:hover:bg-white/10 sm:w-auto"
+                className="flex w-full items-center justify-center gap-2 rounded-2xl border border-slate-200 bg-white/50 px-8 py-4 text-sm font-bold text-slate-700 backdrop-blur-sm transition-all hover:bg-white dark:border-white/10 dark:bg-white/5 dark:text-slate-300 dark:hover:bg-white/10 sm:w-auto"
               >
                 <HiDownload className="text-lg" />
                 Download Resume
@@ -99,7 +99,7 @@ const Hero = () => {
 
         {/* Right Column: Visual */}
         <div className="hidden h-full w-full items-center justify-center lg:flex">
-           <HeroVisual />
+          <HeroVisual />
         </div>
       </div>
 

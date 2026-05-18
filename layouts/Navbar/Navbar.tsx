@@ -75,7 +75,7 @@ const Navbar = () => {
         </Link>
 
         {/* Desktop Navigation Links */}
-        <ul className="hidden items-center gap-1 lg:flex">
+        <ul className="hidden items-center lg:flex">
           {navLinks.map((link, index) => (
             <li key={index} className="relative group">
               <Link
@@ -85,7 +85,7 @@ const Navbar = () => {
                 offset={link.offset}
                 duration={500}
                 activeClass="!text-sky-600 dark:!text-cyan-400"
-                className="peer cursor-pointer rounded-full px-4 py-2 text-sm font-medium uppercase tracking-wider text-slate-600 transition-all duration-200 hover:text-slate-900 dark:text-slate-400 dark:hover:text-white"
+                className="peer cursor-pointer rounded-full px-4 py-2 text-sm font-semibold  tracking-wide text-slate-600 transition-all duration-200 hover:text-slate-900 dark:text-slate-400 dark:hover:text-white"
               >
                 {link.label}
               </Link>
@@ -98,19 +98,19 @@ const Navbar = () => {
         {/* Right Side: Socials + Theme + Mobile Toggle */}
         <div className="flex items-center gap-2">
           {/* Social Icons — Desktop only */}
-          <div className="hidden items-center gap-1.5 border-r border-slate-200/50 pr-3 dark:border-white/10 lg:flex">
+          <div className="hidden items-center border-r border-slate-200/50 pr-3 dark:border-white/10 lg:flex">
             {socialLinks.map((social, index) => (
               <a
                 key={index}
                 href={social.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group relative flex h-9 w-9 items-center justify-center rounded-full text-base text-slate-600 transition-all duration-200 hover:scale-110 hover:text-cyan-600 dark:text-slate-300 dark:hover:text-cyan-400"
+                className="group relative flex h-9 w-9 items-center justify-center rounded-full text-base text-slate-600 transition-all duration-200 hover:scale-110 hover:text-sky-500 dark:text-slate-300 dark:hover:text-cyan-400"
                 title={social.label}
               >
                 {social.icon}
                 {/* Tooltip */}
-                <span className="pointer-events-none absolute -bottom-8 left-1/2 -translate-x-1/2 translate-y-1 whitespace-nowrap rounded-md bg-slate-900/90 px-2 py-1 text-[9px] font-bold uppercase tracking-widest text-white opacity-0 shadow-lg backdrop-blur-md transition-all duration-200 group-hover:translate-y-0 group-hover:opacity-100 dark:bg-white dark:text-slate-950">
+                <span className="pointer-events-none absolute -bottom-8 left-1/2 -translate-x-1/2 translate-y-1 whitespace-nowrap rounded-md bg-slate-900/90 px-2 py-1 text-xs font-medium tracking-wide text-white opacity-0 shadow-lg backdrop-blur-md transition-all duration-200 group-hover:translate-y-0 group-hover:opacity-100 dark:bg-white dark:text-slate-950">
                   {social.label}
                 </span>
               </a>

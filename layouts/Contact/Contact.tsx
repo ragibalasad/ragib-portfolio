@@ -17,7 +17,7 @@ const Contact = () => {
 
       <div className="container relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-16 lg:gap-24 items-center">
-          
+
           {/* Left Column: Info & Content */}
           <div className="flex flex-col gap-10">
             <div className="space-y-6 text-left">
@@ -28,7 +28,7 @@ const Contact = () => {
                 </h2>
                 <div className="h-1.5 w-24 rounded-full bg-gradient-to-r from-cyan-400 to-blue-600"></div>
               </div>
-              
+
               <p className="text-xl leading-relaxed text-slate-600 dark:text-slate-400 max-w-xl">
                 I am currently open to new opportunities, freelance projects, and interesting collaborations. Bring your software ideas to life with high-performance code.
               </p>
@@ -36,23 +36,23 @@ const Contact = () => {
 
             {/* Info Grid */}
             <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
-               <ContactItem 
-                 icon={<MdMail />} 
-                 label="Email" 
-                 value="ragibalasad@gmail.com" 
-                 href="mailto:ragibalasad@gmail.com"
-               />
-               <ContactItem 
-                 icon={<MdPhone />} 
-                 label="Phone" 
-                 value="+880 1719 220115" 
-               />
-               <ContactItem 
-                 icon={<MdLocationOn />} 
-                 label="Location" 
-                 value="Rangpur, Bangladesh" 
-               />
-               <SponsorPopup />
+              <ContactItem
+                icon={<MdMail />}
+                label="Email"
+                value="ragibalasad@gmail.com"
+                href="mailto:ragibalasad@gmail.com"
+              />
+              <ContactItem
+                icon={<MdPhone />}
+                label="Phone"
+                value="+880 1719 220115"
+              />
+              <ContactItem
+                icon={<MdLocationOn />}
+                label="Location"
+                value="Rangpur, Bangladesh"
+              />
+              <SponsorPopup />
             </div>
           </div>
 
@@ -61,7 +61,7 @@ const Contact = () => {
             <div className="relative overflow-hidden rounded-[2.5rem] border border-white/30 bg-white/60 p-8 sm:p-12 shadow-2xl backdrop-blur-2xl dark:border-white/10 dark:bg-slate-900/60">
               <div className="mb-10 space-y-2">
                 <h3 className="text-3xl font-bold tracking-tight text-slate-900 dark:text-slate-100">
-                   Get in touch
+                  Get in touch
                 </h3>
                 <p className="text-slate-500 font-medium">
                   I usually respond within 24 hours.
@@ -70,7 +70,7 @@ const Contact = () => {
 
               <form className="flex flex-col gap-6" action="" method="post">
                 <div className="flex flex-col gap-2">
-                  <label className="text-[10px] font-black uppercase tracking-[0.2em] text-slate-400" htmlFor="email">
+                  <label className="text-xs font-bold tracking-wider text-slate-400" htmlFor="email">
                     Email Address
                   </label>
                   <input
@@ -82,7 +82,7 @@ const Contact = () => {
                 </div>
 
                 <div className="flex flex-col gap-2">
-                  <label className="text-[10px] font-black uppercase tracking-[0.2em] text-slate-400" htmlFor="subject">
+                  <label className="text-xs font-bold tracking-wider text-slate-400" htmlFor="subject">
                     Subject
                   </label>
                   <input
@@ -94,7 +94,7 @@ const Contact = () => {
                 </div>
 
                 <div className="flex flex-col gap-2">
-                  <label className="text-[10px] font-black uppercase tracking-[0.2em] text-slate-400" htmlFor="msg">
+                  <label className="text-xs font-bold tracking-wider text-slate-400" htmlFor="msg">
                     Message
                   </label>
                   <textarea
@@ -105,7 +105,7 @@ const Contact = () => {
                   ></textarea>
                 </div>
 
-                <button className="group relative mt-2 flex w-full items-center justify-center gap-3 overflow-hidden rounded-2xl bg-slate-900 py-5 text-sm font-black uppercase tracking-widest text-white transition-all hover:scale-[1.02] dark:bg-white dark:text-slate-950">
+                <button className="group relative mt-2 flex w-full items-center justify-center gap-3 overflow-hidden rounded-2xl bg-slate-900 py-5 text-sm font-bold tracking-wider text-white transition-all hover:scale-[1.02] dark:bg-white dark:text-slate-950">
                   <div className="absolute inset-0 bg-gradient-to-r from-cyan-500 to-blue-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                   <span className="relative flex items-center gap-3">
                     Send Message
@@ -126,7 +126,7 @@ const ContactItem = ({ icon, label, value, href }: { icon: React.ReactNode, labe
     <div className="group flex flex-col gap-1 rounded-[2rem] border border-white/30 bg-white/60 p-6 shadow-xl backdrop-blur-2xl dark:border-white/10 dark:bg-slate-900/60">
       <div className="flex items-center gap-2 text-cyan-600 dark:text-cyan-400">
         <span className="text-lg">{icon}</span>
-        <span className="text-[9px] font-black uppercase tracking-widest opacity-60">{label}</span>
+        <span className="text-xs font-semibold tracking-wider text-cyan-600 dark:text-cyan-400">{label}</span>
       </div>
       <p className="text-sm font-bold text-slate-900 dark:text-slate-100">{value}</p>
     </div>

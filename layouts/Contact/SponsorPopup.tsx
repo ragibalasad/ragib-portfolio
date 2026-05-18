@@ -38,7 +38,7 @@ const SponsorPopup = ({ address = "0x3b9d44e43f04f43c0e397968543975dfb2893eb9" }
   };
 
   return (
-    <div 
+    <div
       ref={containerRef}
       className="relative"
       onPointerEnter={(e) => {
@@ -49,7 +49,7 @@ const SponsorPopup = ({ address = "0x3b9d44e43f04f43c0e397968543975dfb2893eb9" }
       }}
     >
       {/* Sponsor Button */}
-      <button 
+      <button
         type="button"
         onClick={() => setIsOpen(!isOpen)}
         className="group relative flex w-full flex-col gap-1 rounded-[2rem] border border-white/30 bg-white/60 p-6 shadow-xl backdrop-blur-2xl transition-transform hover:-translate-y-1 dark:border-white/10 dark:bg-slate-900/60"
@@ -68,7 +68,7 @@ const SponsorPopup = ({ address = "0x3b9d44e43f04f43c0e397968543975dfb2893eb9" }
             >
               <FaHeart className="text-lg" />
             </motion.div>
-            <span className="text-[10px] font-black uppercase tracking-widest opacity-60">Sponsor</span>
+            <span className="text-xs font-bold tracking-wider">Sponsor</span>
           </div>
           <SiTether className="text-emerald-500 text-xl" title="USDT (ERC20)" />
         </div>

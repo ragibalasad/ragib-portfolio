@@ -16,7 +16,7 @@ const Footer = () => {
 
       <div className="container relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="grid gap-16 lg:grid-cols-12 items-start">
-          
+
           {/* Brand & Info */}
           <div className="lg:col-span-4 flex flex-col gap-6">
             <div className="flex items-center gap-2">
@@ -27,7 +27,7 @@ const Footer = () => {
                 ragib<span className="text-cyan-500">.</span>
               </span>
             </div>
-            
+
             <p className="max-w-xs text-base font-medium text-slate-400">
               Building quality digital experiences with clean code and modern aesthetics. Based in Bangladesh.
             </p>
@@ -46,7 +46,7 @@ const Footer = () => {
 
           {/* Navigation Links */}
           <div className="lg:col-span-4 flex flex-col items-start gap-6 lg:items-center">
-            <h3 className="text-xs font-bold uppercase tracking-[0.3em] text-slate-600">Explore</h3>
+            <h3 className="text-sm font-semibold text-cyan-600 dark:text-cyan-400">Explore</h3>
             <ul className="grid grid-cols-2 gap-x-12 gap-y-4 text-sm font-bold text-slate-400">
               <li><a href="#hero" className="transition-colors hover:text-white">Home</a></li>
               <li><a href="#about" className="transition-colors hover:text-white">About</a></li>
@@ -59,28 +59,28 @@ const Footer = () => {
 
           {/* Social Links & CTA */}
           <div className="lg:col-span-4 flex flex-col items-start gap-6 lg:items-end">
-             <h3 className="text-xs font-bold uppercase tracking-[0.3em] text-slate-600">Connect</h3>
-             <div className="flex flex-wrap gap-3 lg:justify-end">
-                <SocialLink href="https://github.com/ragibalasad" label="GitHub"><FaGithub /></SocialLink>
-                <SocialLink href="https://linkedin.com/in/ragibalasad" label="LinkedIn"><FaLinkedin /></SocialLink>
-                <SocialLink href="https://x.com/ragibalasad" label="Twitter"><FaXTwitter /></SocialLink>
-                <SocialLink href="https://facebook.com/ragibalasad" label="Facebook"><FaFacebook /></SocialLink>
-                <SocialLink href="https://discord.com/ragibalasad" label="Discord"><FaDiscord /></SocialLink>
-             </div>
-             
-             <a 
-                href="https://github.com/ragibalasad/ragib-portfolio"
-                target="_blank"
-                className="group mt-4 flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-6 py-2 text-[10px] font-bold uppercase tracking-widest text-slate-400 transition-all hover:bg-white/10 hover:text-white"
-             >
-                <FaGithub className="text-sm" />
-                Get this website for <span className="text-green-500 text-sm group-hover:text-green-300">$45.99</span> only
-             </a>
+            <h3 className="text-sm font-semibold text-cyan-600 dark:text-cyan-400">Connect</h3>
+            <div className="flex flex-wrap gap-3 lg:justify-end">
+              <SocialLink href="https://github.com/ragibalasad" label="GitHub"><FaGithub /></SocialLink>
+              <SocialLink href="https://linkedin.com/in/ragibalasad" label="LinkedIn"><FaLinkedin /></SocialLink>
+              <SocialLink href="https://x.com/ragibalasad" label="Twitter"><FaXTwitter /></SocialLink>
+              <SocialLink href="https://facebook.com/ragibalasad" label="Facebook"><FaFacebook /></SocialLink>
+              <SocialLink href="https://discord.com/ragibalasad" label="Discord"><FaDiscord /></SocialLink>
+            </div>
+
+            <a
+              href="https://github.com/ragibalasad/ragib-portfolio"
+              target="_blank"
+              className="group mt-4 flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-6 py-2 text-[10px] font-bold uppercase tracking-widest text-slate-400 transition-all hover:bg-white/10 hover:text-white"
+            >
+              <FaGithub className="text-sm" />
+              Get this website for <span className="text-green-500 text-sm group-hover:text-green-300">$45.99</span> only
+            </a>
           </div>
         </div>
-        
+
         {/* Copyright Bar */}
-        <div className="mt-20 flex flex-col items-center justify-between gap-6 border-t border-white/5 pt-8 text-[11px] font-bold uppercase tracking-[0.2em] text-slate-600 sm:flex-row">
+        <div className="mt-20 flex flex-col items-center justify-between gap-6 border-t border-white/5 pt-8 text-sm font-medium text-slate-600 sm:flex-row">
           <p>
             &copy; {new Date().getFullYear()} Ragib Al Asad.
           </p>

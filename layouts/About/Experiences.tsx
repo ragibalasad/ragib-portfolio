@@ -71,10 +71,10 @@ function ExperienceItem({ count, label }: Experience) {
         />
         <span className="text-2xl font-bold text-cyan-500">+</span>
       </div>
-      
+
       <div className="relative flex items-center gap-3">
         <div className="h-0.5 w-8 rounded-full bg-gradient-to-r from-cyan-400 to-blue-600 transition-all duration-500 group-hover:w-12"></div>
-        <span className="text-xs font-bold uppercase tracking-[0.2em] text-slate-500 dark:text-slate-400">
+        <span className="text-sm font-semibold tracking-wider text-slate-500 dark:text-slate-400">
           {label}
         </span>
       </div>
