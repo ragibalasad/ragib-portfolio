@@ -1,7 +1,7 @@
 "use client";
 
 import { AnimatePresence, motion } from "framer-motion";
-import { useState } from "react";
+import { useState, useMemo } from "react";
 import GridItem from "./GridItem";
 import projects from "./projects.json";
 
@@ -17,8 +17,12 @@ const catagories = [
 const Projects = () => {
   const [filter, setFilter] = useState("all");
 
-  const filteredProjects = projects.filter(
-    (project) => filter === "all" || project.category === filter,
+  const filteredProjects = useMemo(
+    () =>
+      projects.filter(
+        (project) => filter === "all" || project.category === filter,
+      ),
+    [filter],
   );
 
   const containerVariants = {
